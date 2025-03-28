@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footers from "./Footer";
 export default function HingedDoorWardrobes() {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
       <div className="page-content">
         {/* <!-- CONTENT START --> */}
@@ -43,10 +43,10 @@ export default function HingedDoorWardrobes() {
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* text start  */}
-          <div className="container mt-5 mb-5">
+          <div className="container mt-5 mb-5" style={{background:'#000'}}>
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Elegant Hinged Wardrobe Doors for Stylish Living</h3>
                   <p>
                     Custom Built-In Fitted Wardrobes Tailored to Your Space in
@@ -78,7 +78,7 @@ export default function HingedDoorWardrobes() {
 
 
           {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 bg-gray">
+          <div className="section-full p-t80 p-b50 " >
             
             <div className="container-fluid">
              

@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Slidingwardrobed = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}
@@ -42,29 +42,49 @@ const Slidingwardrobed = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* <!--Bedroom  SECTION START --> */}
-        <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
                 
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Bedroom Sliding Wardrobes
                       </h3>
                       <p>
                       Upgrade your bedroom with stylish sliding wardrobes that combine elegance and functionality. Designed to maximize space, these wardrobes offer seamless storage solutions while enhancing your room’s aesthetic appeal.
                       </p>
-                      <a href="/Bathroom" className="site-button-link" style={{background:'#141b1f',color:'white',padding:'18px'}}>
-                        Read More
-                      </a>
+                      <a 
+  href="/Bathroom" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    border: '2px solid #B19777',
+    textDecoration: 'none',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+ READ MORE
+</a>
+
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-6 col-md-12">
-                  <div className="arc-home-about-right portfolio-wrap">
+                <div className="col-lg-6 col-md-12" >
+                  <div className="arc-home-about-right portfolio-wrap" >
                     <div className="row">
                         <div className="col-md-6 col-sm-6 masonry-item">
                         <div className="wt-media m-b20  img-reflection">
@@ -101,7 +121,7 @@ const Slidingwardrobed = () => {
 
         
         {/* <!--Home Office  SECTION START --> */}
-        <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+        <div className="section-full p-t80 p-b80 bg-gray overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
@@ -138,16 +158,38 @@ const Slidingwardrobed = () => {
                 </div>
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Home Office Sliding Wardrobes
                       </h3>
                       <p>
                       Optimize your workspace with home office sliding wardrobes, designed for both style and efficiency. These sleek wardrobes provide ample storage while maintaining a clean and organized environment.
                       </p>
-                      <a href="/HomeOffice" className="site-button-link" style={{background:'#141b1f',color:'white',padding:'18px'}}>
-                        Read More
-                      </a>
+                      <a href="/HomeOffice"
+   style={{
+     display: 'inline-block',
+     padding: '18px',
+     background: '#B19777',
+     color: 'white',
+     fontWeight:600,
+     textDecoration: 'none',
+     position: 'relative',
+     border: '2px solid #B19777',
+     overflow: 'hidden',
+     transition: 'color 0.3s ease-in-out',
+   }}
+   onMouseEnter={(e) => {
+     e.target.style.color = '#B19777';
+     e.target.style.background = 'white';
+   }}
+   onMouseLeave={(e) => {
+     e.target.style.color = 'white';
+     e.target.style.background = '#B19777';
+   }}
+>
+  READ MORE
+</a>
+
                     </div>
                   </div>
                 </div>
@@ -159,23 +201,43 @@ const Slidingwardrobed = () => {
         {/* <!-- Home Office  SECTION END -->   */}
 
          {/* <!--Living  SECTION START --> */}
-         <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+         <div className="section-full p-t80 p-b80 bg-gray overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
                 
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Living Room Sliding Wardrobes
                       </h3>
                       <p>
                       Maximize space and style with our elegant living room sliding wardrobes, designed for seamless storage and a modern aesthetic. These wardrobes blend effortlessly with your décor while keeping your essentials neatly organized.
                       </p>
-                      <a href="/FittedLiving" className="site-button-link" style={{background:'#141b1f',color:'white',padding:'18px'}}>
-                        Read More
-                      </a>
+                      <a 
+  href="/FittedLiving" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
+
                     </div>
                   </div>
                 </div>
@@ -217,7 +279,7 @@ const Slidingwardrobed = () => {
         {/* <!-- Living  SECTION END -->   */}
 
          {/* <!--Childrens   SECTION START --> */}
-         <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+         <div className="section-full p-t80 p-b80 bg-gray overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
@@ -254,16 +316,36 @@ const Slidingwardrobed = () => {
                 </div>
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Childrens Bedroom Sliding Wardrobes
                       </h3>
                       <p>
                       Create a fun and organized space for your little ones with our children's sliding bedroom wardrobes. Designed for easy access and maximum storage, these wardrobes keep clothes, toys, and essentials neatly arranged.
                       </p>
-                      <a href="/ChildrenFittedBadrooms" className="site-button-link" style={{background:'#141b1f',color:'white',padding:'18px'}}>
-                        Read More
-                      </a>
+                      
+                      <a 
+  href="/ChildrenFittedBadrooms" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                     </div>
                   </div>
                 </div>

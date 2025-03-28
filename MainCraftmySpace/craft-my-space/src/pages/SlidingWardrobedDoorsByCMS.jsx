@@ -5,7 +5,7 @@ import Footers from "./Footer";
 const SlidingWardrobedDoorsByCMS = () => {
   
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}
@@ -47,7 +47,7 @@ const SlidingWardrobedDoorsByCMS = () => {
            <div className="container mt-5 mb-5">
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Elegant Sliding Wardrobe Doors – Premium Wood & Glass Finishes</h3>
                   <p>
                   Transform your living space with our elegant sliding wardrobe doors, designed to blend style and functionality. Crafted with premium wood and sleek glass finishes, these doors add a modern touch to any room. Whether you prefer a classic wooden texture or a contemporary glass look, our collection offers a variety of designs to suit your taste. Experience smooth sliding mechanisms and durable materials that ensure long-lasting performance. Upgrade your home with a perfect combination of sophistication and convenience.
@@ -67,7 +67,7 @@ const SlidingWardrobedDoorsByCMS = () => {
           {/* text end  */}
 
            {/* <!-- SECTION CONTENT START --> */}
-           <div className="section-full p-t80 p-b50 bg-gray">
+           <div className="section-full p-t80 p-b50 ">
             
             <div className="container-fluid">
              
