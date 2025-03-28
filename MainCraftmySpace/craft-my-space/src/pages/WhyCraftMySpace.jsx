@@ -249,7 +249,7 @@ const WhyCraftMySpace = () => {
                             
                                 <div className="item">
                                     <div className="wt-thum-bx">
-                                        <img src="/assets/pic/slider1.webp" alt="" />
+                                        <img src="/assets/pic/corner-sofas.jpg" alt="" />
                                     </div>
                                 </div>
                                 
