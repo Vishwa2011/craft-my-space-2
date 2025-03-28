@@ -18,11 +18,11 @@ const Header = () => {
       alignItems="center"
       px={3}
       py={1}
-      borderBottom={1}
+      // borderBottom={1}
       borderColor="grey.300"
       bgcolor="white"
       textAlign={isMobile ? "center" : "left"}
-      sx={{backgroundColor:'#141b1f',color:'#fff'}}
+      sx={{backgroundColor:'#000',color:'#fff'}}
     >
       {/* Social Media Icons with Login Links */}
       <Box display="flex" gap={1} justifyContent={isMobile ? "center" : "flex-start"}>

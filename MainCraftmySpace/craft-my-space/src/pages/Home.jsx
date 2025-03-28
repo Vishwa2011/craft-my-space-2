@@ -1066,10 +1066,9 @@ export default function Home() {
         </div>
 
         {/* <!-- slider END --> */}
-        <div
+        <div 
           className="bg-gray overflow-hide v-title-outer"
-          style={{ padding: "100px 0px" }}
-        >
+          style={{ padding: "100px 0px",background:'#000',borderBottom:'2px solid #B19777' }}>
           <div className="section-content">
             <div
               className="custom-block-outer clearfix bg-cover"
@@ -1126,7 +1125,7 @@ export default function Home() {
 
         
         {/* [ our services ] start  */}
-        <div className="section-full p-t80 p-b50 bg-white">
+        <div className="section-full p-t80 p-b50" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div>
            
@@ -1310,7 +1309,7 @@ export default function Home() {
         </div>
         {/* [ our services ] end  */}
         {/* STEP INSPIRED SOLUTION start  */}
-        <div className="section-full p-t10 p-b50 bg-white">
+        <div className="section-full p-t80 p-b50 " style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div>
               <h2 style={{ display: "flex", justifyContent: "center" }}>
@@ -1332,7 +1331,7 @@ export default function Home() {
                         <img src="/assets/pic/conversation (2).png" alt="" />
                       </div>
                       <div>
-                        <p className="mt-3">DISCUSS & PLAN</p>
+                        <p className="mt-3" >DISCUSS & PLAN</p>
                       </div>
                     </a>
                   </div>
@@ -1383,14 +1382,14 @@ export default function Home() {
         {/* STEP INSPIRED SOLUTION end  */}
 
         {/* content start */}
-<div style={{padding:'70px 0px'}}>
+<div style={{padding:'70px 0px',background:'#000',borderBottom:'2px solid #B19777'}}>
         <div className="container">
            <div className="col-12">
             <div className="row">
               <div className="col-lg-6 col-md-12 col-sm-12">
               <div display="flex" gap={0.5} style={{marginBottom:'20px'}}>
       {[...Array(5)].map((_, index) => (
-        <Star key={index} sx={{ color: "#E4A545", fontSize: 32 }} />
+        <Star key={index} sx={{ color: "#B19777", fontSize: 32 }} />
       ))}
     </div>
                 <h2>Enjoy a Luxury Experience</h2>
@@ -1401,7 +1400,7 @@ export default function Home() {
                   flexDirection="column" gap={2} color="#C29565">
       {/* First Contact */}
       <a href="tel:+01753530216" style={{ textDecoration: 'none' }}>
-  <div style={{ display: 'flex', color: '#d5dd02', margin: '41px 0px 25px 0px', alignItems: 'center', gap: '10px' }}>
+  <div style={{ display: 'flex', color: '#B19777', margin: '41px 0px 25px 0px', alignItems: 'center', gap: '10px' }}>
     <PhoneInTalkIcon style={{ fontSize: '40px', marginRight: '17px' }} />
     <Typography style={{ fontSize: '22px' }} fontWeight={500}>
       +01753530216
@@ -1430,8 +1429,8 @@ export default function Home() {
 
         {/* Testimonial start  */}
         <div
-          className="section-full p-tb80 testimonial-slider-outer bg-white bg-cover bg-left-center"
-          style={{ backgroundImage: "url(images/background/bg-1.jpg)" }}
+          className="section-full p-tb80 testimonial-slider-outer bg-cover bg-left-center"
+          style={{ background:'#000',borderBottom:'2px solid #B19777' }}
         >
           <div className="container">
             <div className="section-head clearfix">
@@ -1575,7 +1574,7 @@ export default function Home() {
         </div>
         {/* Testimonial end  */}
         {/* Why Choose start   */}
-        <div className="section-full p-t80 p-b50 bg-gray">
+        <div className="section-full p-t80 p-b50 " style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid">
@@ -1595,7 +1594,7 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="G">
                       Guaranteed Quality
@@ -1614,7 +1613,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="P">
                       Professional Manufacturing
@@ -1632,7 +1631,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="H">
                       High Quality Service
@@ -1651,7 +1650,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="C">
                       Convenience of Choice
@@ -1670,7 +1669,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="E">
                       Easy Delivery
@@ -1689,7 +1688,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="M">
                       Made in Britain
@@ -1714,8 +1713,8 @@ export default function Home() {
 
         {/* our blog start  */}
         <div
-          className="section-full  p-t80 p-b80 bg-secondry"
-          style={{ marginBottom: "100px" }}
+          className="section-full  p-t80 p-b80 "
+          style={{ paddingBottom: "100px",background:'#000' }}
         >
           <div className="container">
             <div className="section-head clearfix">
@@ -1734,7 +1733,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="section-content">
+          <div className="section-content" >
             <div className="container-fluid">
               <div className="container">
                 <div className="projects-slider-two">

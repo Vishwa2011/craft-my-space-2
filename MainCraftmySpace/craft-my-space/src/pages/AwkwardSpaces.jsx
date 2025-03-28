@@ -125,7 +125,7 @@ const AwkwardSpaces = () => {
       ? items
       : items.filter((item) => item.category === activeCategory);
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
 
       <div className="page-content">
@@ -164,7 +164,7 @@ const AwkwardSpaces = () => {
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 bg-gray">
+          <div className="section-full p-t80 p-b50 " style={{background:'#000'}}>
             <div className="container">
               <div className="filter-wrap p-b30">
                 <ul className="masonry-filter link-style text-uppercase masonry-filter1">
@@ -207,7 +207,7 @@ const AwkwardSpaces = () => {
           <div className="container mt-5 mb-5"> 
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Awkward Spaces</h3>
                   
                   <p>

@@ -7,7 +7,7 @@ import { BiPhoneCall } from "react-icons/bi";
 const WhyCraftMySpace = () => {
   const [errors, setErrors] = useState({});
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
       <div className="page-content">
         {/* <!-- CONTENT START --> */}
@@ -47,10 +47,10 @@ const WhyCraftMySpace = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* text start  */}
-        <div className="container mt-5 mb-5">
+        <div className="container mt-5 mb-5" >
           <div className="project-detail-outer">
             <div className="project-detail-containt">
-              <div className="bg-white text-black">
+              <div className=" text-black">
                 <h3>Crafting Bespoke Furniture Solutions Since 2009</h3>
                 <p>
                   Bespoke fitted wardrobes, bedrooms, furniture, and kitchens
@@ -169,10 +169,11 @@ const WhyCraftMySpace = () => {
         {/* image end  */}
 
         {/* text start  */}
-        <div className="container  mb-5">
+        <div style={{borderBottom:'2px solid #B19777'}}>
+        <div className="container  mb-5" >
           <div className="project-detail-outer">
             <div className="project-detail-containt">
-              <div className="bg-white text-black">
+              <div className=" text-black">
                 <p>
                   At <b>CraftMySpace</b>, we take immense pride in our
                   exceptional team!
@@ -194,10 +195,11 @@ const WhyCraftMySpace = () => {
             </div>
           </div>
         </div>
+        </div>
         {/* text end  */}
 
         {/* customer start  */}
-        <div className="bg-gray overflow-hide v-title-outer">
+        <div className=" overflow-hide v-title-outer" >
           <div className="section-content">
             <div className="custom-block-outer clearfix bg-cover">
               {/* <div className="custom-right-part "> */}
@@ -242,7 +244,7 @@ const WhyCraftMySpace = () => {
         {/* customer end  */}
 
         {/* slider start */}
-<div style={{padding:'100px 0px'}}>
+<div style={{padding:'100px 0px',borderBottom:'2px solid #B19777'}}>
         <div className="wt-post-media">
                         
                             <div className="owl-carousel owl-fade-slider-one owl-btn-vertical-center owl-dots-bottom-right m-b30">
@@ -273,10 +275,11 @@ const WhyCraftMySpace = () => {
 
 
         {/* text start  */}
-        <div className="container mt-5">
+        <div style={{borderBottom:'2px solid #B19777'}}>
+        <div className="container mt-5" >
           <div className="project-detail-outer">
             <div className="project-detail-containt">
-              <div className="bg-white text-black">
+              <div className=" text-black">
                 <h3>Sliding Wardrobe Doors Manufacturer</h3>
                 <p>
                   <b>CraftMySpace</b> is more than just a wardrobe specialist—we
@@ -306,10 +309,11 @@ const WhyCraftMySpace = () => {
             </div>
           </div>
         </div>
+        </div>
         {/* text end  */}
 
         {/* <!-- VIDEO SECTION START --> */}
-        <div className="bg-gray overflow-hide v-title-outer">
+        <div className=" overflow-hide v-title-outer" style={{borderBottom:'2px solid #B19777'}}>
           <div className="section-content">
             <div className="custom-block-outer clearfix bg-cover">
               <div

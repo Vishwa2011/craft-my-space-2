@@ -40,18 +40,18 @@ const Mission = () => {
             </div>
           </div>
           {/* <!--  SECTION START --> */}
-          <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+          <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}}>
             <div className="container">
               <div className="section-content">
                 <div className="row">
                   <div className="col-lg-6 col-md-12">
                     <div className="arc-home-about-left">
-                      <div className="arc-home-left-content  bg-gray">
-                        <h4>GET TO KNOW</h4>
+                      <div className="arc-home-left-content  " style={{background:'#000'}}>
+                        <h4 style={{color:'#B19777'}}>GET TO KNOW</h4>
                         <h3 className="m-t0 ">Our Mission</h3>
                         <p
                           style={{
-                            color: "#434f5a",
+                            color: "#7c7c7c",
                             fontSize: "14px",
                             lineHeight: "30px",
                           }}

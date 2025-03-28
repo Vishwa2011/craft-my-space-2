@@ -129,7 +129,7 @@ const FittedWardrobes = () => {
       ? items
       : items.filter((item) => item.category === activeCategory);
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
 
       <div className="page-content">
@@ -169,7 +169,7 @@ const FittedWardrobes = () => {
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 bg-gray">
+          <div className="section-full p-t80 p-b50 " style={{background:'#000'}}>
             <div className="container">
               <div className="filter-wrap p-b30">
                 <ul className="masonry-filter link-style text-uppercase masonry-filter1">
@@ -209,11 +209,11 @@ const FittedWardrobes = () => {
           {/* <!-- SECTION CONTENT END  --> */}
 
           {/* text start  */}
-          <div className="container mt-5 mb-5">
+          <div className="container mt-5 mb-5" style={{background:'#000'}}>
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
-                  <h3>Built In Fitted Wardrobes</h3>
+                <div className=" text-black">
+                  <h3 style={{color:'#B19777'}}>Built In Fitted Wardrobes</h3>
                   <h3>
                     Custom Built-In Fitted Wardrobes Tailored to Your Space in
                     London and the Home Counties – From CraftMySpace
@@ -248,13 +248,30 @@ const FittedWardrobes = () => {
                   </ul>
                   </p>
                 </div>
-                <div style={{display:'flex',justifyContent:'center'}}>
-                  <a href="/GetaQuote"    style={{
-                      background: "#141b1f",
-                      color: "white",
-                      padding: "20px",
-                    }}>Contact Now</a>
-                </div>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+  <a 
+    href="/GetaQuote"    
+    style={{
+      background: "#B19777",
+      color: "white",
+      padding: "20px",
+      fontWeight:700,
+      textDecoration: "none",
+      transition: "0.3s",
+    }}
+    onMouseEnter={(e) => {
+      e.target.style.background = "white";
+      e.target.style.color = "#B19777";
+    }}
+    onMouseLeave={(e) => {
+      e.target.style.background = "#B19777";
+      e.target.style.color = "white";
+    }}
+  >
+    Contact Now
+  </a>
+</div>
+
               </div>
             </div>
 

@@ -4,7 +4,7 @@ import Footers from "./Footer";
 
 const FittedBedroom = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
 
       <div className="page-content">
@@ -41,7 +41,7 @@ const FittedBedroom = () => {
         <div className="container mt-5">
           <div className="project-detail-outer">
             <div className="project-detail-containt">
-              <div className="bg-white text-black">
+              <div className=" text-black">
                 <h3>
                   Transform Your Bedroom into a Serene and Organized Space with
                   Custom Fitted Wardrobes
@@ -70,7 +70,7 @@ const FittedBedroom = () => {
               </div>
             </div>
             <div className="project-detail-containt">
-              <div className="bg-white text-black">
+              <div className=" text-black">
                 <h3>
                   Effortless Installation of Fitted Bedrooms and Wardrobes
                   Without the Hassle

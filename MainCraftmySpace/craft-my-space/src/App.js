@@ -47,9 +47,9 @@ function App() {
     <>
       {/* <Navbar />  */}
        <div class="phone-widget">
-              <a href="tel:+01753530216">
+              <a href="tel:(0044)07365 566 666">
                 <div class="phone-number">
-                  +01753530216
+                (0044)07365 566 666
                 </div>
                 <div class="phone-icon">
                   <BiPhoneCall className="icon" />
