@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const HomeOffice = () => {
   return (
     <>
-      <div className="page-wraper">
+      <div className="page-wraper" style={{background:'#000'}}>
         <Navbar />
         <div className="page-content">
           {/* <!-- CONTENT START --> */}
@@ -45,10 +45,11 @@ const HomeOffice = () => {
             {/* <!-- INNER PAGE BANNER END --> */}
 
             {/* text start  */}
-            <div className="container mt-5 mb-5">
+            <div style={{borderBottom:'2px solid #B19777'}}>
+            <div className="container mt-5 mb-5" >
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
-                  <div className="bg-white text-black">
+                  <div className=" text-black">
                     <h3>Fitted Home Office</h3>
                     <p>
                       A <b>fitted home office</b> creates an organized,
@@ -72,12 +73,13 @@ const HomeOffice = () => {
                 </div>
               </div>
             </div>
+            </div>
             {/* text end  */}
 
             {/* customer start  */}
             <div
-              className="bg-gray overflow-hide v-title-outer"
-              style={{ textAlign: "center" }}
+              className=" overflow-hide v-title-outer"
+              style={{ textAlign: "center",borderBottom:'2px solid #B19777' }}
             >
               <div className="section-content">
                 <div className="custom-block-outer clearfix bg-cover">
@@ -145,7 +147,7 @@ const HomeOffice = () => {
             </div>
             {/* customer end  */}
              {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 bg-gray">
+          <div className="section-full p-t80 p-b50 ">
             
             <div className="container-fluid">
              

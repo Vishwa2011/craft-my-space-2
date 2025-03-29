@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const Kitchens = () => {
   return (
     <>
-      <div className="page-wraper">
+      <div className="page-wraper" style={{background:'#000'}}>
         <Navbar />
         <div className="page-content">
           {/* <!-- CONTENT START --> */}
@@ -45,10 +45,11 @@ const Kitchens = () => {
             {/* <!-- INNER PAGE BANNER END --> */}
 
             {/* text start  */}
-            <div className="container mt-5 mb-5">
+           <div style={{borderBottom:'2px solid #B19777'}}>
+           <div className="container mt-5 mb-5" >
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
-                  <div className="bg-white text-black">
+                  <div className=" text-black">
                     <h3>Fitted Kitchens</h3>
                     <p>
                     A <b>fitted kitchen</b> offers a seamless and efficient cooking space, designed to match your lifestyle and aesthetic preferences. With custom-built cabinets, sleek countertops, and smart storage solutions, everything is crafted to maximize space and enhance convenience. Whether you prefer a modern minimalist look or a classic design, bespoke kitchens provide a perfect balance of beauty and practicality.
@@ -60,15 +61,16 @@ const Kitchens = () => {
                 </div>
               </div>
             </div>
+           </div>
             {/* text end  */}
 
             {/* Kitchens Means start   */}
-        <div className="section-full p-t80 p-b50 bg-gray">
+        <div className="section-full p-t80 p-b50 " style={{borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <h3>Our Fitted Kitchens Means</h3>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="G">
                     Guaranteed Quality
@@ -86,7 +88,7 @@ const Kitchens = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="P">
                     Professional Manufacturing
@@ -104,7 +106,7 @@ const Kitchens = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="H">
                     High Quality Service
@@ -122,7 +124,7 @@ const Kitchens = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="C">
                     Convenience of Choice
@@ -140,7 +142,7 @@ const Kitchens = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="E">
                     Easy Delivery
@@ -158,7 +160,7 @@ const Kitchens = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="M">
                     Made in Britain
@@ -184,7 +186,7 @@ const Kitchens = () => {
         <div className="container mt-5 mb-5">
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
-                  <div className="bg-white text-black">
+                  <div className=" text-black">
                     <h3>Fitted Kitchens – Design & Installation</h3>
                     <p>
                     Once you've selected from our wide range of door styles and over 60 premium finishes, including matte, gloss, and rich wood grains, we ensure a seamless and stress-free installation experience. Every detail is carefully considered to bring your vision to life with precision and elegance.
@@ -198,7 +200,7 @@ const Kitchens = () => {
             </div>
             {/* text end  */}
                {/* video start  */}
-            <div className="container">
+            <div className="container ">
             <div className="blog-post date-style-1 blog-detail text-black">
               <div className="wt-post-media">
                 <div className="owl-carousel owl-fade-slider-one owl-btn-vertical-center owl-dots-bottom-right " style={{marginBottom:'45px'}}>

@@ -42,7 +42,7 @@ const Walkinwardrobed = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* <!--  SECTION START --> */}
-        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}}>
+        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
@@ -56,9 +56,29 @@ const Walkinwardrobed = () => {
                       <p>
                       Transform your space with luxurious walk-in wardrobes, offering a perfect blend of style and functionality. Designed for seamless organization, these wardrobes provide ample storage for clothing, accessories, and more.
                       </p>
-                      <a href="" className="site-button-link" style={{background:'#141b1f',color:'white',padding:'18px'}}>
-                        Read More
-                      </a>
+                     
+                      <a 
+  href="" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                     </div>
                   </div>
                 </div>
@@ -103,7 +123,7 @@ const Walkinwardrobed = () => {
          <div className="container mt-5 mb-5">
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Why Walk In Wardrobes?</h3>
                   <h2>Benefits of a custom walk-in-wardrobe</h2>
                   <p>
@@ -122,7 +142,7 @@ const Walkinwardrobed = () => {
                  
                  
                 </div>
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Dressing room to order “CraftMySpace” – a dream that becomes a reality</h3>
                   
                   <p>

@@ -47,13 +47,13 @@ const SlidingBedroomWardrobes = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* <!--  SECTION START --> */}
-        <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Fitted Wardrobes For Beautiful Bedrooms
                       </h3>
@@ -61,17 +61,28 @@ const SlidingBedroomWardrobes = () => {
                       A well-designed bedroom is incomplete without a fitted wardrobe that enhances both style and practicality. Custom-built to suit your space, these wardrobes offer seamless storage solutions while complementing your bedroom’s décor. From sleek sliding doors to classic hinged designs, fitted wardrobes provide ample space for clothing, accessories, and personal belongings, ensuring a clutter-free and organized room.
                       </p> 
                      
-                      <a
-                        href=""
-                        className="site-button-link"
-                        style={{
-                          background: "#141b1f",
-                          color: "white",
-                          padding: "18px",
-                        }}
-                      >
-                        Read More
-                      </a>
+                      <a 
+  href="" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                     </div>
                   </div>
                 </div>

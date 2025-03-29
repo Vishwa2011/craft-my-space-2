@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 const BayWindows = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
     <Navbar />
     <div className="page-content">
       {/* <!-- CONTENT START --> */}
@@ -44,10 +44,11 @@ const BayWindows = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* text start  */}
-        <div className="container mt-5 mb-5">
+       <div style={{borderBottom:'2px solid #B19777'}}>
+       <div className="container mt-5 mb-5">
           <div className="project-detail-outer">
             <div className="project-detail-containt">
-              <div className="bg-white text-black">
+              <div className=" text-black">
                 <h3>Maximize Storage with Custom Bay Window Seating
                 </h3>
                 <p>
@@ -61,12 +62,13 @@ const BayWindows = () => {
             </div>
           </div>
         </div>
+       </div>
         {/* text end  */}
 
         {/* customer start  */}
         <div
-          className="bg-gray overflow-hide v-title-outer"
-          style={{ textAlign: "center" }}
+          className=" overflow-hide v-title-outer"
+          style={{ textAlign: "center",borderBottom:'2px solid #B19777' }}
         >
           <div className="section-content">
             <div className="custom-block-outer clearfix bg-cover">
@@ -134,7 +136,7 @@ const BayWindows = () => {
         </div>
         {/* customer end  */}
          {/* <!-- SECTION CONTENT START --> */}
-      <div className="section-full p-t80 p-b50 bg-gray">
+      <div className="section-full p-t80 p-b50 ">
         
         <div className="container-fluid">
          

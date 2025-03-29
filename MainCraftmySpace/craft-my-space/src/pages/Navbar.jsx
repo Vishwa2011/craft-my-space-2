@@ -604,12 +604,12 @@ const Navbar = () => {
                       <li>
                         <a href="/FittedLiving">Fitted Living</a>
                         <ul className="sub-menu">
-                          <li>
+                          {/* <li>
                             <a href="/Bathroom">Bathroom</a>
                           </li>
                           <li>
                             <a href="/DiningRoom">Dining Room</a>
-                          </li>
+                          </li> */}
                           <li>
                             <a href="/HomeOffice">Home Office</a>
                           </li>
