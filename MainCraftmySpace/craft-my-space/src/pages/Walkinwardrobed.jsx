@@ -4,7 +4,7 @@ import Footers from './Footer';
 
 const Walkinwardrobed = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}
@@ -42,14 +42,14 @@ const Walkinwardrobed = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* <!--  SECTION START --> */}
-        <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
                 
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Walk in Wardrobes
                       </h3>
