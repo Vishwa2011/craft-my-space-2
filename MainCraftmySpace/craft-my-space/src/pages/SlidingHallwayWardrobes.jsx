@@ -47,13 +47,13 @@ const SlidingHallwayWardrobes = () => {
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* <!--  SECTION START --> */}
-          <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+          <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}}>
             <div className="container">
               <div className="section-content">
                 <div className="row">
                   <div className="col-lg-6 col-md-12">
                     <div className="arc-home-about-left">
-                      <div className="arc-home-left-content  bg-gray">
+                      <div className="arc-home-left-content  " style={{background:'#000'}}>
                         <h3 className="m-t0 wt-tilte-light">
                         Hallways and Under Staircase Fitted Sliding Wardrobes
                         </h3>
@@ -61,17 +61,28 @@ const SlidingHallwayWardrobes = () => {
                         If you think your hallway lacks options for storage, think again. Our collection includes a variety of sizes, shapes, and finishes to complement your home’s interior. Designed to blend seamlessly with your décor, these fitted wardrobes make use of every available corner, transforming your hallway into an organized and stylish entryway.
                         </p> 
                        
-                        <a
-                          href=""
-                          className="site-button-link"
-                          style={{
-                            background: "#141b1f",
-                            color: "white",
-                            padding: "18px",
-                          }}
-                        >
-                          Read More
-                        </a>
+                        <a 
+  href="" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                       </div>
                     </div>
                   </div>

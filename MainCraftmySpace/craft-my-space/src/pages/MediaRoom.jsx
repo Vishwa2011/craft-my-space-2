@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const MediaRoom = () => {
   return (
     <>
-       <div className="page-wraper">
+       <div className="page-wraper" style={{background:'#000'}}>
         <Navbar />
         <div className="page-content">
           {/* <!-- CONTENT START --> */}
@@ -45,10 +45,11 @@ const MediaRoom = () => {
             {/* <!-- INNER PAGE BANNER END --> */}
 
             {/* text start  */}
+            <div style={{borderBottom:'2px solid #B19777'}}>
             <div className="container mt-5 mb-5">
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
-                  <div className="bg-white text-black">
+                  <div className=" text-black">
                     <h3>Media Room – Built in TV & Media Units</h3>
                     <p>
                     If you have a <b>media room</b> in your home, it likely accommodates multiple devices, from a TV and gaming console to streaming boxes and sound systems. Keep everything neatly organized with a <b>custom-built TV cabinet</b> designed for both style and functionality. Our expertly crafted <b>fitted media units</b> provide the perfect space for your entertainment setup while discreetly housing all your additional gadgets and accessories.
@@ -61,12 +62,13 @@ const MediaRoom = () => {
                 </div>
               </div>
             </div>
+            </div>
             {/* text end  */}
 
             {/* customer start  */}
             <div
-              className="bg-gray overflow-hide v-title-outer"
-              style={{ textAlign: "center" }}
+              className=" overflow-hide v-title-outer"
+              style={{ textAlign: "center" ,borderBottom:'2px solid #B19777'}}
             >
               <div className="section-content">
                 <div className="custom-block-outer clearfix bg-cover">
@@ -134,7 +136,7 @@ const MediaRoom = () => {
             </div>
             {/* customer end  */}
              {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 bg-gray">
+          <div className="section-full p-t80 p-b50 ">
             
             <div className="container-fluid">
              

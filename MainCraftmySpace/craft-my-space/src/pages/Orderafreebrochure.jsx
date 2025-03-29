@@ -78,7 +78,7 @@ const Orderafreebrochure = () => {
   });
   return (
     <>
-      <div className="page-wraper">
+      <div className="page-wraper" style={{ background: "#000" }}>
         <Navbar />
         <div className="page-content">
           <div
@@ -112,13 +112,14 @@ const Orderafreebrochure = () => {
               <div className="section-content">
                 <div className="row">
                   {/* Left Side: Form start*/}
-                  <div className="col-12 col-md-6 p-md-5 p-3">
+                  <div className="col-12 col-md-6 p-md-6 p-3" >
                     <form
+                    style={{padding:'20px',background:'#FFF'}}
                       className="cons-contact-form"
                       onSubmit={formik.handleSubmit}
                     >
                       <div className="section-head text-left mb-4">
-                        <h2>Order a Free Brochure</h2>
+                        <h2 style={{color:'#000'}}>Order a Free Brochure</h2>
                       </div>
 
                       <div className="row">
@@ -194,7 +195,7 @@ const Orderafreebrochure = () => {
                           />
                         </div>
 
-                        <div className="col-12 mb-3">
+                        <div className="col-12 mb-3" style={{color:'#000'}}>
                           <p>I’m looking to create a beautiful...</p>
                           <div className="d-flex flex-wrap">
                             {[
@@ -231,7 +232,7 @@ const Orderafreebrochure = () => {
                           </div>
                         </div>
 
-                        <div className="col-12 mb-3">
+                        <div className="col-12 mb-3" style={{color:'#000'}}>
                           <p>I’m also interested in having a design visit</p>
                           <label className="d-flex align-items-center">
                             <Checkbox
@@ -247,9 +248,9 @@ const Orderafreebrochure = () => {
                           </label>
                         </div>
 
-                        <div className="col-12 mb-3">
+                        <div className="col-12 mb-3" >
                           <div className="d-flex align-items-center">
-                            <h4 className="me-2">Code :</h4>
+                            <h4 className="me-2" style={{color:'#000'}}>Code :</h4>
                             <canvas
                               id="captcha"
                               width="200"
@@ -284,7 +285,7 @@ const Orderafreebrochure = () => {
                         <div className="col-12 mt-3">
                           <button
                             type="submit"
-                            className="btn btn-dark text-uppercase w-100"
+                            className="btn btn-dark text-uppercase w-100" style={{background:'#000'}}
                           >
                             Order Now
                           </button>
@@ -295,7 +296,7 @@ const Orderafreebrochure = () => {
                   {/* Left Side: Form end */}
                   {/* Right Side: Contact Info */}
                   <div
-                    className="col-12 col-md-6 p-md-5 p-3 contact-info text-center m-t80 bg-gray  m-b50 col-6"
+                    className="col-12 col-md-6 p-md-5 p-3 contact-info text-center m-t80 bg-gray m-b50 col-6"
                     style={{
                       display: "flex",
                       justifyContent: "center",

@@ -4,7 +4,7 @@ import Footers from './Footer'
 
 const ChildrenFittedBadrooms = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
     <Navbar />
     <div className="page-content">
        {/* <!-- INNER PAGE BANNER --> */}
@@ -41,10 +41,11 @@ const ChildrenFittedBadrooms = () => {
         </div>
         {/* <!-- INNER PAGE BANNER END --> */}
          {/* text start  */}
-         <div className="container mt-5 mb-5">
+        <div style={{borderBottom:'2px solid #B19777'}}>
+        <div className="container mt-5 mb-5" >
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Making Your Child’s Life More Practical with Smart Wardrobe Solutions</h3>
                   
                   <p>
@@ -57,7 +58,7 @@ const ChildrenFittedBadrooms = () => {
                  
                  
                 </div>
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Children’s Fitted Wardrobes</h3>
                   
                   <p>
@@ -69,9 +70,10 @@ const ChildrenFittedBadrooms = () => {
               </div>
             </div>
           </div>
+        </div>
           {/* text end  */}
             {/* customer start  */}
-            <div className="bg-gray overflow-hide v-title-outer" style={{textAlign:'center'}}>
+            <div className=" overflow-hide v-title-outer" style={{textAlign:'center',borderBottom:'2px solid #B19777'}}>
             <div className="section-content">
               <div className="custom-block-outer clearfix bg-cover">
                 {/* <div className="custom-right-part "> */}
@@ -115,10 +117,10 @@ const ChildrenFittedBadrooms = () => {
           </div>
           {/* customer end  */}
           {/* img start  */}
-          <div className="blog-post date-style-1 blog-detail text-black">
+          <div className="blog-post date-style-1 blog-detail text-black" style={{background:'#000',}}>
                         
                         
-                        <div className="wt-post-info p-a30 bg-white">
+                        <div className="wt-post-info p-a30 ">
                            
                             
                             <div className="wt-blog-post-media">

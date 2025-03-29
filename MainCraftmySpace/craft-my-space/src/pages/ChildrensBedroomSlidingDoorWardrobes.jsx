@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footers from "./Footer";
 const ChildrensBedroomSlidingDoorWardrobes = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper"  style={{background:'#000'}}>
       <Navbar />
       <div className="page-content" style={{marginTop:'30px'}}>
         {/* <!-- CONTENT START --> */}
@@ -46,30 +46,41 @@ const ChildrensBedroomSlidingDoorWardrobes = () => {
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* <!--  SECTION START --> */}
-          <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+          <div className="section-full p-t80 p-b80 b overflow-hide"  style={{background:'#000',borderBottom:'2px solid #B19777'}}>
             <div className="container">
               <div className="section-content">
                 <div className="row">
                   <div className="col-lg-6 col-md-12">
                     <div className="arc-home-about-left">
-                      <div className="arc-home-left-content  bg-gray">
+                      <div className="arc-home-left-content  "  style={{background:'#000'}}>
                         <h3 className="m-t0 wt-tilte-light">
                           Making Your Child’s Life More Practical
                         </h3>
                         <p>
                         Keeping a child’s room tidy can be a challenge, but the right storage solutions make organization effortless. Our children’s fitted wardrobes are designed to grow with your child, featuring adjustable shelves and customizable compartments that adapt to their changing needs. With ample storage space, these wardrobes help keep clothes, toys, and books neatly arranged, making daily routines smoother and more efficient.
                         </p> 
-                        <a
-                          href=""
-                          className="site-button-link"
-                          style={{
-                            background: "#141b1f",
-                            color: "white",
-                            padding: "18px",
-                          }}
-                        >
-                          Read More
-                        </a>
+                        <a 
+  href="" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                       </div>
                     </div>
                   </div>
@@ -111,7 +122,7 @@ const ChildrensBedroomSlidingDoorWardrobes = () => {
          <div className="container mt-5 mb-5">
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   
                   <p>
                   Available in a variety of colors, styles, and finishes, our sliding wardrobes not only maximize space but also add a stylish touch to any room. Whether you choose a built-in or freestanding design, these wardrobes make organizing fun for kids while ensuring a clutter-free and functional living space. CraftMySpace offers the perfect blend of practicality and creativity to enhance your child’s room.

@@ -4,7 +4,7 @@ import Footers from './Footer'
 
 export default function Blogdetail() {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
        <div className="page-content">
             {/* <!-- INNER PAGE BANNER --> */}
@@ -33,7 +33,7 @@ export default function Blogdetail() {
             {/* <!-- INNER PAGE BANNER END --> */}
             
 			{/* <!-- SECTION CONTENT START --> */}
-            <div className="section-full p-t80 p-b50 bg-gray">
+            <div className="section-full p-t80 p-b50 ">
             
                 {/* <!-- GALLERY CONTENT START --> */}
                 	<div className="container">
@@ -41,7 +41,7 @@ export default function Blogdetail() {
                             <div className="col-lg-8 col-md-12 col-sm-12">                    	
                                 <div className="news-listing ">
                                     {/* <!-- COLUMNS 1 --> */}
-                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-white" >
+                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-gray" >
                                         <div className="wt-post-media wt-img-effect zoom-slow">
                                             <a href="/"><img src="/assets/pic/blogdetail1.jpg" alt="" /></a>
                                         </div>
@@ -49,8 +49,8 @@ export default function Blogdetail() {
                                             <div className="wt-post-meta ">
                                                 <ul>
                                                     <li className="post-date"><strong>25 </strong> <span>Aug 2019</span> </li>
-                                                    <li className="post-author"><i className="fa fa-user"></i><a href="">By <span>Admin</span></a> </li>
-                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="">10 <span>Comment</span></a> </li>                                                
+                                                    <li className="post-author"><i className="fa fa-user"></i><a href="" style={{color:'#B19777'}}>By <span>Admin</span></a> </li>
+                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="" style={{color:'#B19777'}}>10 <span>Comment</span></a> </li>                                                
                                                 </ul>
                                             </div>                                        
                                             <div className="wt-post-title ">
@@ -64,7 +64,7 @@ export default function Blogdetail() {
                                     </div>                             
         
                                     {/* <!-- COLUMNS 2 --> */}
-                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-white" >
+                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-gray" >
                                         <div className="wt-post-media wt-img-effect zoom-slow">
                                             <a href=""><img src="/assets/pic/Best-Furniture-Brands-In-India (1).jpg" alt="" /></a>
                                         </div>
@@ -72,8 +72,8 @@ export default function Blogdetail() {
                                             <div className="wt-post-meta ">
                                                 <ul>
                                                     <li className="post-date"><strong>25 </strong> <span>Aug 2019</span> </li>
-                                                    <li className="post-author"><i className="fa fa-user"></i><a href="">By <span>Admin</span></a> </li>
-                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="">10 <span>Comment</span></a> </li>                                                
+                                                    <li className="post-author"><i className="fa fa-user"></i><a href="" style={{color:'#B19777'}}>By <span>Admin</span></a> </li>
+                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="" style={{color:'#B19777'}}>10 <span>Comment</span></a> </li>                                                
                                                 </ul>
                                             </div>                                        
                                             <div className="wt-post-title ">
@@ -87,7 +87,7 @@ export default function Blogdetail() {
                                     </div> 
                                     
                                     {/* <!-- COLUMNS 3 --> */}
-                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-white" >
+                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-gray" >
                                         <div className="wt-post-media wt-img-effect zoom-slow">
                                             <a href=""><img src="/assets/pic/Kitchenhome (1).jpg" alt="" /></a>
                                         </div>
@@ -95,8 +95,8 @@ export default function Blogdetail() {
                                             <div className="wt-post-meta ">
                                                 <ul>
                                                     <li className="post-date"><strong>25 </strong> <span>Aug 2019</span> </li>
-                                                    <li className="post-author"><i className="fa fa-user"></i><a href="">By <span>Admin</span></a> </li>
-                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="">10 <span>Comment</span></a> </li>                                                
+                                                    <li className="post-author"><i className="fa fa-user"></i><a href="" style={{color:'#B19777'}}>By <span>Admin</span></a> </li>
+                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="" style={{color:'#B19777'}}>10 <span>Comment</span></a> </li>                                                
                                                 </ul>
                                             </div>                                        
                                             <div className="wt-post-title ">
@@ -110,7 +110,7 @@ export default function Blogdetail() {
                                     </div> 
                                     
                                     {/* <!-- COLUMNS 4 --> */}
-                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-white" >
+                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-gray" >
                                         <div className="wt-post-media wt-img-effect zoom-slow">
                                             <a href=""><img src="/assets/pic/blogdetail4.jpg" alt="" /></a>
                                         </div>
@@ -118,8 +118,8 @@ export default function Blogdetail() {
                                             <div className="wt-post-meta ">
                                                 <ul>
                                                     <li className="post-date"><strong>25 </strong> <span>Aug 2019</span> </li>
-                                                    <li className="post-author"><i className="fa fa-user"></i><a href="">By <span>Admin</span></a> </li>
-                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="">10 <span>Comment</span></a> </li>                                                
+                                                    <li className="post-author"><i className="fa fa-user"></i><a href="" style={{color:'#B19777'}}>By <span>Admin</span></a> </li>
+                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="" style={{color:'#B19777'}}>10 <span>Comment</span></a> </li>                                                
                                                 </ul>
                                             </div>                                        
                                             <div className="wt-post-title ">
@@ -133,7 +133,7 @@ export default function Blogdetail() {
                                     </div> 
                                     
                                     {/* <!-- COLUMNS 5 --> */}
-                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-white" >
+                                     <div className="blog-post blog-md date-style-1 clearfix  m-b60 bg-gray" >
                                         <div className="wt-post-media wt-img-effect zoom-slow">
                                             <a href=""><img src="/assets/pic/blogdetail5.webp" alt="" /></a>
                                         </div>
@@ -141,8 +141,8 @@ export default function Blogdetail() {
                                             <div className="wt-post-meta ">
                                                 <ul>
                                                     <li className="post-date"><strong>25</strong> <span>Aug 2019</span> </li>
-                                                    <li className="post-author"><i className="fa fa-user"></i><a href="">By <span>Admin</span></a> </li>
-                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="">10 <span>Comment</span></a> </li>                                                
+                                                    <li className="post-author"><i className="fa fa-user"></i><a href="" style={{color:'#B19777'}}>By <span>Admin</span></a> </li>
+                                                    <li className="post-comment"><i className="fa fa fa-comments"></i><a href="" style={{color:'#B19777'}}>10 <span>Comment</span></a> </li>                                                
                                                 </ul>
                                             </div>                                        
                                             <div className="wt-post-title ">
@@ -164,7 +164,7 @@ export default function Blogdetail() {
                                 <aside  className="side-bar">
                                     
                                         {/* <!-- SEARCH --> */}
-                                        <div className="widget p-a30 bg-white">
+                                        <div className="widget p-a30 bg-gray">
                                             <h4 className="widget-title">Search</h4>
                                             <div className="search-bx">
                                                 <form role="search" method="post">
@@ -179,7 +179,7 @@ export default function Blogdetail() {
                                         </div>
                                         
                                     {/* <!-- Categories -->                                         */}
-									<div className="widget bg-white  widget_services p-a30 bg-white">
+									<div className="widget   widget_services p-a30 bg-gray">
                                     	<h4 className="widget-title">Categories</h4>
                                         <ul>
                                             <li><a href="">Architecture</a><span> (28)</span></li>
@@ -192,7 +192,7 @@ export default function Blogdetail() {
                                     </div>                                        
                                         
                                         {/* <!-- OUR GALLERY  --> */}
-                                        <div className="widget widget_gallery mfp-gallery p-a30 bg-white">
+                                        <div className="widget widget_gallery mfp-gallery p-a30 bg-gray">
                                             <h4 className="widget-title">Our Gallery</h4>
                                             <div className="row no-gutters justify-content-center">
                                                 <div className="col-6 col-sm-4 ">
@@ -240,7 +240,7 @@ export default function Blogdetail() {
                                                                               
                                         
                                         {/* <!-- RECENT POSTS --> */}
-                                        <div className="widget  recent-posts-entry p-a30 bg-white">
+                                        <div className="widget  recent-posts-entry p-a30 bg-gray">
                                             <h4 className="widget-title">Recent Posts</h4>
                                             <div className="section-content">
                                                 <div className="widget-post-bx">
@@ -296,7 +296,7 @@ export default function Blogdetail() {
                                                                           
     
                                         {/* <!-- TAGS --> */}
-                                        <div className="widget widget_tag_cloud p-a30 bg-white">
+                                        <div className="widget widget_tag_cloud p-a30 bg-gray">
                                             <h4 className="widget-title">Tags</h4>
                                             <div className="tagcloud">
                                                 <a href="">Trouble </a>

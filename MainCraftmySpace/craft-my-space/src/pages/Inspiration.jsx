@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const Inspiration = () => {
   return (
     <>
-      <div className="page-wraper">
+      <div className="page-wraper"  style={{ background: "#000" }}>
         <Navbar />
         <div className="page-content">
           <div
@@ -36,7 +36,7 @@ const Inspiration = () => {
               </div>
             </div>
           </div>
-          <div className="section-full p-t80 p-b50 bg-gray ">
+          <div className="section-full p-t80 p-b50  ">
             {/* <!-- GALLERY CONTENT START --> */}
             <div className="container">
               <div>
@@ -46,7 +46,7 @@ const Inspiration = () => {
                       {/* COLUMN 1 */}
                       <div className="col-lg-4 col-md-6 mb-3">
                         <div
-                          className="blog-post blog-md date-style-1 clearfix bg-white"
+                          className="blog-post blog-md date-style-1 clearfix bg-gray"
                           style={{
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                             transition: "box-shadow 0.3s ease-in-out",
@@ -86,19 +86,19 @@ const Inspiration = () => {
 
 
 
-                          <div className=" p-a30">
+                          <div className=" p-a30 bg-gray" >
                             <div className="wt-post-meta">
                               <ul>
                                 {/* <li className="post-date"><span>Aug 2019</span></li> */}
                                 <li className="post-author">
                                   <i className="fa fa-user"></i>
-                                  <a href=""> 20 November 2024</a>
+                                  <a href="" className="text-white"> 20 November 2024</a>
                                 </li>
                                 <li className="post-comment">
                                   <i className="fa fa-comments"></i>
                                   <a href="">
                                     {" "}
-                                    <span>CraftMyspace</span>
+                                    <span className="text-white">CraftMyspace</span>
                                   </a>
                                 </li>
                               </ul>
@@ -139,7 +139,7 @@ const Inspiration = () => {
                       {/* COLUMN 2 */}
                       <div className="col-lg-4 col-md-6 mb-3">
                         <div
-                          className="blog-post blog-md date-style-1 clearfix bg-white"
+                          className="blog-post blog-md date-style-1 clearfix bg-gray"
                           style={{
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                             transition: "box-shadow 0.3s ease-in-out",
@@ -168,19 +168,19 @@ const Inspiration = () => {
     </a>
   </a>
 </div>
-                          <div className=" p-a30">
+                          <div className=" p-a30 bg-gray">
                             <div className="wt-post-meta">
                               <ul>
                                 {/* <li className="post-date"><span>Aug 2019</span></li> */}
                                 <li className="post-author">
                                   <i className="fa fa-user"></i>
-                                  <a href=""> 28 April 2024</a>
+                                  <a href="" className="text-white"> 28 April 2024</a>
                                 </li>
                                 <li className="post-comment">
                                   <i className="fa fa-comments"></i>
                                   <a href="">
                                     {" "}
-                                    <span>CraftMySpace</span>
+                                    <span className="text-white">CraftMyspace</span>
                                   </a>
                                 </li>
                               </ul>
@@ -220,7 +220,7 @@ const Inspiration = () => {
                       {/* COLUMN 3 */}
                       <div className="col-lg-4 col-md-6 mb-3">
                         <div
-                          className="blog-post blog-md date-style-1 clearfix bg-white"
+                          className="blog-post blog-md date-style-1 clearfix bg-gray"
                           style={{
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                             transition: "box-shadow 0.3s ease-in-out",
@@ -248,19 +248,19 @@ const Inspiration = () => {
     </a>
   </a>
 </div>
-                          <div className=" p-a30">
+                          <div className=" p-a30 bg-gray">
                             <div className="wt-post-meta">
                               <ul>
                                 {/* <li className="post-date"><span>Aug 2019</span></li> */}
                                 <li className="post-author">
                                   <i className="fa fa-user"></i>
-                                  <a href=""> 24 June 2024</a>
+                                  <a href="" className="text-white"> 24 June 2024</a>
                                 </li>
                                 <li className="post-comment">
                                   <i className="fa fa-comments"></i>
                                   <a href="">
                                     {" "}
-                                    <span>CraftMyspace</span>
+                                    <span className="text-white">CraftMyspace</span>
                                   </a>
                                 </li>
                               </ul>
@@ -297,7 +297,7 @@ const Inspiration = () => {
                       {/* COLUMN 4 */}
                       <div className="col-lg-4 col-md-6 mb-3">
                         <div
-                          className="blog-post blog-md date-style-1 clearfix bg-white"
+                          className="blog-post blog-md date-style-1 clearfix bg-gray"
                           style={{
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                             transition: "box-shadow 0.3s ease-in-out",
@@ -326,19 +326,19 @@ const Inspiration = () => {
     </a>
   </a>
 </div>
-                          <div className="p-a30">
+                          <div className="p-a30 bg-gray">
                             <div className="wt-post-meta">
                               <ul>
                                 {/* <li className="post-date"><span>Aug 2019</span></li> */}
                                 <li className="post-author">
                                   <i className="fa fa-user"></i>
-                                  <a href=""> 5 November 2024</a>
+                                  <a href="" className="text-white"> 5 November 2024</a>
                                 </li>
                                 <li className="post-comment">
                                   <i className="fa fa-comments"></i>
                                   <a href="">
                                     {" "}
-                                    <span>CraftMyspace</span>
+                                    <span className="text-white">CraftMyspace</span>
                                   </a>
                                 </li>
                               </ul>
@@ -375,7 +375,7 @@ const Inspiration = () => {
                       {/* COLUMN 5 */}
                       <div className="col-lg-4 col-md-6 mb-3">
                         <div
-                          className="blog-post blog-md date-style-1 clearfix bg-white"
+                          className="blog-post blog-md date-style-1 clearfix bg-gray"
                           style={{
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                             transition: "box-shadow 0.3s ease-in-out",
@@ -404,19 +404,19 @@ const Inspiration = () => {
     </a>
   </a>
 </div>
-                          <div className=" p-a30">
+                          <div className=" p-a30 bg-gray">
                             <div className="wt-post-meta">
                               <ul>
                                 {/* <li className="post-date"><span>Aug 2019</span></li> */}
                                 <li className="post-author">
                                   <i className="fa fa-user"></i>
-                                  <a href=""> 27 November 2024</a>
+                                  <a href="" className="text-white"> 27 November 2024</a>
                                 </li>
                                 <li className="post-comment">
                                   <i className="fa fa-comments"></i>
                                   <a href="">
                                     {" "}
-                                    <span>CraftMyspace</span>
+                                    <span className="text-white">CraftMyspace</span>
                                   </a>
                                 </li>
                               </ul>
@@ -453,7 +453,7 @@ const Inspiration = () => {
                       {/* COLUMN 6 */}
                       <div className="col-lg-4 col-md-6 mb-3">
                         <div
-                          className="blog-post blog-md date-style-1 clearfix bg-white"
+                          className="blog-post blog-md date-style-1 clearfix bg-gray"
                           style={{
                             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                             transition: "box-shadow 0.3s ease-in-out",
@@ -481,19 +481,19 @@ const Inspiration = () => {
     </a>
   </a>
 </div>
-                          <div className=" p-a30">
+                          <div className=" p-a30 bg-gray">
                             <div className="wt-post-meta">
                               <ul>
                                 {/* <li className="post-date"><span>Aug 2019</span></li> */}
                                 <li className="post-author">
                                   <i className="fa fa-user"></i>
-                                  <a href="">28 February</a>
+                                  <a href="" className="text-white">28 February 2024</a>
                                 </li>
                                 <li className="post-comment">
                                   <i className="fa fa-comments"></i>
                                   <a href="">
                                     {" "}
-                                    <span>CraftMyspace</span>
+                                    <span className="text-white">CraftMyspace</span>
                                   </a>
                                 </li>
                               </ul>

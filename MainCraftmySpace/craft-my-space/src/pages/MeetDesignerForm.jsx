@@ -88,7 +88,7 @@ const MeetDesignerForm = () => {
         >
           <div
             style={{
-              background: "#f6f6f6",
+              background: "#B19777",
               padding: "40px",
               borderRadius: "8px",
               width: "500px",
@@ -106,6 +106,7 @@ const MeetDesignerForm = () => {
                 border: "none",
                 fontSize: "24px",
                 cursor: "pointer",
+                color:'#fff'
               }}
             >
               ×

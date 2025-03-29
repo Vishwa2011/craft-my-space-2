@@ -47,13 +47,13 @@ const SlidingLivingAreaWardrobes = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* <!--  SECTION START --> */}
-        <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Fitted Wardrobes in Your Living Areas
                       </h3>
@@ -61,17 +61,28 @@ const SlidingLivingAreaWardrobes = () => {
                       Designed to complement your home décor, living room fitted wardrobes can be tailored to suit your preferences, from modern minimalist styles to classic wood finishes. They provide smart storage solutions for everything from media units to seasonal decorations, ensuring that your space remains tidy and welcoming. Elevate your home with a bespoke wardrobe that perfectly balances elegance and functionality.
                       </p> 
                      
-                      <a
-                        href=""
-                        className="site-button-link"
-                        style={{
-                          background: "#141b1f",
-                          color: "white",
-                          padding: "18px",
-                        }}
-                      >
-                        Read More
-                      </a>
+                      <a 
+  href="" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                     </div>
                   </div>
                 </div>
@@ -111,7 +122,7 @@ const SlidingLivingAreaWardrobes = () => {
         {/* <!--   SECTION END -->   */}
 
          {/* <!--  SECTION START --> */}
-         <div className="section-full p-t80 p-b80 bg-gray overflow-hide">
+         <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
           <div className="container">
             <div className="section-content">
               <div className="row">
@@ -147,7 +158,7 @@ const SlidingLivingAreaWardrobes = () => {
                 </div>
                 <div className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
-                    <div className="arc-home-left-content  bg-gray">
+                    <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
                       Modernise Your Living Room
                       </h3>
@@ -155,17 +166,28 @@ const SlidingLivingAreaWardrobes = () => {
                       A modern living room is all about clean lines, smart storage, and a clutter-free environment. With fitted sliding wardrobes, you can effortlessly enhance your space while keeping everyday essentials neatly organized. Whether you need a sleek media unit, hidden storage for books and accessories, or a stylish display cabinet, customized wardrobes offer a perfect blend of functionality and elegance.
                       </p> 
                      
-                      <a
-                        href=""
-                        className="site-button-link"
-                        style={{
-                          background: "#141b1f",
-                          color: "white",
-                          padding: "18px",
-                        }}
-                      >
-                        Read More
-                      </a>
+                      <a 
+  href="" 
+  className="site-button-link" 
+  style={{
+    background: '#B19777',
+    color: 'white',
+    padding: '18px',
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out'
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+> 
+  Read More
+</a>
                     </div>
                   </div>
                 </div>
