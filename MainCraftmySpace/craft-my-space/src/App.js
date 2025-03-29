@@ -41,6 +41,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import MeetDesignerForm from "./pages/MeetDesignerForm";
 import Thankyou from "./pages/Thankyou";
 import GetaQuote from "./pages/GetaQuote";
+import Service from "./pages/Service";
 // import Getaquote from "./pages/GetQuote";
 function App() {
   return (
@@ -96,6 +97,7 @@ function App() {
         <Route path="/Vision" element={<Vision />} />
         <Route path="/MeetDesignerForm" element={<MeetDesignerForm />} />
         <Route path="/Thankyou" element={<Thankyou />} />
+        <Route path="/Service" element={<Service />} />
 
 
 
