@@ -326,7 +326,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import CloseIcon from "@mui/icons-material/Close";
 import Info from "./Info";
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen ] = useState(false);
 
   const [open, setOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
