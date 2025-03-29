@@ -55,11 +55,11 @@ const Joinery = () => {
           </div>
 
           {/* joinery start */}
-          <div>
+          {/* <div>
             <div style={{ borderBottom: "2px solid #B19777" }}>
               <div class="container py-5">
                 <div class="row align-items-center">
-                  {/* <!-- Text Section --> */}
+                 
                   <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <h3>What is joinery?</h3>
                     <p>
@@ -83,7 +83,7 @@ const Joinery = () => {
                     </p>
                   </div>
 
-                  {/* <!-- Image Section --> */}
+               
                   <div class="col-lg-6 col-md-12 text-center">
                     <img
                       src="/assets/pic/joinery.jpeg"
@@ -94,7 +94,7 @@ const Joinery = () => {
                 </div>
               </div>
             </div>
-            {/* <!-- Features Section --> */}
+        
             <div
               class="row text-center mt-5"
               style={{ borderBottom: "2px solid #B19777" }}
@@ -132,7 +132,7 @@ const Joinery = () => {
                 <h4>Professional Installation</h4>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* joinery end */}
           {/* card start  */}
@@ -220,7 +220,7 @@ const Joinery = () => {
           </div>
           {/* card end  */}
           {/* <!-- OUR STORY SECTION START --> */}
-          <div
+          {/* <div
             class=""
             style={{ borderBottom: "2px solid #B19777", paddingBottom: "20px" }}
           >
@@ -239,13 +239,12 @@ const Joinery = () => {
                     </p>
                     <div class="  awards-win-section-left bg-cover bg-no-repeat bg-center bg-gray  ">
                       <img src="/assets/pic/bench (1).jpg" />
-                      {/* <div class="awards-win-left-content">
-                            </div> */}
+                     
                     </div>
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 awards-win-section-right bg-gray  mt-4">
+                <div class="col-lg-6 col-md-12 awards-win-section-right   mt-4">
                   <div class="awards-win-right-content">
                     <div class="awards-win">
                       <div>
@@ -261,7 +260,7 @@ const Joinery = () => {
                         </p>
                       </div>
                       <ul>
-                        {/* <!-- COLUMNS 2 --> */}
+                  
                         <li>
                           <h2 class="title-year">
                             <img
@@ -279,7 +278,7 @@ const Joinery = () => {
                             precision in every joinery product.{" "}
                           </p>
                         </li>
-                        {/* <!-- COLUMNS 3 --> */}
+                
                         <li>
                           <h2 class="title-year">
                             <img
@@ -296,7 +295,7 @@ const Joinery = () => {
                             and expert finishing techniques.
                           </p>
                         </li>
-                        {/* <!-- COLUMNS 4 --> */}
+                     
                         <li>
                           <h2 class="title-year">
                             <img
@@ -317,7 +316,7 @@ const Joinery = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <!-- OUR STORY SECTION END -->    */}
 
           {/* customer start  */}
