@@ -318,9 +318,9 @@ const GetaQuote = () => {
             ></iframe>
           </div>
           <div
-                  className="contact-info col-md-6 col-12 text-center  p-4"
+                  className="contact-info col-md-6 col-12 text-center bg-gray  p-4"
                   style={{
-                    background:"#fff",
+                   
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -328,7 +328,7 @@ const GetaQuote = () => {
                   }}
                 >
                   <div >
-                    <h4 style={{ marginBottom: "30px",color:'#000' }}>CraftMySpace</h4>
+                    <h4 style={{ marginBottom: "30px",color:'#fff' }}>CraftMySpace</h4>
                     <div style={{ textAlign: "justify" }}>
                       <div>
                         <div className="icon-content">
