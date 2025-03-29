@@ -2,29 +2,55 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
 
-const categories = [
-  { id: "all", name: "All" },
-  { id: "cat-1", name: "Kitchens" },
-  { id: "cat-2", name: "Home Office" },
-  // { id: "cat-3", name: "Dining Room" },
-  { id: "cat-4", name: "Media Room" },
-  // { id: "cat-5", name: "Bathroom" },
-];
-const items = [
+// const categories = [
+//   { id: "all", name: "All" },
+//   { id: "cat-1", name: "Kitchens" },
+//   { id: "cat-2", name: "Home Office" },
+//   // { id: "cat-3", name: "Dining Room" },
+//   { id: "cat-4", name: "Media Room" },
+//   // { id: "cat-5", name: "Bathroom" },
+// ];
+
+const services = [
   {
-    id: 1,
-    category: "cat-1",
-    title: " Smart Kitchen Designs",
-    p: "Upgrade your kitchen with space-saving, stylish, and functional furniture that enhances convenience and aesthetics.",
-    image: "/assets/pic/modular.png",
-  },
-  {
-    id: 2,
-    category: "cat-2",
-    title: "WorkEase Hub",
-    p: "Design a productive and stylish home office with ergonomic furniture that enhances comfort and efficiency.",
+    title: "Home Office",
+    description:
+      "Create a productive and stylish workspace with smart storage solutions, ergonomic designs, and a seamless blend of functionality and aesthetics.",
     image: "/assets/pic/home1.png",
+      link: "/HomeOffice",
   },
+  {
+    title: "Kitchen",
+    description:
+      "A perfect fusion of style and functionality, featuring smart storage solutions, modern aesthetics, and efficient layouts for a seamless cooking experience.",
+    image: "/assets/pic/modular.png",
+    link:"/Kitchens"
+  },
+  {
+    title: "Media Room",
+    description:
+      "Designed for ultimate comfort and functionality, offering stylish storage solutions, sleek designs, and optimized layouts for an immersive entertainment experience.",
+    image: "/assets/pic/media1.png",
+      link:"/MediaRoom"
+  },
+ 
+];
+
+const items = [
+  // {
+  //   id: 1,
+  //   category: "cat-1",
+  //   title: " Smart Kitchen Designs",
+  //   p: "Upgrade your kitchen with space-saving, stylish, and functional furniture that enhances convenience and aesthetics.",
+  //   image: "/assets/pic/modular.png",
+  // },
+  // {
+  //   id: 2,
+  //   category: "cat-2",
+  //   title: "WorkEase Hub",
+  //   p: "Design a productive and stylish home office with ergonomic furniture that enhances comfort and efficiency.",
+  //   image: "/assets/pic/home1.png",
+  // },
   // {
   //   id: 3,
   //   category: "cat-3",
@@ -32,13 +58,13 @@ const items = [
   //   p: "Enhance your dining experience with elegant, comfortable, and stylish furniture that brings warmth to every meal.",
   //   image: "/assets/pic/Capture-17 1.png",
   // },
-  {
-    id: 4,
-    category: "cat-4",
-    title: "CineLounge",
-    p: "Create a cinematic experience at home with cozy, stylish, and functional furniture designed for ultimate comfort and entertainment. ",
-    image: "/assets/pic/media1.png",
-  },
+  // {
+  //   id: 4,
+  //   category: "cat-4",
+  //   title: "CineLounge",
+  //   p: "Create a cinematic experience at home with cozy, stylish, and functional furniture designed for ultimate comfort and entertainment. ",
+  //   image: "/assets/pic/media1.png",
+  // },
   // {
   //   id: 5,
   //   category: "cat-5",
@@ -46,13 +72,13 @@ const items = [
   //   p: "Transform your bathroom into a relaxing retreat with elegant, space-saving furniture designed for comfort and style.",
   //   image: "/assets/pic/ambrosia.png",
   // },
-  {
-    id: 6,
-    category: "cat-1",
-    title: "Modern Kitchen Setup",
-    p: "Experience a seamless cooking space with durable, elegant, and well-crafted kitchen furniture designed for everyday use.",
-    image: "/assets/pic/sky.png",
-  },
+  // {
+  //   id: 6,
+  //   category: "cat-1",
+  //   title: "Modern Kitchen Setup",
+  //   p: "Experience a seamless cooking space with durable, elegant, and well-crafted kitchen furniture designed for everyday use.",
+  //   image: "/assets/pic/sky.png",
+  // },
   // {
   //   id: 7,
   //   category: "cat-3",
@@ -60,27 +86,27 @@ const items = [
   //   p: "Create a cozy and inviting dining space with modern furniture designed for comfort, durability, and timeless appeal.",
   //   image: "/assets/pic/modern1.png",
   // },
-  {
-    id: 8,
-    category: "cat-4",
-    title: "ScreenNest",
-    p: "Upgrade your media room with sleek and modern furniture that enhances viewing pleasure while maintaining a stylish ambiance.",
-    image: "/assets/pic/media2.png",
-  },
-  {
-    id: 9,
-    category: "cat-2",
-    title: "FocusNest",
-    p: "Create an inspiring and clutter-free workspace with modern, space-saving office furniture tailored for productivity.",
-    image: "/assets/pic/home2.png",
-  },
-  {
-    id: 10,
-    category: "cat-1",
-    title: "Elegant Kitchen Interiors",
-    p: "Transform your kitchen with contemporary furniture that blends practicality with a sophisticated and timeless appeal.",
-    image: "/assets/pic/modern-light.png",
-  },
+  // {
+  //   id: 8,
+  //   category: "cat-4",
+  //   title: "ScreenNest",
+  //   p: "Upgrade your media room with sleek and modern furniture that enhances viewing pleasure while maintaining a stylish ambiance.",
+  //   image: "/assets/pic/media2.png",
+  // },
+  // {
+  //   id: 9,
+  //   category: "cat-2",
+  //   title: "FocusNest",
+  //   p: "Create an inspiring and clutter-free workspace with modern, space-saving office furniture tailored for productivity.",
+  //   image: "/assets/pic/home2.png",
+  // },
+  // {
+  //   id: 10,
+  //   category: "cat-1",
+  //   title: "Elegant Kitchen Interiors",
+  //   p: "Transform your kitchen with contemporary furniture that blends practicality with a sophisticated and timeless appeal.",
+  //   image: "/assets/pic/modern-light.png",
+  // },
   // {
   //   id: 11,
   //   category: "cat-5",
@@ -88,13 +114,13 @@ const items = [
   //   p: "Upgrade your bathroom with modern, functional, and sleek furniture that enhances both aesthetics and organization.",
   //   image: "/assets/pic/unley.png",
   // },
-  {
-    id: 12,
-    category: "cat-2",
-    title: "ErgoHive",
-    p: "Upgrade your home office with sleek, functional furniture designed for long hours of comfortable and efficient work.",
-    image: "/assets/pic/home3.png",
-  },
+  // {
+  //   id: 12,
+  //   category: "cat-2",
+  //   title: "ErgoHive",
+  //   p: "Upgrade your home office with sleek, functional furniture designed for long hours of comfortable and efficient work.",
+  //   image: "/assets/pic/home3.png",
+  // },
   // {
   //   id: 13,
   //   category: "cat-3",
@@ -102,13 +128,13 @@ const items = [
   //   p: "Transform your dining room with sophisticated furniture that blends functionality, elegance, and a welcoming ambiance.",
   //   image: "/assets/pic/captur3.png",
   // },
-  {
-    id: 14,
-    category: "cat-4",
-    title: "VistaDen",
-    p: "Transform your entertainment space with premium furniture that blends luxury, functionality, and immersive comfort.",
-    image: "/assets/pic/media3.png",
-  },
+  // {
+  //   id: 14,
+  //   category: "cat-4",
+  //   title: "VistaDen",
+  //   p: "Transform your entertainment space with premium furniture that blends luxury, functionality, and immersive comfort.",
+  //   image: "/assets/pic/media3.png",
+  // },
   // {
   //   id: 15,
   //   category: "cat-5",
@@ -164,7 +190,7 @@ const FittedLiving = () => {
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 " style={{background:'#000'}}>
+          {/* <div className="section-full p-t80 p-b50 " style={{background:'#000'}}>
             <div className="container">
               <div className="filter-wrap p-b30">
                 <ul className="masonry-filter link-style text-uppercase masonry-filter1">
@@ -200,8 +226,60 @@ const FittedLiving = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <!-- SECTION CONTENT END  --> */}
+
+{/* WELCOME SECTION START */}
+<div className="section-full p-t80 p-b80 bg-black overflow-hide home-2-about-outer">
+            <div className="container">
+              <div className="section-content">
+                {services.map((service, index) => (
+                  <div className="row" key={index} style={{ justifyContent: 'space-between', flexDirection: index % 2 === 0 ? 'row-reverse' : 'row', marginBottom: '120px', }}>
+                    <div className="col-xl-5 col-lg-6 col-md-12" >
+                      <div className="wt-thum-bx">
+                        <img src={service.image} alt="Service" />
+                      </div>
+                    </div>
+                    <div className="col-xl-6 col-lg-6 col-md-12">
+                      <div className="home-2-about-left-outer">
+                        <div className="home-2-about-left">
+                          <div className="home-2-about-left-content  p-a50 text-white" style={{background:'#272727'}}>                                                        
+                            <h2 className="m-t0 wt-title">{service.title}</h2>
+                            <p>{service.description}</p>
+                            <a 
+                              href={service.link}                                                                 
+                              className="site-button-link" 
+                              style={{
+                                background: '#B19777',
+                                color: 'white',
+                                padding: '18px',
+                                textDecoration: 'none',
+                                border: '2px solid #B19777',
+                                transition: 'all 0.3s ease-in-out'
+                              }}
+                              onMouseEnter={(e) => {
+                                e.target.style.background = 'white';
+                                e.target.style.color = '#B19777';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.target.style.background = '#B19777';
+                                e.target.style.color = 'white';
+                              }}
+                            > 
+                              Read More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          {/* WELCOME SECTION END */}
+
+
 
           {/* text start  */}
           <div className="container mt-5 mb-5" style={{background:'#000'}}> 
