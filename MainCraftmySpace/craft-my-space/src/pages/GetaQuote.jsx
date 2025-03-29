@@ -99,7 +99,7 @@ const GetaQuote = () => {
       };
   return (
     <>
-       <div className="page-wrapper">
+       <div className="page-wrapper" style={{ background: "#000" }}>
         <Navbar />
         <div className="page-content">
           <div
@@ -137,13 +137,14 @@ const GetaQuote = () => {
                 <div className="contact-form p-a30 col-md-6 col-12">
                   <form className="cons-contact-form" onSubmit={handleSubmit}>
                     <div className="contact-one">
-                      <h4 className="m-b6">Contact Us</h4>
-                      <h3>Do You Need Any Help? Send Message</h3>
+                      <h4 className="m-b6" style={{color:"#B19777"}}>Contact Us</h4>
+                      <h3 style={{color:'black'}}>Do You Need Any Help? Send Message</h3>
                       <Box sx={{ width: "100%" }}>
                         <TextField
                           fullWidth
                           label="Your Name"
                           name="name"
+                          
                           variant="standard"
                           margin="normal"
                           onBlur={handleBlur}
@@ -319,14 +320,15 @@ const GetaQuote = () => {
           <div
                   className="contact-info col-md-6 col-12 text-center  p-4"
                   style={{
+                    background:"#fff",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
                   }}
                 >
-                  <div>
-                    <h4 style={{ marginBottom: "30px" }}>CraftMySpace</h4>
+                  <div >
+                    <h4 style={{ marginBottom: "30px",color:'#000' }}>CraftMySpace</h4>
                     <div style={{ textAlign: "justify" }}>
                       <div>
                         <div className="icon-content">
@@ -406,6 +408,7 @@ const GetaQuote = () => {
             <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
           </button>
         </div>
+        
       </div>
     </>
   )

@@ -578,7 +578,7 @@ a:focus{
 }
 
 p a {
-	color:#333333;
+	color:#fff;
 }
 
 img {border-style: none; height: auto; max-width: 100%; vertical-align: middle;}
@@ -3453,7 +3453,7 @@ transform: translateY(-50%);
 .widget_services ul li:last-child{border-bottom:0px;padding-bottom:0px;}
 .widget_services ul li {font-size: 14px; font-weight: 600;}
 
-.widget_services ul li a {color:#000;}
+.widget_services ul li a {color:#fff;}
 .widget_services ul li a:hover {color:#ababab;}
 
 .widget_services ul li span{float:right;}
@@ -3504,7 +3504,7 @@ transform: translateY(-50%);
 .recent-posts-entry .post-meta span{margin-right:10px;}
 
 /*19.8 widget tags-list*/
-.widget_tag_cloud a {padding:8px 14px;	font-size:12px;	display:inline-block;	margin:0 0 5px;	text-transform:uppercase;	font-weight:600;	color:#262423; position:relative;background-color: #f4f4f4; }
+.widget_tag_cloud a {padding:8px 14px;	font-size:12px;	display:inline-block;	margin:0 0 5px;	text-transform:uppercase;	font-weight:600;	color:#fff; position:relative;background-color: #000; }
 .widget_tag_cloud a:hover{color:#a2a2a2;}
 
 
@@ -3740,7 +3740,7 @@ blockquote span{	font-size: 12px;	color: #262423;	line-height: 30px;	margin-bott
 	-moz-text-stroke-width: 2px;
 	-o-text-stroke-width: 2px;
 	
-	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-color: #B19777;
 	-ms-text-stroke-color: #000;
 	-moz-text-stroke-color: #000;
 	-o-text-stroke-color: #000;	
@@ -6535,7 +6535,7 @@ ol.commentlist li::after {
 
 .awards-win{
 	padding:50px 30px;
-	background-color:#fff;
+	background-color:#000;
 }
 
 .awards-win ul{list-style:none; position:relative; padding: 40px 0px; z-index:1;}
@@ -6546,7 +6546,7 @@ ol.commentlist li::after {
 	top:0px;
 	width:120px;
 	height:100%;
-	border:10px solid #000;
+	border:10px solid #B19777;
 	border-right:0px;
 	z-index:-1;
 }
@@ -6557,9 +6557,9 @@ ol.commentlist li::after {
 	top: 0px;
 	bottom: 0px;
 	width: 10px;
-	border-top: 40px solid #000;
+	border-top: 40px solid #B19777;
 	z-index: -1px;
-	border-bottom: 40px solid #000;
+	border-bottom: 40px solid #B19777;
 }
 
 .awards-win ul li{position:relative;padding-left:120px; margin-bottom:30px;}
@@ -8170,9 +8170,9 @@ padding: 20px;;}
 	background-color: #000;
 }
 
-.term_li ul li{
+/* .term_li ul li{
 	text-align: justify;
-}
+} */
 
 
 .project-img-effect-1 a {

@@ -127,7 +127,7 @@ const Recentwork = () => {
     setVisibleImages((prev) => prev + 3);
   };
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{background:'#000'}}>
       <Navbar />
 
       <div className="page-content">
@@ -161,7 +161,7 @@ const Recentwork = () => {
         {/* card start  */}
         <div className="container mt-5">
           <div style={{ textAlign: "center" }}>
-            <h5>[ Recent Works ]</h5>
+            <h5 style={{color:'#B19777'}}>[ Recent Works ]</h5>
             <h3>A Sample of Recent Works</h3>
           </div>
           <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
@@ -187,11 +187,21 @@ const Recentwork = () => {
                   className=" "
                   onClick={loadMore}
                   style={{
-                    color: "white",
-                    background: "#141b1f",
-                    padding: "15px",
-                    border: "0px",
-                    marginBottom: "20px",
+                    background: '#B19777',
+                    color: 'white',
+                    padding: '18px',
+                    marginBottom:"20px",
+                    textDecoration: 'none',
+                    border: '2px solid #B19777',
+                    transition: 'all 0.3s ease-in-out'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = 'white';
+                    e.target.style.color = '#B19777';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = '#B19777';
+                    e.target.style.color = 'white';
                   }}
                 >
                   Load More
@@ -201,7 +211,7 @@ const Recentwork = () => {
           </div>
         </div>
         {/* card end  */}
-
+       
         <Footers />
       </div>
 

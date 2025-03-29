@@ -5,7 +5,7 @@ import Footers from "./Footer";
 const PrivacyPolicy = () => {
   return (
     <>
-      <div className="page-wraper ">
+      <div className="page-wraper " style={{ background: "#000" }}>
         <Navbar />
         <div className="page-content">
           <div
