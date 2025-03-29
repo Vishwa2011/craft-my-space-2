@@ -50,13 +50,13 @@ const Header = () => {
       >
         <Box display="flex" alignItems="center" gap={1}>
           <LocalPhone fontSize="small" />
-         <a href="tel:+01753530216" style={{color:'#fff'}}>
-          <Typography variant="body2" > 01753530216</Typography>
+         <a href="tel:(0044)07365 566 666" style={{color:'#fff'}}>
+          <Typography variant="body2" > (0044)07365 566 666</Typography>
           </a> 
         </Box>
         <Box display="flex" alignItems="center" gap={1}>
   <Email fontSize="small" />
-  <a  href="mailto:info@craftmyspace.uk" style={{color:'#fff'}}>
+  <a  href="mailto:Info@craftmyspace.co.uk" style={{color:'#fff'}}>
   <Typography 
     variant="body2" 
    
@@ -65,7 +65,7 @@ const Header = () => {
   >
   
 
-    info@craftmyspace.uk
+  Info@craftmyspace.co.uk
   </Typography>
     </a>
 </Box>

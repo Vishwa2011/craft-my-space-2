@@ -98,65 +98,7 @@ const Footers = () => {
               </div>
 
               <div className="col-xl-3 col-lg-6 col-md-6">
-                {/* <div className="widget widget_about">
-                  <h4 className="widget-title  text-uppercase">MENU</h4>
-                  <ul>
-                    <li>
-                      <ChevronRightIcon />{" "}
-                      <a
-                        href="/fitted-bedroom"
-                        style={{ color: "#7e878c", lineHeight: "30px" }}
-                      >
-                        Fitted Bedrooms
-                      </a>
-                    </li>
-                    <li>
-                      <ChevronRightIcon />{" "}
-                      <a
-                        href="/FittedWardrobes"
-                        style={{ color: "#7e878c", lineHeight: "30px" }}
-                      >
-                        Fitted Wardrobes
-                      </a>
-                    </li>
-                    <li>
-                      <ChevronRightIcon />{" "}
-                      <a
-                        href="/FittedLiving"
-                        style={{ color: "#7e878c", lineHeight: "30px" }}
-                      >
-                        Fitted Living
-                      </a>
-                    </li>
-                    <li>
-                      <ChevronRightIcon />{" "}
-                      <a
-                        href="/Kitchens"
-                        style={{ color: "#7e878c", lineHeight: "30px" }}
-                      >
-                        Kitchens
-                      </a>
-                    </li>
-                    <li>
-                      <ChevronRightIcon />{" "}
-                      <a
-                        href="/HomeOffice"
-                        style={{ color: "#7e878c", lineHeight: "30px" }}
-                      >
-                        Home Office
-                      </a>
-                    </li>
-                    <li>
-                      <ChevronRightIcon />{" "}
-                      <a
-                        href="/AwkwardSpaces"
-                        style={{ color: "#7e878c", lineHeight: "30px" }}
-                      >
-                        Awkward Spaces
-                      </a>
-                    </li>
-                  </ul>
-                </div> */}
+               
                 <div className="widget widget_address_outer m-b20">
                   <h4 className="widget-title">Contact Us</h4>
                   <ul className="widget_address">
@@ -192,10 +134,170 @@ const Footers = () => {
                   </ul>
                 </div>
               </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+              <div className="widget widget_address_outer m-b20">
+              <h4 className="widget-title">Explore </h4>
+                <ul >
+                <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+   href='/'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777  "} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+   Home
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/WhyCraftMySpace'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+     Why Craftmyspace?
+  </a>
+</li>
+
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Services'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+    Services
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Joinery'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+    Joinery
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Inspiration'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+    Inspiration
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Recentwork'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+    Gallary
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/GetaQuote'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+  Get Quote
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Mission'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+ Our Mission
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Vision'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+  Our Vision
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/PrivacyPolicy'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+Privacy & Policy
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Termandcondition'
+    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+  >
+  Terms & Condition
+  </a>
+</li>
+
+       
+                 
+                </ul>
+              </div>
+              </div>
 
               {/* <!-- TAGS --> */}
+             
               <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="widget widget_address_outer m-b20">
+                <div className=" widget_address_outer mb-3">
+                  <h4 className="widget-title mb-0">Booking & Brochure</h4>
+                </div>
+                <div>
+                <a href="/GetaQuote">
+                  <div
+                    style={{
+                      border: "1px solid #fff",
+                      background: "#fff",
+                      padding: " 16px 10px",
+                      width: "70%",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    <span>
+                      
+                      Book a Free Design Visit 
+                     
+                    </span>
+                  </div>
+                  </a>
+                  <a href="/Orderafreebrochure">
+                  <div
+                    style={{
+                      border: "1px solid #fff",
+                      background: "#fff",
+                      padding: " 16px 10px",
+                      width: "70%",
+                      borderRadius: "10px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    <span>
+                  Order a Free Brochure 
+                    </span>
+                  </div>
+                  </a>
+                  
+                <div className="widget widget_address_outer m-b20" style={{marginTop:'10px'}}>
                   <h4 className="widget-title">Office Info</h4>
                   <form onSubmit={handleSubmit}>
   <Box
@@ -249,48 +351,10 @@ const Footers = () => {
     )}
 </form>
 
-                </div>
               </div>
 
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className=" widget_address_outer mb-3">
-                  <h4 className="widget-title mb-0">Booking & Brochure</h4>
                 </div>
-                <div>
-                <a href="/GetaQuote">
-                  <div
-                    style={{
-                      border: "1px solid #fff",
-                      background: "#fff",
-                      padding: " 16px 10px",
-                      width: "70%",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    <span>
-                      
-                      Book a Free Design Visit 
-                     
-                    </span>
-                  </div>
-                  </a>
-                  <a href="/Orderafreebrochure">
-                  <div
-                    style={{
-                      border: "1px solid #fff",
-                      background: "#fff",
-                      padding: " 16px 10px",
-                      width: "70%",
-                      borderRadius: "10px",
-                      marginTop: "10px",
-                    }}
-                  >
-                    <span>
-                  Order a Free Brochure 
-                    </span>
-                  </div>
-                  </a>
-                </div>
+                
               </div>
               {/* <!-- NEWSLETTER --> */}
             </div>
