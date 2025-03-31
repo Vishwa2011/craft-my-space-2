@@ -387,7 +387,7 @@ const Joinery = () => {
                       className="sub-title main-color mb-15"
                       style={{ color: "#B19777" }}
                     >
-                      FAQS
+                      [ FAQS ]
                     </h6>
                     <h2 className="fontmanage">Frequently Asked Questions</h2>
                   </div>
@@ -463,7 +463,7 @@ const Joinery = () => {
                     <div className="home-2-about-left-outer">
                       <div className="section-head clearfix">
                         <div className="wt-tilte-main">
-                          <small className="wt-small-title" style={{color:"#B19777"}}>Our Company</small>
+                          <small className="wt-small-title" style={{color:"#B19777"}}>[ Our Company ]</small>
                           <h2 className="m-b5">About Detail</h2>
                         </div>
                       </div>

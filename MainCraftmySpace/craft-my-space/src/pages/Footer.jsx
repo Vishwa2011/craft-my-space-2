@@ -161,7 +161,7 @@ const Footers = () => {
 
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
-  href='/Services'
+  href='/Service'
     style={{ color: "#7e878c", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
     onMouseLeave={(e) => e.target.style.color = "#7e878c"}
@@ -378,8 +378,7 @@ Privacy & Policy
                 and Wales No.
               </span>
               <span className="copyrights-text mt-2">
-                11976914. Registered Office: Unit 9 Slough Interchange,
-                Whittenham Close, Slough SL2 5EP.
+                11976914. Registered Office: Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire - SL0 9NT.
               </span>
             </div>
               </div>
