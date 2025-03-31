@@ -6,7 +6,7 @@ const SlidingLivingAreaWardrobes = () => {
   return (
     <div className="page-wraper">
     <Navbar />
-    <div className="page-content" style={{marginTop:'30px'}}>
+    <div className="page-content" >
       {/* <!-- CONTENT START --> */}
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}

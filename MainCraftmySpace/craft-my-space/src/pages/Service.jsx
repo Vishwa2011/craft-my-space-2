@@ -21,7 +21,7 @@ const services = [
     title: "Fitted Living",
     description:
       "Create a seamless and stylish living space with bespoke fitted living solutions, designed for comfort, functionality, and elegance.",
-    image: "/assets/pic/livingfit (1).webp",
+    image: "/assets/pic/livingfit2.jpg",
       link:"/FittedLiving"
   },
   {
@@ -117,6 +117,10 @@ const Service = () => {
           {/* WELCOME SECTION END */}
         </div>
         <Footers />
+         {/* <!-- BUTTON TOP START --> */}
+       <button className="scroltop">
+          <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
+        </button>
       </div>
     </>
   );

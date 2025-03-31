@@ -23,7 +23,7 @@ const services = [
     title: "Kitchen",
     description:
       "A perfect fusion of style and functionality, featuring smart storage solutions, modern aesthetics, and efficient layouts for a seamless cooking experience.",
-    image: "/assets/pic/modular.png",
+    image: "/assets/pic/modular1.jpg",
     link:"/Kitchens"
   },
   {
@@ -230,7 +230,7 @@ const FittedLiving = () => {
           {/* <!-- SECTION CONTENT END  --> */}
 
 {/* WELCOME SECTION START */}
-<div className="section-full p-t80 p-b80 bg-black overflow-hide home-2-about-outer">
+<div className="section-full p-t80 p-b80 bg-black overflow-hide home-2-about-outer" style={{borderBottom:'2px solid #B19777'}}>
             <div className="container">
               <div className="section-content">
                 {services.map((service, index) => (
