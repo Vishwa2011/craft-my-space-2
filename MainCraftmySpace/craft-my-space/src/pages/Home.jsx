@@ -1,24 +1,23 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
-import {  Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 // import Info from "./Info";
 import { Star } from "@mui/icons-material";
 import MeetDesignerForm from "./MeetDesignerForm";
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import { motion } from "framer-motion";
-
 
 export default function Home() {
   const imageVariantsLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
   const imageVariantsRight = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
   return (
@@ -1078,9 +1077,14 @@ export default function Home() {
         </div>
 
         {/* <!-- slider END --> */}
-        <div 
+        <div
           className="bg-gray overflow-hide v-title-outer"
-          style={{ padding: "100px 0px",background:'#000',borderBottom:'2px solid #B19777' }}>
+          style={{
+            padding: "100px 0px",
+            background: "#000",
+            borderBottom: "2px solid #B19777",
+          }}
+        >
           <div className="section-content">
             <div
               className="custom-block-outer clearfix bg-cover"
@@ -1091,7 +1095,10 @@ export default function Home() {
                 {/* <div className="video-section-outer"> */}
                 <div className="section-head clearfix">
                   <div style={{ textAlign: "center" }}>
-                    <small className="wt-small-title" style={{color:"#B19777"}}>
+                    <small
+                      className="wt-small-title"
+                      style={{ color: "#B19777" }}
+                    >
                       [ Latest Projects ]
                     </small>
                     <h2 className="m-b5">Our Projects</h2>
@@ -1105,7 +1112,7 @@ export default function Home() {
                         <h1 className="counter font-weight-800 m-b5 site-text-primary">
                           132
                         </h1>
-                         <h4 className="wt-tilte m-b0">Five stars rating</h4>
+                        <h4 className="wt-tilte m-b0">Five stars rating</h4>
                       </div>
                     </div>
 
@@ -1135,63 +1142,119 @@ export default function Home() {
           </div>
         </div>
 
-        
         {/* [ our services ] start  */}
-        <div className="section-full p-t80 p-b50" style={{ background: "#000", borderBottom: "2px solid #B19777" }}>
-      <div className="container">
-        <div className="section-head clearfix">
-          <div className="wt-tilte-main" style={{ display: "contents" }}>
-            <small className="wt-small-title" style={{ justifyContent: "center", display: "flex", color: "#B19777" }}>
-              [ our services ]
-            </small>
-            <h2 className="m-b5" style={{ justifyContent: "center", display: "flex" }}>Our Latest Services</h2>
+        <div
+          className="section-full p-t80 p-b50"
+          style={{ background: "#000", borderBottom: "2px solid #B19777" }}
+        >
+          <div className="container">
+            <div className="section-head clearfix">
+              <div className="wt-tilte-main" style={{ display: "contents" }}>
+                <small
+                  className="wt-small-title"
+                  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                    color: "#B19777",
+                  }}
+                >
+                  [ our services ]
+                </small>
+                <h2
+                  className="m-b5"
+                  style={{ justifyContent: "center", display: "flex" }}
+                >
+                  Our Latest Services
+                </h2>
+              </div>
+            </div>
+
+            <div
+              className="row equal-wraper"
+              style={{ justifyContent: "center" }}
+            >
+              {[
+                {
+                  img: "/assets/pic/stratford11.webp",
+                  title: "Fitted Wardrobes",
+                  link: "/FittedWardrobes",
+                  desc: "Fitted wardrobes add a touch of elegance while maximizing storage space with a seamless, customized design.",
+                },
+                {
+                  img: "/assets/pic/ImageNewAdd5.avif",
+                  title: "Fitted Kitchen",
+                  link: "/Kitchens",
+                  desc: "A fitted kitchen makes every corner stylish and functional with modern design and maximum storage.",
+                },
+                {
+                  img: "/assets/pic/Best-Bespoke-Furniture (1).webp",
+                  title: "Bespoke Furniture",
+                  link: "/Bathroom",
+                  desc: "When bespoke furniture is added, every space transforms into a unique blend of style, functionality, and personalized elegance.",
+                },
+                {
+                  img: "/assets/pic/display.jpg",
+                  title: "Awkward Spaces",
+                  link: "/AwkwardSpaces",
+                  desc: "Temples, Studies, Home Office Furniture, Sliding Door Wardrobes",
+                },
+              ].map((service, index) => (
+                <div key={index} className="col-xl-5 col-lg-6 col-md-12">
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false }}
+                    variants={
+                      index % 2 === 0 ? imageVariantsLeft : imageVariantsRight
+                    }
+                  >
+                    <div className="wt-post-media wt-img-effect zoom-slow relative">
+                      <a className="block relative">
+                        <img src={service.img} alt="" className="w-full" />
+                        <a href={service.link}>
+                          <div
+                            className="absolute top-2 right-2 text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md border-gray-300 uppercase rotate-90"
+                            style={{
+                              right: "-25px",
+                              top: "41px",
+                              transform: "rotate(270deg)",
+                              color: "white",
+                              border: "2px solid #fff",
+                            }}
+                          >
+                            SEE MORE
+                          </div>
+                        </a>
+                      </a>
+                    </div>
+                    <div
+                      className="wt-post-info p-a30"
+                      style={{ paddingLeft: "0px" }}
+                    >
+                      <div className="wt-post-title">
+                        <h4 className="post-title" style={{borderBottom:'1px solid #B19777',paddingBottom:'10px'}}>
+                          <a href={service.link} className="m-t0">
+                            {service.title}
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="wt-post-text">
+                        <p>{service.desc}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
+              ))}
+            </div>
+            {/*  */}
           </div>
         </div>
-
-        <div className="row equal-wraper" style={{ justifyContent: "center" }}>
-          {[ 
-            { img: "/assets/pic/stratford11.webp", title: "Fitted Wardrobes", link: "/FittedWardrobes", desc: "Fitted wardrobes add a touch of elegance while maximizing storage space with a seamless, customized design." },
-            { img: "/assets/pic/ImageNewAdd5.avif", title: "Fitted Kitchen", link: "/Kitchens", desc: "A fitted kitchen makes every corner stylish and functional with modern design and maximum storage." },
-            { img: "/assets/pic/Best-Bespoke-Furniture (1).webp", title: "Bespoke Furniture", link: "/Bathroom", desc: "When bespoke furniture is added, every space transforms into a unique blend of style, functionality, and personalized elegance." },
-            { img: "/assets/pic/display.jpg", title: "Awkward Spaces", link: "/AwkwardSpaces", desc: "Temples, Studies, Home Office Furniture, Sliding Door Wardrobes" }
-          ].map((service, index) => (
-            <div key={index} className="col-xl-5 col-lg-6 col-md-12">
-              <motion.div 
-                className="blog-post blog-md blog-no-gap date-style-1 clearfix m-b30"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={index >= 2 ? (index % 2 === 0 ? imageVariantsLeft : imageVariantsRight) : {}}
-              >
-                <div className="wt-post-media wt-img-effect zoom-slow relative">
-                  <a className="block relative">
-                    <img src={service.img} alt="" className="w-full" />
-                    <a href={service.link}>
-                      <div className="absolute top-2 right-2 text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md border-gray-300 uppercase rotate-90" style={{ right: "-25px", top: "41px", transform: "rotate(270deg)", color: "white", border: "2px solid #fff" }}>
-                        SEE MORE
-                      </div>
-                    </a>
-                  </a>
-                </div>
-                <div className="wt-post-info p-a30" style={{ paddingLeft: "0px" }}>
-                  <div className="wt-post-title">
-                    <h4 className="post-title">
-                      <a href={service.link} className="m-t0">{service.title}</a>
-                    </h4>
-                  </div>
-                  <div className="wt-post-text">
-                    <p>{service.desc}</p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
         {/* [ our services ] end  */}
         {/* STEP INSPIRED SOLUTION start  */}
-        <div className="section-full p-t80 p-b50 " style={{background:'#000',borderBottom:'2px solid #B19777'}}>
+        <div
+          className="section-full p-t80 p-b50 "
+          style={{ background: "#000", borderBottom: "2px solid #B19777" }}
+        >
           <div className="container">
             <div>
               <h2 style={{ display: "flex", justifyContent: "center" }}>
@@ -1213,7 +1276,7 @@ export default function Home() {
                         <img src="/assets/pic/conversation (2).png" alt="" />
                       </div>
                       <div>
-                        <p className="mt-3" >DISCUSS & PLAN</p>
+                        <p className="mt-3">DISCUSS & PLAN</p>
                       </div>
                     </a>
                   </div>
@@ -1264,60 +1327,103 @@ export default function Home() {
         {/* STEP INSPIRED SOLUTION end  */}
 
         {/* content start */}
-<div style={{padding:'70px 0px',background:'#000',borderBottom:'2px solid #B19777'}}>
-        <div className="container">
-           <div className="col-12">
-            <div className="row">
-              <div className="col-lg-6 col-md-12 col-sm-12">
-              <div display="flex" gap={0.5} style={{marginBottom:'20px'}}>
-      {[...Array(5)].map((_, index) => (
-        <Star key={index} sx={{ color: "#B19777", fontSize: 32 }} />
-      ))}
-    </div>
-                <h2>Enjoy a Luxury Experience</h2>
+        <div
+          style={{
+            padding: "70px 0px",
+            background: "#000",
+            borderBottom: "2px solid #B19777",
+          }}
+        >
+          <div className="container">
+            <div className="col-12">
+              <div className="row">
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <div
+                    display="flex"
+                    gap={0.5}
+                    style={{ marginBottom: "20px" }}
+                  >
+                    {[...Array(5)].map((_, index) => (
+                      <Star
+                        key={index}
+                        sx={{ color: "#B19777", fontSize: 32 }}
+                      />
+                    ))}
+                  </div>
+                  <h2>Enjoy a Luxury Experience</h2>
                   <p>
-                  At Elite Living, we set the benchmark for refined luxury, crafting spaces that epitomize sophistication and exclusivity. Our bespoke services go beyond the ordinary, transforming every detail into an extraordinary expression of elegance. From the moment you step into our world, you are embraced by a realm of tailored indulgence. With a dedicated team of expert designers and artisans, we meticulously bring your vision to life, ensuring each element reflects your distinct taste and lifestyle. At Elite Living, every creation is a testament to timeless beauty, superior craftsmanship, and unparalleled luxury.
+                    At Elite Living, we set the benchmark for refined luxury,
+                    crafting spaces that epitomize sophistication and
+                    exclusivity. Our bespoke services go beyond the ordinary,
+                    transforming every detail into an extraordinary expression
+                    of elegance. From the moment you step into our world, you
+                    are embraced by a realm of tailored indulgence. With a
+                    dedicated team of expert designers and artisans, we
+                    meticulously bring your vision to life, ensuring each
+                    element reflects your distinct taste and lifestyle. At Elite
+                    Living, every creation is a testament to timeless beauty,
+                    superior craftsmanship, and unparalleled luxury.
                   </p>
-                  <div 
-                  flexDirection="column" gap={2} color="#C29565">
-      {/* First Contact */}
-      <a href="tel:(0044)07365 566 666" style={{ textDecoration: 'none' }}>
-  <div style={{ display: 'flex', color: '#B19777', margin: '41px 0px 25px 0px', alignItems: 'center', gap: '10px' }}>
-    <PhoneInTalkIcon style={{ fontSize: '40px', marginRight: '17px' }} />
-    <Typography style={{ fontSize: '22px' }} fontWeight={500}>
-    (0044)07365 566 666
-    </Typography>
-  </div>
-</a>
+                  <div flexDirection="column" gap={2} color="#C29565">
+                    {/* First Contact */}
+                    <a
+                      href="tel:(0044)07365 566 666"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          color: "#B19777",
+                          margin: "41px 0px 25px 0px",
+                          alignItems: "center",
+                          gap: "10px",
+                        }}
+                      >
+                        <PhoneInTalkIcon
+                          style={{ fontSize: "40px", marginRight: "17px" }}
+                        />
+                        <Typography
+                          style={{ fontSize: "22px" }}
+                          fontWeight={500}
+                        >
+                          (0044)07365 566 666
+                        </Typography>
+                      </div>
+                    </a>
 
-      {/* Second Contact */}
-      {/* <div  style={{display:'flex',color:'#d5dd02'}} alignItems="center" gap={1}>
+                    {/* Second Contact */}
+                    {/* <div  style={{display:'flex',color:'#d5dd02'}} alignItems="center" gap={1}>
     
      <ContactPhoneIcon  style={{fontSize:'40px',marginRight:'17px'}}/>
         <Typography style={{fontSize:'22px'}}  fontWeight={500}>
           +44 2033759375
         </Typography>
       </div> */}
-    </div>
-              </div>
-              <div className="col-lg-6 col-md-12 col-sm-12">
-                <img src="/assets/pic/bed.webp" style={{height:'450px',width:'100%'}}/>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <img
+                    src="/assets/pic/bed.webp"
+                    style={{ height: "450px", width: "100%" }}
+                  />
+                </div>
               </div>
             </div>
-           </div>
-        </div>
+          </div>
         </div>
         {/* content end */}
 
         {/* Testimonial start  */}
         <div
           className="section-full p-tb80 testimonial-slider-outer bg-cover bg-left-center"
-          style={{ background:'#000',borderBottom:'2px solid #B19777' }}
+          style={{ background: "#000", borderBottom: "2px solid #B19777" }}
         >
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid">
-                <small className="wt-small-title" style={{color:'#B19777'}}>[ Client Testimonial ]</small>
+                <small className="wt-small-title" style={{ color: "#B19777" }}>
+                  [ Client Testimonial ]
+                </small>
                 <h2 className="m-b5">Our Client gave us Feedback</h2>
               </div>
               <div className="title-right-detail">
@@ -1456,11 +1562,14 @@ export default function Home() {
         </div>
         {/* Testimonial end  */}
         {/* Why Choose start   */}
-        <div className="section-full p-t80 p-b50 " style={{background:'#000',borderBottom:'2px solid #B19777'}}>
+        <div
+          className="section-full p-t80 p-b50 "
+          style={{ background: "#000", borderBottom: "2px solid #B19777" }}
+        >
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid">
-                <small className="wt-small-title" style={{color:'#B19777'}}>
+                <small className="wt-small-title" style={{ color: "#B19777" }}>
                   [ Why Choose CraftMySpace]
                 </small>
                 <h2 className="m-b5">Why CraftMySpace?</h2>
@@ -1596,12 +1705,14 @@ export default function Home() {
         {/* our blog start  */}
         <div
           className="section-full  p-t80 p-b80 "
-          style={{ paddingBottom: "100px",background:'#000' }}
+          style={{ paddingBottom: "100px", background: "#000" }}
         >
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid text-white">
-                <small className="wt-small-title" style={{color:"#B19777"}}>[ our blog ]</small>
+                <small className="wt-small-title" style={{ color: "#B19777" }}>
+                  [ our blog ]
+                </small>
                 <h2 className="m-b5">Read Our Latest News</h2>
               </div>
               <div className="title-right-detail text-white">
@@ -1615,7 +1726,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="section-content" >
+          <div className="section-content">
             <div className="container-fluid">
               <div className="container">
                 <div className="projects-slider-two">
@@ -1660,12 +1771,12 @@ export default function Home() {
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                                CraftMySpace fitted furniture storage
-                                solutions blend style and functionality to
-                                maximize your space efficiently. Designed with
-                                precision, our bespoke storage solutions cater
-                                to your unique needs, whether for bedrooms,
-                                living rooms, or home offices....{" "}
+                                CraftMySpace fitted furniture storage solutions
+                                blend style and functionality to maximize your
+                                space efficiently. Designed with precision, our
+                                bespoke storage solutions cater to your unique
+                                needs, whether for bedrooms, living rooms, or
+                                home offices....{" "}
                               </p>
                             </div>
                             <a
@@ -1818,7 +1929,6 @@ export default function Home() {
       </div>
       <MeetDesignerForm />
 
-      
       {/* <!-- LOADING AREA START ===== --> */}
       {/* <div className="loading-area">
                 <div className="loading-box"></div>

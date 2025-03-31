@@ -74,12 +74,12 @@ const Header = () => {
 
       {/* Finance Info */}
       <Box display="flex" alignItems="center" gap={1} mt={isMobile ? 1 : 0} justifyContent={isMobile ? "center" : "flex-end"}>
-        <AttachMoney fontSize="small" />
+        {/* <AttachMoney fontSize="small" /> */}
       
 <a href='/GetaQuote' style={{color:'#fff'}}>
 
         <Typography variant="body2" sx={{ fontSize: isMobile ? "12px" : "14px" }} href="/GetaQuote">
-          Finance Available From 0% APR on Fitted Bedroom Furniture
+        Download Broucher 
         </Typography>
 </a>
         
