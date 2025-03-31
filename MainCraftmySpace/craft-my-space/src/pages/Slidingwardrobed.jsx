@@ -491,7 +491,7 @@ const services = [
     title: "Sliding Bedroom Wardrobes ",
     description:
       "Maximize space and style with our sleek sliding bedroom wardrobes, designed for effortless organization and modern elegance.",
-    image: "/assets/pic/5 (1).jpg",
+    image: "/assets/pic/bedroom1.jpg",
     link: "/SlidingBedroomWardrobes",
   }
 ];

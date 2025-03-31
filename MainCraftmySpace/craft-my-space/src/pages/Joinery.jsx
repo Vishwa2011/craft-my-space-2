@@ -376,7 +376,7 @@ const Joinery = () => {
               <div className="row align-items-center">
                 <div className="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
                   <img
-                    src="/assets/pic/faq.webp"
+                    src="/assets/pic/enjoy.jpg"
                     alt="FAQ"
                     className="img-fluid"
                   />

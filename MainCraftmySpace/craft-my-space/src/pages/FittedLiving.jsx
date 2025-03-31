@@ -23,7 +23,7 @@ const services = [
     title: "Kitchen",
     description:
       "A perfect fusion of style and functionality, featuring smart storage solutions, modern aesthetics, and efficient layouts for a seamless cooking experience.",
-    image: "/assets/pic/modular.png",
+    image: "/assets/pic/modular1.jpg",
     link:"/Kitchens"
   },
   {

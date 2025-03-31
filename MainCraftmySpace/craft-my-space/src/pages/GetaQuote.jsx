@@ -258,7 +258,7 @@ const GetaQuote = () => {
                                 marginRight: "10px",
                               }}
                             ></i>
-                            +01753530216
+                            (0044)07365 566 666
                           </p>
                         </div>
                       </div>

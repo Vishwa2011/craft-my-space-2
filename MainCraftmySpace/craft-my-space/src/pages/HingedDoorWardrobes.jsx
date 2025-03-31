@@ -89,7 +89,7 @@ export default function HingedDoorWardrobes() {
                     <img src="assets/pic/hiding5.png" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
-                    <img src="assets/pic/hiding3.png" alt="" />
+                    <img src="/assets/pic/hiding3.1.jpg" alt="" />
                   </div>
                 </div>
                 {/* <!-- COLUMNS 2 --> */}
