@@ -166,7 +166,7 @@ const SlopingCeilings = () => {
                 <img src="/assets/pic/ceiling4 (1).jpg" alt="" />
               </div>
               <div className="project-img-effect-1 mt-4">
-                <img src="/assets/pic/ceiling7 (1).jpg" alt="" />
+                <img src="/assets/pic/ceiling7.1 (1).jpg" alt="" />
               </div>
             </div>
             {/* <!-- COLUMNS 4 --> */}
