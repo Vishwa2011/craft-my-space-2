@@ -1,9 +1,18 @@
+
 import React from "react";
+import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
+
 export default function HingedDoorWardrobes() {
   return (
-    <div className="page-wraper" style={{background:'#000'}}>
+    <motion.div
+      className="page-wraper"
+      style={{ background: "#000" }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <Navbar />
       <div className="page-content">
         {/* <!-- CONTENT START --> */}
@@ -24,8 +33,7 @@ export default function HingedDoorWardrobes() {
                     <h2 className="text-white">Hinged Door Wardrobes</h2>
                   </div>
                 </div>
-                {/* <!-- BREADCRUMB ROW -->                             */}
-
+                {/* <!-- BREADCRUMB ROW --> */}
                 <div>
                   <ul className="wt-breadcrumb breadcrumb-style-2">
                     <li>
@@ -35,18 +43,17 @@ export default function HingedDoorWardrobes() {
                     <li>Hinged Door Wardrobes</li>
                   </ul>
                 </div>
-
-                {/* <!-- BREADCRUMB ROW END -->                         */}
+                {/* <!-- BREADCRUMB ROW END --> */}
               </div>
             </div>
           </div>
           {/* <!-- INNER PAGE BANNER END --> */}
 
           {/* text start  */}
-          <div className="container mt-5 mb-5" style={{background:'#000'}}>
+          <motion.div className="container mt-5 mb-5" style={{ background: "#000" }}>
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className=" text-black">
+                <div className="text-black">
                   <h3>Elegant Hinged Wardrobe Doors for Stylish Living</h3>
                   <p>
                     Custom Built-In Fitted Wardrobes Tailored to Your Space in
@@ -73,16 +80,13 @@ export default function HingedDoorWardrobes() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* text end  */}
 
-
           {/* <!-- SECTION CONTENT START --> */}
-          <div className="section-full p-t80 p-b50 " >
-            
+          <motion.div className="section-full p-t80 p-b50">
             <div className="container-fluid">
-             
-              <div className="portfolio-wrap mfp-gallery work-grid row clearfix" >
+              <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
                 {/* <!-- COLUMNS 1 --> */}
                 <div className="masonry-item col-xl-3 col-lg-4  col-md-6 col-sm-6 m-b30">
                   <div className="project-img-effect-1">
@@ -119,23 +123,18 @@ export default function HingedDoorWardrobes() {
                     <img src="assets/pic/hiding8.png" alt="" />
                   </div>
                 </div>
-              
               </div>
-             
             </div>
-            
-          </div>
+          </motion.div>
           {/* <!-- SECTION CONTENT END  --> */}
-
-          
         </div>
         {/* <!-- CONTENT END --> */}
       </div>
       <Footers />
-       {/* <!-- BUTTON TOP START --> */}
-       <button className="scroltop">
-          <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
-        </button>
-    </div>
+      {/* <!-- BUTTON TOP START --> */}
+      <button className="scroltop">
+        <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
+      </button>
+    </motion.div>
   );
 }

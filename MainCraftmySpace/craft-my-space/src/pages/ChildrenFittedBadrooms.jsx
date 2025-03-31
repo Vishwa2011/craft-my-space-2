@@ -1,10 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footers from './Footer'
+import { motion } from "framer-motion";
 
 const ChildrenFittedBadrooms = () => {
   return (
-    <div className="page-wraper" style={{background:'#000'}}>
+    <motion.div     className="page-wraper"
+    style={{ background: "#000" }}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}>
     <Navbar />
     <div className="page-content">
        {/* <!-- INNER PAGE BANNER --> */}
@@ -41,7 +46,7 @@ const ChildrenFittedBadrooms = () => {
         </div>
         {/* <!-- INNER PAGE BANNER END --> */}
          {/* text start  */}
-        <div style={{borderBottom:'2px solid #B19777'}}>
+        <motion.div   style={{borderBottom:'2px solid #B19777'}}>
         <div className="container mt-5 mb-5" >
             <div className="project-detail-outer">
               <div className="project-detail-containt">
@@ -70,10 +75,10 @@ const ChildrenFittedBadrooms = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div  >
           {/* text end  */}
             {/* customer start  */}
-            <div className=" overflow-hide v-title-outer" style={{textAlign:'center',borderBottom:'2px solid #B19777'}}>
+            <motion.div   className=" overflow-hide v-title-outer" style={{textAlign:'center',borderBottom:'2px solid #B19777'}}>
             <div className="section-content">
               <div className="custom-block-outer clearfix bg-cover">
                 {/* <div className="custom-right-part "> */}
@@ -114,10 +119,10 @@ const ChildrenFittedBadrooms = () => {
                 {/* </div> */}
               </div>
             </div>
-          </div>
+          </motion.div  >
           {/* customer end  */}
           {/* img start  */}
-          <div className="blog-post date-style-1 blog-detail text-black" style={{background:'#000',}}>
+          <motion.div   className="blog-post date-style-1 blog-detail text-black" style={{background:'#000',}}>
                         
                         
                         <div className="wt-post-info p-a30 ">
@@ -150,7 +155,7 @@ const ChildrenFittedBadrooms = () => {
                                                                   
                         </div>
                         
-                    </div>
+                    </motion.div  >
           {/* img end */}
 
     </div>
@@ -160,7 +165,7 @@ const ChildrenFittedBadrooms = () => {
        <button className="scroltop">
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
-    </div>
+    </motion.div >
   )
 }
 

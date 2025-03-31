@@ -1,10 +1,15 @@
 import React from 'react'
 import Footers from './Footer'
 import Navbar from './Navbar'
+import { motion } from "framer-motion";
 
 const SlidingBedroomWardrobes = () => {
   return (
-    <div className="page-wraper">
+    <motion.div    className="page-wraper"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}>
+    
     <Navbar />
     <div className="page-content">
       {/* <!-- CONTENT START --> */}
@@ -51,7 +56,10 @@ const SlidingBedroomWardrobes = () => {
           <div className="container">
             <div className="section-content">
               <div className="row">
-                <div className="col-lg-6 col-md-12">
+                <motion.div
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }} className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
                     <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
@@ -85,9 +93,12 @@ const SlidingBedroomWardrobes = () => {
 </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="col-lg-6 col-md-12">
+                <motion.div
+                                    initial={{ opacity: 0, x: 50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1 }} className="col-lg-6 col-md-12">
                   <div className="arc-home-about-right portfolio-wrap">
                     <div className="row">
                       <div className="col-md-6 col-sm-6 masonry-item">
@@ -114,7 +125,7 @@ const SlidingBedroomWardrobes = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -194,7 +205,7 @@ const SlidingBedroomWardrobes = () => {
     <button className="scroltop">
       <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
     </button>
-  </div>
+  </motion.div   >
   )
 }
 

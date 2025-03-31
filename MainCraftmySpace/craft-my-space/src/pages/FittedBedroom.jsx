@@ -1,10 +1,17 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
+import { motion } from "framer-motion";
 
 const FittedBedroom = () => {
   return (
-    <div className="page-wraper" style={{background:'#000'}}>
+    <motion.div 
+    className="page-wraper" 
+    style={{ background: "#000" }}
+    initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+  >
       <Navbar />
 
       <div className="page-content">
@@ -38,7 +45,7 @@ const FittedBedroom = () => {
         </div>
         {/* top conatin end  */}
         {/* text start  */}
-        <div className="container mt-5">
+        <motion.div  className="container mt-5">
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
@@ -110,11 +117,11 @@ const FittedBedroom = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div >
         {/* text end  */}
 
         {/* card start  */}
-        <div className="container mt-5">
+        <motion.div  className="container mt-5">
           <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
             <div className="masonry-item cat-1 col-lg-4 col-md-6 col-sm-12 m-b30">
               <div className="project-img-effect-1">
@@ -177,30 +184,9 @@ const FittedBedroom = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div >
         {/* card end  */}
 
-          {/* text start  */}
-          {/* <div className="container mt-5">
-          <div className="project-detail-outer">
-            <div className="project-detail-containt">
-              <div className="bg-white text-black">
-                <h3>
-                Internal Carcass Colour
-                </h3>
-                <p>
-                Each design is available in a wide variety of beautiful finishes.
-                </p>
-
-                <p>
-                You will have even more options to create a wardrobe that perfectly matches your style.
-                </p>
-              </div>
-            </div>
-           
-          </div>
-        </div> */}
-        {/* text end  */}
 
     <Footers />
 
@@ -209,7 +195,7 @@ const FittedBedroom = () => {
       <button className="scroltop">
         <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
       </button>
-    </div>
+    </motion.div >
   );
 };
 

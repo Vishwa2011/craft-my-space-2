@@ -10,7 +10,10 @@ import Checkbox from "@mui/material/Checkbox";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Swal from "sweetalert2";
+import { motion } from "framer-motion";
+
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
 
 const Orderafreebrochure = () => {
   const canvasRef = useRef(null);
@@ -78,7 +81,13 @@ const Orderafreebrochure = () => {
   });
   return (
     <>
-      <div className="page-wraper" style={{ background: "#000" }}>
+      <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="page-wraper"
+  style={{ background: "#000" }}
+>
         <Navbar />
         <div className="page-content">
           <div
@@ -112,7 +121,7 @@ const Orderafreebrochure = () => {
               <div className="section-content">
                 <div className="row">
                   {/* Left Side: Form start*/}
-                  <div className="col-12 col-md-6 p-md-6 p-3" >
+                  <motion.div className="col-12 col-md-6 p-md-6 p-3"  initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
                     <form
                     style={{padding:'20px',background:'#FFF'}}
                       className="cons-contact-form"
@@ -292,10 +301,10 @@ const Orderafreebrochure = () => {
                         </div>
                       </div>
                     </form>
-                  </div>
+                  </motion.div>
                   {/* Left Side: Form end */}
                   {/* Right Side: Contact Info */}
-                  <div
+                  <motion.div
                     className="col-12 col-md-6 p-md-5 p-3 contact-info text-center m-t80 bg-gray m-b50 col-6"
                     style={{
                       display: "flex",
@@ -303,6 +312,7 @@ const Orderafreebrochure = () => {
                       flexDirection: "column",
                       alignItems: "center",
                     }}
+                    initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}
                   >
                     <h4 style={{ marginBottom: "30px" }}>CraftMySpace</h4>
                     <div style={{ textAlign: "justify" }}>
@@ -372,7 +382,7 @@ salil@craftmyspace.uk
                         </div>
                       </div> */}
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -382,7 +392,7 @@ salil@craftmyspace.uk
         <button className="scroltop">
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
-      </div>
+        </motion.div>
     </>
   );
 };
