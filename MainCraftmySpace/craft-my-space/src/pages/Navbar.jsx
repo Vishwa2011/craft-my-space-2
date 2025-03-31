@@ -70,22 +70,24 @@ const Navbar = () => {
       </header>
 
       {isOpen && (
-         <div
-         className="bg-black text-white"
-         style={{
-           position: "fixed",
-           top: 0,
-           left: 0,
-           width: "100vw",
-           height: "100vh",
-           zIndex: 9999,
-           display: "flex",
-           justifyContent: "center",
-           alignItems: "center",
-           flexDirection: "column",
-           padding: "16px 0px 210px 0px",
-         }}
-       >
+      <div
+      className="bg-black text-white menu-container"
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        zIndex: 9999,
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        padding: "16px 0px 210px 0px",
+        overflowY: "auto", // Enables scrolling
+        maxHeight: "100vh", // Prevents overflow beyond screen height
+        justifyContent: window.innerWidth > 320 ? "center" : "flex-start", // Conditional justifyContent
+      }}
+    >
         <button
       id="mobile-side-drawer"
       onClick={() => setIsOpen(false)}
@@ -226,7 +228,8 @@ const Navbar = () => {
               <div
                 className="flex space-x-4 text-gray-400 text-2xl"
                 style={{ display: "flex",
-                  justifyContent: window.innerWidth <= 768 ? "center" : "start" 
+                  justifyContent: window.innerWidth <= 768 ? "center" : "start" ,
+                  marginBottom:'40px',
                  }}
               >
                 <div

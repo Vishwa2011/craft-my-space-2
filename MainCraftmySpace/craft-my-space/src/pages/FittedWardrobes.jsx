@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
-
+import { motion } from "framer-motion";
 
 // const categories = [
 //   { id: "all", name: "All" },
@@ -18,36 +18,36 @@ const services = [
     description:
       "Classic and versatile, offering easy access, smart customizable storage, and timeless elegant designs to complement any interior.",
     image: "/assets/pic/v2.png",
-      link: "/HingedDoorWardrobes",
+    link: "/HingedDoorWardrobes",
   },
   {
     title: "Sliding Wardrobe Doors By CMS",
     description:
       "Stylish and space-saving, designed for seamless functionality, modern aesthetics, and personalized storage solutions.",
     image: "/assets/pic/custom.png",
-    link:"/SlidingWardrobedDoorsByCMS"
+    link: "/SlidingWardrobedDoorsByCMS",
   },
   {
     title: "Sliding Wardrobes",
     description:
-      " Maximize space with sleek, modern sliding wardrobes, offering effortless access and customizable storage for a clutter-free look.",
+      "Maximize space with sleek, modern sliding wardrobes, offering effortless access and customizable storage for a clutter-free look.",
     image: "/assets/pic/image.png",
-      link:"/Slidingwardrobed"
+    link: "/Slidingwardrobed",
   },
   {
     title: "Walk-In-Wardrobes",
     description:
-      " A perfect blend of luxury and functionality, offering spacious, organized storage with a personalized touch for effortless style.",
+      "A perfect blend of luxury and functionality, offering spacious, organized storage with a personalized touch for effortless style.",
     image: "/assets/pic/walk-in-closet 1.png",
-      link:"/Walkinwardrobed"
+    link: "/Walkinwardrobed",
   },
   {
-    title: "Children's Fitted Bedeooms",
+    title: "Children's Fitted Bedrooms",
     description:
-      " Smart, space-saving designs tailored for kids, combining functionality, safety, and playful aesthetics for a perfect living space.",
+      "Smart, space-saving designs tailored for kids, combining functionality, safety, and playful aesthetics for a perfect living space.",
     image: "/assets/pic/kids-bedroom.png",
-      link:"/ChildrenFittedBadrooms"
-  }
+    link: "/ChildrenFittedBadrooms",
+  },
 ];
 const items = [
   // {
@@ -247,52 +247,67 @@ const FittedWardrobes = () => {
 
  {/* WELCOME SECTION START */}
  <div className="section-full p-t80 p-b80 bg-black overflow-hide home-2-about-outer">
-            <div className="container">
-              <div className="section-content">
-                {services.map((service, index) => (
-                  <div className="row" key={index} style={{ justifyContent: 'space-between', flexDirection: index % 2 === 0 ? 'row-reverse' : 'row', marginBottom: '120px', }}>
-                    <div className="col-xl-5 col-lg-6 col-md-12" >
-                      <div className="wt-thum-bx">
-                        <img src={service.image} alt="Service" />
-                      </div>
+          <div className="container">
+            <div className="section-content">
+              {services.map((service, index) => (
+                <motion.div
+                  className="row"
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  style={{
+                    justifyContent: "space-between",
+                    flexDirection: index % 2 === 0 ? "row-reverse" : "row",
+                    marginBottom: "120px",
+                  }}
+                >
+                  <div className="col-xl-5 col-lg-6 col-md-12">
+                    <div className="wt-thum-bx">
+                      <img src={service.image} alt="Service" />
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-12">
-                      <div className="home-2-about-left-outer">
-                        <div className="home-2-about-left">
-                          <div className="home-2-about-left-content  p-a50 text-white" style={{background:'#272727'}}>                                                        
-                            <h2 className="m-t0 wt-title">{service.title}</h2>
-                            <p>{service.description}</p>
-                            <a 
-                              href={service.link}                                                                 
-                              className="site-button-link" 
-                              style={{
-                                background: '#B19777',
-                                color: 'white',
-                                padding: '18px',
-                                textDecoration: 'none',
-                                border: '2px solid #B19777',
-                                transition: 'all 0.3s ease-in-out'
-                              }}
-                              onMouseEnter={(e) => {
-                                e.target.style.background = 'white';
-                                e.target.style.color = '#B19777';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.target.style.background = '#B19777';
-                                e.target.style.color = 'white';
-                              }}
-                            > 
-                              Read More
-                            </a>
-                          </div>
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-md-12">
+                    <div className="home-2-about-left-outer">
+                      <div className="home-2-about-left">
+                        <div
+                          className="home-2-about-left-content p-a50 text-white"
+                          style={{ background: "#272727" }}
+                        >
+                          <h2 className="m-t0 wt-title">{service.title}</h2>
+                          <p>{service.description}</p>
+                          <a
+                            href={service.link}
+                            className="site-button-link"
+                            style={{
+                              background: "#B19777",
+                              color: "white",
+                              padding: "18px",
+                              textDecoration: "none",
+                              border: "2px solid #B19777",
+                              transition: "all 0.3s ease-in-out",
+                            }}
+                            onMouseEnter={(e) => {
+                              e.target.style.background = "white";
+                              e.target.style.color = "#B19777";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.background = "#B19777";
+                              e.target.style.color = "white";
+                            }}
+                          >
+                            Read More
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </motion.div>
+              ))}
             </div>
           </div>
+        </div>
           {/* WELCOME SECTION END */}
           {/* text start  */}
           <div className="container mt-5 mb-5" style={{background:'#000'}}>

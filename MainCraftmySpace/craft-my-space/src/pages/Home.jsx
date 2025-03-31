@@ -7,8 +7,20 @@ import { Star } from "@mui/icons-material";
 import MeetDesignerForm from "./MeetDesignerForm";
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import { motion } from "framer-motion";
+
 
 export default function Home() {
+  const imageVariantsLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
+  const imageVariantsRight = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
+
   return (
     <>
       <div className="page-wraper">
@@ -1125,188 +1137,58 @@ export default function Home() {
 
         
         {/* [ our services ] start  */}
-        <div className="section-full p-t80 p-b50" style={{background:'#000',borderBottom:'2px solid #B19777'}}>
-          <div className="container">
-            <div>
-           
-                <div className="section-head clearfix">
-                  <div className="wt-tilte-main " style={{display:'contents'}}>
-                    <small className="wt-small-title" style={{justifyContent:'center', display:'flex',color:'#B19777'}}>[ our services ]</small>
-                    <h2 className="m-b5" style={{justifyContent:'center', display:'flex'}}>Our Latest Services</h2>
-                  </div>
-                  <div>
-                    {/* <p>
-                      Our latest services include customized solutions designed
-                      to meet your unique needs, offering innovative and
-                      high-quality options tailored to enhance functionality and
-                      aesthetics.
-                    </p> */}
-                 
-                </div>
-              </div>
-            </div>
-            <div className="row equal-wraper" style={{justifyContent:'center'}}>
-              
-              <div className="col-xl-5 col-lg-6 col-md-12">
-                <div className="blog-post blog-md blog-no-gap date-style-1 clearfix  m-b30">
-                <div className="wt-post-media wt-img-effect zoom-slow relative">
-  <a  className="block relative">
-    <img src="/assets/pic/stratford11.webp" alt="" className="w-full" />
-    {/* "SEE MORE" Box on Image */}
-    <a href="/FittedWardrobes">
-    <div className="absolute top-2 right-2  text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md  border-gray-300 uppercase rotate-90" style={{right:'-25px',top:'41px',transform:'rotate(270deg)',color:'white',border:'2px solid #fff'}}>
-      SEE MORE
-    </div>
-    </a>
-  </a>
-</div>
-
-                  <div
-                    className="wt-post-info p-a30"
-                    style={{ paddingLeft: "0px" }}
-                  >
-                    <div className="wt-post-title ">
-                      <h4 className="post-title">
-                        <a href="/FittedWardrobes" className=" m-t0">
-                          Fitted Wardrobes
-                        </a>
-                      </h4>
-                    </div>
-                    <div className="wt-post-text">
-                      <p>
-                        Fitted wardrobes add a touch of elegance while
-                        maximizing storage space with a seamless, customized
-                        design.
-                      </p>
-                    </div>
-                  
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5 col-lg-6 col-md-12">
-                <div className="blog-post blog-md blog-no-gap date-style-1 clearfix  m-b60">
-                  
-
-                  <div className="wt-post-media wt-img-effect zoom-slow relative">
-  <a  className="block relative">
-  <img src="/assets/pic/ImageNewAdd5.avif" alt="" />
-    {/* "SEE MORE" Box on Image */}
-    <a  href="/Kitchens">
-    <div className="absolute top-2 right-2  text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md  border-gray-300 uppercase rotate-90" style={{right:'-25px',top:'41px',transform:'rotate(270deg)',color:'white',border:'2px solid #fff'}}>
-      SEE MORE
-    </div>
-    </a>
-  </a>
-</div>
-
-                  <div
-                    className="wt-post-info p-a30"
-                    style={{ paddingLeft: "0px" }}
-                  >
-                    <div className="wt-post-title ">
-                      <h4 className="post-title">
-                        <a href="/Kitchens" className=" m-t0">
-                          Fitted Kitchen
-                        </a>
-                      </h4>
-                    </div>
-                    <div className="wt-post-text">
-                      <p>
-                        A fitted kitchen makes every corner stylish and
-                        functional with modern design and maximum storage.
-                      </p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-       
-              <div className="col-xl-5 col-lg-6 col-md-12">
-                <div className="blog-post blog-md blog-no-gap date-style-1 clearfix  m-b60">
-                
-
-
-
-
-
-
-
-                  <div className="wt-post-media wt-img-effect zoom-slow relative">
-  <a  className="block relative">
-  <img src="/assets/pic/Best-Bespoke-Furniture (1).webp" alt="" />
-    {/* "SEE MORE" Box on Image */}
-    <a href="/Bathroom"></a> <a  href="/Kitchens">
-    <div className="absolute top-2 right-2  text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md  border-gray-300 uppercase rotate-90" style={{right:'-25px',top:'41px',transform:'rotate(270deg)',color:'white',border:'2px solid #fff'}}>
-      SEE MORE
-    </div>
-    </a>
-  </a>
-</div>
-
-
-                  <div
-                    className="wt-post-info p-a30"
-                    style={{ paddingLeft: "0px" }}
-                  >
-                    <div className="wt-post-title ">
-                      <h4 className="post-title">
-                        <a href="/Bathroom" className=" m-t0">
-                          Bespoke Furniture
-                        </a>
-                      </h4>
-                    </div>
-                    <div className="wt-post-text">
-                      <p>
-                        When bespoke furniture is added, every space transforms
-                        into a unique blend of style, functionality, and
-                        personalized elegance.
-                      </p>
-                    </div>
-                 
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5 col-lg-6 col-md-12">
-                <div className="blog-post blog-md blog-no-gap date-style-1 clearfix  m-b60">
-                 
-
-
-
-                  <div className="wt-post-media wt-img-effect zoom-slow relative">
-  <a  className="block relative">
-  <img src="/assets/pic/display.jpg" alt="" />
-    {/* "SEE MORE" Box on Image */}
-    <a href="/AwkwardSpaces">
-    <div className="absolute top-2 right-2  text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md  border-gray-300 uppercase rotate-90" style={{right:'-25px',top:'41px',transform:'rotate(270deg)',color:'white',border:'2px solid #fff'}}>
-      SEE MORE
-    </div>
-    </a>
-  </a>
-</div>
-                  <div
-                    className="wt-post-info p-a30"
-                    style={{ paddingLeft: "0px" }}
-                  >
-                    <div className="wt-post-title ">
-                      <h4 className="post-title">
-                        <a href="/AwkwardSpaces" className=" m-t0">
-                          Awkward Spaces
-                        </a>
-                      </h4>
-                    </div>
-                    <div className="wt-post-text">
-                      <p>
-                        Temples, Studies, Home Office Furniture, Sliding Door
-                        Wardrobes
-                      </p>
-                    </div>
-              
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="section-full p-t80 p-b50" style={{ background: "#000", borderBottom: "2px solid #B19777" }}>
+      <div className="container">
+        <div className="section-head clearfix">
+          <div className="wt-tilte-main" style={{ display: "contents" }}>
+            <small className="wt-small-title" style={{ justifyContent: "center", display: "flex", color: "#B19777" }}>
+              [ our services ]
+            </small>
+            <h2 className="m-b5" style={{ justifyContent: "center", display: "flex" }}>Our Latest Services</h2>
           </div>
         </div>
+
+        <div className="row equal-wraper" style={{ justifyContent: "center" }}>
+          {[ 
+            { img: "/assets/pic/stratford11.webp", title: "Fitted Wardrobes", link: "/FittedWardrobes", desc: "Fitted wardrobes add a touch of elegance while maximizing storage space with a seamless, customized design." },
+            { img: "/assets/pic/ImageNewAdd5.avif", title: "Fitted Kitchen", link: "/Kitchens", desc: "A fitted kitchen makes every corner stylish and functional with modern design and maximum storage." },
+            { img: "/assets/pic/Best-Bespoke-Furniture (1).webp", title: "Bespoke Furniture", link: "/Bathroom", desc: "When bespoke furniture is added, every space transforms into a unique blend of style, functionality, and personalized elegance." },
+            { img: "/assets/pic/display.jpg", title: "Awkward Spaces", link: "/AwkwardSpaces", desc: "Temples, Studies, Home Office Furniture, Sliding Door Wardrobes" }
+          ].map((service, index) => (
+            <div key={index} className="col-xl-5 col-lg-6 col-md-12">
+              <motion.div 
+                className="blog-post blog-md blog-no-gap date-style-1 clearfix m-b30"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={index >= 2 ? (index % 2 === 0 ? imageVariantsLeft : imageVariantsRight) : {}}
+              >
+                <div className="wt-post-media wt-img-effect zoom-slow relative">
+                  <a className="block relative">
+                    <img src={service.img} alt="" className="w-full" />
+                    <a href={service.link}>
+                      <div className="absolute top-2 right-2 text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md border-gray-300 uppercase rotate-90" style={{ right: "-25px", top: "41px", transform: "rotate(270deg)", color: "white", border: "2px solid #fff" }}>
+                        SEE MORE
+                      </div>
+                    </a>
+                  </a>
+                </div>
+                <div className="wt-post-info p-a30" style={{ paddingLeft: "0px" }}>
+                  <div className="wt-post-title">
+                    <h4 className="post-title">
+                      <a href={service.link} className="m-t0">{service.title}</a>
+                    </h4>
+                  </div>
+                  <div className="wt-post-text">
+                    <p>{service.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
         {/* [ our services ] end  */}
         {/* STEP INSPIRED SOLUTION start  */}
         <div className="section-full p-t80 p-b50 " style={{background:'#000',borderBottom:'2px solid #B19777'}}>
@@ -1399,11 +1281,11 @@ export default function Home() {
                   <div 
                   flexDirection="column" gap={2} color="#C29565">
       {/* First Contact */}
-      <a href="tel:+01753530216" style={{ textDecoration: 'none' }}>
+      <a href="tel:(0044)07365 566 666" style={{ textDecoration: 'none' }}>
   <div style={{ display: 'flex', color: '#B19777', margin: '41px 0px 25px 0px', alignItems: 'center', gap: '10px' }}>
     <PhoneInTalkIcon style={{ fontSize: '40px', marginRight: '17px' }} />
     <Typography style={{ fontSize: '22px' }} fontWeight={500}>
-      +01753530216
+    (0044)07365 566 666
     </Typography>
   </div>
 </a>
