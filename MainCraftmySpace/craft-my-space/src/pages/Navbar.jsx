@@ -34,7 +34,9 @@ const Navbar = () => {
 
   return (
     <>
-      <Info />
+          <div className="infonone">
+    <Info />
+    </div>
       <header
         className={`site-header ${
           isScrolled ? "scrolled" : ""
@@ -89,8 +91,8 @@ const Navbar = () => {
       onClick={() => setIsOpen(false)}
       style={{
         position: "absolute",
-        top: "20px",
-        right: "20px",
+        top: "30px",
+        right: "30px",
         background: "#B19777",
         fontSize: "23px",
         width: "44px",
@@ -113,8 +115,16 @@ const Navbar = () => {
           >
             <img src="/assets/pic/craft.jpg" style={{ height: "160px" }} />
           </div>
-          <div style={{ justifyContent: "center", display: "flex" }}>
-            <div className="w-1/4 bg-black p-8 flex flex-col justify-between">
+          <div style={{ 
+  justifyContent: "center", 
+  display: "flex", 
+  flexDirection: window.innerWidth <= 768 ? "column" : "row" 
+}}>
+            <div
+  className="w-1/4 bg-black p-8 flex flex-col justify-between"
+  style={{ textAlign: window.innerWidth <= 768 ? "center" : "left" }}
+>
+
               <ul
                 className="space-y-4 text-lg text-gray-400"
                 style={{ fontSize: "30px", listStyle: "none" }}
@@ -215,7 +225,9 @@ const Navbar = () => {
               </ul>
               <div
                 className="flex space-x-4 text-gray-400 text-2xl"
-                style={{ display: "flex" }}
+                style={{ display: "flex",
+                  justifyContent: window.innerWidth <= 768 ? "center" : "start" 
+                 }}
               >
                 <div
                   style={{
@@ -262,7 +274,11 @@ const Navbar = () => {
             </div>
             <div
               className="w-3/4 flex items-center justify-center p-8"
-              style={{ paddingLeft: "230px" }}
+              style={{ 
+                paddingLeft: window.innerWidth <= 768 ? "0px" : window.innerWidth <= 1024 ? "70px" : "230px" ,
+                textAlign: window.innerWidth <= 768 ? "center" : "left"
+              }}
+              
             >
               <div className="max-w-lg w-full p-6 bg-gray-900 rounded-lg shadow-lg border-l-2 border-gray-500">
                 <h2
@@ -277,6 +293,7 @@ const Navbar = () => {
                     fontSize: "17px",
                     marginBottom: "7px",
                     color: "#B19777",
+                    textAlign: window.innerWidth <= 768 ? "center" : "left"
                   }}
                 >
                   Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire - SL0
@@ -290,7 +307,7 @@ const Navbar = () => {
                 </h2>
                 <p
                   className="text-gray-400"
-                  style={{ fontSize: "17px", margin: "7px", color: "#B19777" }}
+                  style={{ fontSize: "17px", margin: "7px", color: "#B19777",textAlign: window.innerWidth <= 768 ? "center" : "left" }}
                 >
                   (0044)07365 566{" "}
                 </p>
@@ -304,7 +321,7 @@ const Navbar = () => {
                 </h2>
                 <p
                   className="text-gray-400"
-                  style={{ fontSize: "17px", margin: "0px", color: "#B19777" }}
+                  style={{ fontSize: "17px", margin: "0px", color: "#B19777",textAlign: window.innerWidth <= 768 ? "center" : "left" }}
                 >
                   Info@craftmyspace.co.uk
                 </p>
@@ -317,7 +334,7 @@ const Navbar = () => {
                 </h2>
                 <p
                   className="text-gray-400"
-                  style={{ fontSize: "17px", margin: "7px", color: "#B19777" }}
+                  style={{ fontSize: "17px", margin: "7px", color: "#B19777",textAlign: window.innerWidth <= 768 ? "center" : "left" }}
                 >
                   9:00AM - 6:00PM Mon - Sat
                 </p>
