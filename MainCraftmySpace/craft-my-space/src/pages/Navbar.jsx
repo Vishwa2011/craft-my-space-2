@@ -76,7 +76,7 @@ const Navbar = () => {
            left: 0,
            width: "100vw",
            height: "100vh",
-           zIndex: 9999, // Keep menu on top
+           zIndex: 9999,
            display: "flex",
            justifyContent: "center",
            alignItems: "center",
