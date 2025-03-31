@@ -1,11 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
+import { motion } from "framer-motion";
 
 const SlidingWardrobedDoorsByCMS = () => {
   
   return (
-    <div className="page-wraper" style={{background:'#000'}}>
+    <motion.div
+    className="page-wraper"
+    style={{ background: "#000" }}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
       <Navbar />
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}
@@ -44,7 +51,7 @@ const SlidingWardrobedDoorsByCMS = () => {
           {/* <!-- INNER PAGE BANNER END --> */}
 
            {/* text start  */}
-           <div className="container mt-5 mb-5">
+           <motion.div className="container mt-5 mb-5">
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
@@ -63,11 +70,11 @@ const SlidingWardrobedDoorsByCMS = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* text end  */}
 
            {/* <!-- SECTION CONTENT START --> */}
-           <div className="section-full p-t80 p-b50 ">
+           <motion.div className="section-full p-t80 p-b50 ">
             
             <div className="container-fluid">
              
@@ -113,7 +120,7 @@ const SlidingWardrobedDoorsByCMS = () => {
              
             </div>
             
-          </div>
+          </motion.div>
           {/* <!-- SECTION CONTENT END  --> */}
 
         
@@ -123,7 +130,7 @@ const SlidingWardrobedDoorsByCMS = () => {
        <button className="scroltop">
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
-    </div>
+    </motion.div>
   );
 };
 
