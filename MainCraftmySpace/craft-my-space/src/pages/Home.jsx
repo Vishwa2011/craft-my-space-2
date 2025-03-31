@@ -1079,7 +1079,7 @@ export default function Home() {
                 {/* <div className="video-section-outer"> */}
                 <div className="section-head clearfix">
                   <div style={{ textAlign: "center" }}>
-                    <small className="wt-small-title">
+                    <small className="wt-small-title" style={{color:"#B19777"}}>
                       [ Latest Projects ]
                     </small>
                     <h2 className="m-b5">Our Projects</h2>
@@ -1131,7 +1131,7 @@ export default function Home() {
            
                 <div className="section-head clearfix">
                   <div className="wt-tilte-main " style={{display:'contents'}}>
-                    <small className="wt-small-title" style={{justifyContent:'center', display:'flex'}}>[ our services ]</small>
+                    <small className="wt-small-title" style={{justifyContent:'center', display:'flex',color:'#B19777'}}>[ our services ]</small>
                     <h2 className="m-b5" style={{justifyContent:'center', display:'flex'}}>Our Latest Services</h2>
                   </div>
                   <div>
@@ -1435,7 +1435,7 @@ export default function Home() {
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid">
-                <small className="wt-small-title">[ Client Testimonial ]</small>
+                <small className="wt-small-title" style={{color:'#B19777'}}>[ Client Testimonial ]</small>
                 <h2 className="m-b5">Our Client gave us Feedback</h2>
               </div>
               <div className="title-right-detail">
@@ -1578,7 +1578,7 @@ export default function Home() {
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid">
-                <small className="wt-small-title">
+                <small className="wt-small-title" style={{color:'#B19777'}}>
                   [ Why Choose CraftMySpace]
                 </small>
                 <h2 className="m-b5">Why CraftMySpace?</h2>
@@ -1719,7 +1719,7 @@ export default function Home() {
           <div className="container">
             <div className="section-head clearfix">
               <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid text-white">
-                <small className="wt-small-title">[ our blog ]</small>
+                <small className="wt-small-title" style={{color:"#B19777"}}>[ our blog ]</small>
                 <h2 className="m-b5">Read Our Latest News</h2>
               </div>
               <div className="title-right-detail text-white">

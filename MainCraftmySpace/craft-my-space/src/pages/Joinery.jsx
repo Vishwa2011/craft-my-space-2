@@ -55,7 +55,7 @@ const Joinery = () => {
           </div>
 
           {/* joinery start */}
-          {/* <div>
+          <div>
             <div style={{ borderBottom: "2px solid #B19777" }}>
               <div class="container py-5">
                 <div class="row align-items-center">
@@ -101,7 +101,7 @@ const Joinery = () => {
             >
               <div class="col-6 col-md-3 mb-4">
                 <img
-                  src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h1.png"
+                  src="/assets/pic/craft1.png"
                   alt="Warranty"
                   class="img-fluid mb-2"
                 />
@@ -109,7 +109,7 @@ const Joinery = () => {
               </div>
               <div class="col-6 col-md-3 mb-4">
                 <img
-                  src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h2.png"
+                  src="/assets/pic/craft2.png"
                   alt="Materials"
                   class="img-fluid mb-2"
                 />
@@ -117,7 +117,7 @@ const Joinery = () => {
               </div>
               <div class="col-6 col-md-3 mb-4">
                 <img
-                  src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h4.png"
+                  src="/assets/pic/craft3.png"
                   alt="Production"
                   class="img-fluid mb-2"
                 />
@@ -125,14 +125,14 @@ const Joinery = () => {
               </div>
               <div class="col-6 col-md-3 mb-4">
                 <img
-                  src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h3.png"
+                  src="/assets/pic/craft4.png"
                   alt="Installation"
                   class="img-fluid mb-2"
                 />
                 <h4>Professional Installation</h4>
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* joinery end */}
           {/* card start  */}
@@ -220,7 +220,7 @@ const Joinery = () => {
           </div>
           {/* card end  */}
           {/* <!-- OUR STORY SECTION START --> */}
-          {/* <div
+          <div
             class=""
             style={{ borderBottom: "2px solid #B19777", paddingBottom: "20px" }}
           >
@@ -264,7 +264,7 @@ const Joinery = () => {
                         <li>
                           <h2 class="title-year">
                             <img
-                              src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h1.png"
+                              src="/assets/pic/craft1.png"
                               alt=""
                             />
                           </h2>
@@ -282,7 +282,7 @@ const Joinery = () => {
                         <li>
                           <h2 class="title-year">
                             <img
-                              src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h1.png"
+                              src="/assets/pic/craft1.png"
                               alt=""
                             />
                           </h2>
@@ -299,7 +299,7 @@ const Joinery = () => {
                         <li>
                           <h2 class="title-year">
                             <img
-                              src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h1.png"
+                              src="/assets/pic/craft1.png"
                               alt=""
                             />
                           </h2>
@@ -316,7 +316,7 @@ const Joinery = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           {/* <!-- OUR STORY SECTION END -->    */}
 
           {/* customer start  */}
@@ -387,7 +387,7 @@ const Joinery = () => {
                       className="sub-title main-color mb-15"
                       style={{ color: "#B19777" }}
                     >
-                      FAQS
+                      [ FAQS ]
                     </h6>
                     <h2 className="fontmanage">Frequently Asked Questions</h2>
                   </div>
@@ -463,7 +463,7 @@ const Joinery = () => {
                     <div className="home-2-about-left-outer">
                       <div className="section-head clearfix">
                         <div className="wt-tilte-main">
-                          <small className="wt-small-title" style={{color:"#B19777"}}>Our Company</small>
+                          <small className="wt-small-title" style={{color:"#B19777"}}>[ Our Company ]</small>
                           <h2 className="m-b5">About Detail</h2>
                         </div>
                       </div>

@@ -35,7 +35,7 @@ const services = [
   {
     title: "Sliding Bedroom Wardrobes ",
     description:
-      "Stylish and functional, these space-saving wardrobes offer seamless storage solutions while enhancing your living space's aesthetic.",
+      "Maximize space and style with our sleek sliding bedroom wardrobes, designed for effortless organization and modern elegance.",
     image: "/assets/pic/5 (1).jpg",
       link:"/SlidingBedroomWardrobes"
   }

@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="container flex justify-between items-center">
               {!isOpen && (
                 <div className="logo-header">
-                  <a href="index.html">
+                  <a href="/">
                     <img
                       src="/assets/pic/craft.jpg"
                       style={{ height: "90px" }}

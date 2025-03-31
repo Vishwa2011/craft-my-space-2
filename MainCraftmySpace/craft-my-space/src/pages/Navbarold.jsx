@@ -135,7 +135,7 @@ const Navbar = () => {
           <ListItemIcon>
             <LocationOnIcon sx={{ color: "#fff" }} />
           </ListItemIcon>
-          <ListItemText primary="Unit 9 Slough Interchange,Whittenham Close,Slough SL2 5EP" />
+          <ListItemText primary="Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire - SL0 9NT" />
         </ListItem>
         <ListItem>
   <ListItemIcon>

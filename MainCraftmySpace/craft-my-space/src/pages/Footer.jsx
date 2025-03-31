@@ -378,8 +378,7 @@ Privacy & Policy
                 and Wales No.
               </span>
               <span className="copyrights-text mt-2">
-                11976914. Registered Office: Unit 9 Slough Interchange,
-                Whittenham Close, Slough SL2 5EP.
+                11976914. Registered Office: Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire - SL0 9NT.
               </span>
             </div>
               </div>
