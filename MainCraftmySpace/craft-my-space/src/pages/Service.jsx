@@ -36,8 +36,8 @@ const services = [
     image: "/assets/pic/livingfit2.jpg",
     link: "/FittedLiving",
     features: [
-      { name: "Home Office", link: "/homeOffice" },
-      { name: "Kitchen", link: "/kitchens" },
+      { name: "Home Office", link: "/HomeOffice" },
+      { name: "Kitchen", link: "/Kitchens" },
       { name: "Media Room", link: "/MediaRoom" }
     ],
     showReadMore: false

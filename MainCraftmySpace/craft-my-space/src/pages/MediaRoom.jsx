@@ -1,13 +1,17 @@
 import React from 'react'
 import Footers from './Footer'
 import Navbar from './Navbar'
-
+import { motion } from 'framer-motion';
 const MediaRoom = () => {
   return (
     <>
-       <div className="page-wraper" style={{background:'#000'}}>
+       <motion.div className="page-wraper" style={{background:'#000'}} initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}>
         <Navbar />
-        <div className="page-content">
+        <motion.div className="page-content" initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
           {/* <!-- CONTENT START --> */}
           <div className="page-content">
             {/* <!-- INNER PAGE BANNER --> */}
@@ -187,13 +191,13 @@ const MediaRoom = () => {
 
           </div>
           {/* <!-- CONTENT END --> */}
-        </div>
+        </motion.div>
         <Footers />
         {/* <!-- BUTTON TOP START --> */}
         <button className="scroltop">
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
-      </div>
+      </motion.div>
     </>
   )
 }

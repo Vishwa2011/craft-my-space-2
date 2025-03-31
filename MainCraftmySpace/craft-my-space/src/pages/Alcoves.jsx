@@ -1,14 +1,19 @@
 import React from 'react'
 import Footers from './Footer'
 import Navbar from './Navbar'
-
+import { motion } from 'framer-motion';
 const Alcoves = () => {
   return (
-    <div className="page-wraper" style={{background:'#000'}}>
+    <motion.div className="page-wraper"  style={{ background: '#000' }}
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}>
     <Navbar />
     <div className="page-content">
       {/* <!-- CONTENT START --> */}
-      <div className="page-content">
+      <motion.div className="page-content"  initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
         {/* <!-- INNER PAGE BANNER --> */}
         <div
           className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"
@@ -185,7 +190,7 @@ const Alcoves = () => {
       </div>
       {/* <!-- SECTION CONTENT END  --> */}
 
-      </div>
+      </motion.div>
       {/* <!-- CONTENT END --> */}
     </div>
     <Footers />
@@ -193,7 +198,7 @@ const Alcoves = () => {
     <button className="scroltop">
       <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
     </button>
-  </div>
+  </motion.div>
   )
 }
 

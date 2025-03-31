@@ -1,12 +1,16 @@
 import React from 'react'
 import Footers from './Footer'
 import Navbar from './Navbar'
-
+import { motion } from "framer-motion";
 const SlidingHomeOfficeWardrobes = () => {
   return (
-    <div className="page-wraper">
+    <motion.div className="page-wraper" initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}>
     <Navbar />
-    <div className="page-content" >
+    <motion.div className="page-content" initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
       {/* <!-- CONTENT START --> */}
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}
@@ -47,11 +51,13 @@ const SlidingHomeOfficeWardrobes = () => {
         {/* <!-- INNER PAGE BANNER END --> */}
 
         {/* <!--  SECTION START --> */}
-        <div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}}>
+        <motion.div className="section-full p-t80 p-b80  overflow-hide" style={{background:'#000'}} initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}>
           <div className="container">
             <div className="section-content">
               <div className="row">
-                <div className="col-lg-6 col-md-12">
+                <motion.div className="col-lg-6 col-md-12" initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
                   <div className="arc-home-about-left">
                     <div className="arc-home-left-content  " style={{background:'#000'}}>
                       <h3 className="m-t0 wt-tilte-light">
@@ -85,9 +91,9 @@ const SlidingHomeOfficeWardrobes = () => {
 </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="col-lg-6 col-md-12">
+                <motion.div className="col-lg-6 col-md-12" initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
                   <div className="arc-home-about-right portfolio-wrap">
                     <div className="row">
                       <div className="col-md-6 col-sm-6 masonry-item">
@@ -114,22 +120,22 @@ const SlidingHomeOfficeWardrobes = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* <!--   SECTION END -->   */}
        
       </div>
       {/* <!-- CONTENT END --> */}
-    </div>
+    </motion.div>
     <Footers />
     {/* <!-- BUTTON TOP START --> */}
     <button className="scroltop">
       <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
     </button>
-  </div>
+  </motion.div>
   )
 }
 
