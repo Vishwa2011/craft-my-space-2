@@ -84,7 +84,7 @@ const ChildrenFittedBadrooms = () => {
                       <div className="col-md-4 col-sm-4">
                         <div className="m-b30 text-black  center">
                           <h1 className=" font-weight-800 m-b5 site-text-primary">
-                           <img src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h1.png" alt="" />
+                           <img src="/assets/pic/craft1.png" alt="" />
                           </h1>
                           <h4 className="wt-tilte m-b0">10 years warranty</h4>
                         </div>
@@ -93,7 +93,7 @@ const ChildrenFittedBadrooms = () => {
                       <div className="col-md-4 col-sm-4">
                         <div className="m-b30 text-black  center">
                           <h1 className=" font-weight-800 m-b5 site-text-primary">
-                            <img src="	https://bravolondon.co.uk/wp-content/uploads/2022/10/h2.png" alt="" />
+                            <img src="/assets/pic/craft2.png" alt="" />
                           </h1>
                           <h4 className="wt-tilte m-b0">The best materials</h4>
                         </div>
@@ -101,7 +101,7 @@ const ChildrenFittedBadrooms = () => {
                       <div className="col-md-4 col-sm-4">
                         <div className="m-b30 text-black  center">
                           <h1 className=" font-weight-800 m-b5 site-text-primary">
-                            <img src="	https://bravolondon.co.uk/wp-content/uploads/2022/10/h3.png" alt="" />
+                            <img src="/assets/pic/craft4.png" alt="" />
                           </h1>
                           <h4 className="wt-tilte m-b0">Fast production</h4>
                         </div>

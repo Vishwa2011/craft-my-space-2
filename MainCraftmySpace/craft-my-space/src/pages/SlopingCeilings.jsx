@@ -82,7 +82,7 @@ const SlopingCeilings = () => {
                       <div className="m-b30 text-black  center">
                         <h1 className=" font-weight-800 m-b5 site-text-primary">
                           <img
-                            src="https://bravolondon.co.uk/wp-content/uploads/2022/10/h1.png"
+                            src="/assets/pic/craft1.png"
                             alt=""
                           />
                         </h1>
@@ -94,7 +94,7 @@ const SlopingCeilings = () => {
                       <div className="m-b30 text-black  center">
                         <h1 className=" font-weight-800 m-b5 site-text-primary">
                           <img
-                            src="	https://bravolondon.co.uk/wp-content/uploads/2022/10/h2.png"
+                            src="/assets/pic/craft2.png"
                             alt=""
                           />
                         </h1>
@@ -107,7 +107,7 @@ const SlopingCeilings = () => {
                       <div className="m-b30 text-black  center">
                         <h1 className=" font-weight-800 m-b5 site-text-primary">
                           <img
-                            src="	https://bravolondon.co.uk/wp-content/uploads/2022/10/h4.png"
+                            src="/assets/pic/craft3.png"
                             alt=""
                           />
                         </h1>
@@ -118,7 +118,7 @@ const SlopingCeilings = () => {
                       <div className="m-b30 text-black  center">
                         <h1 className=" font-weight-800 m-b5 site-text-primary">
                           <img
-                            src="	https://bravolondon.co.uk/wp-content/uploads/2022/10/h3.png"
+                            src="/assets/pic/craft4.png"
                             alt=""
                           />
                         </h1>
