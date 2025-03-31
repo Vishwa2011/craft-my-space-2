@@ -133,7 +133,7 @@ const WhyCraftMySpace = () => {
                 <div className="project-detail-pic">
                   <div className="wt-media">
                     {/* <img src="assets/images/gallery/pic3.jpg" alt="" /> */}
-                    <img src="/assets/pic/cms3.webp" alt="" />
+                    <img src="/assets/pic/cms3.jpg" alt="" />
                   </div>
                 </div>
               </div>
