@@ -49,8 +49,8 @@ const Navbar = () => {
                 <div className="logo-header">
                   <a href="/">
                     <img
-                      src="/assets/pic/craft.jpg"
-                      style={{ height: "90px" }}
+                      src="/assets/pic/cmslogo.jpeg"
+                      style={{ height: "100px" ,width:"170px"}}
                     />
                   </a>
                 </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
               marginBottom: "30px",
             }}
           >
-            <img src="/assets/pic/craft.jpg" style={{ height: "160px" }} />
+            <img src="/assets/pic/cmslogo.jpeg" style={{ height: "160px" }} />
           </div>
           <div style={{ 
   justifyContent: "center", 
