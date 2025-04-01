@@ -45,6 +45,8 @@ import Service from "./pages/Service";
 import KitchenService from "./pages/Kitchen-Service";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
+import Ourfactorytours from "./pages/Ourfactorytours";
+
 // import Getaquote from "./pages/GetQuote";
 function App() {
   return (
@@ -110,6 +112,7 @@ function App() {
         <Route path="/Thankyou" element={<Thankyou />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/Kitchen-Service" element={<KitchenService />} />
+        <Route path="/Ourfactorytours" element={<Ourfactorytours />} />
 
 
 
