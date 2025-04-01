@@ -154,7 +154,7 @@ const Ourfactorytours = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <img
-                    src="/assets/pic/bed.webp"
+                    src="/assets/pic/production.jpg"
                     style={{ height: "450px", width: "100%" }}
                   />
                 </div>
