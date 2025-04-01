@@ -10,19 +10,11 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const imageVariantsLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-  };
 
-  const imageVariantsRight = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-  };
 
   return (
     <>
-      <div className="page-wraper">
+      <div className="page-wraper" style={{background:'#000'}}>
         {/* <Info /> */}
         <Navbar />
 
@@ -1200,13 +1192,9 @@ export default function Home() {
                 },
               ].map((service, index) => (
                 <div key={index} className="col-xl-5 col-lg-6 col-md-12">
-                  <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false }}
-                    variants={
-                      index % 2 === 0 ? imageVariantsLeft : imageVariantsRight
-                    }
+                  <div
+                   
+                   
                   >
                     <div className="wt-post-media wt-img-effect zoom-slow relative">
                       <a className="block relative">
@@ -1242,7 +1230,7 @@ export default function Home() {
                         <p>{service.desc}</p>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               ))}
             </div>

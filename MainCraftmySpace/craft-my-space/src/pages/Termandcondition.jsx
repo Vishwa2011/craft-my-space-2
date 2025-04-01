@@ -170,6 +170,7 @@ const Termandcondition = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
+      style={{ background: '#000' }}
     >
       <div className="page-wraper term_li" style={{ background: "#000" }}>
         <Navbar />

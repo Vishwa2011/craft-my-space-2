@@ -11,7 +11,7 @@ const pageVariants = {
 
 const Mission = () => {
   return (
-    <motion.div initial="hidden" animate="visible" variants={pageVariants} className="page-wraper">
+    <motion.div initial="hidden" animate="visible" variants={pageVariants} className="page-wraper" style={{background:'#000'}}>
       <Navbar />
       <div className="page-content">
         <div

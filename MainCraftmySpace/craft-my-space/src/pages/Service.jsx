@@ -73,7 +73,7 @@ const ServiceSection = ({ service, index }) => {
       style={{
         justifyContent: "space-between",
         flexDirection: index % 2 === 0 ? "row-reverse" : "row",
-        marginBottom: "120px",
+        marginBottom: "120px",background:'#000'
       }}
     >
       <div className="col-xl-5 col-lg-6 col-md-12">

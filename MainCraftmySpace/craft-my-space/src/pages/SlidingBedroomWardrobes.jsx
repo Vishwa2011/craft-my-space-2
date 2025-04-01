@@ -8,10 +8,10 @@ const SlidingBedroomWardrobes = () => {
     <motion.div    className="page-wraper"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}>
+    transition={{ duration: 0.8 }} style={{ background: '#000' }}>
     
     <Navbar />
-    <div className="page-content">
+    <div className="page-content" >
       {/* <!-- CONTENT START --> */}
       <div className="page-content">
         {/* <!-- INNER PAGE BANNER --> */}

@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 const Bathroom = () => {
   return (
-    <div className="page-wraper">
+    <div className="page-wraper" style={{ background: '#000' }}>
     <Navbar />
     <div className="page-content">
       {/* <!-- CONTENT START --> */}

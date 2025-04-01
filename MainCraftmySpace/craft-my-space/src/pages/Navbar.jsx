@@ -79,7 +79,7 @@ const Navbar = () => {
         width: "100vw",
         height: "100vh",
         zIndex: 9999,
-        display: "flex",
+        // display: "flex",
         alignItems: "center",
         flexDirection: "column",
         padding: "16px 0px 210px 0px",

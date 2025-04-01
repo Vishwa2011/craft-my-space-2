@@ -99,6 +99,7 @@ import Footers from "./Footer";
 const Vision = () => {
   return (
     <motion.div
+    style={{background:'#000'}}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

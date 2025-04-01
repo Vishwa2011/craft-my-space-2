@@ -642,6 +642,7 @@ const WhyCraftMySpace = () => {
 
         {/* Content Section */}
         <motion.div
+        style={{ background: '#000' }}
           className="container mt-5 mb-5"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

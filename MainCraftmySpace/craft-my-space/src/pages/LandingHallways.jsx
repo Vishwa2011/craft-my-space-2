@@ -12,7 +12,7 @@ const LandingHallways = () => {
     <Navbar />
     <div className="page-content">
       {/* <!-- CONTENT START --> */}
-      <motion.div className="page-content" initial={{ opacity: 0, scale: 0.9 }}
+      <motion.div className="page-content" style={{ background: '#000' }} initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
         {/* <!-- INNER PAGE BANNER --> */}

@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footers from './Footer'
-
+import { motion } from 'framer-motion';
 export default function Blogdetail() {
   return (
-    <div className="page-wraper" style={{background:'#000'}}>
+    <motion.div className="page-wraper" style={{background:'#000'}} initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}>
       <Navbar />
-       <div className="page-content">
+       <motion.div className="page-content" initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
             {/* <!-- INNER PAGE BANNER --> */}
             <div className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"  data-stellar-background-ratio="0.5"  style={{backgroundImage:"url(assets/pic/blogdetail.jpg)"}}>
             	<div className="overlay-main bg-black opacity-07"></div>
@@ -325,12 +329,12 @@ export default function Blogdetail() {
             </div>
             {/* <!-- SECTION CONTENT END  --> */}
 
-        </div>
+        </motion.div>
         <Footers />
        {/* <!-- BUTTON TOP START --> */}
        <button className="scroltop">
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
-    </div>
+    </motion.div>
   )
 }

@@ -6,7 +6,7 @@ const SlidingLivingAreaWardrobes = () => {
   return (
     <motion.div className="page-wraper" initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}>
+    transition={{ duration: 0.8, ease: "easeOut" }} style={{ background: '#000' }}>
     <Navbar />
     <motion.div className="page-content" initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
