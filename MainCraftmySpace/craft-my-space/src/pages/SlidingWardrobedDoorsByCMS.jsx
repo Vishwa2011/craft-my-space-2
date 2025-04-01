@@ -85,7 +85,7 @@ const SlidingWardrobedDoorsByCMS = () => {
                     <img src="/assets/pic/swd1.png" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
-                    <img src="/assets/pic/swd6.png" alt="" />
+                    <img src="/assets/pic/swd6.jpg" alt="" />
                   </div>
                 </div>
                 {/* <!-- COLUMNS 2 --> */}

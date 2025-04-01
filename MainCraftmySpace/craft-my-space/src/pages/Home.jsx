@@ -1180,9 +1180,9 @@ export default function Home() {
                 },
                 {
                   img: "/assets/pic/Best-Bespoke-Furniture (1).webp",
-                  title: "Bespoke Furniture",
-                  link: "/Bathroom",
-                  desc: "When bespoke furniture is added, every space transforms into a unique blend of style, functionality, and personalized elegance.",
+                  title: "Fitted Living",
+                  link: "/FittedLiving",
+                  desc: "FittedLiving offers custom-designed, space-saving furniture solutions tailored to modern living needs.",
                 },
                 {
                   img: "/assets/pic/display.jpg",
