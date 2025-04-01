@@ -99,7 +99,7 @@ export default function HingedDoorWardrobes() {
                 {/* <!-- COLUMNS 2 --> */}
                 <div className="masonry-item col-xl-3 col-lg-4  col-md-6 col-sm-6 m-b30">
                   <div className="project-img-effect-1">
-                    <img src="assets/pic/hiding1.png" alt="" />
+                    <img src="assets/pic/hiding1.jpg" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
                     <img src="assets/pic/hiding7.png" alt="" />
@@ -111,7 +111,7 @@ export default function HingedDoorWardrobes() {
                     <img src="assets/pic/hiding6.png" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
-                    <img src="assets/pic/hiding4.png" alt="" />
+                    <img src="assets/pic/hiding4.jpg" alt="" />
                   </div>
                 </div>
                 {/* <!-- COLUMNS 4 --> */}

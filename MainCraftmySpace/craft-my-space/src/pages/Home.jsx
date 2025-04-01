@@ -1161,79 +1161,115 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              className="row equal-wraper"
-              style={{ justifyContent: "center" }}
-            >
-              {[
-                {
-                  img: "/assets/pic/stratford11.webp",
-                  title: "Fitted Wardrobes",
-                  link: "/FittedWardrobes",
-                  desc: "Fitted wardrobes add a touch of elegance while maximizing storage space with a seamless, customized design.",
-                },
-                {
-                  img: "/assets/pic/ImageNewAdd5.avif",
-                  title: "Fitted Kitchen",
-                  link: "/Kitchens",
-                  desc: "A fitted kitchen makes every corner stylish and functional with modern design and maximum storage.",
-                },
-                {
-                  img: "/assets/pic/Best-Bespoke-Furniture (1).webp",
-                  title: "Bespoke Furniture",
-                  link: "/Bathroom",
-                  desc: "When bespoke furniture is added, every space transforms into a unique blend of style, functionality, and personalized elegance.",
-                },
-                {
-                  img: "/assets/pic/display.jpg",
-                  title: "Awkward Spaces",
-                  link: "/AwkwardSpaces",
-                  desc: "Temples, Studies, Home Office Furniture, Sliding Door Wardrobes",
-                },
-              ].map((service, index) => (
-                <div key={index} className="col-xl-5 col-lg-6 col-md-12">
-                  <div
-                   
-                   
-                  >
-                    <div className="wt-post-media wt-img-effect zoom-slow relative">
-                      <a className="block relative">
-                        <img src={service.img} alt="" className="w-full" />
-                        <a href={service.link}>
-                          <div
-                            className="absolute top-2 right-2 text-black text-xs tracking-widest font-bold py-2 px-3 shadow-md border-gray-300 uppercase rotate-90"
-                            style={{
-                              right: "-25px",
-                              top: "41px",
-                              transform: "rotate(270deg)",
-                              color: "white",
-                              border: "2px solid #fff",
-                            }}
-                          >
-                            SEE MORE
-                          </div>
-                        </a>
-                      </a>
-                    </div>
-                    <div
-                      className="wt-post-info p-a30"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      <div className="wt-post-title">
-                        <h4 className="post-title" style={{borderBottom:'1px solid #B19777',paddingBottom:'10px'}}>
-                          <a href={service.link} className="m-t0">
-                            {service.title}
-                          </a>
-                        </h4>
-                      </div>
-                      <div className="wt-post-text">
-                        <p>{service.desc}</p>
-                      </div>
-                    </div>
-                  </div>
+            {/* card start  */}
+     <motion.div  className="container mt-5">
+          <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
+            <div className="masonry-item cat-1 col-lg-4 col-md-6 col-sm-12 m-b30">
+              <a href="/Kitchen-Service">
+
+              <div className="project-img-effect-1">
+                <img
+                  // src="assets/images/gallery/pic1.jpg"
+                  src="/assets/pic/bedroom1.avif"
+                  alt=""
+                />
+                <div className="wt-info">
+                  <h4 className="wt-tilte text-white  m-b10 m-t0">
+                    Kitchen
+                  </h4>
+                 
                 </div>
-              ))}
+              </div>
+              </a>
             </div>
+            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
+            <a href="/Kitchen-Service">
+              <div className="project-img-effect-1">
+                <img
+                  // src="assets/images/gallery/pic2.jpg"
+                  src="/assets/pic/bedroom2.1.jpg"
+                  alt=""
+                />
+                <div className="wt-info">
+                  <h4 className="wt-tilte text-white  m-b10 m-t0">
+                    Bedroom
+                  </h4>
+                
+                </div>
+              </div>
+              </a>
+            </div>
+            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
+            <a href="/Kitchen-Service">
+              <div className="project-img-effect-1">
+                <img
+                  // src="assets/images/gallery/pic2.jpg"
+                  src="/assets/pic/bedroom2.1.jpg"
+                  alt=""
+                />
+                <div className="wt-info">
+                  <h4 className="wt-tilte text-white  m-b10 m-t0">
+                     Home Office
+                  </h4>
+                
+                </div>
+              </div>
+              </a>
+            </div>
+            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
+            <a href="/Kitchen-Service">
+              <div className="project-img-effect-1">
+                <img
+                  // src="assets/images/gallery/pic2.jpg"
+                  src="/assets/pic/bedroom2.1.jpg"
+                  alt=""
+                />
+                <div className="wt-info">
+                  <h4 className="wt-tilte text-white  m-b10 m-t0">
+                    Media Room
+                  </h4>
+                  
+                </div>
+              </div>
+              </a>
+            </div>
+            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
+            <a href="/Kitchen-Service">
+              <div className="project-img-effect-1">
+                <img
+                  // src="assets/images/gallery/pic2.jpg"
+                  src="/assets/pic/bedroom2.1.jpg"
+                  alt=""
+                />
+                <div className="wt-info">
+                  <h4 className="wt-tilte text-white  m-b10 m-t0">
+                    Bay Windows
+                  </h4>
+                 
+                </div>
+              </div>
+              </a>
+            </div>
+            <div className="masonry-item cat-3 col-lg-4 col-md-6 col-sm-12 m-b30">
+            <a href="/Kitchen-Service">
+              <div className="project-img-effect-1">
+                <img
+                  // src="assets/images/gallery/pic3.jpg"
+                  src="/assets/pic/bedroom3.jpg"
+                  alt=""
+                />
+                <div className="wt-info">
+                  <h4 className="wt-tilte text-white  m-b10 m-t0">
+                    Landing & Hallways
+                  </h4>
+                 
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </motion.div >
+        {/* card end  */}
             {/*  */}
           </div>
         </div>
@@ -1316,89 +1352,95 @@ export default function Home() {
 
         {/* content start */}
         <div
+  style={{
+    padding: "70px 0px",
+    background: "#000",
+    borderBottom: "2px solid #B19777",
+    position: "relative",  // Ensures that we can position the background image separately
+  }}
+>
+  <div className="container">
+    <div className="col-12">
+      <div className="row">
+        <div
+          className="col-lg-6 col-md-12 col-sm-12"
           style={{
-            padding: "70px 0px",
-            background: "#000",
-            borderBottom: "2px solid #B19777",
+            position: "relative", // This will keep the text above the background image
+            height: "450px",
+            overflow: "hidden", // Hide anything outside the bounds
           }}
         >
-          <div className="container">
-            <div className="col-12">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                  <div
-                    display="flex"
-                    gap={0.5}
-                    style={{ marginBottom: "20px" }}
-                  >
-                    {[...Array(5)].map((_, index) => (
-                      <Star
-                        key={index}
-                        sx={{ color: "#B19777", fontSize: 32 }}
-                      />
-                    ))}
-                  </div>
-                  <h2>Enjoy a Luxury Experience</h2>
-                  <p>
-                    At Elite Living, we set the benchmark for refined luxury,
-                    crafting spaces that epitomize sophistication and
-                    exclusivity. Our bespoke services go beyond the ordinary,
-                    transforming every detail into an extraordinary expression
-                    of elegance. From the moment you step into our world, you
-                    are embraced by a realm of tailored indulgence. With a
-                    dedicated team of expert designers and artisans, we
-                    meticulously bring your vision to life, ensuring each
-                    element reflects your distinct taste and lifestyle. At Elite
-                    Living, every creation is a testament to timeless beauty,
-                    superior craftsmanship, and unparalleled luxury.
-                  </p>
-                  <div flexDirection="column" gap={2} color="#C29565">
-                    {/* First Contact */}
-                    <a
-                      href="tel:(0044)07365 566 666"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          color: "#B19777",
-                          margin: "41px 0px 25px 0px",
-                          alignItems: "center",
-                          gap: "10px",
-                        }}
-                      >
-                        <PhoneInTalkIcon
-                          style={{ fontSize: "40px", marginRight: "17px" }}
-                        />
-                        <Typography
-                          style={{ fontSize: "22px" }}
-                          fontWeight={500}
-                        >
-                          (0044)07365 566 666
-                        </Typography>
-                      </div>
-                    </a>
+          {/* Background Image with Opacity and Rotation */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: "100px",
+              bottom: 0,
+              inset: "10px",
+              backgroundImage: 'url("/assets/pic/backcms.png")',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transform: "rotate(-18deg)", // Rotates the background image
+              opacity: 0.2,  // Adjust the opacity of the background image
+              zIndex: 0,  // Ensure the background is behind the text
+            }}
+          ></div>
 
-                    {/* Second Contact */}
-                    {/* <div  style={{display:'flex',color:'#d5dd02'}} alignItems="center" gap={1}>
-    
-     <ContactPhoneIcon  style={{fontSize:'40px',marginRight:'17px'}}/>
-        <Typography style={{fontSize:'22px'}}  fontWeight={500}>
-          +44 2033759375
-        </Typography>
-      </div> */}
-                  </div>
-                </div>
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                  <img
-                    src="/assets/pic/bed.webp"
-                    style={{ height: "450px", width: "100%" }}
-                  />
-                </div>
+          <div
+            display="flex"
+            gap={0.5}
+            style={{ marginBottom: "20px" }}
+          >
+            {[...Array(5)].map((_, index) => (
+              <Star key={index} sx={{ color: "#B19777", fontSize: 32 }} />
+            ))}
+          </div>
+          <h2>Enjoy a Luxury Experience</h2>
+          <p>
+            At Elite Living, we set the benchmark for refined luxury,
+            crafting spaces that epitomize sophistication and exclusivity.
+            Our bespoke services go beyond the ordinary, transforming every
+            detail into an extraordinary expression of elegance. From the
+            moment you step into our world, you are embraced by a realm of
+            tailored indulgence. With a dedicated team of expert designers
+            and artisans, we meticulously bring your vision to life, ensuring
+            each element reflects your distinct taste and lifestyle. At Elite
+            Living, every creation is a testament to timeless beauty, superior
+            craftsmanship, and unparalleled luxury.
+          </p>
+          <div flexDirection="column" gap={2} color="#C29565">
+            {/* First Contact */}
+            <a href="tel:(0044)07365 566 666" style={{ textDecoration: "none" }}>
+              <div
+                style={{
+                  display: "flex",
+                  color: "#B19777",
+                  margin: "41px 0px 25px 0px",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <PhoneInTalkIcon style={{ fontSize: "40px", marginRight: "17px" }} />
+                <Typography style={{ fontSize: "22px" }} fontWeight={500}>
+                  (0044)07365 566 666
+                </Typography>
               </div>
-            </div>
+            </a>
           </div>
         </div>
+        <div className="col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="/assets/pic/bed.webp"
+            style={{ height: "450px", width: "100%" }}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         {/* content end */}
 
         {/* Testimonial start  */}
@@ -1549,6 +1591,19 @@ export default function Home() {
           </div>
         </div>
         {/* Testimonial end  */}
+
+
+        {/* video start  */}
+        <div style={{borderBottom:'2px solid #B19777'}}>
+        <div class="high-res-video-container" >
+  <video class="high-res-video" controls>
+    <source src="/assets/pic/videosection.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+        </div>
+        {/* video end */}
+
         {/* Why Choose start   */}
         <div
           className="section-full p-t80 p-b50 "
@@ -1915,7 +1970,7 @@ export default function Home() {
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
       </div>
-      <MeetDesignerForm />
+      {/* <MeetDesignerForm /> */}
 
       {/* <!-- LOADING AREA START ===== --> */}
       {/* <div className="loading-area">

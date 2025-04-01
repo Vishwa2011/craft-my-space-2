@@ -48,7 +48,7 @@ const DiningRoom = () => {
             <div className="container mt-5 mb-5">
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
-                  <div className="bg-white text-black">
+                  <div className=" text-black">
                     <h3>
                       Dining Room Furniture: Entertain family & friends in style
                     </h3>
@@ -111,7 +111,7 @@ const DiningRoom = () => {
              <div className="container mt-5 mb-5">
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
-                  <div className="bg-white text-black">
+                  <div className=" text-black">
                     
                     <p>
                     Custom dining room furniture offers limitless possibilities, from showcasing fine china to organizing everyday essentials. Thoughtfully designed fitted cabinets can transform your dining area into a stylish and functional space, serving as a beautiful focal point while maximizing storage.

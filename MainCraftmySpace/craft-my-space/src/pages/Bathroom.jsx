@@ -49,7 +49,7 @@ const Bathroom = () => {
          <div className="container mt-5 mb-5">
             <div className="project-detail-outer">
               <div className="project-detail-containt">
-                <div className="bg-white text-black">
+                <div className=" text-black">
                   <h3>Bathroom Bespoke Furniture</h3>
                   <p>Enhance your bathroom with <b>bespoke furniture</b>, offering stylish, space-saving, and moisture-resistant storage solutions.</p>
                   <p>
@@ -66,7 +66,7 @@ const Bathroom = () => {
           {/* text end  */}
 
            {/* STEP INSPIRED SOLUTION start  */}
-        <div className="section-full p-t20 p-b50 bg-white">
+        <div className="section-full p-t20 p-b50 " style={{borderTop:'2px solid #B19777'}}>
           <div className="container">
            
             <div
