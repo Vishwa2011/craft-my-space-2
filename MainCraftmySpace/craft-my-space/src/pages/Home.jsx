@@ -1162,7 +1162,8 @@ export default function Home() {
             </div>
 
             {/* card start  */}
-     <motion.div  className="container mt-5">
+
+     <motion.div  className="container mt-5" >
           <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
             <div className="masonry-item cat-1 col-lg-4 col-md-6 col-sm-12 m-b30">
               <a href="/Kitchen-Service">
@@ -1170,7 +1171,7 @@ export default function Home() {
               <div className="project-img-effect-1">
                 <img
                   // src="assets/images/gallery/pic1.jpg"
-                  src="/assets/pic/bedroom1.avif"
+                  src="/assets/pic/home-design.jpg"
                   alt=""
                 />
                 <div className="wt-info">
@@ -1187,7 +1188,7 @@ export default function Home() {
               <div className="project-img-effect-1">
                 <img
                   // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/bedroom2.1.jpg"
+                  src="/assets/pic/home-design (1).jpg"
                   alt=""
                 />
                 <div className="wt-info">
@@ -1204,7 +1205,7 @@ export default function Home() {
               <div className="project-img-effect-1">
                 <img
                   // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/bedroom2.1.jpg"
+                  src="/assets/pic/office-001-temp.jpg"
                   alt=""
                 />
                 <div className="wt-info">
@@ -1221,7 +1222,7 @@ export default function Home() {
               <div className="project-img-effect-1">
                 <img
                   // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/bedroom2.1.jpg"
+                  src="/assets/pic/servicetv.jpg"
                   alt=""
                 />
                 <div className="wt-info">
@@ -1238,7 +1239,7 @@ export default function Home() {
               <div className="project-img-effect-1">
                 <img
                   // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/bedroom2.1.jpg"
+                  src="/assets/pic/Dress-Bay-Windows.jpg"
                   alt=""
                 />
                 <div className="wt-info">
@@ -1255,7 +1256,7 @@ export default function Home() {
               <div className="project-img-effect-1">
                 <img
                   // src="assets/images/gallery/pic3.jpg"
-                  src="/assets/pic/bedroom3.jpg"
+                  src="/assets/pic/hallways-landings-banner-04.jpg"
                   alt=""
                 />
                 <div className="wt-info">
@@ -1269,6 +1270,7 @@ export default function Home() {
             </div>
           </div>
         </motion.div >
+
         {/* card end  */}
             {/*  */}
           </div>
@@ -1345,6 +1347,30 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <div>
+                  <a
+                            href="/Ourfactorytours"
+                            className="site-button-link"
+                            style={{
+                              background: "#B19777",
+                              color: "white",
+                              padding: "18px",
+                              textDecoration: "none",
+                              border: "2px solid #B19777",
+                              transition: "all 0.3s ease-in-out",
+                            }}
+                            onMouseEnter={(e) => {
+                              e.target.style.background = "white";
+                              e.target.style.color = "#B19777";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.background = "#B19777";
+                              e.target.style.color = "white";
+                            }}
+                          >
+                            our  factory  Tours
+                          </a>
+                  </div>
             </div>
           </div>
         </div>
@@ -1997,7 +2023,7 @@ export default function Home() {
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
       </div>
-      {/* <MeetDesignerForm /> */}
+      <MeetDesignerForm />
 
       {/* <!-- LOADING AREA START ===== --> */}
       {/* <div className="loading-area">

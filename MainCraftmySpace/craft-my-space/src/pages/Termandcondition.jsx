@@ -200,7 +200,7 @@ const Termandcondition = () => {
             </div>
           </div>
           <div className="section-full p-6 md:p-12" style={{ padding: '100px 0px' }}>
-            <div className='container mx-auto px-4'>
+            <div className='container mx-auto px-4' style={{textAlign:"justify"}}>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
