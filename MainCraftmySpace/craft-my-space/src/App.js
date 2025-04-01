@@ -42,6 +42,7 @@ import MeetDesignerForm from "./pages/MeetDesignerForm";
 import Thankyou from "./pages/Thankyou";
 import GetaQuote from "./pages/GetaQuote";
 import Service from "./pages/Service";
+import KitchenService from "./pages/Kitchen-Service";
 // import Getaquote from "./pages/GetQuote";
 function App() {
   return (
@@ -98,7 +99,7 @@ function App() {
         <Route path="/MeetDesignerForm" element={<MeetDesignerForm />} />
         <Route path="/Thankyou" element={<Thankyou />} />
         <Route path="/Service" element={<Service />} />
-
+        <Route path="/Kitchen-Service" element={<KitchenService />} />
 
 
         
