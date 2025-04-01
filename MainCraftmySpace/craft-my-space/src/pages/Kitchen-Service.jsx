@@ -43,62 +43,62 @@ const KitchenService = () => {
 
             <div className="arc-home-about-right portfolio-wrap" style={{padding:'100px 0px'}}>
                     <div className="row">
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn1.png" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn2.png" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn3.webp" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn4.webp" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn5.jpg" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn6.jpg" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12  masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn7.webp" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12  masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchen8.webp" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12  masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn9.jpg" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn10.jpg" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12  masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn11.webp" alt="" />
                         </div>
                       </div>
-                      <div className="col-4 masonry-item">
+                      <div className="col-lg-4 col-md-6 col-sm-12 masonry-item">
                         <div className="wt-media m-b20 img-reflection">
                           <img src="/assets/pic/kitchenn12.webp" alt="" />
                         </div>
@@ -108,6 +108,9 @@ const KitchenService = () => {
             </div>
         </div>
         <Footers />
+        <button className="scroltop">
+        <span className="fa fa-angle-up relative" id="btn-vibrate"></span>
+      </button>
         </div>
     </>
   )
