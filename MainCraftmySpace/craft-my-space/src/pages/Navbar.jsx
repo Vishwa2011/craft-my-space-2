@@ -235,47 +235,83 @@ const Navbar = () => {
                   marginBottom:'40px',
                  }}
               >
-                <div
-                  style={{
-                    background: "#B19777",
-                    fontSize: "23px",
-                    width: "44px",
-                    height: "44px",
-                    textAlign: "center",
-                    borderRadius: "100%",
-                    padding: "3px",
-                    marginRight: "10px",
-                  }}
-                >
-                  <FacebookIcon />
-                </div>
-                <div
-                  style={{
-                    background: "#B19777",
-                    fontSize: "23px",
-                    width: "44px",
-                    height: "44px",
-                    textAlign: "center",
-                    borderRadius: "100%",
-                    padding: "3px",
-                    marginRight: "10px",
-                  }}
-                >
-                  <FaInstagram className="hover:text-white cursor-pointer" />
-                </div>
-                <div
-                  style={{
-                    background: "#B19777",
-                    fontSize: "23px",
-                    width: "44px",
-                    height: "44px",
-                    textAlign: "center",
-                    borderRadius: "100%",
-                    padding: "3px",
-                  }}
-                >
-                  <FaYoutube className="hover:text-white cursor-pointer" />
-                </div>
+               <div
+  style={{
+    background: "#B19777",
+    fontSize: "23px",
+    width: "44px",
+    height: "44px",
+    textAlign: "center",
+    borderRadius: "100%",
+    padding: "3px",
+    marginRight: "10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+>
+  <a 
+    href="https://www.facebook.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ color: "black", transition: "color 0.3s ease" }}
+    onMouseOver={(e) => (e.currentTarget.style.color = 'white')}
+    onMouseOut={(e) => (e.currentTarget.style.color = 'black')}
+  >
+    <FacebookIcon />
+  </a>
+</div>
+<div
+  style={{
+    background: "#B19777",
+    fontSize: "23px",
+    width: "44px",
+    height: "44px",
+    textAlign: "center",
+    borderRadius: "100%",
+    padding: "3px",
+    marginRight: "10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+>
+  <a 
+    href="https://www.instagram.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ color: "black", transition: "color 0.3s ease" }}
+    onMouseOver={(e) => (e.currentTarget.style.color = 'white')}
+    onMouseOut={(e) => (e.currentTarget.style.color = 'black')}
+  >
+    <FaInstagram />
+  </a>
+</div>
+<div
+  style={{
+    background: "#B19777",
+    fontSize: "23px",
+    width: "44px",
+    height: "44px",
+    textAlign: "center",
+    borderRadius: "100%",
+    padding: "3px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+>
+  <a 
+    href="https://www.youtube.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ color: "black", transition: "color 0.3s ease" }}
+    onMouseOver={(e) => (e.currentTarget.style.color = 'white')}
+    onMouseOut={(e) => (e.currentTarget.style.color = 'black')}
+  >
+    <FaYoutube />
+  </a>
+</div>
               </div>
               {/*  */}
             </div>

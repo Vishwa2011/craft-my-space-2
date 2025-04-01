@@ -107,7 +107,7 @@ function App() {
         <Route path="/MeetDesignerForm" element={<MeetDesignerForm />} />
         <Route path="/Thankyou" element={<Thankyou />} />
         <Route path="/Service" element={<Service />} />
-
+        <Route path="/Kitchen-Service" element={<KitchenService />} />
 
 
 
