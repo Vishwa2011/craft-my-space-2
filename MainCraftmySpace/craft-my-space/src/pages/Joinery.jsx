@@ -1087,7 +1087,7 @@ const Joinery = () => {
                           <div className="item">
                             <div className="wt-thum-bx">
                               <img
-                                src="/assets/pic/Kitchen-Furniture (1).jpg"
+                                src="/assets/pic/3535 (1).png"
                                 alt=""
                               />
                             </div>
