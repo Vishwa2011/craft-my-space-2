@@ -42,20 +42,29 @@ import MeetDesignerForm from "./pages/MeetDesignerForm";
 import Thankyou from "./pages/Thankyou";
 import GetaQuote from "./pages/GetaQuote";
 import Service from "./pages/Service";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 // import Getaquote from "./pages/GetQuote";
 function App() {
   return (
     <>
       {/* <Navbar />  */}
-       <div class="phone-widget">
-              <a href="tel:(0044)07365 566 666">
-                <div class="phone-number">
-                (0044)07365 566 666
-                </div>
-                <div class="phone-icon">
-                  <BiPhoneCall className="icon" />
-                </div></a>
-              </div>
+      <div class="phone-widget">
+        <a href="tel:(0044)07365 566 666">
+          <div class="phone-number">
+            (0044)07365 566 666
+          </div>
+          <div class="phone-icon">
+            <BiPhoneCall className="icon" />
+          </div></a>
+      </div>
+      {/* WhatsApp */}
+      <div class="phone-widget1">
+        <a href="https://wa.me/447365566666" target="_blank">
+          <div class="phone-icon1">
+            <WhatsAppIcon className="icon" />
+          </div>
+        </a>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />
@@ -66,14 +75,14 @@ function App() {
         <Route path="/Inspiration" element={<Inspiration />} />
         <Route path="/Recentwork" element={<Recentwork />} />
         {/* <Route path="/GetQuote" element={<Getaquote />} /> */}
-        <Route path="/GetaQuote" element={<GetaQuote/>}/>
-        <Route path="/Orderafreebrochure" element={<Orderafreebrochure/>} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
-        <Route path="/Footer" element={<Footer/>} />
-        <Route path="/HingedDoorWardrobes" element={<HingedDoorWardrobes/>} />
-        <Route path="/SlidingWardrobedDoorsByCMS" element={<SlidingWardrobedDoorsByCMS/>} />
-        <Route path="/Slidingwardrobed" element={<Slidingwardrobed/>} />
-        <Route path="/ChildrensBedroomSlidingDoorWardrobes" element={<ChildrensBedroomSlidingDoorWardrobes/>} />
+        <Route path="/GetaQuote" element={<GetaQuote />} />
+        <Route path="/Orderafreebrochure" element={<Orderafreebrochure />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/Footer" element={<Footer />} />
+        <Route path="/HingedDoorWardrobes" element={<HingedDoorWardrobes />} />
+        <Route path="/SlidingWardrobedDoorsByCMS" element={<SlidingWardrobedDoorsByCMS />} />
+        <Route path="/Slidingwardrobed" element={<Slidingwardrobed />} />
+        <Route path="/ChildrensBedroomSlidingDoorWardrobes" element={<ChildrensBedroomSlidingDoorWardrobes />} />
         <Route path="/WhyCraftMySpace" element={<WhyCraftMySpace />} />
         <Route path="/Walkinwardrobed" element={<Walkinwardrobed />} />
         <Route path="/ChildrenFittedBadrooms" element={<ChildrenFittedBadrooms />} />
@@ -101,7 +110,7 @@ function App() {
 
 
 
-        
+
 
 
 

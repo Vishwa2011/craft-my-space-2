@@ -49,7 +49,7 @@ const Navbar = () => {
                 <div className="logo-header">
                   <a href="/">
                     <img
-                      src="/assets/pic/cmslogo.jpeg"
+                      src="/assets/pic/headercms.png"
                       style={{ height: "100px", width: "170px" }}
                     />
                   </a>
