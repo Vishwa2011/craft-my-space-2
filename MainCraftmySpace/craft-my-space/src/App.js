@@ -42,6 +42,7 @@ import MeetDesignerForm from "./pages/MeetDesignerForm";
 import Thankyou from "./pages/Thankyou";
 import GetaQuote from "./pages/GetaQuote";
 import Service from "./pages/Service";
+import KitchenService from "./pages/Kitchen-Service";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 // import Getaquote from "./pages/GetQuote";
 function App() {

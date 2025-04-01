@@ -8538,41 +8538,43 @@ padding: 20px;;}
     }
   }
 
-  /*  */
-
-  
-  .high-res-video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px; /* Adjust this value based on your needs */
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+ 
+/*  */
+.responsive-background {
+    position: absolute;
+    inset: 10px 100px 10px 10px;
+    background-image: url("/assets/pic/backcms.png");
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-18deg); /* Rotates the background image */
+    opacity: 0.1; /* Adjust the opacity of the background image */
+    z-index: 0; /* Ensure the background is behind the text */
   }
 
-  .high-res-video {
-    width: 100%;
-    height: auto;
-    max-height: 90vh;
-    object-fit: contain;
-  }
-
-  @media (min-width: 1200px) {
-    .high-res-video-container {
-      max-width: 1140px;
+  @media (max-width: 1024px) {
+    .responsive-background {
+      inset: 117px 91px 27px 2px; 
     }
   }
-
-  @media (min-width: 1400px) {
-    .high-res-video-container {
-      max-width: 1320px;
+  @media (max-width: 768px) {
+    .responsive-background {
+        inset: 35px 181px 6px 75px;
+        height: 320px;
     }
-  }
-
-  @media (min-width: 1600px) {
-    .high-res-video-container {
-      max-width: 1500px;
+}
+@media (max-width: 425px) {
+    .responsive-background {
+        inset: 65px 50px 50px 10px;
     }
-  }
+}
+@media (max-width: 375px) {
+    .responsive-background {
+        inset: 109px 21px 70px 0px;
+    }
+}
+@media (max-width: 320px) {
+    .responsive-background {
+        inset: 173px 31px 46px 19px;
+        height: 247px;
+    }
+}

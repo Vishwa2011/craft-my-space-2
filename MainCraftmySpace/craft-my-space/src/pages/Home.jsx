@@ -1366,26 +1366,23 @@ export default function Home() {
           className="col-lg-6 col-md-12 col-sm-12"
           style={{
             position: "relative", // This will keep the text above the background image
-            height: "450px",
+            // height: "450px",
             overflow: "hidden", // Hide anything outside the bounds
           }}
         >
           {/* Background Image with Opacity and Rotation */}
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: "100px",
-              bottom: 0,
-              inset: "10px",
-              backgroundImage: 'url("/assets/pic/backcms.png")',
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              transform: "rotate(-18deg)", // Rotates the background image
-              opacity: 0.2,  // Adjust the opacity of the background image
-              zIndex: 0,  // Ensure the background is behind the text
-            }}
+          <div className="responsive-background"
+            // style={{
+            //   position: "absolute",
+              
+            //   inset: "10px 100px 10px 10px",
+            //   backgroundImage: 'url("/assets/pic/backcms.png")',
+            //   backgroundSize: "cover",
+            //   backgroundPosition: "center",
+            //   transform: "rotate(-18deg)", // Rotates the background image
+            //   opacity: 0.4,  // Adjust the opacity of the background image
+            //   zIndex: 0,  // Ensure the background is behind the text
+            // }}
           ></div>
 
           <div
@@ -1593,16 +1590,46 @@ export default function Home() {
         {/* Testimonial end  */}
 
 
-        {/* video start  */}
-        <div style={{borderBottom:'2px solid #B19777'}}>
-        <div class="high-res-video-container" >
-  <video class="high-res-video" controls>
-    <source src="/assets/pic/videosection.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
+       {/* <!-- VIDEO SECTION START --> */}
+    <motion.div className=" overflow-hide v-title-outer" style={{borderBottom:'2px solid #B19777'}}>
+  <div className="section-content">
+    <div className="custom-block-outer clearfix bg-cover">
+      <div
+        className="custom-right-part"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+        }}
+      >
+        <div className="custom-right-part-content p-t80 p-b80">
+          <div className="video-section-outer" style={{width:'100%'}}>
+            <div className="video-section">
+              {/* <img src="assets/images/video-img.jpg" alt="" /> */}
+              <img
+                src="/assets/pic/videoimg.jpg"
+                alt=""
+                style={{
+                  width: "100%",    // Adjust this as needed
+                  height: "auto",   // Or use a specific height value (e.g., '400px')
+                }}
+              />
+              <a
+                href="https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0"
+                className="mfp-video play-now"
+              >
+                <i className="icon fa fa-play"></i>
+                <span className="ripple"></span>
+              </a>
+            </div>
+          </div>
         </div>
-        {/* video end */}
+      </div>
+    </div>
+  </div>
+</motion.div>
+
+        {/* <!-- VIDEO  SECTION END -->
 
         {/* Why Choose start   */}
         <div
