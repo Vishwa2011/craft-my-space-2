@@ -68,7 +68,17 @@ function App() {
           </div>
         </a>
       </div>
-      
+      {/* book */}
+      <div class="phone-widget2" style={{
+    transform: "rotate(270deg)"
+}}>
+        <a href="/GetaQuote">
+          <div class="phone-number2">
+          Book An Appointment
+          </div>
+        
+          </a>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />

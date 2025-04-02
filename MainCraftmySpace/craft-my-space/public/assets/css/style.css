@@ -5121,6 +5121,7 @@ line-height:normal;}
 .slider-social-right ul li{display:inline-block;padding-right:50px;}
 .slider-social-right ul li:last-child{padding-right:0px;}
 .slider-social-right ul li a{color:#fff;display:block;font-size:14px;font-weight:600; position:relative;}
+.slider-social-right ul li a:hover{color:#B19777;}
 .slider-social-right ul li a span{ 
 	font-size:32px; 
 	opacity:0;
@@ -5787,6 +5788,32 @@ footer .container {width:100%;}
 /*-------------------------------------
 	6. scroll top btn css
 -------------------------------------*/
+.phone-widget2 {
+    position: fixed;
+    left: -40px;
+    top: 70%;
+	padding: 12px ;
+    transform: translateY(-50%);
+    /* display: flex; */
+    align-items: center;
+    background-color:#a1a1a136; 
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+	
+}
+.phone-number2{
+	color: white;
+}
+.phone-widget2:hover .phone-number2{
+	color: #B19777;
+}
+
+
+
+
+/*  */
 .phone-widget1 {
     position: fixed;
     right: 15px;
@@ -8247,7 +8274,7 @@ padding: 20px;;}
 	height:100%;
 	width:0px;
 	z-index:-1;
-	background-color: #272727;
+	background-color: #b1977794;
 	transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
@@ -8578,3 +8605,41 @@ padding: 20px;;}
         height: 247px;
     }
 }
+
+/*  */
+
+.high-res-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px; /* Adjust this value based on your needs */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .high-res-video {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  @media (min-width: 1200px) {
+    .high-res-video-container {
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .high-res-video-container {
+      max-width: 1320px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .high-res-video-container {
+      max-width: 1500px;
+    }
+  }

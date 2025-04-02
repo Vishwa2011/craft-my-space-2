@@ -41,11 +41,11 @@ const Footers = () => {
                     <i className="fa fa-facebook"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://twitter.com/login" target="_blank">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="https://www.pinterest.com/login/" target="_blank">
                     <i className="fa fa-pinterest-p"></i>
@@ -264,15 +264,26 @@ Privacy & Policy
                 </div>
                 <div>
                 <a href="/GetaQuote">
-                  <div
-                    style={{
-                      border: "1px solid #fff",
-                      background: "#fff",
-                      padding: " 16px 10px",
-                      width: "70%",
-                      borderRadius: "10px",
-                    }}
-                  >
+                <div
+    style={{
+      border: "2px solid #B19777",
+      background: "rgb(177, 151, 119)",
+      padding: "10px",
+      fontWeight:500,
+      width: "65%",
+      borderRadius: "3px",
+      color: "white",
+      transition: "background 0.3s, color 0.3s",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.background = "white";
+      e.currentTarget.style.color = "rgb(177, 151, 119)";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.background = "rgb(177, 151, 119)";
+      e.currentTarget.style.color = "white";
+    }}
+  >
                     <span>
                       
                       Book a Free Design Visit 
@@ -283,12 +294,23 @@ Privacy & Policy
                   <a href="/Orderafreebrochure">
                   <div
                     style={{
-                      border: "1px solid #fff",
-                      background: "#fff",
-                      padding: " 16px 10px",
-                      width: "70%",
-                      borderRadius: "10px",
-                      marginTop: "10px",
+                      border: "2px solid #B19777",
+                      background: "rgb(177, 151, 119)",
+                      padding: "10px",
+                      fontWeight:500,
+                      width: "65%",
+                      borderRadius: "3px",
+                      color: "white",
+                      marginTop:'20px',
+                      transition: "background 0.3s, color 0.3s",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = "white";
+                      e.currentTarget.style.color = "rgb(177, 151, 119)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = "rgb(177, 151, 119)";
+                      e.currentTarget.style.color = "white";
                     }}
                   >
                     <span>

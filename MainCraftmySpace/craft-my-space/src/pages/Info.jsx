@@ -73,17 +73,43 @@ const Header = () => {
       </Box>
 
       {/* Finance Info */}
-      <Box display="flex" alignItems="center" gap={1} mt={isMobile ? 1 : 0} justifyContent={isMobile ? "center" : "flex-end"}>
-        {/* <AttachMoney fontSize="small" /> */}
-      
-<a href='/GetaQuote' style={{color:'#fff'}}>
+      <Box 
+  display="flex" 
+  alignItems="center" 
+  gap={1} 
+  mt={isMobile ? 1 : 0} 
+  justifyContent={isMobile ? "center" : "flex-end"}
+>
+  <a 
+    href='/GetaQuote' 
+    style={{ 
+      color: '#fff', 
+      fontWeight: '600', 
+      padding: '5px 10px', 
+      border: '2px solid #B19777', 
+      background:'#B19777',
+      borderRadius: '5px', 
+      transition: 'all 0.3s ease-in-out',
+      display: 'inline-block'
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.backgroundColor = "#fff";
+      e.currentTarget.style.color = "#B19777";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.backgroundColor = "#B19777";
+      e.currentTarget.style.color = "#fff";
+    }}
+  >
+    <Typography 
+      variant="body2" 
+      sx={{ fontSize: isMobile ? "12px" : "14px" }}
+    >
+      Download Broucher
+    </Typography>
+  </a>
+</Box>
 
-        <Typography variant="body2" sx={{ fontSize: isMobile ? "12px" : "14px" }} href="/GetaQuote">
-        Download Broucher 
-        </Typography>
-</a>
-        
-      </Box>
     </Box>
   );
 };

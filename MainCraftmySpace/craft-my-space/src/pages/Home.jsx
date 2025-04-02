@@ -1162,114 +1162,47 @@ export default function Home() {
             </div>
 
             {/* card start  */}
-
-     <motion.div  className="container mt-5" >
-          <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
-            <div className="masonry-item cat-1 col-lg-4 col-md-6 col-sm-12 m-b30">
-              <a href="/Kitchen-Service">
-
-              <div className="project-img-effect-1">
-                <img
-                  // src="assets/images/gallery/pic1.jpg"
-                  src="/assets/pic/home-design.jpg"
-                  alt=""
-                />
-                <div className="wt-info">
-                  <h4 className="wt-tilte text-white  m-b10 m-t0">
-                    Kitchen
-                  </h4>
-                 
-                </div>
-              </div>
-              </a>
-            </div>
-            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
-            <a href="/Kitchen-Service">
-              <div className="project-img-effect-1">
-                <img
-                  // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/home-design (1).jpg"
-                  alt=""
-                />
-                <div className="wt-info">
-                  <h4 className="wt-tilte text-white  m-b10 m-t0">
-                    Bedroom
-                  </h4>
-                
-                </div>
-              </div>
-              </a>
-            </div>
-            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
-            <a href="/Kitchen-Service">
-              <div className="project-img-effect-1">
-                <img
-                  // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/office-001-temp.jpg"
-                  alt=""
-                />
-                <div className="wt-info">
-                  <h4 className="wt-tilte text-white  m-b10 m-t0">
-                     Home Office
-                  </h4>
-                
-                </div>
-              </div>
-              </a>
-            </div>
-            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
-            <a href="/Kitchen-Service">
-              <div className="project-img-effect-1">
-                <img
-                  // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/servicetv.jpg"
-                  alt=""
-                />
-                <div className="wt-info">
-                  <h4 className="wt-tilte text-white  m-b10 m-t0">
-                    Media Room
-                  </h4>
-                  
-                </div>
-              </div>
-              </a>
-            </div>
-            <div className="masonry-item cat-2 col-lg-4 col-md-6 col-sm-12 m-b30">
-            <a href="/Kitchen-Service">
-              <div className="project-img-effect-1">
-                <img
-                  // src="assets/images/gallery/pic2.jpg"
-                  src="/assets/pic/Dress-Bay-Windows.jpg"
-                  alt=""
-                />
-                <div className="wt-info">
-                  <h4 className="wt-tilte text-white  m-b10 m-t0">
-                    Bay Windows
-                  </h4>
-                 
-                </div>
-              </div>
-              </a>
-            </div>
-            <div className="masonry-item cat-3 col-lg-4 col-md-6 col-sm-12 m-b30">
-            <a href="/Kitchen-Service">
-              <div className="project-img-effect-1">
-                <img
-                  // src="assets/images/gallery/pic3.jpg"
-                  src="/assets/pic/hallways-landings-banner-04.jpg"
-                  alt=""
-                />
-                <div className="wt-info">
-                  <h4 className="wt-tilte text-white  m-b10 m-t0">
-                    Landing & Hallways
-                  </h4>
-                 
-                </div>
-              </div>
-              </a>
+            <motion.div className="container mt-5">
+  <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
+    {[
+      { title: "Kitchen", img: "designn1.jpg" },
+      { title: "Bedroom", img: "design2.jpg" },
+      { title: "Home Office", img: "design3.jpg" },
+      { title: "Media Room", img: "design4.jpg" },
+      { title: "Bay Windows", img: "design5.jpg" },
+      { title: "Landing & Hallways", img: "design6.jpg" },
+    ].map((item, index) => (
+      <div key={index} className="masonry-item col-lg-4 col-md-6 col-sm-12 m-b30">
+        <a href="/Kitchen-Service">
+          <div style={{ position: "relative", overflow: "hidden" }}>
+            <img
+              src={`/assets/pic/${item.img}`}
+              alt={item.title}
+              style={{
+                width: "100%",
+                opacity: "0.6",
+                transition: "transform 0.9s ease-in-out",
+              }}
+              onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
+              onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+            />
+            <div
+              style={{
+                position: "absolute",
+                left: "38%",
+                top: "44%",
+                width: "100%",
+                fontSize: "30px",
+              }}
+            >
+              <h4 className="wt-tilte text-white">{item.title}</h4>
             </div>
           </div>
-        </motion.div >
+        </a>
+      </div>
+    ))}
+  </div>
+</motion.div>
 
         {/* card end  */}
             {/*  */}
@@ -1349,7 +1282,7 @@ export default function Home() {
               </div>
               <div>
                   <a
-                            href="/Ourfactorytours"
+                            href="/Ourfactorytour"
                             className="site-button-link"
                             style={{
                               background: "#B19777",
@@ -1368,7 +1301,7 @@ export default function Home() {
                               e.target.style.color = "white";
                             }}
                           >
-                            our  factory  Tours
+                            our  factory  Tour
                           </a>
                   </div>
             </div>
@@ -1580,33 +1513,33 @@ export default function Home() {
               >
                 <div className="item">
                   <div className="wt-media">
-                    <img src="/assets/pic/profile.webp" alt="" />
+                    <img src="/assets/pic/profile1.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
                   <div className="wt-media">
-                    <img src="/assets/pic/profile.webp" alt="" />
+                    <img src="/assets/pic/profile2.png" alt="" />
                   </div>
                 </div>
                 <div className="item">
                   <div className="wt-media">
-                    <img src="/assets/pic/profile.webp" alt="" />
+                    <img src="/assets/pic/profile3.jpeg" alt="" />
                   </div>
                 </div>
                 <div className="item">
                   <div className="wt-media">
-                    <img src="/assets/pic/profile.webp" alt="" />
+                    <img src="/assets/pic/profile4.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
                   <div className="wt-media">
-                    <img src="/assets/pic/profile.webp" alt="" />
+                    <img src="/assets/pic/profile1.jpg" alt="" />
                   </div>
                 </div>
-                {/* New Thumbnail for the new testimonial */}
+                
                 <div className="item">
                   <div className="wt-media">
-                    <img src="/assets/pic/profile.webp" alt="" />
+                    <img src="/assets/pic/profile2.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -1617,43 +1550,14 @@ export default function Home() {
 
 
        {/* <!-- VIDEO SECTION START --> */}
-    <motion.div className=" overflow-hide v-title-outer" style={{borderBottom:'2px solid #B19777'}}>
-  <div className="section-content">
-    <div className="custom-block-outer clearfix bg-cover">
-      <div
-        className="custom-right-part"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          width: "100%",
-        }}
-      >
-        <div className="custom-right-part-content p-t80 p-b80">
-          <div className="video-section-outer" style={{width:'100%'}}>
-            <div className="video-section">
-              {/* <img src="assets/images/video-img.jpg" alt="" /> */}
-              <img
-                src="/assets/pic/videoimg.jpg"
-                alt=""
-                style={{
-                  width: "100%",    // Adjust this as needed
-                  height: "auto",   // Or use a specific height value (e.g., '400px')
-                }}
-              />
-              <a
-                href="https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0"
-                className="mfp-video play-now"
-              >
-                <i className="icon fa fa-play"></i>
-                <span className="ripple"></span>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div  style={{borderBottom:'2px solid #B19777'}}>
+      <div class="high-res-video-container">
+  <video class="high-res-video" controls>
+    <source src="/assets/pic/videosection.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
       </div>
-    </div>
-  </div>
-</motion.div>
 
         {/* <!-- VIDEO  SECTION END -->
 
