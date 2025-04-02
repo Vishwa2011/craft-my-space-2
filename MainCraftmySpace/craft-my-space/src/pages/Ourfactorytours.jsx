@@ -142,7 +142,7 @@ const Ourfactorytours = () => {
                 >
                   {/* Background Image with Opacity and Rotation */}
                   <div className="responsive-background"
-               
+                  
                   ></div>
         
                
