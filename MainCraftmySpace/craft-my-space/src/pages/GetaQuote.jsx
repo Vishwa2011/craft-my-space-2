@@ -91,8 +91,8 @@ const GetaQuote = () => {
       <Navbar />
       <div className="page-content">
         <motion.div
-          className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"
-          style={{ backgroundImage: "url(assets/pic/getaquote.jpg)" }}
+          className="wt-bnr-inr overlay-wraper bg-parallax "
+          style={{ backgroundImage: "url(assets/pic/get.png)" }}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -123,7 +123,7 @@ const GetaQuote = () => {
               <motion.div className="contact-form p-a30 col-md-6 col-12" initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}>
               <form className="cons-contact-form" onSubmit={handleSubmit}>
                     <div className="contact-one">
-                      <h4 className="m-b6" style={{color:"#B19777"}}>Contact Us</h4>
+                      <h4 className="m-b6" style={{color:"#B19777"}}>Get A Quote</h4>
                       <h3 style={{color:'black'}}>Do You Need Any Help? Send Message</h3>
                       <Box sx={{ width: "100%" }}>
                         <TextField
@@ -216,13 +216,13 @@ const GetaQuote = () => {
               <motion.div className="col-md-6 col-12"
               initial={{ x: 100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}
               >
-                   <img src="/assets/pic/contact (1).jpg"/>
+                   <img src="/assets/pic/contact (1).jpg" style={{height:'650px'}}/>
                 </motion.div>
             </div>
             <div className="row" style={{padding:'50px 0px'}}>
               
 
-              <motion.div className="col-md-6 col-12"
+              <motion.div className="col-md-12 col-12"
               initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}
               >
           <iframe
@@ -234,67 +234,7 @@ const GetaQuote = () => {
               loading="lazy"
             ></iframe>
         </motion.div>
-        <motion.div
-                     initial={{ x: 100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}
-                className="contact-info col-md-6 col-12 text-center bg-gray  p-4"
-                style={{
-                 
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <div >
-                  <h4 style={{ marginBottom: "30px",color:'#fff' }}>CraftMySpace</h4>
-                  <div style={{ textAlign: "justify" }}>
-                    <div>
-                      <div className="icon-content">
-                        <p style={{display:'flex'}}>
-                          <i
-                            className="sl-icon-phone"
-                            style={{
-                              border: "1px solid #000",
-                              borderRadius: "100%",
-                              background: "#000",
-                              color: "#fff",
-                              padding: "5px",
-                              marginRight: "10px",
-                            }}
-                          ></i>
-                          <a href="tel:(0044)07365 566 666">
-
-                          (0044)07365 566 666
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="icon-content">
-                        <p style={{display:'flex'}}>
-                          {" "}
-                          <i
-                            className="sl-icon-envolope"
-                            style={{
-                              border: "1px solid #000",
-                              borderRadius: "100%",
-                              background: "#000",
-                              color: "#fff",
-                              padding: "5px",
-                              marginRight: "10px",
-                            }}
-                          ></i>
-                          <a href="mailto:Info@craftmyspace.co.uk">
-
-                          Info@craftmyspace.co.uk
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                   
-                  </div>
-                </div>
-              </motion.div> 
+  
             </div>
           </div>
         </motion.div>
