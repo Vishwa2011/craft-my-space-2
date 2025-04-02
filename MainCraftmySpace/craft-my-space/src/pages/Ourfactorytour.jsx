@@ -404,7 +404,10 @@ const Ourfactorytour = () => {
                                 {/* {/* <!-- VIDEO  SECTION END --> */}
         </div>
       </div>
-      <Footers />          
+      <Footers />    
+      <button className="scroltop">
+      <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
+    </button>      
 </motion.div>
     </>
   )
