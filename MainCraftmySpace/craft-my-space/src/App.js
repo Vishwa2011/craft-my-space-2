@@ -7,7 +7,6 @@ import AwkwardSpaces from "./pages/AwkwardSpaces";
 import Joinery from "./pages/Joinery";
 import Inspiration from "./pages/Inspiration";
 import Recentwork from "./pages/Recentwork";
-
 import Orderafreebrochure from "./pages/Orderafreebrochure";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Footer from "./pages/Footer";
@@ -69,6 +68,7 @@ function App() {
           </div>
         </a>
       </div>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />
@@ -113,21 +113,6 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/Kitchen-Service" element={<KitchenService />} />
         <Route path="/Ourfactorytours" element={<Ourfactorytours />} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </Routes>
     </>
   );
