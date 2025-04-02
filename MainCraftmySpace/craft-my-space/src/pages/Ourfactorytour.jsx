@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Navbar from './Navbar';
 import Footers from './Footer';
 
-const Ourfactorytours = () => {
+const Ourfactorytour = () => {
   return (
     <>
     <motion.div
@@ -28,7 +28,7 @@ const Ourfactorytours = () => {
             <div className="wt-bnr-inr-entry">
               <div className="banner-title-outer">
                 <div className="banner-title-name">
-                  <h2 className="text-white">Our Factory Tours</h2>
+                  <h2 className="text-white">Our Factory Tour</h2>
                 </div>
               </div>
               <div>
@@ -36,7 +36,7 @@ const Ourfactorytours = () => {
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>Our Factory Tours</li>
+                  <li>Our Factory Tour</li>
                 </ul>
               </div>
             </div>
@@ -142,7 +142,7 @@ const Ourfactorytours = () => {
                 >
                   {/* Background Image with Opacity and Rotation */}
                   <div className="responsive-background"
-                  
+
                   ></div>
         
                
@@ -410,4 +410,4 @@ const Ourfactorytours = () => {
   )
 }
 
-export default Ourfactorytours
+export default Ourfactorytour
