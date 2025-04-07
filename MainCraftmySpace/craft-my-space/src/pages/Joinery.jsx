@@ -75,7 +75,7 @@ const Joinery = () => {
        
 
     {/* joinery start */}
-    <div>
+          <div>
             <div style={{ borderBottom: "2px solid #B19777" }}>
               <div class="container py-5">
                 <div class="row align-items-center">
@@ -122,7 +122,7 @@ const Joinery = () => {
 
           {/* joinery end */}
 
-        <motion.div className="row text-center mt-5" style={{ borderBottom: "2px solid #B19777" }} variants={fadeInUp}>
+        <motion.div className="row text-center mt-5" style={{ borderBottom: "2px solid #B19777" ,marginRight:'0px',marginLeft:'0px'}} variants={fadeInUp}>
         <div class="col-6 col-md-3 mb-4">
                 <img
                   src="/assets/pic/craft1.png"
@@ -157,7 +157,7 @@ const Joinery = () => {
               </div>
         </motion.div>
                 {/* card start  */}
-                <motion.div style={{ borderBottom: "2px solid #B19777" }}>
+           <motion.div style={{ borderBottom: "2px solid #B19777" }}>
             <div className="container mt-5">
               <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
@@ -246,8 +246,10 @@ const Joinery = () => {
             style={{ borderBottom: "2px solid #B19777", paddingBottom: "20px" }}
           >
             <div class="section-content">
-              <div class="row awards-win-section">
+              <div class="row awards-win-section" style={{marginRight:'0px',marginLeft:'0px'}}>
                 <div className="col-lg-6 col-md-12  mt-4">
+
+
                   <div className="awards-win pb-0">
                     <h3>Joinery and Furniture Production</h3>
                     <p>

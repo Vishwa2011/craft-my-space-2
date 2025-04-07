@@ -1319,6 +1319,27 @@ export default function Home() {
   }}
 >
   <div className="container">
+  <div className="section-head clearfix">
+              <div className="wt-tilte-main" style={{ display: "contents" }}>
+                <small
+                  className="wt-small-title"
+                  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                    color: "#B19777",
+                    textAlign:'center'
+                  }}
+                >
+                  [ Bespoke Luxury Wardrobes & Furniture - Crafted to Perfection ]
+                </small>
+                <p
+                  className="m-b5"
+                  style={{ justifyContent: "center", display: "flex",fontSize:'16px' ,paddingTop:'10px',textAlign:'center'}}
+                >
+                  "Designed to fit your space. Built to elevate your lifestyle."
+                </p>
+              </div>
+            </div>
     <div className="col-12">
       <div className="row">
         <div
@@ -1410,7 +1431,7 @@ export default function Home() {
                 <small className="wt-small-title" style={{ color: "#B19777" }}>
                   [ Client Testimonial ]
                 </small>
-                <h2 className="m-b5">Our Client gave us Feedback</h2>
+                <h2 className="m-b5">what our clients say</h2>
               </div>
               <div className="title-right-detail">
                 <p>
@@ -1429,14 +1450,13 @@ export default function Home() {
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
                           <div className="quote-left"></div>
-                          <p>
-                            The services provided by the officials was smooth
-                            and satisfactory. Products and goods delivered were
-                            up to satisfaction and compared to market price.
+                          <p style={{textAlign:'center'}}>
+                          "Absolutely delighted with my new dining set from CraftMySpace! The design is elegant, and the quality is superb. It’s made our family dinners feel extra special."
                           </p>
                         </div>
+                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
                         <div className="testimonial-detail ">
-                          <h4 className="testimonial-name m-b5">James Bond</h4>
+                          <h4 className="testimonial-name m-b5"> Emily Thompson, London</h4>
                         </div>
                       </div>
                     </div>
@@ -1449,14 +1469,13 @@ export default function Home() {
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
                           <div className="quote-left"></div>
-                          <p>
-                            Very attractive collection. We roamed and roamed but
-                            we didn't find quality items. Finally we entered to
-                            Durian. Really satisfied with quality and service.
+                          <p style={{textAlign:'center'}}>
+                          "CraftMySpace exceeded my expectations. The custom bookshelf I ordered fits perfectly and looks stunning. Great service from start to finish!"
                           </p>
                         </div>
+                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
                         <div className="testimonial-detail ">
-                          <h4 className="testimonial-name m-b5">R K Varma</h4>
+                          <h4 className="testimonial-name m-b5">James Patel, Manchester</h4>
                         </div>
                       </div>
                     </div>
@@ -1469,15 +1488,14 @@ export default function Home() {
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
                           <div className="quote-left"></div>
-                          <p>
-                            We purchased so many products from durian and we
-                            would recommend Durian Furniture to everyone who
-                            needs quality and decent looking furniture.
+                          <p style={{textAlign:'center'}}>
+                          "I’ve ordered furniture online before, but nothing compares to the quality and style from CraftMySpace. The sofa is incredibly comfortable and looks amazing in our lounge."
                           </p>
                         </div>
+                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
                         <div className="testimonial-detail ">
                           <h4 className="testimonial-name m-b5">
-                            Haris Gulati
+                          Sophie Walker, Birmingham
                           </h4>
                         </div>
                       </div>
@@ -1491,15 +1509,13 @@ export default function Home() {
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
                           <div className="quote-left"></div>
-                          <p>
-                            The office furniture is ergonomic in design, it is
-                            very comfortable to use for long hours in office. Be
-                            it design, comfort or the shopping experience, it
-                            ticks all the boxes for us.
+                          <p style={{textAlign:'center'}}>
+                          "Excellent craftsmanship and quick delivery. The team was super helpful when I had questions about matching pieces for my home office."
                           </p>
                         </div>
+                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
                         <div className="testimonial-detail ">
-                          <h4 className="testimonial-name m-b5">Liam Noah</h4>
+                          <h4 className="testimonial-name m-b5">Oliver Green, Leeds</h4>
                         </div>
                       </div>
                     </div>
@@ -1512,26 +1528,26 @@ export default function Home() {
                 className="owl-carousel owl-theme testimonial-1-thumb center"
               >
                 <div className="item">
-                  <div className="wt-media">
-                    <img src="/assets/pic/profile1.jpg" alt="" />
+                  <div className="wt-media" style={{border:'1px solid white'}}>
+                    <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
-                  <div className="wt-media">
-                    <img src="/assets/pic/profile2.png" alt="" />
+                  <div className="wt-media" style={{border:'1px solid white'}}>
+                    <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
-                  <div className="wt-media">
-                    <img src="/assets/pic/profile3.jpeg" alt="" />
+                  <div className="wt-media" style={{border:'1px solid white'}}>
+                    <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
-                  <div className="wt-media">
-                    <img src="/assets/pic/profile4.jpg" alt="" />
+                  <div className="wt-media" style={{border:'1px solid white'}}>
+                    <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
-                <div className="item">
+                {/* <div className="item">
                   <div className="wt-media">
                     <img src="/assets/pic/profile1.jpg" alt="" />
                   </div>
@@ -1541,7 +1557,7 @@ export default function Home() {
                   <div className="wt-media">
                     <img src="/assets/pic/profile2.png" alt="" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -1567,135 +1583,129 @@ export default function Home() {
           style={{ background: "#000", borderBottom: "2px solid #B19777" }}
         >
           <div className="container">
-            <div className="section-head clearfix">
-              <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid">
+            <div className="section-head clearfix" style={{display:'flex',justifyContent:'center'}}>
+              <div className="wt-tilte-main bdr-r-3 bdr-primary " style={{textAlign:'center'}}>
                 <small className="wt-small-title" style={{ color: "#B19777" }}>
-                  [ Why Choose CraftMySpace]
+                  [ Why Choose CraftMySpace ]
                 </small>
-                <h2 className="m-b5">Why CraftMySpace?</h2>
+                <h2 className="m-b5">Why London's Homeowners & Businesses Trust Us</h2>
               </div>
-              <div className="title-right-detail">
-                <p>
-                  Choose CraftMySpace for custom, high-quality furniture that
-                  fits your style and space. Our expert craftsmanship and
-                  attention to detail ensure durability and elegance,
-                  transforming any area into a functional and beautiful space.
-                </p>
-              </div>
+              
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="G">
-                      Guaranteed Quality
-                    </h4>
-                    <p>
-                      Guaranteed Quality" means we deliver durable, high-quality
-                      furniture crafted with the finest materials for lasting
-                      performance and beauty.
-                    </p>
-                  </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-mansion v-icon"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="P">
-                      Professional Manufacturing
-                    </h4>
-                    <p>
-                      Professional Manufacturing guarantees precision and
-                      high-quality craftsmanship in every piece of furniture.
-                    </p>
-                  </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-stair v-icon"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="H">
-                      High Quality Service
-                    </h4>
-                    <p>
-                      High Quality Service ensures personalized attention and
-                      exceptional results, delivering furniture that exceeds
-                      expectations in both style .
-                    </p>
-                  </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-apartment v-icon"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="C">
-                      Convenience of Choice
-                    </h4>
-                    <p>
-                      Convenience of Choice offers a wide range of customizable
-                      furniture options, allowing you to select designs that
-                      perfectly fit your style and needs.
-                    </p>
-                  </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-photo v-icon"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 col-sm-6">
+                <a href="/Contact">
                 <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
                     <h4 className="wt-tilte-large m-t0" data-title="E">
-                      Easy Delivery
+                      Expert Craftsmanship
                     </h4>
-                    <p>
-                      Easy and Timely Delivery ensures your furniture arrives
-                      quickly and safely, right to your doorstep with minimal
-                      hassle.
+                    <p style={{color:'white'}}>
+                    With over 15+ years of experience, CraftMySpace delivers expert craftsmanship that combines timeless design with lasting quality.
                     </p>
                   </div>
                   <div className="icon-xl inline-icon">
                     <span className="icon-cell">
-                      <i className="flaticon-sketch v-icon"></i>
+                      <i className="flaticon-mansion v-icon" style={{color:'#B19777'}}></i>
                     </span>
                   </div>
                 </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
+                <a href="/Contact">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                   <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="M">
-                      Made in Britain
+                    <h4 className="wt-tilte-large m-t0" data-title="P">
+                      Premium Materials
                     </h4>
-                    <p>
-                      Made in Britain guarantees high-quality craftsmanship,
-                      using locally sourced materials and skilled artisans to
-                      create durable and stylish furniture.
+                    <p style={{color:'white'}}>
+                    CraftMySpace uses only premium materials, including high-quality wood, glass, and flawless finishes, to ensure every piece is both elegant.
                     </p>
                   </div>
                   <div className="icon-xl inline-icon">
                     <span className="icon-cell">
-                      <i className="flaticon-kitchen v-icon"></i>
+                      <i className="flaticon-stair v-icon" style={{color:'#B19777'}}></i>
                     </span>
                   </div>
                 </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <a href="/Contact">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                  <div className="icon-content m-b30">
+                    <h4 className="wt-tilte-large m-t0" data-title="t">
+                      Tailored to your space
+                    </h4>
+                    <p style={{color:'white'}}>
+                    CraftMySpace offers 100% custom designs, thoughtfully tailored to your space for a perfect blend of style, comfort, and functionality.
+                    </p>
+                  </div>
+                  <div className="icon-xl inline-icon">
+                    <span className="icon-cell">
+                      <i className="flaticon-apartment v-icon" style={{color:'#B19777'}}></i>
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <a href="/Contact">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                  <div className="icon-content m-b30">
+                    <h4 className="wt-tilte-large m-t0" data-title="s">
+                      Seamless installation
+                    </h4>
+                    <p style={{color:'white'}}>
+                    CraftMySpace ensures seamless installation with hassle-free fitting and finishing, making your furniture setup smooth and stress-free.
+                    </p>
+                  </div>
+                  <div className="icon-xl inline-icon">
+                    <span className="icon-cell">
+                      <i className="flaticon-photo v-icon" style={{color:'#B19777'}}></i>
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <a href="/Contact">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                  <div className="icon-content m-b30">
+                    <h4 className="wt-tilte-large m-t0" data-title="L">
+                      Luxury look
+                    </h4>
+                    <p style={{color:'white'}}>
+                    CraftMySpace delivers a luxury look with sophisticated designs and premium detailing that elevate every corner of your home.
+                    </p>
+                  </div>
+                  <div className="icon-xl inline-icon">
+                    <span className="icon-cell">
+                      <i className="flaticon-sketch v-icon" style={{color:'#B19777'}}></i>
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <a href="/Contact">
+                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
+                  <div className="icon-content m-b30">
+                    <h4 className="wt-tilte-large m-t0" data-title="A">
+                      Affordable prices
+                    </h4>
+                    <p style={{color:'white'}}>
+                    CraftMySpace offers stylish, high-quality furniture at affordable prices, making luxury living accessible for every home.
+                    </p>
+                  </div>
+                  <div className="icon-xl inline-icon">
+                    <span className="icon-cell">
+                      <i className="flaticon-kitchen v-icon" style={{color:'#B19777'}}></i>
+                    </span>
+                  </div>
+                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1708,21 +1718,25 @@ export default function Home() {
           style={{ paddingBottom: "100px", background: "#000" }}
         >
           <div className="container">
-            <div className="section-head clearfix">
-              <div className="wt-tilte-main bdr-r-3 bdr-primary bdr-solid text-white">
-                <small className="wt-small-title" style={{ color: "#B19777" }}>
+            <div className="section-head clearfix" style={{display:'flex',justifyContent:'center'}}>
+              <div className="wt-tilte-main bdr-r-3 bdr-primary  text-white">
+                <small className="wt-small-title"  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                    color: "#B19777",
+                  }}>
                   [ our blog ]
                 </small>
-                <h2 className="m-b5">Read Our Latest News</h2>
+                <h2 className="m-b5">Furniture Inspiration & Expert Tips</h2>
               </div>
-              <div className="title-right-detail text-white">
+              {/* <div className="title-right-detail text-white">
                 <p>
                   Our blog offers expert insights, tips, and inspiration on
                   furniture design, home decor, and space optimization. We share
                   the latest trends, DIY ideas, and advice to help you create
                   beautiful, functional spaces that reflect your personal style.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -1764,19 +1778,13 @@ export default function Home() {
                             <div className="wt-post-title">
                               <h4 className="post-title">
                                 <a href="" style={{ color: "#fff" }}>
-                                  CraftMySpace Fitted Furniture Storage
-                                  Solutions
+                                  how to choose the perfect wardrobe for your home
                                 </a>
                               </h4>
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                                CraftMySpace fitted furniture storage solutions
-                                blend style and functionality to maximize your
-                                space efficiently. Designed with precision, our
-                                bespoke storage solutions cater to your unique
-                                needs, whether for bedrooms, living rooms, or
-                                home offices....{" "}
+                              Choosing the perfect wardrobe involves balancing style, space, and functionality. Measure your room carefully to ensure the wardrobe fits well without making the space feel cramped. Consider your storage needs and pick a design that complements your interior while keeping everything organized.
                               </p>
                             </div>
                             <a
@@ -1824,19 +1832,13 @@ export default function Home() {
                             <div className="wt-post-title">
                               <h4 className="post-title">
                                 <a href="" style={{ color: "#fff" }}>
-                                  The Advantages of Aluminum Profile Sliding
-                                  Wardrobe Doors
+                                  maximizing space with loft wardrobes
                                 </a>
                               </h4>
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                                Aluminum profile sliding wardrobe doors offer a
-                                sleek, modern, and space-saving solution for any
-                                home. Their lightweight yet durable construction
-                                ensures long-lasting performance while providing
-                                smooth and effortless operation. Unlike
-                                traditional hinged doors...{" "}
+                              Loft wardrobes are a smart solution for making the most of vertical space in compact modern rooms. They offer ample hidden storage without taking up valuable floor area, keeping your home neat and clutter-free. Custom loft wardrobes can be perfectly tailored to fit awkward corners or sloped ceilings, maximizing every inch efficiently.
                               </p>
                             </div>
                             <a
@@ -1883,18 +1885,13 @@ export default function Home() {
                             <div className="wt-post-title">
                               <h4 className="post-title">
                                 <a href="" style={{ color: "#fff" }}>
-                                  Stages When Ordering From CraftMySpace
+                                  trending wardrobes designs for 2025
                                 </a>
                               </h4>
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                                When ordering from CraftMySpace, the process
-                                begins with an inquiry and consultation, where
-                                customers share their requirements, design
-                                preferences, and budget. Our expert designers
-                                then create custom concepts and 3D renders for
-                                approval. Once the design is ....
+                              Wardrobe designs in 2025 are all about sleek functionality and modern aesthetics. Trends like mirrored finishes, integrated lighting, and space-saving galley layouts are taking center stage. Sustainable materials and custom corner units are also gaining popularity for their stylish, eco-friendly, and efficient appeal.
                               </p>
                             </div>
                             <a

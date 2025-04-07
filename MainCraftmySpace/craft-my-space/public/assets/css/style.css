@@ -1298,7 +1298,7 @@ ol.list-num-count.list-outline-none > li:before {background-color:transparent;	c
 .bg-yellow{background-color:#fff000;}
 .bg-dark-blue{background-color:#161b23;}
 .bg-light-blue{background-color:#3097db;}
-.bg-white1{background-color: #323232;}
+.bg-white1{background-color: #141414;}
 /*-------------------------------------
 	3. background image
 -------------------------------------*/
@@ -4209,7 +4209,7 @@ display: none;
 }
 
 .header-fixed .color-fill.main-bar {
-    background:#00000094;
+    background:#000;
 }
 /*======================================
 17. MAIN BAR ( place logo & main-navigation )

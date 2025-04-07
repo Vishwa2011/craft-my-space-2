@@ -35,9 +35,9 @@ const Header = () => {
         <IconButton size="small" onClick={() => openLoginPage("https://www.instagram.com/accounts/login/")}>
           <Instagram fontSize="small"  style={{color:'#fff'}}/>
         </IconButton>
-        <IconButton size="small" onClick={() => openLoginPage("https://accounts.google.com/signin/v2/identifier?service=youtube")}>
+        {/* <IconButton size="small" onClick={() => openLoginPage("https://accounts.google.com/signin/v2/identifier?service=youtube")}>
           <YouTube fontSize="small"  style={{color:'#fff'}}/>
-        </IconButton>
+        </IconButton> */}
       </Box>
 
       {/* Contact Details */}
