@@ -2,8 +2,30 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Recentwork = () => {
+  const slides = [
+    {
+      id: 1,
+      image: "/assets/pic/corner-sofas.jpg",
+      title: "Slide 1 Title",
+    },
+    {
+      id: 2,
+      image: "/assets/pic/slider2.jpg",
+      title: "Slide 2 Title",
+    },
+    {
+      id: 3,
+      image: "/assets/pic/slider3.webp",
+      title: "Slide 3 Title",
+    },
+  ];
   const images = [
     { src: "/assets/pic/galary1.webp", title: "Fitted Hinged Doors Wardrobes" },
     { src: "/assets/pic/modern-kitchen.jpg", title: "Maximising Space and Functionality" },
@@ -59,17 +81,40 @@ const Recentwork = () => {
         {/* top conatin end */}
 
         {/* card start */}
-        <div className="container mt-5">
+        <div className="container mt-5 ">
           <div style={{ textAlign: "center" }}>
-            <h5 style={{ color: "#B19777" }}>[ Recent Works ]</h5>
-            <h3>A Sample of Recent Works</h3>
+            <h5 style={{ color: "#B19777" }}>[ A Glimpse Of Our Craftsmanship  ]</h5>
+            <h3>See how we've transformed homes and businesses across london with custom furniture</h3>
           </div>
+
+          <div className="w-full max-w-4xl mx-auto">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
+        loop={true}
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full rounded-xl shadow-md"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
 
           <motion.div
             className="portfolio-wrap mfp-gallery work-grid row clearfix"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
+            style={{marginTop:'60px'}}
           >
             {images.slice(0, visibleImages).map((image, index) => (
               <motion.div
@@ -90,36 +135,7 @@ const Recentwork = () => {
             ))}
           </motion.div>
 
-          {visibleImages < images.length && (
-            <motion.div
-              className="col-12 text-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1 }}
-            >
-              <button
-                onClick={loadMore}
-                style={{
-                  background: "#B19777",
-                  color: "white",
-                  padding: "18px",
-                  marginBottom: "20px",
-                  border: "2px solid #B19777",
-                  transition: "all 0.3s ease-in-out",
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.background = "white";
-                  e.target.style.color = "#B19777";
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.background = "#B19777";
-                  e.target.style.color = "white";
-                }}
-              >
-                Load More
-              </button>
-            </motion.div>
-          )}
+        
         </div>
         {/* card end */}
 

@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
 import { motion } from "framer-motion";
-// const categories = [
-//   { id: "all", name: "All" },
-//   { id: "cat-1", name: "Kitchens" },
-//   { id: "cat-2", name: "Home Office" },
-//   // { id: "cat-3", name: "Dining Room" },
-//   { id: "cat-4", name: "Media Room" },
-//   // { id: "cat-5", name: "Bathroom" },
-// ];
+
 
 const services = [
   {
