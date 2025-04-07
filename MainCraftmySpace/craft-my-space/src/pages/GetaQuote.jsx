@@ -6,6 +6,7 @@ import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import Footers from "./Footer";
 import Swal from "sweetalert2";
+import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
 const GetaQuote = () => {
   const [formData, setFormData] = useState({
@@ -117,6 +118,20 @@ const GetaQuote = () => {
           </div>
         </motion.div>
 
+        <div>
+        <div className="section-head clearfix" style={{marginTop:'60px'}}>
+                  <div style={{ textAlign: "center" }}>
+                    <small
+                      className="wt-small-title"
+                      style={{ color: "#B19777",fontSize:'25px' }}
+                    >
+                      [   Let's  Build  Your  Dream  Furniture  Together!     ]
+                    </small>
+                 
+                  </div>
+                </div>
+        </div>
+
         <motion.div className="section-full p-t30" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2 }}>
           <div className="container">
             <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>
@@ -139,6 +154,19 @@ const GetaQuote = () => {
                           error={!!errors.name}
                           helperText={errors.name}
                         />
+                         <TextField
+                          fullWidth
+                          label="Email"
+                          name="email"
+                          variant="standard"
+                          margin="normal"
+                          onBlur={handleBlur}
+                          onChange={handleChange}
+                          value={formData.email}
+                          error={!!errors.email}
+                          helperText={errors.email}
+                        
+                        />
                         <TextField
                           fullWidth
                           label="Mobile"
@@ -152,37 +180,35 @@ const GetaQuote = () => {
                           helperText={errors.mobile}
                           inputProps={{ maxLength: 10 }}
                         />
-                        <TextField
-                          fullWidth
-                          label="Subject"
-                          name="subject"
-                          variant="standard"
-                          margin="normal"
-                          onBlur={handleBlur}
-                          onChange={handleChange}
-                          value={formData.subject}
-                          error={!!errors.subject}
-                          helperText={errors.subject}
-                        />
-                        <TextField
-                          fullWidth
-                          label="Email"
-                          name="email"
-                          variant="standard"
-                          margin="normal"
-                          onBlur={handleBlur}
-                          onChange={handleChange}
-                          value={formData.email}
-                          error={!!errors.email}
-                          helperText={errors.email}
-                          InputProps={{
-                            endAdornment: (
-                              <InputAdornment position="end">
-                                @gmail.com
-                              </InputAdornment>
-                            ),
-                          }}
-                        />
+                  <FormControl fullWidth variant="standard" margin="normal" error={!!errors.subject}>
+  <InputLabel>Preferred Furniture Type</InputLabel>
+  <Select
+    name="subject"
+    value={formData.subject}
+    onChange={handleChange}
+    onBlur={handleBlur}
+    label="Subject"
+  >
+    <MenuItem value=""><em>None</em></MenuItem>
+    <MenuItem value="Hinged Door Wardrobes">Hinged Door Wardrobes</MenuItem>
+    <MenuItem value="Sliding Wardrobes Doors By CMS">Sliding Wardrobes Doors By CMS</MenuItem>
+    <MenuItem value="Sliding Wardrobes">Sliding Wardrobes</MenuItem>
+    <MenuItem value="Walk-in Wardrobes">Walk-in Wardrobes</MenuItem>
+    <MenuItem value="Children's Fitted Bedrooms">Children's Fitted Bedrooms</MenuItem>
+    <MenuItem value="Home Office">Home Office</MenuItem>
+    <MenuItem value="Kitchen">Kitchen</MenuItem>
+    <MenuItem value="Media Room">Media Room</MenuItem>
+    <MenuItem value="Alcoves">Alcoves</MenuItem>
+    <MenuItem value="Bay Windows">Bay Windows</MenuItem>
+    <MenuItem value="Landing & Hallways">Landing & Hallways</MenuItem>
+    <MenuItem value="Sloping Ceiling">Sloping Ceiling</MenuItem>
+    <MenuItem value="Under Stairs">Under Stairs</MenuItem>
+    <MenuItem value="Others">Others</MenuItem>
+  </Select>
+  {errors.subject && <p style={{ color: "red", fontSize: "0.75rem" }}>{errors.subject}</p>}
+</FormControl>
+
+                       
                         <TextField
                           fullWidth
                           label="Message"
