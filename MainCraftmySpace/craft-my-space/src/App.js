@@ -50,6 +50,7 @@ import Ourfactorytour from "./pages/Ourfactorytour";
 
 import BespokeFurniture from "./pages/BespokeFurniture";
 import GetFreeDesignConsultation from "./pages/GetFreeDesignConsultation";
+import Startdesigning from "./pages/Startdesigning";
 
 
 // import Getaquote from "./pages/GetQuote";
@@ -190,7 +191,7 @@ function App() {
 
         <Route path="/BespokeFurniture" element={<BespokeFurniture />} />
         <Route path="/GetFreeDesignConsultation" element={<GetFreeDesignConsultation />} />
-       
+        <Route path="/Startdesigning" element={<Startdesigning />}/>
       </Routes>
     </>
   );
