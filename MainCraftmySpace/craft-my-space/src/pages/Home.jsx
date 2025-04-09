@@ -2452,7 +2452,7 @@ export default function Home() {
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
       </div>
-      {/* <MeetDesignerForm /> */}
+      <MeetDesignerForm />
 
       {/* <!-- LOADING AREA START ===== --> */}
       {/* <div className="loading-area">
