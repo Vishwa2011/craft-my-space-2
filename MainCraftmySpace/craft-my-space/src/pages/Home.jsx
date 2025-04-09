@@ -1515,7 +1515,7 @@ export default function Home() {
                   { title: "fretwork doors wardrobe", img: "bespoke12.jpg" ,link:'/'},
                 ].map((item, index) => (
                   <div
-                    key={index}
+                    key={index}  
                     className="masonry-item col-lg-4 col-md-6 col-sm-12 m-b30"
                   >
                     <a href={item.link}>
