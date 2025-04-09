@@ -4,6 +4,30 @@ import { useInView } from "react-intersection-observer";
 import Navbar from "./Navbar";
 import Footers from "./Footer";
 
+
+const steps = [
+  {
+    number: "1",
+    title: "FREE IN-HOME DESIGN VISIT",
+    description:
+      "Work with your designer in the comfort of your home, to transform your space and maximise your storage. They’ll show you samples to inspire you, create a 3D illustration, and provide you with a full quotation.",
+    image: "/assets/pic/Bedroomfit (1).webp",
+  },
+  {
+    number: "2",
+    title: "SURVEY & BESPOKE UK MANUFACTURING",
+    description:
+      "Once you have placed your order, a technical surveyor will visit your home to double-check every detail. Your order will then be tailor-made from quality, sustainable materials at our state-of-the-art facility in the West Midlands.",
+    image: "/assets/pic/Bedroomfit (1).webp",
+  },
+  {
+    number: "3",
+    title: "INSTALLATION & PEACE OF MIND",
+    description:
+      "After delivery, your professional installer will install your dream fitted furniture with a perfect, seamless fit. Sit back and enjoy your new stylish, organised space. Plus, it all comes with a 15-year guarantee.",
+    image: "/assets/pic/Bedroomfit (1).webp",
+  },
+];
 const services = [
   {
     title: "Fitted Bedrooms",
@@ -193,10 +217,71 @@ const Service = () => {
           </div>
         </div>
       </div>
+      <div>
+    <div className="section-head clearfix ">
+                  <div style={{ textAlign: "center" }}>
+                    <small
+                      className="wt-small-title"
+                      style={{ color: "#B19777",fontSize:'25px' }}
+                    >
+                      [ DESIGN YOUR DREAM WARDROBE - IN REAL TIME! ]
+                    </small>
+                    <h2 className="m-b5" style={{fontSize:'18px'}}>CUSTOMIZE YOUR WARDROBE BY SELECTING SIZES, MATERIALA,COLORS,AND INTERNAL LAYOUTS.</h2>
+                  </div>
+                </div>
+                <div className="bg-[#e7edef] py-16 text-center">
+      <h2 className="text-3xl font-semibold mb-2">
+        3 STEPS TO BECOME BEAUTIFULLY ORGANISED
+      </h2>
+      <p className="text-[#00547c] mb-10">
+        Book a free In-Home Design Visit and receive a no-obligation quote with a range of payment options.
+      </p>
+<div className="col-12 container">
+  <div className="row">
+  <div className="col-4 "  >
+        {steps.map((step) => (
+          <div
+            key={step.number}
+            className=" rounded-md shadow-lg overflow-hidden flex flex-col transition-transform hover:scale-105"
+          >
+            <div className="relative w-full h-64">
+              <img
+                src={step.image}
+                alt={`Step ${step.number}`}
+                className="w-full h-full object-cover"
+                style={{
+                  clipPath: "polygon(0 0, 100% 0, 100% 70%, 70% 100%, 0 100%)",
+                }}
+              />
+            </div>
+            <div className="p-6 flex-1 flex flex-col">
+              <div className="text-xl w-10 h-10 mx-auto mb-4 flex items-center justify-center rounded-full bg-gray-100 font-bold">
+                {step.number}
+              </div>
+              <h3 className="text-md font-bold mb-2 uppercase">{step.title}</h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+  </div>
+</div>
+      
+
+      <div className="mt-10">
+        <button className="bg-[#f0c14b] text-black px-6 py-3 rounded shadow hover:bg-yellow-400 transition">
+          Book a Free Design Visit
+        </button>
+      </div>
+    </div>
+      </div>
       <Footers />
       <button className="scroltop">
       <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
     </button>
+    
     </motion.div>
   );
 };

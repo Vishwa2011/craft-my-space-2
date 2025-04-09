@@ -91,7 +91,7 @@ const MeetDesignerForm = () => {
               background: "#B19777",
               padding: "40px",
               borderRadius: "8px",
-              width: "500px",
+              width: "800px",
               boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
               position: "relative",
             }}
@@ -111,11 +111,13 @@ const MeetDesignerForm = () => {
             >
               ×
             </button>
-            <h2>MEET A DESIGNER</h2>
+
+  <div className="col-12">
+    <div className="row">
+      <div className="col-6">
+      <h2>Design Your Own Wardrobe</h2>
             <p>
-              Welcome to CraftMySpace, where collaboration turns your ideas into
-              reality. Let's explore materials and possibilities to create your
-              perfect space.
+              Encourage visitors to start customizing their furniture as soon as they land on the website.
             </p>
             <form onSubmit={handleSubmit}>
               <input
@@ -235,6 +237,16 @@ const MeetDesignerForm = () => {
                 SUBMIT
               </button>
             </form>
+      </div>
+      <div className="col-6">
+        <img src="/assets/pic/havan.jpeg" alt="" />
+      </div>
+    </div>
+  </div>
+         
+          
+
+
           </div>
         </div>
       )}
