@@ -1557,7 +1557,7 @@ export default function Home() {
               </div>
                 <div style={{display:'flex',justifyContent:'center'}}>
                 <a
-                        href="/"
+                        href="/GetFreeDesignConsultation"
                         style={{
                           background: "#B19777",
                           padding: "15px",
@@ -1820,7 +1820,7 @@ export default function Home() {
                       </a>
 
                       <a
-                        href=""
+                        href="/GetFreeDesignConsultation"
                         style={{
                           background: "#B19777",
                           padding: "15px",
@@ -1846,11 +1846,195 @@ export default function Home() {
         </div>
         {/* Testimonial end  */}
 
+        <div>
+    <div className="section-head clearfix " style={{margin:"60px 0px 10px 0px"}}>
+                  <div style={{ textAlign: "center" }}>
+                    <small
+                      className="wt-small-title"
+                      style={{ color: "#B19777",fontSize:'25px' }}
+                    >
+                      [ DESIGN YOUR DREAM WARDROBE - IN REAL TIME! ]
+                    </small>
+                    <h2 className="m-b5" style={{fontSize:'18px'}}>CUSTOMIZE YOUR WARDROBE BY SELECTING SIZES, MATERIALA,COLORS,AND INTERNAL LAYOUTS.</h2>
+                  </div>
+                </div>
+                <section className="container py-5 text-center">
+   
+
+    <div className="row g-4">
+  {/* Step 1 */}
+  <div className="col-md-4 mb-4">
+    <div className="card h-100 shadow-sm" style={{border:'0px'}}>
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
+        <img
+          src="/assets/pic/no1 (3).jpg"
+          alt="Design Visit"
+          style={{
+            width: '100%',
+            height: '240px',
+            display: 'block',
+          }}
+        />
+        {/* Top-right white triangle overlay */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            right: "-2px",
+            width: '100px',
+            height: '100px',
+            backgroundColor: 'black ',
+            clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+          }}
+        />
+        {/* Step number */}
+        <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">1</span>
+      </div>
+      <div className="card-body text-center" style={{background:'#141414'}}> 
+        <h5 className="card-title fw-bold" style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>Choose your Wardrobe type</h5>
+        <p className="card-text text-muted" style={{color:'#fff'}}>
+        Finding the perfect wardrobe for your space just got easier! Whether you’re looking for sleek sliding doors, classic hinged wardrobes, space-saving corner designs, or fully customized built-ins, we have something to match every style and need. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Step 2 */}
+  <div className="col-md-4 mb-4">
+    <div className="card h-100 shadow-sm" style={{border:'0px'}}>
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
+        <img
+          src="/assets/pic/no2 (1).webp"
+          alt="Survey"
+          style={{
+            width: '100%',
+            height: '240px',
+            display: 'block',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            top: "-1px",
+            right: "-2px",
+            width: '100px',
+            height: '100px',
+            backgroundColor: 'black',
+            clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+          }}
+        />
+        <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">2</span>
+      </div>
+      <div className="card-body text-center"  style={{background:'#141414'}}>
+        <h5 className="card-title fw-bold" style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>select colors & Finishes</h5>
+        <p className="card-text text-muted" style={{color:'#fff'}}>
+        Add the perfect touch to your furniture with our wide range of colors and finishes. Whether you prefer warm wooden textures, glossy laminates, soft matte tones, or bold colors that make a statement – we have options to suit every mood and interior style. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Step 3 */}
+  <div className="col-md-4 mb-4" >
+    <div className="card h-100 shadow-sm" style={{border:'0px'}}>
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
+        <img
+          src="/assets/pic/no3.jpg"
+          alt="Installation"
+          style={{
+            width: '100%',
+            height: '240px',
+            display: 'block',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            top: "-1px",
+            right: "-2px",
+            width: '100px',
+            height: '100px',
+            backgroundColor: 'black',
+            clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
+          }}
+        />
+        <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">3</span>
+      </div>
+      <div className="card-body text-center"  style={{background:'#141414'}}>
+        <h5 className="card-title fw-bold"  style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>visualize & get a quote</h5>
+        <p className="card-text text-muted" style={{color:'#fff'}}>
+        See your dream furniture come to life before you buy! With our visualization tools, you can preview designs, colors, and finishes in real-time—making it easier to picture how everything will look in your space.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    {/* <!-- Button --> */}
+<div style={{display:'flex' ,justifyContent:'center',marginTop:'60px'}}>
+
+    <div style={{marginRight:'25px'}} >
+                <a
+                  href="/Startdesigning"
+                  className="site-button-link"
+                  style={{
+                    background: "#B19777",
+                    color: "white",
+                    padding: "18px",
+                    textDecoration: "none",
+                    border: "2px solid #B19777",
+                    transition: "all 0.3s ease-in-out",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = "white";
+                    e.target.style.color = "#B19777";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = "#B19777";
+                    e.target.style.color = "white";
+                  }}
+                >
+                    START DESIGNING NOW
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/Recentwork"
+                  className="site-button-link"
+                  style={{
+                    background: "#B19777",
+                    color: "white",
+                    padding: "18px",
+                    textDecoration: "none",
+                    border: "2px solid #B19777",
+                    transition: "all 0.3s ease-in-out",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = "white";
+                    e.target.style.color = "#B19777";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = "#B19777";
+                    e.target.style.color = "white";
+                  }}
+                >
+                  EXPLORE OUR GALLERY
+                </a>
+              </div>
+</div>
+    
+  </section>
+
+      </div>
+
         {/* <!-- VIDEO SECTION START --> */}
         <div style={{ borderBottom: "2px solid #B19777" }}>
           <div class="high-res-video-container">
             <video class="high-res-video" controls>
-              <source src="/assets/pic/videosection.mp4" type="video/mp4" />
+              <source src="/assets/pic/Modern Sliding Wardrobe Ideas That Maximize Space and Style _ Mirror Cupboard Sliding Doors.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

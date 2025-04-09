@@ -170,7 +170,7 @@ const WhyCraftMySpace = () => {
         </motion.div>
         {/* image end  */}
         {/* mission-vision start  */}
-       <div style={{ borderBottom: "2px solid #B19777",paddingBottom:'40px' }}>
+       {/* <div style={{ borderBottom: "2px solid #B19777",paddingBottom:'40px' }}>
        <section
           className=" "
           style={{textAlign:'center' }}
@@ -236,7 +236,7 @@ const WhyCraftMySpace = () => {
             </div>
           </div>
         </section>
-       </div>
+       </div> */}
  {/* mission-vision end  */}
         {/* text start  */}
         <motion.div className="mt-5" style={{ borderBottom: "2px solid #B19777" }}>

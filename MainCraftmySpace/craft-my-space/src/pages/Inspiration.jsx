@@ -19,7 +19,7 @@ const Inspiration = () => {
           data-stellar-background-ratio="0.5"
           style={{
             backgroundImage:
-              "url(https://www.online-bedrooms.co.uk/media/wysiwyg/Grey-Shaker-Fitted-Wardrobe.jpg)",
+              "url(assets/pic/blogggg.jpg)",
           }}
         >
           <div className="overlay-main bg-black opacity-07"></div>
