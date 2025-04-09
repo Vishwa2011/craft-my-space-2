@@ -1,179 +1,555 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footers from './Footer'
+import React, { useEffect, useState } from "react";
+import Navbar from "./Navbar";
+import Footers from "./Footer";
 export default function GetFreeDesignConsultation() {
-    return (
-        <>
-        <div className="page-wraper" style={{ background: '#000' }}>
-    <Navbar />
-    <div className="page-content">
-    <div
-          className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"
-          data-stellar-background-ratio="0.5"
-          style={{
-            backgroundImage: "url(assets/pic/dining.jpg)",
-          }}
-        >
-          <div className="overlay-main bg-black opacity-07"></div>
-          <div className="container">
-            <div className="wt-bnr-inr-entry">
-              <div className="banner-title-outer">
-                <div className="banner-title-name">
-                  <h2 className="text-white">Get Free Design Consultation</h2>
+  const [selectedRooms, setSelectedRooms] = useState([]);
+  const [showManualAddress, setShowManualAddress] = useState(false);
+  const toggleRoomSelection = (room) => {
+    setSelectedRooms((prev) =>
+      prev.includes(room) ? prev.filter((r) => r !== room) : [...prev, room]
+    );
+  };
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth < 1024);
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+  const isSelected = (room) => selectedRooms.includes(room);
+  return (
+    <>
+      <div className="page-wraper" style={{ background: "#000" }}>
+        <Navbar />
+        <div className="page-content">
+          <div
+            className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"
+            data-stellar-background-ratio="0.5"
+            style={{
+              backgroundImage: "url(assets/pic/dining.jpg)",
+            }}
+          >
+            <div className="overlay-main bg-black opacity-07"></div>
+            <div className="container">
+              <div className="wt-bnr-inr-entry">
+                <div className="banner-title-outer">
+                  <div className="banner-title-name">
+                    <h2 className="text-white">Get Free Design Consultation</h2>
+                  </div>
+                </div>
+                {/* <!-- BREADCRUMB ROW -->  */}
+
+                <div>
+                  <ul className="wt-breadcrumb breadcrumb-style-2">
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                    <li>Get Free Design Consultation</li>
+                  </ul>
+                </div>
+
+                {/* <!-- BREADCRUMB ROW END --> */}
+              </div>
+            </div>
+          </div>
+
+          {/*  */}
+          <div style={{ marginTop: "60px" }}>
+            <div className="container">
+              <div className="section-head clearfix">
+                <div className="wt-tilte-main" style={{ display: "contents" }}>
+                  <small
+                    className="wt-small-title"
+                    style={{
+                      justifyContent: "center",
+                      display: "flex",
+                      color: "#B19777",
+                      textAlign: "center",
+                    }}
+                  >
+                    [ Book a Free Design Visit ]
+                  </small>
+                  <p
+                    className="m-b5"
+                    style={{
+                      justifyContent: "center",
+                      display: "flex",
+                      fontSize: "18px",
+                      paddingTop: "10px",
+                      textAlign: "center",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Please fill in the form below and a member of our friendly
+                    team will be in touch to arrange a suitable time for a Free,
+                    no obligation, Design Visit.
+                  </p>
                 </div>
               </div>
-              {/* <!-- BREADCRUMB ROW -->  */}
 
-              <div>
-                <ul className="wt-breadcrumb breadcrumb-style-2">
-                  <li>
-                    <a href="/">Home</a>
-                  </li>
-                  <li>Get Free Design Consultation</li>
-                
-                </ul>
-              </div>
+              {/*  */}
+              <div
+                style={{
+                  padding: "24px",
+                  display: "flex",
+                  flexDirection: isMobile ? "column" : "row",
+                  gap: "32px",
+                  justifyContent: "center",
+                }}
+              >
+                {/* Form Section */}
+                <form
+                  style={{
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "16px",
+                  }}
+                >
+                  <select
+                    style={{
+                        background:'#000',
+                        color:'#fff',
+                      width: "50%",
+                      border: "1px solid #ccc",
+                      padding: "8px",
+                      borderRadius: "4px",
+                    }}
+                  >
+                    <option value="">Title</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                    <option>Miss</option>
+                    <option>Ms</option>
+                  </select>
 
-              {/* <!-- BREADCRUMB ROW END --> */}
-            </div>
-          </div>
-        </div>
-        
-        {/*  */}
-    <div style={{marginTop:'60px'}}>
-        <div className="container">
-                    <div className="section-head clearfix">
-                      <div className="wt-tilte-main" style={{ display: "contents" }}>
-                        <small
-                          className="wt-small-title"
-                          style={{
-                            justifyContent: "center",
-                            display: "flex",
-                            color: "#B19777",
-                            textAlign: "center",
-                          }}
-                        >
-                          [ Book a Free Design Visit ]
-                        </small>
-                        <p
-                          className="m-b5"
-                          style={{
-                            justifyContent: "center",
-                            display: "flex",
-                            fontSize: "18px",
-                            paddingTop: "10px",
-                            textAlign: "center",
-                            textTransform:'uppercase'
-                          }}
-                        >
-                          Please fill in the form below and a member of our friendly team will be in touch to arrange a suitable time for a Free, no obligation, Design Visit.
-                        </p>
-                      </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      //   flexDirection: "column",
+                      gap: "16px",
+                    }}
+                  >
+                    <input
+                      type="text"
+                      placeholder="First name"
+                      style={{
+                        background:'#000',
+                        color:'#fff',
+                        border: "1px solid #ccc",
+                        padding: "8px",
+                        borderRadius: "4px",
+                        width: "50%",
+                      }}
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last name"
+                      style={{
+                        background:'#000',
+                        color:'#fff',
+                        border: "1px solid #ccc",
+                        padding: "8px",
+                        borderRadius: "4px",
+                        width: "50%",
+                      }}
+                    />
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Telephone"
+                    style={{
+                        background:'#000',
+                        color:'#fff',
+                      border: "1px solid #ccc",
+                      padding: "8px",
+                      borderRadius: "4px",
+                      width: "100%",
+                    }}
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    style={{
+                        background:'#000',
+                        color:'#fff',
+                      border: "1px solid #ccc",
+                      padding: "8px",
+                      borderRadius: "4px",
+                      width: "100%",
+                    }}
+                  />
+
+                  <label style={{ fontSize: "14px" }}>
+                    Quick address lookup:
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Postcode"
+                    style={{
+                        background:'#000',
+                        color:'#fff',
+                      border: "1px solid #ccc",
+                      padding: "8px",
+                      borderRadius: "4px",
+                      width: "100%",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <button
+                      type="button"
+                      style={{
+                        backgroundColor: "#B19777",
+                        color: "white",
+                        padding: "8px 16px",
+                        borderRadius: "4px",
+                        border: "2px solid #B19777",
+                      }}
+                    >
+                      Find Address
+                    </button>
+                    {!showManualAddress && (
+                      <a
+                        href="#"
+                        style={{
+                          color: "#fff",
+                          fontSize: "12px",
+                          textDecoration: "underline",
+                        }}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setShowManualAddress(true);
+                        }}
+                      >
+                        Enter address manually
+                      </a>
+                    )}
+                  </div>
+                  {showManualAddress && (
+                    <>
+                      <input
+                        type="text"
+                        placeholder="Address line 1"
+                        style={{
+                            background:'#000',
+                        color:'#fff',
+                          border: "1px solid #ccc",
+                          padding: "8px",
+                          borderRadius: "4px",
+                          width: "100%",
+                        }}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Address line 2"
+                        style={{
+                            background:'#000',
+                        color:'#fff',
+                          border: "1px solid #ccc",
+                          padding: "8px",
+                          borderRadius: "4px",
+                          width: "100%",
+                        }}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Town or city"
+                        style={{
+                            background:'#000',
+                        color:'#fff',
+                          border: "1px solid #ccc",
+                          padding: "8px",
+                          borderRadius: "4px",
+                          width: "100%",
+                        }}
+                      />
+                      <input
+                        type="text"
+                        placeholder="County"
+                        style={{
+                            background:'#000',
+                        color:'#fff',
+                          border: "1px solid #ccc",
+                          padding: "8px",
+                          borderRadius: "4px",
+                          width: "100%",
+                        }}
+                      />
+                      <input
+                        type="text"
+                        placeholder="Postcode"
+                        style={{
+                            background:'#000',
+                        color:'#fff',
+                          border: "1px solid #ccc",
+                          padding: "8px",
+                          borderRadius: "4px",
+                          width: "100%",
+                        }}
+                      />
+                    </>
+                  )}
+                  <div style={{ background: "#141414", padding: "12px" }}>
+                    <label style={{ display: "block", marginBottom: "4px" }}>
+                      I'm looking to create a beautiful...
+                    </label>
+                    <div
+                      style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}
+                    >
+                      {["Bedroom", "Home Office", "Living Space"].map(
+                        (room) => (
+                          <button
+                            key={room}
+                            type="button"
+                            onClick={() => toggleRoomSelection(room)}
+                            style={{
+                              border: "1px solid #B19777",
+                              borderRadius: "4px",
+                              padding: "8px 12px",
+                              backgroundColor: isSelected(room)
+                                ? "#B19777"
+                                : "#000",
+                              cursor: "pointer",
+                              color: isSelected(room) ? "#fff" : "#fff",
+                            }}
+                          >
+                            {room === "Bedroom" && "🛏 "}
+                            {room === "Home Office" && "🖥 "}
+                            {room === "Living Space" && "🛋 "}
+                            {room}
+                          </button>
+                        )
+                      )}
                     </div>
-                    
-                    {/*  */}
-                    <div style={{ padding: '24px', display: 'flex', flexDirection: 'row', gap: '32px',justifyContent:'center' }}>
-      {/* Form Section */}
-      <form style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '16px' }}>
-        <select style={{ width: '100%', border: '1px solid #ccc', padding: '8px', borderRadius: '4px' }}>
-          <option value="">Title</option>
-          <option>Mr</option>
-          <option>Mrs</option>
-          <option>Miss</option>
-          <option>Ms</option>
-        </select>
+                    <p
+                      style={{
+                        fontSize: "12px",
+                        color: "#fff",
+                        marginTop: "4px",
+                        marginBottom: "0px",
+                      }}
+                    >
+                      Please select all that apply.
+                    </p>
+                  </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-          <input type="text" placeholder="First name" style={{ border: '1px solid #ccc', padding: '8px', borderRadius: '4px', width: '100%' }} />
-          <input type="text" placeholder="Last name" style={{ border: '1px solid #ccc', padding: '8px', borderRadius: '4px', width: '100%' }} />
-        </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      id="signup"
+                      style={{ marginRight: "8px" }}
+                    />
+                    <label htmlFor="signup">
+                      Sign up for exclusive offers, inspiration, rewards and
+                      news.
+                    </label>
+                  </div>
 
-        <input type="text" placeholder="Telephone" style={{ border: '1px solid #ccc', padding: '8px', borderRadius: '4px', width: '100%' }} />
-        <input type="email" placeholder="Email address" style={{ border: '1px solid #ccc', padding: '8px', borderRadius: '4px', width: '100%' }} />
+                  <button
+                    style={{
+                      backgroundColor: "#B19777",
+                      color: "white",
+                      padding: "8px 16px",
+                      borderRadius: "4px",
+                      marginTop: "8px",
+                      border: "2px solid #B19777",
+                    }}
+                  >
+                    Submit booking request →
+                  </button>
 
-        <label style={{ fontSize: '14px' }}>Quick address lookup:</label>
-        <input type="text" placeholder="Postcode" style={{ border: '1px solid #ccc', padding: '8px', borderRadius: '4px', width: '100%' }} />
+                  <p style={{ fontSize: "12px", color: "#666" }}>
+                    By submitting this form you agree we will hold, store and
+                    use your information in line with GDPR regulations. For more
+                    information see our{" "}
+                    <a
+                      href="/PrivacyPolicy"
+                      style={{ textDecoration: "underline" }}
+                    >
+                      Privacy Policy
+                    </a>
+                    .
+                  </p>
+                </form>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <button type="button" style={{ backgroundColor: '#333', color: 'white', padding: '8px 16px', borderRadius: '4px' }}>Find Address</button>
-          <a href="#" style={{ color: '#1e40af', fontSize: '14px' }}>Enter address manually</a>
-        </div>
+                {/* Info Section */}
+                <div
+                  style={{
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "24px",
+                  }}
+                >
+                  <div
+  style={{
+    display: "flex",
+    flexDirection: isMobile ? "column" : "row",
+    justifyContent: isMobile ? "center" : "space-between",
+    backgroundColor: "#141414",
+    padding: "16px",
+    borderRadius: "8px",
+    gap: isMobile ? "16px" : "0",
+  }}
+>
+  {[...Array(4)].map((_, i) => (
+    <div
+      key={i}
+      style={{
+        textAlign: "center",
+        width: isMobile ? "100%" : "25%",
+      }}
+    >
+      <img
+        src={
+          i === 0
+            ? "/assets/pic/guarantee15 (1).svg"
+            : i === 1
+            ? "/assets/pic/design.svg"
+            : i === 2
+            ? "/assets/pic/bespoke121.svg"
+            : "/assets/pic/sustainable.svg"
+        }
+        alt=""
+        width={"60px"}
+      />
+      <h4
+        style={{
+          fontSize: "16px",
+          fontWeight: "500",
+          margin: 0,
+        }}
+      >
+        {i === 0
+          ? "15-year"
+          : i === 1
+          ? "Bespoke"
+          : i === 2
+          ? "Made in the"
+          : "Sustainably"}
+      </h4>
+      <p
+        style={{
+          fontSize: "12px",
+          textAlign: "center",
+          fontWeight: "bold",
+          margin: 0,
+        }}
+      >
+        {i === 0
+          ? "GUARANTEE"
+          : i === 1
+          ? "DESIGN & FIT"
+          : i === 2
+          ? "UNITED KINGDOM"
+          : "SOURCED"}
+      </p>
+    </div>
+  ))}
+</div>
 
-        <div>
-          <label style={{ display: 'block', marginBottom: '4px' }}>I'm looking to create a beautiful...</label>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            <button type="button" style={{ border: '1px solid #ccc', borderRadius: '4px', padding: '8px 12px' }}>🛏 Bedroom</button>
-            <button type="button" style={{ border: '1px solid #ccc', borderRadius: '4px', padding: '8px 12px' }}>🖥 Home Office</button>
-            <button type="button" style={{ border: '1px solid #ccc', borderRadius: '4px', padding: '8px 12px' }}>🛋 Living Space</button>
+
+<div
+      style={{
+        background: "#141414",
+        padding: "20px",
+        borderRadius: "8px",
+      }}
+    >
+      <h2
+        style={{
+          fontSize: "18px",
+          fontWeight: "600",
+          marginBottom: "16px",
+          textAlign: "center",
+          textDecoration: "underline",
+        }}
+      >
+        WHAT HAPPENS DURING YOUR DESIGN VISIT?
+      </h2>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          gap: "16px",
+        }}
+      >
+        {[
+          {
+            title: "View samples",
+            text: "Your designer will listen to your requirements, show you samples and assess your needs.",
+          },
+          {
+            title: "Design your space",
+            text: "They will measure your space and create a detailed 3D illustration free of charge.",
+          },
+          {
+            title: "Receive a quote",
+            text: "Your designer will give you a no-obligation quote with a range of payment options.",
+          },
+        ].map((item, index) => (
+          <div key={index} style={{ flex: 1 }}>
+            <h3
+              style={{
+                fontSize: "18px",
+                textAlign: "center",
+                color: "#B19777",
+                marginBottom: "0px",
+              }}
+            >
+              {item.title}
+            </h3>
+            <p
+              style={{
+                fontSize: "12px",
+                color: "white",
+                textAlign:'center',
+                padding: "10px",
+              }}
+            >
+              {item.text}
+            </p>
           </div>
-          <p style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>Please select all that apply.</p>
-        </div>
-
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: '8px' }}>
-          <input type="checkbox" id="signup" style={{ marginRight: '8px' }} />
-          <label htmlFor="signup">Sign up for exclusive offers, inspiration, rewards and news.</label>
-        </div>
-
-        <button style={{ backgroundColor: '#facc15', color: 'black', padding: '8px 16px', borderRadius: '4px', marginTop: '8px' }}>
-          Submit booking request →
-        </button>
-
-        <p style={{ fontSize: '12px', color: '#666' }}>
-          By submitting this form you agree we will hold, store and use your information in line with GDPR
-          regulations. For more information see our <a href="#" style={{ textDecoration: 'underline' }}>Privacy Policy</a>.
-        </p>
-      </form>
-
-      {/* Info Section */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '24px' }}>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', backgroundColor: '#f3f4f6', padding: '16px', borderRadius: '8px' }}>
-          {['15-year GUARANTEE', 'Bespoke DESIGN & FIT', 'Made in the UNITED KINGDOM', 'Sustainably SOURCED'].map((text, index) => (
-            <div key={index} style={{ textAlign: 'center', width: '50%', marginBottom: '16px' }}>
-              <div style={{ fontSize: '18px', fontWeight: '600' }}>{text}</div>
-            </div>
-          ))}
-        </div>
-
-        <div>
-          <h2 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '16px' }}>WHAT HAPPENS DURING YOUR DESIGN VISIT?</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ flex: 1 }}>
-              <h3 style={{ fontWeight: '600', fontStyle: 'italic' }}>View samples</h3>
-              <p style={{ fontSize: '14px', color: '#666' }}>
-                Your designer will listen to your requirements, show you samples and assess your needs.
-              </p>
-            </div>
-            <div style={{ flex: 1 }}>
-              <h3 style={{ fontWeight: '600', fontStyle: 'italic' }}>Design your space</h3>
-              <p style={{ fontSize: '14px', color: '#666' }}>
-                They will measure your space and create a detailed 3D illustration free of charge.
-              </p>
-            </div>
-            <div style={{ flex: 1 }}>
-              <h3 style={{ fontWeight: '600', fontStyle: 'italic' }}>Receive a quote</h3>
-              <p style={{ fontSize: '14px', color: '#666' }}>
-                Your designer will give you a no-obligation quote with a range of payment options.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ marginTop: '16px' }}>
-          <img src="/designer-meeting.jpg" alt="Designer visit meeting" style={{ borderRadius: '8px', boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)' }} />
-        </div>
+        ))}
       </div>
     </div>
-                    {/*  */}
 
+                  <div style={{ marginTop: "16px" }}>
+                    <img
+                      src="/assets/pic/book-design-visit.webp"
+                      alt="Designer visit meeting"
+                      style={{
+                        borderRadius: "8px",
+                        boxShadow: "0 2px 6px rgba(0, 0, 0, 0.1)",
+                      }}
+                    />
                   </div>
+                </div>
+              </div>
+              {/*  */}
+            </div>
+          </div>
         </div>
-       
-    </div>
-    <Footers />
-    <button className="scroltop">
-    <span className="fa fa-angle-up relative" id="btn-vibrate"></span>
-  </button>
-    </div>
-        </>
-  )
+        <Footers />
+        <button className="scroltop">
+          <span className="fa fa-angle-up relative" id="btn-vibrate"></span>
+        </button>
+      </div>
+    </>
+  );
 }
