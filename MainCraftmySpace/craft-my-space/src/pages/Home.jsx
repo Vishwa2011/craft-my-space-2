@@ -10,11 +10,9 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import { motion } from "framer-motion";
 
 export default function Home() {
-
-
   return (
     <>
-      <div className="page-wraper" style={{background:'#000'}}>
+      <div className="page-wraper" style={{ background: "#000" }}>
         {/* <Info /> */}
         <Navbar />
 
@@ -1163,48 +1161,55 @@ export default function Home() {
 
             {/* card start  */}
             <motion.div className="container mt-5">
-  <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
-    {[
-      { title: "Kitchen", img: "designn1.jpg" },
-      { title: "Bedroom", img: "design2.jpg" },
-      { title: "Home Office", img: "design3.jpg" },
-      { title: "Media Room", img: "design4.jpg" },
-      { title: "Bay Windows", img: "design5.jpg" },
-      { title: "Landing & Hallways", img: "design6.jpg" },
-    ].map((item, index) => (
-      <div key={index} className="masonry-item col-lg-4 col-md-6 col-sm-12 m-b30">
-        <a href="/Kitchen-Service">
-          <div style={{ position: "relative", overflow: "hidden" }}>
-            <img
-              src={`/assets/pic/${item.img}`}
-              alt={item.title}
-              style={{
-                width: "100%",
-                opacity: "0.6",
-                transition: "transform 0.9s ease-in-out",
-              }}
-              onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
-              onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
-            />
-            <div
-              style={{
-                position: "absolute",
-                left: "38%",
-                top: "44%",
-                width: "100%",
-                fontSize: "30px",
-              }}
-            >
-              <h4 className="wt-tilte text-white">{item.title}</h4>
-            </div>
-          </div>
-        </a>
-      </div>
-    ))}
-  </div>
-</motion.div>
+              <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
+                {[
+                  { title: "Kitchen", img: "designn1.jpg" },
+                  { title: "Bedroom", img: "design2.jpg" },
+                  { title: "Home Office", img: "design3.jpg" },
+                  { title: "Media Room", img: "design4.jpg" },
+                  { title: "Bay Windows", img: "design5.jpg" },
+                  { title: "Landing & Hallways", img: "design6.jpg" },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="masonry-item col-lg-4 col-md-6 col-sm-12 m-b30"
+                  >
+                    <a href="/Kitchen-Service">
+                      <div style={{ position: "relative", overflow: "hidden" }}>
+                        <img
+                          src={`/assets/pic/${item.img}`}
+                          alt={item.title}
+                          style={{
+                            width: "100%",
+                            opacity: "0.6",
+                            transition: "transform 0.9s ease-in-out",
+                          }}
+                          onMouseEnter={(e) =>
+                            (e.target.style.transform = "scale(1.1)")
+                          }
+                          onMouseLeave={(e) =>
+                            (e.target.style.transform = "scale(1)")
+                          }
+                        />
+                        <div
+                          style={{
+                            position: "absolute",
+                            left: "38%",
+                            top: "44%",
+                            width: "100%",
+                            fontSize: "30px",
+                          }}
+                        >
+                          <h4 className="wt-tilte text-white">{item.title}</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
 
-        {/* card end  */}
+            {/* card end  */}
             {/*  */}
           </div>
         </div>
@@ -1281,29 +1286,29 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                  <a
-                            href="/Ourfactorytour"
-                            className="site-button-link"
-                            style={{
-                              background: "#B19777",
-                              color: "white",
-                              padding: "18px",
-                              textDecoration: "none",
-                              border: "2px solid #B19777",
-                              transition: "all 0.3s ease-in-out",
-                            }}
-                            onMouseEnter={(e) => {
-                              e.target.style.background = "white";
-                              e.target.style.color = "#B19777";
-                            }}
-                            onMouseLeave={(e) => {
-                              e.target.style.background = "#B19777";
-                              e.target.style.color = "white";
-                            }}
-                          >
-                            our  factory  Tour
-                          </a>
-                  </div>
+                <a
+                  href="/Ourfactorytour"
+                  className="site-button-link"
+                  style={{
+                    background: "#B19777",
+                    color: "white",
+                    padding: "18px",
+                    textDecoration: "none",
+                    border: "2px solid #B19777",
+                    transition: "all 0.3s ease-in-out",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = "white";
+                    e.target.style.color = "#B19777";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = "#B19777";
+                    e.target.style.color = "white";
+                  }}
+                >
+                  our factory Tour
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1311,15 +1316,15 @@ export default function Home() {
 
         {/* content start */}
         <div
-  style={{
-    padding: "70px 0px",
-    background: "#000",
-    borderBottom: "2px solid #B19777",
-    position: "relative",  // Ensures that we can position the background image separately
-  }}
->
-  <div className="container">
-  <div className="section-head clearfix">
+          style={{
+            padding: "70px 0px",
+            background: "#000",
+            borderBottom: "2px solid #B19777",
+            position: "relative", // Ensures that we can position the background image separately
+          }}
+        >
+          <div className="container">
+            <div className="section-head clearfix">
               <div className="wt-tilte-main" style={{ display: "contents" }}>
                 <small
                   className="wt-small-title"
@@ -1327,99 +1332,236 @@ export default function Home() {
                     justifyContent: "center",
                     display: "flex",
                     color: "#B19777",
-                    textAlign:'center'
+                    textAlign: "center",
                   }}
                 >
-                  [ Bespoke Luxury Wardrobes & Furniture - Crafted to Perfection ]
+                  [ Bespoke Luxury Wardrobes & Furniture - Crafted to Perfection
+                  ]
                 </small>
                 <p
                   className="m-b5"
-                  style={{ justifyContent: "center", display: "flex",fontSize:'16px' ,paddingTop:'10px',textAlign:'center'}}
+                  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                    fontSize: "18px",
+                    paddingTop: "10px",
+                    textAlign: "center",
+                  }}
                 >
-                  "Designed to fit your space. Built to elevate your lifestyle."
+                  DESIGNED TO FIT YOUR SPACE. BUILT TO ELEVATE YOUR LIFESTYLE.
                 </p>
               </div>
             </div>
-    <div className="col-12">
-      <div className="row">
-        <div
-          className="col-lg-6 col-md-12 col-sm-12"
-          style={{
-            position: "relative", // This will keep the text above the background image
-            // height: "450px",
-            overflow: "hidden", // Hide anything outside the bounds
-          }}
-        >
-          {/* Background Image with Opacity and Rotation */}
-          <div className="responsive-background"
-            // style={{
-            //   position: "absolute",
-              
-            //   inset: "10px 100px 10px 10px",
-            //   backgroundImage: 'url("/assets/pic/backcms.png")',
-            //   backgroundSize: "cover",
-            //   backgroundPosition: "center",
-            //   transform: "rotate(-18deg)", // Rotates the background image
-            //   opacity: 0.4,  // Adjust the opacity of the background image
-            //   zIndex: 0,  // Ensure the background is behind the text
-            // }}
-          ></div>
+            <div className="col-12">
+              <div className="row">
+                <div
+                  className="col-lg-6 col-md-12 col-sm-12"
+                  style={{
+                    position: "relative", // This will keep the text above the background image
+                    // height: "450px",
+                    zIndex:999,
+                    overflow: "hidden", // Hide anything outside the bounds
+                  }}
+                >
+                  {/* Background Image with Opacity and Rotation */}
+                  <div
+                    className="responsive-background"
+                    // style={{
+                    //   position: "absolute",
 
-          <div
-            display="flex"
-            gap={0.5}
-            style={{ marginBottom: "20px" }}
-          >
-            {[...Array(5)].map((_, index) => (
-              <Star key={index} sx={{ color: "#B19777", fontSize: 32 }} />
-            ))}
-          </div>
-          <h2>Enjoy a Luxury Experience</h2>
-          <p>
-            At Elite Living, we set the benchmark for refined luxury,
-            crafting spaces that epitomize sophistication and exclusivity.
-            Our bespoke services go beyond the ordinary, transforming every
-            detail into an extraordinary expression of elegance. From the
-            moment you step into our world, you are embraced by a realm of
-            tailored indulgence. With a dedicated team of expert designers
-            and artisans, we meticulously bring your vision to life, ensuring
-            each element reflects your distinct taste and lifestyle. At Elite
-            Living, every creation is a testament to timeless beauty, superior
-            craftsmanship, and unparalleled luxury.
-          </p>
-          <div flexDirection="column" gap={2} color="#C29565">
-            {/* First Contact */}
-            <a href="tel:(0044)07365 566 666" style={{ textDecoration: "none" }}>
-              <div
-                style={{
-                  display: "flex",
-                  color: "#B19777",
-                  margin: "41px 0px 25px 0px",
-                  alignItems: "center",
-                  gap: "10px",
-                }}
-              >
-                <PhoneInTalkIcon style={{ fontSize: "40px", marginRight: "17px" }} />
-                <Typography style={{ fontSize: "22px" }} fontWeight={500}>
-                  (0044)07365 566 666
-                </Typography>
+                    //   inset: "10px 100px 10px 10px",
+                    //   backgroundImage: 'url("/assets/pic/backcms.png")',
+                    //   backgroundSize: "cover",
+                    //   backgroundPosition: "center",
+                    //   transform: "rotate(-18deg)", // Rotates the background image
+                    //   opacity: 0.4,  // Adjust the opacity of the background image
+                    //   zIndex: 0,  // Ensure the background is behind the text
+                    // }}
+                  ></div>
+
+                  <div
+                    display="flex"
+                    gap={0.5}
+                    style={{ marginBottom: "20px" }}
+                  >
+                    {[...Array(5)].map((_, index) => (
+                      <Star
+                        key={index}
+                        sx={{ color: "#B19777", fontSize: 32 }}
+                      />
+                    ))}
+                  </div>
+                  <h2>Enjoy a Luxury Experience</h2>
+                  <p>
+                    At Elite Living, we set the benchmark for refined luxury,
+                    crafting spaces that epitomize sophistication and
+                    exclusivity. Our bespoke services go beyond the ordinary,
+                    transforming every detail into an extraordinary expression
+                    of elegance. From the moment you step into our world, you
+                    are embraced by a realm of tailored indulgence. With a
+                    dedicated team of expert designers and artisans, we
+                    meticulously bring your vision to life, ensuring each
+                    element reflects your distinct taste and lifestyle. At Elite
+                    Living, every creation is a testament to timeless beauty,
+                    superior craftsmanship, and unparalleled luxury.
+                  </p>
+                
+                   
+                    <div>
+                      <a
+                        href="/"
+                        style={{
+                          background: "#B19777",
+                          padding: "15px",
+                          color: "white",
+                          margin: "10px",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                          border: "2px solid #B19777",
+                          transition: "all 0.3s ease-in-out",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = "white";
+                          e.target.style.color = "#B19777";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = "#B19777";
+                          e.target.style.color = "white";
+                        }}
+                      >
+                        Get a Free Design Consultation
+                      </a>
+
+                      <a
+                        href="/Kitchen-Service"
+                        style={{
+                          background: "#B19777",
+                          padding: "15px",
+                          color: "white",
+                          margin: "10px",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                          border: "2px solid #B19777",
+                          transition: "all 0.3s ease-in-out",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = "white";
+                          e.target.style.color = "#B19777";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = "#B19777";
+                          e.target.style.color = "white";
+                        }}
+                      >
+                        Start Designing Now
+                      </a>
+                    </div>
+                  
+                </div>
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                  <img
+                    src="/assets/pic/bed.webp"
+                    style={{ height: "450px", width: "100%" }}
+                  />
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12">
-          <img
-            src="/assets/pic/bed.webp"
-            style={{ height: "450px", width: "100%" }}
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
         {/* content end */}
+  {/* [ our bespoke ] start  */}
+  <div
+          className="section-full p-t80 p-b50"
+          style={{ background: "#000", borderBottom: "2px solid #B19777" }}
+        >
+          <div className="container">
+            <div className="section-head clearfix">
+              <div className="wt-tilte-main" style={{ display: "contents" }}>
+                <small
+                  className="wt-small-title"
+                  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                    color: "#B19777",
+                  }}
+                >
+                  [ custom-fitted. elegantly craftd. ]
+                </small>
+                <p
+                  
+                  style={{ justifyContent: "center", display: "flex",fontSize:"16px",textAlign:'center' }}
+                >
+                  FROM WARDROBES TO MEDIA UNITS, WE DESIGN AND INSTALL BESPOKE FURNITURE THAT TRANSFORMS YOUR SPACE.
+                </p>
+              </div>
+            </div>
 
+            {/* card start  */}
+            <motion.div className="container mt-5">
+              <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
+                {[
+                  { title: "sliding door wardrobes", img: "bespoke1.jpg", link: "/" },
+                  { title: "plain hinge door wardrobes", img: "bespoke2.jpg",link:'/' },
+                  { title: "shaker style fitted wardrobes", img: "bespoke3.jpg" },
+                  { title: "walk-in wardrobes", img: "bespoke4.jpg",link:'/' },
+                  { title: "loft wardrobes", img: "bespoke5.jpg",link:'/' },
+                  { title: "media units", img: "bespoke6.jpg" ,link:'/'},
+                  { title: "fitted bookshelves", img: "bespoke7.jpg" ,link:'/'},
+                  { title: "office cabinets", img: "bespoke8.jpg",link:'/' },
+                  { title: "glass door wardrobe cabinets", img: "dbespoke9.jpg",link:'/' },
+                  { title: "small utility room storage", img: "bespoke10.jpg" ,link:'/'},
+                  { title: "bedroom wardrobes", img: "bespoke11.jpg",link:'/' },
+                  { title: "fretwork doors wardrobe", img: "bespoke12.jpg" ,link:'/'},
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="masonry-item col-lg-4 col-md-6 col-sm-12 m-b30"
+                  >
+                    <a href={item.link}>
+                      <div className="img-reflection" style={{ position: "relative", overflow: "hidden" }}>
+                        <img
+                          src={`/assets/pic/${item.img}`}
+                          alt={item.title}
+                          style={{
+                            width: "100%",
+                            opacity: "0.6",
+                            transition: "transform 0.9s ease-in-out",
+                          }}
+                          onMouseEnter={(e) =>
+                            (e.target.style.transform = "scale(1.1)")
+                          }
+                          onMouseLeave={(e) =>
+                            (e.target.style.transform = "scale(1)")
+                          }
+                        />
+                        <div
+                         style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          height: "100%",
+                          width: "100%",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          fontSize: "30px",
+                        }}
+                        >
+                          <h4 className="wt-tilte text-white">{item.title}</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* card end  */}
+            {/*  */}
+          </div>
+        </div>
+        {/* [ our bespoke ] end  */}
         {/* Testimonial start  */}
         <div
           className="section-full p-tb80 testimonial-slider-outer bg-cover bg-left-center"
@@ -1450,52 +1592,27 @@ export default function Home() {
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
                           <div className="quote-left"></div>
-                          <p style={{textAlign:'center'}}>
-                          "Absolutely delighted with my new dining set from CraftMySpace! The design is elegant, and the quality is superb. It’s made our family dinners feel extra special."
+                          <p style={{ textAlign: "center" }}>
+                            "Absolutely delighted with my new dining set from
+                            CraftMySpace! The design is elegant, and the quality
+                            is superb. It’s made our family dinners feel extra
+                            special."
                           </p>
                         </div>
-                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
-                        <div className="testimonial-detail ">
-                          <h4 className="testimonial-name m-b5"> Emily Thompson, London</h4>
+                        <div
+                          style={{
+                            color: "#B19777",
+                            fontSize: "25px",
+                            marginBottom: "10px",
+                          }}
+                        >
+                          {" "}
+                          ★ ★ ★ ★ ★
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="item">
-                  <div className="testimonial-slider-content clearfix">
-                    <div className="testimonial-1 testimonial-1-no-img clearfix">
-                      <div className="testimonial-text">
-                        <div className="testimonial-paragraph">
-                          <div className="quote-left"></div>
-                          <p style={{textAlign:'center'}}>
-                          "CraftMySpace exceeded my expectations. The custom bookshelf I ordered fits perfectly and looks stunning. Great service from start to finish!"
-                          </p>
-                        </div>
-                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
-                        <div className="testimonial-detail ">
-                          <h4 className="testimonial-name m-b5">James Patel, Manchester</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="item">
-                  <div className="testimonial-slider-content clearfix">
-                    <div className="testimonial-1 testimonial-1-no-img clearfix">
-                      <div className="testimonial-text">
-                        <div className="testimonial-paragraph">
-                          <div className="quote-left"></div>
-                          <p style={{textAlign:'center'}}>
-                          "I’ve ordered furniture online before, but nothing compares to the quality and style from CraftMySpace. The sofa is incredibly comfortable and looks amazing in our lounge."
-                          </p>
-                        </div>
-                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
                         <div className="testimonial-detail ">
                           <h4 className="testimonial-name m-b5">
-                          Sophie Walker, Birmingham
+                            {" "}
+                            Emily Thompson, London
                           </h4>
                         </div>
                       </div>
@@ -1509,13 +1626,92 @@ export default function Home() {
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
                           <div className="quote-left"></div>
-                          <p style={{textAlign:'center'}}>
-                          "Excellent craftsmanship and quick delivery. The team was super helpful when I had questions about matching pieces for my home office."
+                          <p style={{ textAlign: "center" }}>
+                            "CraftMySpace exceeded my expectations. The custom
+                            bookshelf I ordered fits perfectly and looks
+                            stunning. Great service from start to finish!"
                           </p>
                         </div>
-                        <div style={{color:'#B19777',fontSize:'25px',marginBottom:'10px'}}> ★ ★ ★ ★ ★</div>
+                        <div
+                          style={{
+                            color: "#B19777",
+                            fontSize: "25px",
+                            marginBottom: "10px",
+                          }}
+                        >
+                          {" "}
+                          ★ ★ ★ ★ ★
+                        </div>
                         <div className="testimonial-detail ">
-                          <h4 className="testimonial-name m-b5">Oliver Green, Leeds</h4>
+                          <h4 className="testimonial-name m-b5">
+                            James Patel, Manchester
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="testimonial-slider-content clearfix">
+                    <div className="testimonial-1 testimonial-1-no-img clearfix">
+                      <div className="testimonial-text">
+                        <div className="testimonial-paragraph">
+                          <div className="quote-left"></div>
+                          <p style={{ textAlign: "center" }}>
+                            "I’ve ordered furniture online before, but nothing
+                            compares to the quality and style from CraftMySpace.
+                            The sofa is incredibly comfortable and looks amazing
+                            in our lounge."
+                          </p>
+                        </div>
+                        <div
+                          style={{
+                            color: "#B19777",
+                            fontSize: "25px",
+                            marginBottom: "10px",
+                          }}
+                        >
+                          {" "}
+                          ★ ★ ★ ★ ★
+                        </div>
+                        <div className="testimonial-detail ">
+                          <h4 className="testimonial-name m-b5">
+                            Sophie Walker, Birmingham
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="testimonial-slider-content clearfix">
+                    <div className="testimonial-1 testimonial-1-no-img clearfix">
+                      <div className="testimonial-text">
+                        <div className="testimonial-paragraph">
+                          <div className="quote-left"></div>
+                          <p style={{ textAlign: "center" }}>
+                            "Excellent craftsmanship and quick delivery. The
+                            team was super helpful when I had questions about
+                            matching pieces for my home office."
+                          </p>
+                        </div>
+                        <div
+                          style={{
+                            color: "#B19777",
+                            fontSize: "25px",
+                            marginBottom: "10px",
+                          }}
+                        >
+                          {" "}
+                          ★ ★ ★ ★ ★
+                        </div>
+                        <div className="testimonial-detail ">
+                          <h4 className="testimonial-name m-b5">
+                            Oliver Green, Leeds
+                          </h4>
                         </div>
                       </div>
                     </div>
@@ -1528,22 +1724,34 @@ export default function Home() {
                 className="owl-carousel owl-theme testimonial-1-thumb center"
               >
                 <div className="item">
-                  <div className="wt-media" style={{border:'1px solid white'}}>
+                  <div
+                    className="wt-media"
+                    style={{ border: "1px solid white" }}
+                  >
                     <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
-                  <div className="wt-media" style={{border:'1px solid white'}}>
+                  <div
+                    className="wt-media"
+                    style={{ border: "1px solid white" }}
+                  >
                     <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
-                  <div className="wt-media" style={{border:'1px solid white'}}>
+                  <div
+                    className="wt-media"
+                    style={{ border: "1px solid white" }}
+                  >
                     <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
                 <div className="item">
-                  <div className="wt-media" style={{border:'1px solid white'}}>
+                  <div
+                    className="wt-media"
+                    style={{ border: "1px solid white" }}
+                  >
                     <img src="/assets/pic/no-dp.jpg" alt="" />
                   </div>
                 </div>
@@ -1559,21 +1767,69 @@ export default function Home() {
                   </div>
                 </div> */}
               </div>
-            </div>
           </div>
+          </div>
+            <div style={{display:'flex',justifyContent:'center',marginTop:'20px'}}>
+                      <a
+                        href="/"
+                        style={{
+                          background: "#B19777",
+                          padding: "15px",
+                          color: "white",
+                          margin: "10px",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                          border: "2px solid #B19777",
+                          transition: "all 0.3s ease-in-out",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = "white";
+                          e.target.style.color = "#B19777";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = "#B19777";
+                          e.target.style.color = "white";
+                        }}
+                      >
+                        Read More Reviews
+                      </a>
+
+                      <a
+                        href=""
+                        style={{
+                          background: "#B19777",
+                          padding: "15px",
+                          color: "white",
+                          margin: "10px",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                          border: "2px solid #B19777",
+                          transition: "all 0.3s ease-in-out",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = "white";
+                          e.target.style.color = "#B19777";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = "#B19777";
+                          e.target.style.color = "white";
+                        }}
+                      >
+                        Get a Free Consultation 
+                      </a>
+                    </div>
         </div>
         {/* Testimonial end  */}
 
-
-       {/* <!-- VIDEO SECTION START --> */}
-      <div  style={{borderBottom:'2px solid #B19777'}}>
-      <div class="high-res-video-container">
-  <video class="high-res-video" controls>
-    <source src="/assets/pic/videosection.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
-      </div>
+        {/* <!-- VIDEO SECTION START --> */}
+        <div style={{ borderBottom: "2px solid #B19777" }}>
+          <div class="high-res-video-container">
+            <video class="high-res-video" controls>
+              <source src="/assets/pic/videosection.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
 
         {/* <!-- VIDEO  SECTION END -->
 
@@ -1583,128 +1839,165 @@ export default function Home() {
           style={{ background: "#000", borderBottom: "2px solid #B19777" }}
         >
           <div className="container">
-            <div className="section-head clearfix" style={{display:'flex',justifyContent:'center'}}>
-              <div className="wt-tilte-main bdr-r-3 bdr-primary " style={{textAlign:'center'}}>
+            <div
+              className="section-head clearfix"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <div
+                className="wt-tilte-main bdr-r-3 bdr-primary "
+                style={{ textAlign: "center" }}
+              >
                 <small className="wt-small-title" style={{ color: "#B19777" }}>
                   [ Why Choose CraftMySpace ]
                 </small>
-                <h2 className="m-b5">Why London's Homeowners & Businesses Trust Us</h2>
+                <h2 className="m-b5">
+                  Why London's Homeowners & Businesses Trust Us
+                </h2>
               </div>
-              
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <a href="/Contact">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="E">
-                      Expert Craftsmanship
-                    </h4>
-                    <p style={{color:'white'}}>
-                    With over 15+ years of experience, CraftMySpace delivers expert craftsmanship that combines timeless design with lasting quality.
-                    </p>
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 className="wt-tilte-large m-t0" data-title="E">
+                        Expert Craftsmanship
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        With over 15+ years of experience, CraftMySpace delivers
+                        expert craftsmanship that combines timeless design with
+                        lasting quality.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-mansion v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-mansion v-icon" style={{color:'#B19777'}}></i>
-                    </span>
-                  </div>
-                </div>
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <a href="/Contact">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="P">
-                      Premium Materials
-                    </h4>
-                    <p style={{color:'white'}}>
-                    CraftMySpace uses only premium materials, including high-quality wood, glass, and flawless finishes, to ensure every piece is both elegant.
-                    </p>
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 className="wt-tilte-large m-t0" data-title="P">
+                        Premium Materials
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace uses only premium materials, including
+                        high-quality wood, glass, and flawless finishes, to
+                        ensure every piece is both elegant.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-stair v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-stair v-icon" style={{color:'#B19777'}}></i>
-                    </span>
-                  </div>
-                </div>
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <a href="/Contact">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="t">
-                      Tailored to your space
-                    </h4>
-                    <p style={{color:'white'}}>
-                    CraftMySpace offers 100% custom designs, thoughtfully tailored to your space for a perfect blend of style, comfort, and functionality.
-                    </p>
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 className="wt-tilte-large m-t0" data-title="t">
+                        Tailored to your space
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace offers 100% custom designs, thoughtfully
+                        tailored to your space for a perfect blend of style,
+                        comfort, and functionality.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-apartment v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-apartment v-icon" style={{color:'#B19777'}}></i>
-                    </span>
-                  </div>
-                </div>
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <a href="/Contact">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="s">
-                      Seamless installation
-                    </h4>
-                    <p style={{color:'white'}}>
-                    CraftMySpace ensures seamless installation with hassle-free fitting and finishing, making your furniture setup smooth and stress-free.
-                    </p>
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 className="wt-tilte-large m-t0" data-title="s">
+                        Seamless installation
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace ensures seamless installation with
+                        hassle-free fitting and finishing, making your furniture
+                        setup smooth and stress-free.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-photo v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-photo v-icon" style={{color:'#B19777'}}></i>
-                    </span>
-                  </div>
-                </div>
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <a href="/Contact">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="L">
-                      Luxury look
-                    </h4>
-                    <p style={{color:'white'}}>
-                    CraftMySpace delivers a luxury look with sophisticated designs and premium detailing that elevate every corner of your home.
-                    </p>
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 className="wt-tilte-large m-t0" data-title="L">
+                        Luxury look
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace delivers a luxury look with sophisticated
+                        designs and premium detailing that elevate every corner
+                        of your home.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-sketch v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-sketch v-icon" style={{color:'#B19777'}}></i>
-                    </span>
-                  </div>
-                </div>
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <a href="/Contact">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="A">
-                      Affordable prices
-                    </h4>
-                    <p style={{color:'white'}}>
-                    CraftMySpace offers stylish, high-quality furniture at affordable prices, making luxury living accessible for every home.
-                    </p>
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
+                    <div className="icon-content m-b30">
+                      <h4 className="wt-tilte-large m-t0" data-title="A">
+                        Affordable prices
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace offers stylish, high-quality furniture at
+                        affordable prices, making luxury living accessible for
+                        every home.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-kitchen v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-kitchen v-icon" style={{color:'#B19777'}}></i>
-                    </span>
-                  </div>
-                </div>
                 </a>
               </div>
             </div>
@@ -1718,13 +2011,19 @@ export default function Home() {
           style={{ paddingBottom: "100px", background: "#000" }}
         >
           <div className="container">
-            <div className="section-head clearfix" style={{display:'flex',justifyContent:'center'}}>
+            <div
+              className="section-head clearfix"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               <div className="wt-tilte-main bdr-r-3 bdr-primary  text-white">
-                <small className="wt-small-title"  style={{
+                <small
+                  className="wt-small-title"
+                  style={{
                     justifyContent: "center",
                     display: "flex",
                     color: "#B19777",
-                  }}>
+                  }}
+                >
                   [ our blog ]
                 </small>
                 <h2 className="m-b5">Furniture Inspiration & Expert Tips</h2>
@@ -1778,13 +2077,20 @@ export default function Home() {
                             <div className="wt-post-title">
                               <h4 className="post-title">
                                 <a href="" style={{ color: "#fff" }}>
-                                  how to choose the perfect wardrobe for your home
+                                  how to choose the perfect wardrobe for your
+                                  home
                                 </a>
                               </h4>
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                              Choosing the perfect wardrobe involves balancing style, space, and functionality. Measure your room carefully to ensure the wardrobe fits well without making the space feel cramped. Consider your storage needs and pick a design that complements your interior while keeping everything organized.
+                                Choosing the perfect wardrobe involves balancing
+                                style, space, and functionality. Measure your
+                                room carefully to ensure the wardrobe fits well
+                                without making the space feel cramped. Consider
+                                your storage needs and pick a design that
+                                complements your interior while keeping
+                                everything organized.
                               </p>
                             </div>
                             <a
@@ -1838,7 +2144,14 @@ export default function Home() {
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                              Loft wardrobes are a smart solution for making the most of vertical space in compact modern rooms. They offer ample hidden storage without taking up valuable floor area, keeping your home neat and clutter-free. Custom loft wardrobes can be perfectly tailored to fit awkward corners or sloped ceilings, maximizing every inch efficiently.
+                                Loft wardrobes are a smart solution for making
+                                the most of vertical space in compact modern
+                                rooms. They offer ample hidden storage without
+                                taking up valuable floor area, keeping your home
+                                neat and clutter-free. Custom loft wardrobes can
+                                be perfectly tailored to fit awkward corners or
+                                sloped ceilings, maximizing every inch
+                                efficiently.
                               </p>
                             </div>
                             <a
@@ -1891,7 +2204,13 @@ export default function Home() {
                             </div>
                             <div className="wt-post-text">
                               <p style={{ fontFamily: "sans-serif" }}>
-                              Wardrobe designs in 2025 are all about sleek functionality and modern aesthetics. Trends like mirrored finishes, integrated lighting, and space-saving galley layouts are taking center stage. Sustainable materials and custom corner units are also gaining popularity for their stylish, eco-friendly, and efficient appeal.
+                                Wardrobe designs in 2025 are all about sleek
+                                functionality and modern aesthetics. Trends like
+                                mirrored finishes, integrated lighting, and
+                                space-saving galley layouts are taking center
+                                stage. Sustainable materials and custom corner
+                                units are also gaining popularity for their
+                                stylish, eco-friendly, and efficient appeal.
                               </p>
                             </div>
                             <a

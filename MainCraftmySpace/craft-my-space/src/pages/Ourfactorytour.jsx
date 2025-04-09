@@ -137,6 +137,7 @@ const Ourfactorytour = () => {
                   style={{
                     position: "relative", // This will keep the text above the background image
                     // height: "450px",
+                    zIndex:999,
                     overflow: "hidden", // Hide anything outside the bounds
                   }}
                 >

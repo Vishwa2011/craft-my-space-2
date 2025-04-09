@@ -6,11 +6,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { BiPhoneCall } from "react-icons/bi";
 
-
-
 const WhyCraftMySpace = () => {
-
-
   return (
     <motion.div
       className="page-wraper"
@@ -50,7 +46,7 @@ const WhyCraftMySpace = () => {
 
         {/* Content Section */}
         <motion.div
-        style={{ background: '#000' }}
+          style={{ background: "#000" }}
           className="container mt-5 mb-5"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,7 +54,7 @@ const WhyCraftMySpace = () => {
         >
           <div className="project-detail-outer">
             <div className="project-detail-containt">
-            <div className=" text-black">
+              <div className=" text-black">
                 <h3>Crafting Bespoke Furniture Solutions Since 2009</h3>
                 <p>
                   Bespoke fitted wardrobes, bedrooms, furniture, and kitchens
@@ -110,11 +106,10 @@ const WhyCraftMySpace = () => {
                   </p>
                 </p>
               </div>
-
             </div>
           </div>
         </motion.div>
-    {/* image start  */}
+        {/* image start  */}
         <motion.div className="section-full p-tb90">
           <div className="container-fluid project-detail-pic">
             <div className="row justify-content-center">
@@ -174,37 +169,106 @@ const WhyCraftMySpace = () => {
           </div>
         </motion.div>
         {/* image end  */}
-            {/* text start  */}
-            <motion.div style={{borderBottom:'2px solid #B19777'}}>
-        <div className="container  mb-5" >
-          <div className="project-detail-outer">
-            <div className="project-detail-containt">
-              <div className=" text-black">
-                <p>
-                  At <b>CraftMySpace</b>, we take immense pride in our
-                  exceptional team!
-                </p>
-                <p>
-                  Each of our specialists is deeply committed to delivering
-                  outstanding craftsmanship and personalized service. We believe
-                  that when clients return to collaborate with us on multiple
-                  projects, it’s the highest compliment we can receive. Building
-                  lasting relationships and earning customer trust is at the
-                  heart of everything we do.
-                </p>
-                <p>
-                  We create bespoke solutions tailored to your unique project
-                  requirements, ensuring quality, reliability, and safety you
-                  can always count on.
-                </p>
+        {/* mission-vision start  */}
+       <div style={{ borderBottom: "2px solid #B19777",paddingBottom:'40px' }}>
+       <section
+          className=" "
+          style={{textAlign:'center' }}
+        >
+          <div className="">
+            <h2 className="">
+              What Drives Us
+            </h2>
+            <p className="" style={{textAlign:'center'}}>
+              Our work isn’t just about designing beautiful interiors — it’s
+              guided by a deep mission and a bold vision for the future of
+              living spaces.
+            </p>
+            <div>
+            <a
+  href="/Mission"
+  style={{
+    background: '#B19777',
+    padding: '15px',
+    color: 'white',
+    margin: '10px',
+    fontWeight:500,
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out',
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+>
+  Read Our Mission →
+</a>
+
+<a
+  href="/Vision"
+  style={{
+    background: '#B19777',
+    padding: '15px',
+    color: 'white',
+    margin: '10px',
+    fontWeight:500,
+    textDecoration: 'none',
+    border: '2px solid #B19777',
+    transition: 'all 0.3s ease-in-out',
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.background = 'white';
+    e.target.style.color = '#B19777';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.background = '#B19777';
+    e.target.style.color = 'white';
+  }}
+>
+  Read Our Vision →
+</a>
+
+            </div>
+          </div>
+        </section>
+       </div>
+ {/* mission-vision end  */}
+        {/* text start  */}
+        <motion.div className="mt-5" style={{ borderBottom: "2px solid #B19777" }}>
+          <div className="container  mb-5">
+            <div className="project-detail-outer">
+              <div className="project-detail-containt">
+                <div className=" text-black">
+                  <p>
+                    At <b>CraftMySpace</b>, we take immense pride in our
+                    exceptional team!
+                  </p>
+                  <p>
+                    Each of our specialists is deeply committed to delivering
+                    outstanding craftsmanship and personalized service. We
+                    believe that when clients return to collaborate with us on
+                    multiple projects, it’s the highest compliment we can
+                    receive. Building lasting relationships and earning customer
+                    trust is at the heart of everything we do.
+                  </p>
+                  <p>
+                    We create bespoke solutions tailored to your unique project
+                    requirements, ensuring quality, reliability, and safety you
+                    can always count on.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </motion.div>
         {/* text end  */}
-          {/* customer start  */}
-          <motion.div className=" overflow-hide v-title-outer" >
+        {/* customer start  */}
+        <motion.div className=" overflow-hide v-title-outer">
           <div className="section-content">
             <div className="custom-block-outer clearfix bg-cover">
               {/* <div className="custom-right-part "> */}
@@ -247,75 +311,74 @@ const WhyCraftMySpace = () => {
           </div>
         </motion.div>
         {/* customer end  */}
-        
-        {/* slider start */}
-     <motion.div style={{padding:'100px 0px',borderBottom:'2px solid #B19777'}}>
-        <div className="wt-post-media">
-                        
-                            <div className="owl-carousel owl-fade-slider-one owl-btn-vertical-center owl-dots-bottom-right m-b30">
-                            
-                                <div className="item">
-                                    <div className="wt-thum-bx">
-                                        <img src="/assets/pic/corner-sofas.jpg" alt="" />
-                                    </div>
-                                </div>
-                                
-                                <div className="item">
-                                    <div className="wt-thum-bx">
-                                        <img src="/assets/pic/slider2.jpg" alt="" />
-                                    </div>
-                                </div>
-                                
-                                <div className="item">
-                                    <div className="wt-thum-bx">
-                                        <img src="/assets/pic/slider3.webp" alt="" />
-                                    </div>
-                                </div>                                    
-                            
-                            </div>
-                           
-                        </div>
-                        </motion.div>
-        {/* slider end */}
-         {/* text start  */}
-         <motion.div style={{borderBottom:'2px solid #B19777'}}>
-        <div className="container mt-5" >
-          <div className="project-detail-outer">
-            <div className="project-detail-containt">
-              <div className=" text-black">
-                <h3>Sliding Wardrobe Doors Manufacturer</h3>
-                <p>
-                  <b>CraftMySpace</b> is more than just a wardrobe specialist—we
-                  are one of the leading sliding door manufacturers in the UK.
-                  We design and produce high-quality sliding doors for other
-                  wardrobe manufacturers and trade customers, allowing us to
-                  offer the best prices without compromising on quality.
-                </p>
 
-                <p>
-                  If you’re looking for a reliable supplier of sliding doors or
-                  wardrobes for your business, we provide an extensive range of
-                  stunning designs, top-tier craftsmanship, and fast lead times.
-                  Our team is dedicated to offering expert guidance, and we
-                  provide a free consultation to ensure you receive the perfect
-                  solution.
-                </p>
-                <p>
-                  Visit our{" "}
-                  <b>sliding wardrobe door factory website — CraftMySpace</b>
-                </p>
-                <p>
-                  We build every project to your exact specifications, ensuring
-                  safety and durability you can trust.
-                </p>
+        {/* slider start */}
+        <motion.div
+          style={{ padding: "100px 0px", borderBottom: "2px solid #B19777" }}
+        >
+          <div className="wt-post-media">
+            <div className="owl-carousel owl-fade-slider-one owl-btn-vertical-center owl-dots-bottom-right m-b30">
+              <div className="item">
+                <div className="wt-thum-bx">
+                  <img src="/assets/pic/corner-sofas.jpg" alt="" />
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="wt-thum-bx">
+                  <img src="/assets/pic/slider2.jpg" alt="" />
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="wt-thum-bx">
+                  <img src="/assets/pic/slider3.webp" alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
+        {/* slider end */}
+        {/* text start  */}
+        <motion.div style={{ borderBottom: "2px solid #B19777" }}>
+          <div className="container mt-5">
+            <div className="project-detail-outer">
+              <div className="project-detail-containt">
+                <div className=" text-black">
+                  <h3>Sliding Wardrobe Doors Manufacturer</h3>
+                  <p>
+                    <b>CraftMySpace</b> is more than just a wardrobe
+                    specialist—we are one of the leading sliding door
+                    manufacturers in the UK. We design and produce high-quality
+                    sliding doors for other wardrobe manufacturers and trade
+                    customers, allowing us to offer the best prices without
+                    compromising on quality.
+                  </p>
+
+                  <p>
+                    If you’re looking for a reliable supplier of sliding doors
+                    or wardrobes for your business, we provide an extensive
+                    range of stunning designs, top-tier craftsmanship, and fast
+                    lead times. Our team is dedicated to offering expert
+                    guidance, and we provide a free consultation to ensure you
+                    receive the perfect solution.
+                  </p>
+                  <p>
+                    Visit our{" "}
+                    <b>sliding wardrobe door factory website — CraftMySpace</b>
+                  </p>
+                  <p>
+                    We build every project to your exact specifications,
+                    ensuring safety and durability you can trust.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </motion.div>
         {/* text end  */}
-          {/* <!-- VIDEO SECTION START --> */}
-          <motion.div className=" overflow-hide v-title-outer" style={{borderBottom:'2px solid #B19777'}}>
+        {/* <!-- VIDEO SECTION START --> */}
+        <motion.div className=" overflow-hide v-title-outer" style={{borderBottom:'2px solid #B19777'}}>
           <div className="section-content">
             <div className="custom-block-outer clearfix bg-cover">
               <div
@@ -329,7 +392,7 @@ const WhyCraftMySpace = () => {
                 <div className="custom-right-part-content p-t80 p-b80">
                   <div className="video-section-outer">
                     <div className="video-section">
-                      {/* <img src="assets/images/video-img.jpg" alt="" /> */}
+                     
                       <img src="/assets/pic/videoimg.jpg" alt="" />
                       <a
                         href="https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0"
@@ -345,9 +408,10 @@ const WhyCraftMySpace = () => {
             </div>
           </div>
         </motion.div>
+        
         {/* <!-- VIDEO  SECTION END -->           */}
-              {/* <!-- SECTION CONTENTG START --> */}
-              <motion.div className="section-full ">
+        {/* <!-- SECTION CONTENTG START --> */}
+        <motion.div className="section-full ">
           {/* <!-- LOCATION BLOCK--> */}
           <div className="container">
             {/* <!-- GOOGLE MAP & CONTACT FORM --> */}
@@ -360,14 +424,16 @@ const WhyCraftMySpace = () => {
                         <i className="sl-icon-phone"></i>
                       </div>
                       <div className="icon-content">
-  <h5 className="m-t0 font-weight-500">Phone number</h5>
-  <p>
-    <a href="tel:(0044)07365 566 666" style={{ textDecoration: 'none', color: 'inherit' }}>
-    (0044)07365 566 666
-    </a>
-  </p>
-</div>
-
+                        <h5 className="m-t0 font-weight-500">Phone number</h5>
+                        <p>
+                          <a
+                            href="tel:(0044)07365 566 666"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            (0044)07365 566 666
+                          </a>
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-4">
@@ -376,17 +442,16 @@ const WhyCraftMySpace = () => {
                         <i className="sl-icon-envolope"></i>
                       </div>
                       <div className="icon-content">
-  <h5 className="m-t0 font-weight-500">Email address</h5>
-  <p>
-    <a 
-      href="mailto:Info@craftmyspace.co.uk" 
-      style={{ textDecoration: 'none', color: 'inherit' }}
-    >
-     Info@craftmyspace.co.uk
-    </a>
-  </p>
-</div>
-
+                        <h5 className="m-t0 font-weight-500">Email address</h5>
+                        <p>
+                          <a
+                            href="mailto:Info@craftmyspace.co.uk"
+                            style={{ textDecoration: "none", color: "inherit" }}
+                          >
+                            Info@craftmyspace.co.uk
+                          </a>
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-4">
@@ -397,7 +462,8 @@ const WhyCraftMySpace = () => {
                       <div className="icon-content">
                         <h5 className="m-t0 font-weight-500">Address info</h5>
                         <p>
-                       Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire - SL0 9NT
+                          Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire
+                          - SL0 9NT
                         </p>
                       </div>
                     </div>
@@ -417,157 +483,167 @@ const WhyCraftMySpace = () => {
         ></iframe>
 
         {/* <!-- SECTION CONTENT END --> */}
-               {/* book start  */}
-               <motion.div className="section-full p-t80 p-b80" style={{ backgroundImage: `url('/assets/pic/modular-kitchen-cabinets.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="container">
-        <div className="section-content">
-          <div className="contact-wrapper">
-            {/* Left Side Content */}
-            <div className="contact-info mt-4">
-              <h2 style={{color:'white'}}>Book free design visit</h2>
-              <p>
-                            Enter your details and we will contact you shortly
-                            to discuss booking your design visit.
-                          </p>
-                          <div className="contact-details">
-  <p>
-    <BiPhoneCall />
-    <a 
-      href="tel:(0044)07365 566 666" 
-      style={{ textDecoration: 'none', color: 'inherit', marginLeft: '5px' }}
-    >
-     (0044)07365 566 666
-    </a>
-  </p>
-</div>
+        {/* book start  */}
+        <motion.div
+          className="section-full p-t80 p-b80"
+          style={{
+            backgroundImage: `url('/assets/pic/modular-kitchen-cabinets.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="container">
+            <div className="section-content">
+              <div className="contact-wrapper">
+                {/* Left Side Content */}
+                <div className="contact-info mt-4">
+                  <h2 style={{ color: "white" }}>Book free design visit</h2>
+                  <p>
+                    Enter your details and we will contact you shortly to
+                    discuss booking your design visit.
+                  </p>
+                  <div className="contact-details">
+                    <p>
+                      <BiPhoneCall />
+                      <a
+                        href="tel:(0044)07365 566 666"
+                        style={{
+                          textDecoration: "none",
+                          color: "inherit",
+                          marginLeft: "5px",
+                        }}
+                      >
+                        (0044)07365 566 666
+                      </a>
+                    </p>
+                  </div>
+                </div>
 
-            </div>
+                {/* Right Side Form */}
+                <div className="contact-form p-a30 bg-gray">
+                  <Formik
+                    initialValues={{
+                      username: "",
+                      email: "",
+                      number: "",
+                      address: "",
+                      message: "",
+                    }}
+                    validate={(values) => {
+                      let errors = {};
 
-            {/* Right Side Form */}
-            <div className="contact-form p-a30 bg-gray">
-              <Formik
-                initialValues={{
-                  username: "",
-                  email: "",
-                  number: "",
-                  address: "",
-                  message: "",
-                }}
-                validate={(values) => {
-                  let errors = {};
+                      const emailRegex =
+                        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                      if (!values.email.trim()) {
+                        errors.email = "Email is required";
+                      } else if (!emailRegex.test(values.email)) {
+                        errors.email = "Please enter a valid email address";
+                      }
 
-                  const emailRegex =
-                    /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-                  if (!values.email.trim()) {
-                    errors.email = "Email is required";
-                  } else if (!emailRegex.test(values.email)) {
-                    errors.email = "Please enter a valid email address";
-                  }
+                      const phoneRegex = /^[0-9]{10}$/;
+                      if (!values.number.trim()) {
+                        errors.number = "Phone number is required";
+                      } else if (!phoneRegex.test(values.number)) {
+                        errors.number =
+                          "Phone number must be exactly 10 digits";
+                      }
 
-                  const phoneRegex = /^[0-9]{10}$/;
-                  if (!values.number.trim()) {
-                    errors.number = "Phone number is required";
-                  } else if (!phoneRegex.test(values.number)) {
-                    errors.number = "Phone number must be exactly 10 digits";
-                  }
+                      return errors;
+                    }}
+                    onSubmit={(values, { setSubmitting, resetForm }) => {
+                      console.log("Form Submitted:", values);
 
-                  return errors;
-                }}
-                onSubmit={(values, { setSubmitting, resetForm }) => {
-                  console.log("Form Submitted:", values);
+                      Swal.fire({
+                        title: "Success!",
+                        text: "Form submitted successfully!",
+                        icon: "success",
+                        confirmButtonText: "OK",
+                      });
 
-                  Swal.fire({
-                    title: "Success!",
-                    text: "Form submitted successfully!",
-                    icon: "success",
-                    confirmButtonText: "OK",
-                  });
+                      resetForm();
+                      setSubmitting(false);
+                    }}
+                  >
+                    {({
+                      values,
+                      errors,
+                      touched,
+                      handleBlur,
+                      handleChange,
+                    }) => (
+                      <Form className="cons-contact-form">
+                        {/* <h3 className="m-b5 text-uppercase">Get In Touch</h3> */}
 
-                  resetForm();
-                  setSubmitting(false);
-                }}
-              >
-                {({
-                  values,
-                  errors,
-                  touched,
-                  handleBlur,
-                  handleChange,
-                }) => (
-                  <Form className="cons-contact-form">
-                    {/* <h3 className="m-b5 text-uppercase">Get In Touch</h3> */}
+                        <Field
+                          name="username"
+                          type="text"
+                          className="form-control"
+                          placeholder="Full Name"
+                          onChange={(e) => {
+                            const regex = /^[A-Za-z\s]*$/;
+                            if (regex.test(e.target.value)) {
+                              handleChange(e);
+                            }
+                          }}
+                        />
 
-                    <Field
-                      name="username"
-                      type="text"
-                      className="form-control"
-                      placeholder="Full Name"
-                      onChange={(e) => {
-                        const regex = /^[A-Za-z\s]*$/;
-                        if (regex.test(e.target.value)) {
-                          handleChange(e);
-                        }
-                      }}
-                    />
+                        <Field
+                          name="email"
+                          type="text"
+                          className="form-control"
+                          placeholder="Email Address"
+                        />
+                        {errors.email && touched.email && (
+                          <p className="error-message">{errors.email}</p>
+                        )}
 
-                    <Field
-                      name="email"
-                      type="text"
-                      className="form-control"
-                      placeholder="Email Address"
-                    />
-                    {errors.email && touched.email && (
-                      <p className="error-message">{errors.email}</p>
+                        <Field
+                          name="number"
+                          type="tel"
+                          className="form-control"
+                          placeholder="Phone Number"
+                          value={values.number}
+                          onChange={(e) => {
+                            const value = e.target.value;
+                            if (/^\d{0,10}$/.test(value)) {
+                              handleChange(e);
+                            }
+                          }}
+                        />
+                        {errors.number && touched.number && (
+                          <p className="error-message">{errors.number}</p>
+                        )}
+
+                        <Field
+                          name="address"
+                          type="text"
+                          className="form-control"
+                          placeholder="Location"
+                        />
+
+                        <Field
+                          name="message"
+                          as="textarea"
+                          rows="4"
+                          className="form-control"
+                          placeholder="How can we help?"
+                        />
+
+                        <button
+                          type="submit"
+                          className="site-button radius-no text-uppercase"
+                          disabled={Object.keys(errors).length > 0}
+                        >
+                          SEND
+                        </button>
+                      </Form>
                     )}
-
-                    <Field
-                      name="number"
-                      type="tel"
-                      className="form-control"
-                      placeholder="Phone Number"
-                      value={values.number}
-                      onChange={(e) => {
-                        const value = e.target.value;
-                        if (/^\d{0,10}$/.test(value)) {
-                          handleChange(e);
-                        }
-                      }}
-                    />
-                    {errors.number && touched.number && (
-                      <p className="error-message">{errors.number}</p>
-                    )}
-
-                    <Field
-                      name="address"
-                      type="text"
-                      className="form-control"
-                      placeholder="Location"
-                    />
-
-                    <Field
-                      name="message"
-                      as="textarea"
-                      rows="4"
-                      className="form-control"
-                      placeholder="How can we help?"
-                    />
-
-                    <button
-                      type="submit"
-                      className="site-button radius-no text-uppercase"
-                      disabled={Object.keys(errors).length > 0}
-                    >
-                      SEND
-                    </button>
-                  </Form>
-                )}
-              </Formik>
+                  </Formik>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </motion.div>
-
+        </motion.div>
 
         {/* book end  */}
         {/* Footer Section */}
