@@ -1392,7 +1392,7 @@ export default function Home() {
                     ))}
                   </div>
                   <h2>Enjoy a Luxury Experience</h2>
-                  <p>
+                  <p style={{marginBottom:'50px'}}>
                     At Elite Living, we set the benchmark for refined luxury,
                     crafting spaces that epitomize sophistication and
                     exclusivity. Our bespoke services go beyond the ordinary,
@@ -1409,7 +1409,7 @@ export default function Home() {
                    
                     <div>
                       <a
-                        href="/"
+                        href="/GetFreeDesignConsultation"
                         style={{
                           background: "#B19777",
                           padding: "15px",
@@ -1433,7 +1433,7 @@ export default function Home() {
                       </a>
 
                       <a
-                        href="/Kitchen-Service"
+                        href="/Startdesigning"
                         style={{
                           background: "#B19777",
                           padding: "15px",
@@ -1501,18 +1501,18 @@ export default function Home() {
             <motion.div className="container mt-5">
               <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
                 {[
-                  { title: "sliding door wardrobes", img: "bespoke1.jpg", link: "/" },
-                  { title: "plain hinge door wardrobes", img: "bespoke2.jpg",link:'/' },
-                  { title: "shaker style fitted wardrobes", img: "bespoke3.jpg" },
-                  { title: "walk-in wardrobes", img: "bespoke4.jpg",link:'/' },
-                  { title: "loft wardrobes", img: "bespoke5.jpg",link:'/' },
-                  { title: "media units", img: "bespoke6.jpg" ,link:'/'},
-                  { title: "fitted bookshelves", img: "bespoke7.jpg" ,link:'/'},
-                  { title: "office cabinets", img: "bespoke8.jpg",link:'/' },
-                  { title: "glass door wardrobe cabinets", img: "dbespoke9.jpg",link:'/' },
-                  { title: "small utility room storage", img: "bespoke10.jpg" ,link:'/'},
-                  { title: "bedroom wardrobes", img: "bespoke11.jpg",link:'/' },
-                  { title: "fretwork doors wardrobe", img: "bespoke12.jpg" ,link:'/'},
+                  { title: "sliding door wardrobes", img: "bespoke1.jpg", link: "/BespokeFurniture" },
+                  { title: "plain hinge door wardrobes", img: "bespoke2.jpg",link:'/BespokeFurniture' },
+                  { title: "shaker style fitted wardrobes", img: "bespoke3.jpg",link:'/BespokeFurniture' },
+                  { title: "walk-in wardrobes", img: "bespoke4.jpg",link:'/BespokeFurniture' },
+                  { title: "loft wardrobes", img: "bespoke5.jpg",link:'/BespokeFurniture' },
+                  { title: "media units", img: "bespoke6.jpg" ,link:'/BespokeFurniture'},
+                  { title: "fitted bookshelves", img: "bespoke7.jpg" ,link:'/BespokeFurniture'},
+                  { title: "office cabinets", img: "bespoke8.jpg",link:'/BespokeFurniture' },
+                  { title: "glass door wardrobe cabinets", img: "bespoke9.jpg",link:'/BespokeFurniture' },
+                  { title: "small utility room storage", img: "bespoke10.jpg" ,link:'/BespokeFurniture'},
+                  { title: "bedroom wardrobes", img: "bespoke11.jpg",link:'/BespokeFurniture' },
+                  { title: "fretwork doors wardrobe", img: "bespoke12.jpg" ,link:'/BespokeFurniture'},
                 ].map((item, index) => (
                   <div
                     key={index}  
@@ -1555,6 +1555,31 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+                <div style={{display:'flex',justifyContent:'center'}}>
+                <a
+                        href="/"
+                        style={{
+                          background: "#B19777",
+                          padding: "15px",
+                          color: "white",
+                          margin: "10px",
+                          fontWeight: 500,
+                          textDecoration: "none",
+                          border: "2px solid #B19777",
+                          transition: "all 0.3s ease-in-out",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.background = "white";
+                          e.target.style.color = "#B19777";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.background = "#B19777";
+                          e.target.style.color = "white";
+                        }}
+                      >
+                        Get a Free Design Consultation
+                      </a>
+                </div>
             </motion.div>
 
             {/* card end  */}
@@ -2243,7 +2268,7 @@ export default function Home() {
           <span className="fa fa-angle-up  relative" id="btn-vibrate"></span>
         </button>
       </div>
-      <MeetDesignerForm />
+      {/* <MeetDesignerForm /> */}
 
       {/* <!-- LOADING AREA START ===== --> */}
       {/* <div className="loading-area">

@@ -43,8 +43,14 @@ import GetaQuote from "./pages/GetaQuote";
 import Service from "./pages/Service";
 import KitchenService from "./pages/Kitchen-Service";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
 import Ourfactorytour from "./pages/Ourfactorytour";
+
+
+
+
+import BespokeFurniture from "./pages/BespokeFurniture";
+import GetFreeDesignConsultation from "./pages/GetFreeDesignConsultation";
+
 
 // import Getaquote from "./pages/GetQuote";
 function App() {
@@ -181,6 +187,10 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/Kitchen-Service" element={<KitchenService />} />
         <Route path="/Ourfactorytour" element={<Ourfactorytour />} />
+
+        <Route path="/BespokeFurniture" element={<BespokeFurniture />} />
+        <Route path="/GetFreeDesignConsultation" element={<GetFreeDesignConsultation />} />
+       
       </Routes>
     </>
   );
