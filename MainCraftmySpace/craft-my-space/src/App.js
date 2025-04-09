@@ -46,6 +46,25 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import Ourfactorytour from "./pages/Ourfactorytour";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import Startdesigning from "./pages/Startdesigning";
+
 // import Getaquote from "./pages/GetQuote";
 function App() {
   return (
@@ -181,6 +200,29 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/Kitchen-Service" element={<KitchenService />} />
         <Route path="/Ourfactorytour" element={<Ourfactorytour />} />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Route path="/Startdesigning" element={<Startdesigning />}/>
+        
+
+
+
       </Routes>
     </>
   );
