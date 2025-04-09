@@ -647,7 +647,7 @@ const Navbar = () => {
               <button
                 className="mobile-menu-toggle"
                 onClick={() => setMenuOpen(!menuOpen)}
-                style={{ color: "#141b1f", justifyContent: "flex-end" }}
+                style={{ color: "#fff", justifyContent: "flex-end" }}
               >
                 ☰
               </button>
@@ -658,7 +658,7 @@ const Navbar = () => {
                     <a href="/" >Home</a>
                   </li>
                   <li style={{marginRight:'15px'}}>
-                    <a href="/WhyCraftMySpace">Why CraftMySpace?</a>
+                    <a href="/WhyCraftMySpace">Why CMS?</a>
                     <ul className="sub-menu">
                       <li><a  href="/Mission">Our Mission</a></li>
                       <li><a  href="/Vision">Our Vision</a></li>
@@ -853,7 +853,7 @@ const Navbar = () => {
 
       <style>{`
       .css-y7ab46-MuiPaper-root-MuiDrawer-paper{
-      background: #1c1c1c;
+      background: #000;
       }
         @media (max-width: 768px) {
           .mobile-menu-toggle {

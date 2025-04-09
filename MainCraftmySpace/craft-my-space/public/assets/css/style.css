@@ -4509,7 +4509,7 @@ display: block;	left: -85px;	top:90%;	list-style: none;	margin:8px 0px 0px 0px !
 .header-nav .nav > li .sub-menu li {position: relative;	text-transform:none;}
 
 
-.header-nav .nav > li .sub-menu li a {color: #fff;	display: block;	font-size: 12px;	padding: 10px 20px;}
+.header-nav .nav > li .sub-menu li a {color: #b19777;	display: block;	font-size: 12px;	padding: 10px 20px;}
 .header-nav .nav > li .sub-menu li a:hover {color: #262423;	text-decoration: none;}
 
 
