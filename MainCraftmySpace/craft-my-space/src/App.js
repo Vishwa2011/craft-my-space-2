@@ -60,16 +60,74 @@ function App() {
             <BiPhoneCall className="icon" />
           </div></a>
       </div>
-      {/* WhatsApp */}
-      <div class="phone-widget1">
-        <a href="https://wa.me/447365566666" target="_blank">
-          <div class="phone-icon1">
-            <WhatsAppIcon className="icon" />
-          </div>
-        </a>
-      </div>
-      {/* book */}
       <div class="phone-widget2" style={{
+    transform: "rotate(1deg)"
+}}>
+        <a href="/GetaQuote">
+          <div class="phone-number">
+          Book An Appointment
+          </div>
+        
+          </a>
+      </div>
+      {/* WhatsApp */}
+      <div
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    zIndex: 9999,
+  }}
+  className="phone-widget1"
+>
+  <a
+    href="https://wa.me/447365566666"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      textDecoration: "none",
+    }}
+  >
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        borderRadius: "999px",
+        padding: "10px 15px",
+        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+      }}
+    >
+      <div
+        style={{
+          color: "white",
+          fontSize: "14px",
+          fontWeight: 500,
+          marginRight: "10px",
+          lineHeight: "1.2",
+          textAlign: "right",
+        }}
+      >
+        Chat With Experts  >>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#4AC959", // ✅ Only icon background
+          width: "40px",
+          height: "40px",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <WhatsAppIcon style={{ color: "white" }} />
+      </div>
+    </div>
+  </a>
+</div>
+
+      {/* book */}
+      {/* <div class="phone-widget" style={{
     transform: "rotate(270deg)"
 }}>
         <a href="/GetaQuote">
@@ -78,7 +136,7 @@ function App() {
           </div>
         
           </a>
-      </div>
+      </div> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />
