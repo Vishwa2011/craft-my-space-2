@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 
 const services = [
-  {
-    title: "Home Office",
-    description:
-      "Create a productive and stylish workspace with smart storage solutions, ergonomic designs, and a seamless blend of functionality and aesthetics.",
-    image: "/assets/pic/home1.png",
-      link: "/HomeOffice",
-  },
+  // {
+  //   title: "Home Office",
+  //   description:
+  //     "Create a productive and stylish workspace with smart storage solutions, ergonomic designs, and a seamless blend of functionality and aesthetics.",
+  //   image: "/assets/pic/home1.png",
+  //     link: "/HomeOffice",
+  // },
   {
     title: "Kitchen",
     description:
