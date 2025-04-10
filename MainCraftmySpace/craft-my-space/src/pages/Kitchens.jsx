@@ -74,7 +74,7 @@ const Kitchens = () => {
             <h3 style={{textAlign:'center'}}>Our Fitted Kitchens Means</h3>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="E">
@@ -98,7 +98,7 @@ const Kitchens = () => {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="P">
@@ -122,7 +122,7 @@ const Kitchens = () => {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="t">
@@ -146,7 +146,7 @@ const Kitchens = () => {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="s">
@@ -170,7 +170,7 @@ const Kitchens = () => {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="L">
@@ -194,7 +194,7 @@ const Kitchens = () => {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="A">

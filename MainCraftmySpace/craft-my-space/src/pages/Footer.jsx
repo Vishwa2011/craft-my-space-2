@@ -155,7 +155,7 @@ const Footers = () => {
 </li>
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
-  href='/Inspiration'
+  href='/Blog'
     style={{ color: "#7e878c", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
     onMouseLeave={(e) => e.target.style.color = "#7e878c"}
@@ -165,12 +165,12 @@ const Footers = () => {
 </li>
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
-  href='/GetaQuote'
+  href='/ContactUs'
     style={{ color: "#7e878c", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
     onMouseLeave={(e) => e.target.style.color = "#7e878c"}
   >
-  Get Quote
+  Contact Us
   </a>
 </li>
 {/* <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
@@ -182,8 +182,8 @@ const Footers = () => {
   >
  Our Mission
   </a>
-</li>
-<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+</li> */}
+{/* <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
   href='/Vision'
     style={{ color: "#7e878c", transition: "color 0.3s" }} 
@@ -192,7 +192,7 @@ const Footers = () => {
   >
   Our Vision
   </a>
-</li>
+</li> */}
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
   href='/PrivacyPolicy'
@@ -212,7 +212,7 @@ Privacy & Policy
   >
   Terms & Condition
   </a>
-</li> */}
+</li>
 
        
                  
@@ -267,7 +267,7 @@ Privacy & Policy
                   <h4 className="widget-title mb-0">Booking</h4>
                 </div>
                 <div>
-                <a href="/GetaQuote">
+                <a href="/Orderafreebrochure">
                 <div
     style={{
       border: "2px solid #B19777",
@@ -290,7 +290,7 @@ Privacy & Policy
   >
                     <span>
                       
-                      Get a Free Quote
+                      Order A Free Brouchure
                      
                     </span>
                   </div>
