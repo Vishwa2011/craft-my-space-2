@@ -8,7 +8,7 @@ import Footers from "./Footer";
 import Swal from "sweetalert2";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
-const GetaQuote = () => {
+const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -103,7 +103,7 @@ const GetaQuote = () => {
             <div className="wt-bnr-inr-entry">
               <div className="banner-title-outer">
                 <div className="banner-title-name">
-                  <h2 className="text-white">Get A Quote</h2>
+                  <h2 className="text-white">Contact Us</h2>
                 </div>
               </div>
               <div>
@@ -111,7 +111,7 @@ const GetaQuote = () => {
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>Get A Quote</li>
+                  <li>Contact Us</li>
                 </ul>
               </div>
             </div>
@@ -138,7 +138,7 @@ const GetaQuote = () => {
               <motion.div className="contact-form p-a30 col-md-6 col-12" initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}>
               <form className="cons-contact-form" onSubmit={handleSubmit}>
                     <div className="contact-one">
-                      <h4 className="m-b6" style={{color:"#B19777"}}>Get A Quote</h4>
+                      <h4 className="m-b6" style={{color:"#B19777"}}>Contact Us</h4>
                       <h3 style={{color:'black'}}>Do You Need Any Help? Send Message</h3>
                       <Box sx={{ width: "100%" }}>
                         <TextField
@@ -274,4 +274,4 @@ const GetaQuote = () => {
   );
 };
 
-export default GetaQuote;
+export default ContactUs;

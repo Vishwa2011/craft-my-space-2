@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Footers from "./Footer";
 import Navbar from "./Navbar";
 
-const Inspiration = () => {
+const Blog = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -27,7 +27,7 @@ const Inspiration = () => {
             <div className="wt-bnr-inr-entry">
               <div className="banner-title-outer">
                 <div className="banner-title-name">
-                  <h2 className="text-white">Inspirational Blog</h2>
+                  <h2 className="text-white"> Blog</h2>
                 </div>
               </div>
               <div>
@@ -35,7 +35,7 @@ const Inspiration = () => {
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>Inspirational Blog</li>
+                  <li> Blog</li>
                 </ul>
               </div>
             </div>
@@ -537,4 +537,4 @@ SEE MORE
   );
 };
 
-export default Inspiration;
+export default Blog;

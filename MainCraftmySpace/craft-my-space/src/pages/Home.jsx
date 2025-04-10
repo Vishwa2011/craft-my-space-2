@@ -1961,7 +1961,7 @@ export default function Home() {
         <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">3</span>
       </div>
       <div className="card-body text-center"  style={{background:'#141414'}}>
-        <h5 className="card-title fw-bold"  style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>visualize & get a quote</h5>
+        <h5 className="card-title fw-bold"  style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>visualize & Contact us </h5>
         <p className="card-text " style={{color:'#fff'}}>
         See your dream furniture come to life before you buy! With our visualization tools, you can preview designs, colors, and finishes in real-time—making it easier to picture how everything will look in your space.
         </p>
@@ -2066,7 +2066,7 @@ export default function Home() {
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="E">
@@ -2090,7 +2090,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="P">
@@ -2114,7 +2114,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="t">
@@ -2138,7 +2138,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="s">
@@ -2162,7 +2162,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="L">
@@ -2186,7 +2186,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <a href="/Contact">
+                <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
                     <div className="icon-content m-b30">
                       <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="A">
@@ -2303,7 +2303,7 @@ export default function Home() {
                               </p>
                             </div>
                             <a
-                              href="/Inspiration"
+                              href="/Blog"
                               className="site-button-link"
                               style={{ color: "#fff" }}
                             >
@@ -2364,7 +2364,7 @@ export default function Home() {
                               </p>
                             </div>
                             <a
-                              href="/Inspiration"
+                              href="/Blog"
                               className="site-button-link"
                               style={{ color: "#fff" }}
                             >
@@ -2423,7 +2423,7 @@ export default function Home() {
                               </p>
                             </div>
                             <a
-                              href="/Inspiration"
+                              href="/Blog"
                               className="site-button-link"
                               style={{ color: "#fff" }}
                             >

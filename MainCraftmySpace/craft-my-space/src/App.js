@@ -5,7 +5,7 @@ import FittedWardrobes from "./pages/FittedWardrobes";
 import FittedLiving from "./pages/FittedLiving";
 import AwkwardSpaces from "./pages/AwkwardSpaces";
 import Joinery from "./pages/Joinery";
-import Inspiration from "./pages/Inspiration";
+import Blog from "./pages/Blog";
 import Recentwork from "./pages/Recentwork";
 import Orderafreebrochure from "./pages/Orderafreebrochure";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -39,7 +39,7 @@ import Vision from "./pages/Vision";
 import { BiPhoneCall } from "react-icons/bi";
 import MeetDesignerForm from "./pages/MeetDesignerForm";
 import Thankyou from "./pages/Thankyou";
-import GetaQuote from "./pages/GetaQuote";
+import ContactUs from "./pages/ContactUs";
 import Service from "./pages/Service";
 import KitchenService from "./pages/Kitchen-Service";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -70,7 +70,7 @@ function App() {
       <div class="phone-widget2" style={{
     transform: "rotate(1deg)"
 }}>
-        <a href="/GetaQuote">
+        <a href="/ContactUs">
           <div class="phone-number">
           Book An Appointment
           </div>
@@ -151,10 +151,10 @@ function App() {
         <Route path="/FittedLiving" element={<FittedLiving />} />
         <Route path="/AwkwardSpaces" element={<AwkwardSpaces />} />
         <Route path="/Joinery" element={<Joinery />} />
-        <Route path="/Inspiration" element={<Inspiration />} />
+        <Route path="/Blog" element={<Blog />} />
         <Route path="/Recentwork" element={<Recentwork />} />
         {/* <Route path="/GetQuote" element={<Getaquote />} /> */}
-        <Route path="/GetaQuote" element={<GetaQuote />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Orderafreebrochure" element={<Orderafreebrochure />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Footer" element={<Footer />} />

@@ -351,7 +351,7 @@ const FittedWardrobes = () => {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
   <a 
-    href="/GetaQuote"    
+    href="/ContactUs"    
     style={{
       background: "#B19777",
       color: "white",
