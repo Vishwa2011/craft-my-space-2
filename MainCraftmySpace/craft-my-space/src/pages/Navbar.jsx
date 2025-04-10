@@ -484,7 +484,7 @@ const Navbar = () => {
     sx={{ 
       width: { xs: 320, sm: 375, md: 400 }, 
       padding: 2, 
-      // backgroundColor: "#1c1c1c", 
+      backgroundColor: "#000", 
       color: "#fff" 
     }}
     >
@@ -569,10 +569,10 @@ const Navbar = () => {
   <ListItemText
     primary={
       <a
-        href="mailto:info@craftmyspace.uk"
+        href="mailto:Info@craftmyspace.co.uk"
         style={{ textDecoration: 'none', color: 'inherit' }}
       >
-        info@craftmyspace.uk
+        Info@craftmyspace.co.uk
       </a>
     }
   />

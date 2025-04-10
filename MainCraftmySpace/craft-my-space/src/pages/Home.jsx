@@ -1407,7 +1407,7 @@ export default function Home() {
                   </p>
                 
                    
-                    <div>
+                    <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
                       <a
                         href="/GetFreeDesignConsultation"
                         style={{
@@ -1794,7 +1794,7 @@ export default function Home() {
               </div>
           </div>
           </div>
-            <div style={{display:'flex',justifyContent:'center',marginTop:'20px'}}>
+            <div style={{display:'flex',justifyContent:'center',marginTop:'20px',flexWrap:'wrap'}}>
                       <a
                         href="/"
                         style={{
@@ -1974,9 +1974,9 @@ export default function Home() {
 
 
     {/* <!-- Button --> */}
-<div style={{display:'flex' ,justifyContent:'center',marginTop:'60px'}}>
+<div style={{display:'flex' ,justifyContent:'center',flexWrap:'wrap',marginTop:'60px'}}>
 
-    <div style={{marginRight:'25px'}} >
+    <div style={{margin:'10px'}} >
                 <a
                   href="/Startdesigning"
                   className="site-button-link"
@@ -2000,7 +2000,7 @@ export default function Home() {
                     START DESIGNING NOW
                 </a>
               </div>
-              <div>
+              <div style={{margin:'10px'}}>
                 <a
                   href="/Recentwork"
                   className="site-button-link"
