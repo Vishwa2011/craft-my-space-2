@@ -1904,7 +1904,7 @@ export default function Home() {
     <div className="card h-100 shadow-sm" style={{border:'0px'}}>
       <div style={{ position: 'relative', overflow: 'hidden' }}>
         <img
-          src="/assets/pic/no2 (1).webp"
+          src="/assets/pic/no2 (1).jpg"
           alt="Survey"
           style={{
             width: '100%',

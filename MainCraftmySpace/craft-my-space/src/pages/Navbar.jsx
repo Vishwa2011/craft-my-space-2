@@ -653,7 +653,7 @@ const Navbar = () => {
               </button>
               {/* MAIN Nav */}
               <div className={`header-nav ${menuOpen ? "open" : ""}`}>
-                <ul className="nav navbar-nav scroll" style={{padding:'0px 30px'}}>
+                <ul className="nav navbar-nav scroll"  style={{padding:'0px 30px'}}>
                   <li>
                     <a href="/" >Home</a>
                   </li>
@@ -777,10 +777,10 @@ const Navbar = () => {
                   <li>
                     <a href="/Joinery" >Joinery</a>
                   </li>
-                  <li>
-                    <a href="/Inspiration" >Inspiration</a>
-                  </li>
-                  <li style={{marginRight:'20px'}}>
+                  {/* <li>
+                    <a href="/Inspiration" >Blog</a>
+                  </li> */}
+                  {/* <li style={{marginRight:'20px'}}>
                     <a href="" >Gallery</a>
                     <ul className="sub-menu">
                       <li >
@@ -804,8 +804,8 @@ const Navbar = () => {
                         <a href="/Termandcondition">Terms & Conditions</a>
                       </li>
                     </ul>
-                  </li>
-                  {/* <li style={{marginRight:'22px'}}>
+                  </li> */}
+                  {/* <li styl  e={{marginRight:'22px'}}>
                   <div className="extra-nav" style={{height:'0px'}}>
                                 <div className="extra-cell" style={{display:"block"}}>											
                                     <a href="#search" className=" text-white">
@@ -852,6 +852,9 @@ const Navbar = () => {
       </header>
 
       <style>{`
+          .css-1pkjbo {
+        width: 325px;
+    }
       .css-y7ab46-MuiPaper-root-MuiDrawer-paper{
       background: #000;
       }
