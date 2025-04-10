@@ -104,8 +104,8 @@ const Slidingwardrobed = () => {
                       whileInView={{ opacity: 1 }}
                       transition={{ duration: 0.8 }}>
                       <div className="home-2-about-left">
-                        <div className="home-2-about-left-content p-a50 text-white" style={{ background: "#272727" }}>
-                          <h2 className="m-t0 wt-title">{service.title}</h2>
+                        <div className="home-2-about-left-content p-a50 text-white" style={{ background: "#141414" }}>
+                          <h2 className="m-t0 wt-title" style={{color:'#B19777'}}>{service.title}</h2>
                           <p>{service.description}</p>
                           <a 
                             href={service.link}                                                                 

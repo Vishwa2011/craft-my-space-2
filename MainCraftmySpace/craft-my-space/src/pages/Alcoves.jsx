@@ -55,14 +55,14 @@ const Alcoves = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>Alcoves – awkward shapes storage solutions</h3>
-                <p>
-                Fireplaces add charm and character to any home, and the <b>alcove space</b> beside them or along a <b>chimney breast</b> offers a valuable storage opportunity. Instead of letting this space go unused, <b>custom-built alcove storage</b> can transform these areas into stylish and practical solutions.
+                <h3 style={{color:'#B19777'}}>Alcoves – awkward shapes storage solutions</h3>
+                <p style={{color:'#fff'}}>
+                Fireplaces add charm and character to any home, and the <b style={{color:'#B19777'}}>alcove space</b> beside them or along a <b style={{color:'#B19777'}}>chimney breast</b> offers a valuable storage opportunity. Instead of letting this space go unused, <b style={{color:'#B19777'}}>custom-built alcove storage</b> can transform these areas into stylish and practical solutions.
                 </p>
-                <p>
-                Unlike <b>freestanding wardrobes</b>, which often leave wasted space at the top, sides, and back, <b>made-to-measure fitted wardrobes</b> maximize every inch. From <b>extra hanging space and deeper shelves</b> to an integrated dressing table, a tailor-made design ensures seamless functionality while enhancing the aesthetic of your home.
+                <p style={{color:'#fff'}}>
+                Unlike <b style={{color:'#B19777'}}>freestanding wardrobes</b>, which often leave wasted space at the top, sides, and back, <b style={{color:'#B19777'}}>made-to-measure fitted wardrobes</b> maximize every inch. From <b style={{color:'#B19777'}}>extra hanging space and deeper shelves</b> to an integrated dressing table, a tailor-made design ensures seamless functionality while enhancing the aesthetic of your home.
                 </p>
-                <p>If you’re looking for <b>built-in cupboards</b> for your living room, we have the perfect solution. Whether it’s a <b>fitted bookcase, bespoke TV unit, or custom storage system</b>, our designs create an elegant and clutter-free space tailored to your exact needs.</p>
+                <p style={{color:'#fff'}}>If you’re looking for <b style={{color:'#B19777'}}>built-in cupboards</b> for your living room, we have the perfect solution. Whether it’s a <b style={{color:'#B19777'}}>fitted bookcase, bespoke TV unit, or custom storage system</b>, our designs create an elegant and clutter-free space tailored to your exact needs.</p>
               </div>
             </div>
           </div>

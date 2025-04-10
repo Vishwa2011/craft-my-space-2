@@ -54,14 +54,14 @@ const MediaRoom = () => {
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
                   <div className=" text-black">
-                    <h3>Media Room – Built in TV & Media Units</h3>
-                    <p>
-                    If you have a <b>media room</b> in your home, it likely accommodates multiple devices, from a TV and gaming console to streaming boxes and sound systems. Keep everything neatly organized with a <b>custom-built TV cabinet</b> designed for both style and functionality. Our expertly crafted <b>fitted media units</b> provide the perfect space for your entertainment setup while discreetly housing all your additional gadgets and accessories.
+                    <h3 style={{ color: "#B19777" }}>Media Room – Built in TV & Media Units</h3>
+                    <p style={{ color: "#fff" }}>
+                    If you have a <b style={{ color: "#B19777" }}>media room</b> in your home, it likely accommodates multiple devices, from a TV and gaming console to streaming boxes and sound systems. Keep everything neatly organized with a <b style={{ color: "#B19777" }}>custom-built TV cabinet</b> designed for both style and functionality. Our expertly crafted <b style={{ color: "#B19777" }}>fitted media units</b> provide the perfect space for your entertainment setup while discreetly housing all your additional gadgets and accessories.
                     </p>
-                    <p>
-                    We offer a variety of <b>bespoke media units</b>, including floor-standing, wall-mounted, and <b>built-in corner TV units</b>—ideal for making the most of tricky alcoves. Available in a range of colors and finishes, our designs seamlessly blend into your home’s aesthetic while maximizing storage and convenience.
+                    <p style={{ color: "#fff" }}>
+                    We offer a variety of <b style={{ color: "#B19777" }}>bespoke media units</b>, including floor-standing, wall-mounted, and <b style={{ color: "#B19777" }}>built-in corner TV units</b>—ideal for making the most of tricky alcoves. Available in a range of colors and finishes, our designs seamlessly blend into your home’s aesthetic while maximizing storage and convenience.
                     </p>
-                    <p>Get in touch with our team today to explore <b>tailor-made TV units</b> and innovative storage solutions that will transform your entertainment area into a sleek, clutter-free space.</p>
+                    <p style={{ color: "#fff" }}>Get in touch with our team today to explore <b style={{ color: "#B19777" }}>tailor-made TV units</b> and innovative storage solutions that will transform your entertainment area into a sleek, clutter-free space.</p>
                   </div>
                 </div>
               </div>

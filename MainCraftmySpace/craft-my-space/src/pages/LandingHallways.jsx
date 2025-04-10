@@ -55,14 +55,14 @@ const LandingHallways = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>
+                <h3 style={{color:'#B19777'}}>
                 Bespoke furniture for Landing & Hallway
                 </h3>
-                <p>
-                Landings and hallways are <b>ideal locations</b> for <b>custom-built shoe and coat storage</b>. Whether you’re utilizing the <b>space beneath the stairs</b> for a fitted cloakroom or installing a <b>floor-to-ceiling coat cupboard</b>, these clever solutions help keep your entryway <b>organized and clutter-free</b>.
+                <p style={{color:'#fff'}}>
+                Landings and hallways are <b style={{color:'#B19777'}}>ideal locations</b> for <b style={{color:'#B19777'}}>custom-built shoe and coat storage</b>. Whether you’re utilizing the <b style={{color:'#B19777'}}>space beneath the stairs</b> for a fitted cloakroom or installing a <b style={{color:'#B19777'}}>floor-to-ceiling coat cupboard</b>, these clever solutions help keep your entryway <b style={{color:'#B19777'}}>organized and clutter-free</b>.
                 </p>
-                <p>
-                A well-designed <b>fitted cupboard</b> not only enhances the aesthetics of your hallway but also provides <b>valuable extra storage</b> without taking up space in high-use areas like bedrooms and living rooms. With custom-built solutions, you can make the most of every <b>nook and cranny</b>, ensuring your home remains <b>spacious, stylish, and functional</b>.
+                <p style={{color:'#fff'}}>
+                A well-designed <b style={{color:'#B19777'}}>fitted cupboard</b> not only enhances the aesthetics of your hallway but also provides <b style={{color:'#B19777'}}>valuable extra storage</b> without taking up space in high-use areas like bedrooms and living rooms. With custom-built solutions, you can make the most of every <b style={{color:'#B19777'}}>nook and cranny</b>, ensuring your home remains <b style={{color:'#B19777'}}>spacious, stylish, and functional</b>.
                 </p>
                
               </div>

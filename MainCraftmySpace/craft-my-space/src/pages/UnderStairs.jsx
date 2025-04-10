@@ -53,14 +53,14 @@ const UnderStairs = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>
+                <h3 style={{color:'#B19777'}}>
                 Under Stairs Fitted Furniture
                 </h3>
-                <p>
-                We understand how important it is to make the most of every corner of your home, especially when it comes to <b>under-stairs storage</b>. This often-overlooked area can be transformed into a <b>functional and stylish</b> space that enhances the flow of your home.
+                <p style={{color:'#fff'}}>
+                We understand how important it is to make the most of every corner of your home, especially when it comes to <b style={{color:'#B19777'}}>under-stairs storage</b>. This often-overlooked area can be transformed into a <b style={{color:'#B19777'}}>functional and stylish</b> space that enhances the flow of your home.
                 </p>
-                <p>
-                Whether it's a <b>hallway storage unit, a sleek reception feature</b>, or a <b>practical living space addition</b>, a well-designed under-stairs solution can bring <b>both elegance and efficiency</b> to your home. Our expert designers consider your <b>room dimensions, layout, and storage needs</b> to create a customized design that maximizes your available space while maintaining a seamless and sophisticated look.
+                <p style={{color:'#fff'}}>
+                Whether it's a <b style={{color:'#B19777'}}>hallway storage unit, a sleek reception feature</b>, or a <b style={{color:'#B19777'}}>practical living space addition</b>, a well-designed under-stairs solution can bring <b style={{color:'#B19777'}}>both elegance and efficiency</b> to your home. Our expert designers consider your <b style={{color:'#B19777'}}>room dimensions, layout, and storage needs</b> to create a customized design that maximizes your available space while maintaining a seamless and sophisticated look.
                 </p>
                
               </div>

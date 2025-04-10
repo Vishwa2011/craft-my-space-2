@@ -1892,7 +1892,7 @@ export default function Home() {
       </div>
       <div className="card-body text-center" style={{background:'#141414'}}> 
         <h5 className="card-title fw-bold" style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>Choose your Wardrobe type</h5>
-        <p className="card-text text-muted" style={{color:'#fff'}}>
+        <p className="card-text " style={{color:'#fff'}}>
         Finding the perfect wardrobe for your space just got easier! Whether you’re looking for sleek sliding doors, classic hinged wardrobes, space-saving corner designs, or fully customized built-ins, we have something to match every style and need. 
         </p>
       </div>
@@ -1927,7 +1927,7 @@ export default function Home() {
       </div>
       <div className="card-body text-center"  style={{background:'#141414'}}>
         <h5 className="card-title fw-bold" style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>select colors & Finishes</h5>
-        <p className="card-text text-muted" style={{color:'#fff'}}>
+        <p className="card-text " style={{color:'#fff'}}>
         Add the perfect touch to your furniture with our wide range of colors and finishes. Whether you prefer warm wooden textures, glossy laminates, soft matte tones, or bold colors that make a statement – we have options to suit every mood and interior style. 
         </p>
       </div>
@@ -1962,7 +1962,7 @@ export default function Home() {
       </div>
       <div className="card-body text-center"  style={{background:'#141414'}}>
         <h5 className="card-title fw-bold"  style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>visualize & get a quote</h5>
-        <p className="card-text text-muted" style={{color:'#fff'}}>
+        <p className="card-text " style={{color:'#fff'}}>
         See your dream furniture come to life before you buy! With our visualization tools, you can preview designs, colors, and finishes in real-time—making it easier to picture how everything will look in your space.
         </p>
       </div>
@@ -2069,7 +2069,7 @@ export default function Home() {
                 <a href="/Contact">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 className="wt-tilte-large m-t0" data-title="E">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="E">
                         Expert Craftsmanship
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2093,7 +2093,7 @@ export default function Home() {
                 <a href="/Contact">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 className="wt-tilte-large m-t0" data-title="P">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="P">
                         Premium Materials
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2117,7 +2117,7 @@ export default function Home() {
                 <a href="/Contact">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 className="wt-tilte-large m-t0" data-title="t">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="t">
                         Tailored to your space
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2141,7 +2141,7 @@ export default function Home() {
                 <a href="/Contact">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 className="wt-tilte-large m-t0" data-title="s">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="s">
                         Seamless installation
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2165,7 +2165,7 @@ export default function Home() {
                 <a href="/Contact">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 className="wt-tilte-large m-t0" data-title="L">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="L">
                         Luxury look
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2189,7 +2189,7 @@ export default function Home() {
                 <a href="/Contact">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
                     <div className="icon-content m-b30">
-                      <h4 className="wt-tilte-large m-t0" data-title="A">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="A">
                         Affordable prices
                       </h4>
                       <p style={{ color: "white" }}>

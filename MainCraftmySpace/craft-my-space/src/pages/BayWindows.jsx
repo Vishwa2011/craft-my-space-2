@@ -53,13 +53,13 @@ const BayWindows = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>Maximize Storage with Custom Bay Window Seating
+                <h3 style={{color:'#B19777'}}>Maximize Storage with Custom Bay Window Seating
                 </h3>
-                <p>
-                Bay and bow windows often go <b>underutilized</b>, despite their potential for both functionality and style. Their unique angles make it challenging to find <b>ready-made storage solutions</b>, leading many homeowners to place an armchair there—wasting valuable space and blocking natural light.
+                <p style={{color:'#fff'}}>
+                Bay and bow windows often go <b style={{color:'#B19777'}}>underutilized</b>, despite their potential for both functionality and style. Their unique angles make it challenging to find <b style={{color:'#B19777'}}>ready-made storage solutions</b>, leading many homeowners to place an armchair there—wasting valuable space and blocking natural light.
                 </p>
-                <p>
-                A <b>bespoke bay window seat</b> is the perfect solution, providing a <b>blend of comfort and practicality</b>. With built-in <b>hidden storage</b>, you can neatly store essentials while enjoying a cozy seating area. Upholstered in a fabric of your choice, these stylish <b>window bench seats</b> enhance your space, offering a <b>seamless, elegant, and clutter-free</b> living area.
+                <p style={{color:'#fff'}}>
+                A <b style={{color:'#B19777'}}>bespoke bay window seat</b> is the perfect solution, providing a <b style={{color:'#B19777'}}>blend of comfort and practicality</b>. With built-in <b style={{color:'#B19777'}}>hidden storage</b>, you can neatly store essentials while enjoying a cozy seating area. Upholstered in a fabric of your choice, these stylish <b style={{color:'#B19777'}}>window bench seats</b> enhance your space, offering a <b style={{color:'#B19777'}}>seamless, elegant, and clutter-free</b> living area.
                 </p>
                
               </div>

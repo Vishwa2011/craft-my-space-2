@@ -55,12 +55,12 @@ const WhyCraftMySpace = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>Crafting Bespoke Furniture Solutions Since 2009</h3>
-                <p>
+                <h3 style={{color:'#B19777'}}>Crafting Bespoke Furniture Solutions Since 2009</h3>
+                <p style={{color:'white'}}>
                   Bespoke fitted wardrobes, bedrooms, furniture, and kitchens
                   designed and installed by CraftMySpace.
                 </p>
-                <p>
+                <p style={{color:'white'}}>
                   We design, manufacture, and install premium-quality fitted
                   bedroom furniture across London and the UK. Our expertise lies
                   in creating tailor-made hinged door and sliding door
@@ -72,7 +72,7 @@ const WhyCraftMySpace = () => {
                   leading manufacturers of bespoke sliding wardrobe doors and
                   aluminum profile systems for Trade, Private, and B2B sectors.
                 </p>
-                <p>
+                <p style={{color:'white'}}>
                   Whether you're looking for a Sliding Glass Door Wardrobe, Full
                   Mirror Door Wardrobe, Hinged Door Wardrobe, Walk-in Wardrobe,
                   or a Custom Living or Bedroom Wardrobe, CraftMySpace is your
@@ -81,7 +81,7 @@ const WhyCraftMySpace = () => {
                   home. We offer high-quality, affordable products and storage
                   solutions across London and the Home Counties.
                 </p>
-                <p>
+                <p style={{color:'white'}}>
                   Book your free, no-obligation wardrobe design consultation,
                   and our expert designers will visit your home, take precise
                   measurements, and understand your space requirements. Our
@@ -90,7 +90,7 @@ const WhyCraftMySpace = () => {
                   closet doors, fitted bedrooms, custom sliding wardrobe doors,
                   or fully bespoke furniture, our team will help bring your
                   vision to life.
-                  <p>
+                  <p style={{color:'white'}}>
                     Designed to your exact specifications, our fitted furniture
                     experts ensure that each piece complements your interior
                     while maximizing storage space for your clothing,
@@ -99,7 +99,7 @@ const WhyCraftMySpace = () => {
                     proceeding with production. Once approved, we move to the
                     next stage—bringing your dream furniture to life.
                   </p>
-                  <p>
+                  <p style={{color:'white'}}>
                     "Everything will fit perfectly!" – Since 2009, CraftMySpace
                     has been delivering high-quality fitted furniture and
                     wardrobes, ensuring every design meets your unique needs.
@@ -244,11 +244,11 @@ const WhyCraftMySpace = () => {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
-                  <p>
-                    At <b>CraftMySpace</b>, we take immense pride in our
+                  <p style={{color:'white'}}>
+                    At <b style={{color:'#B19777'}}>CraftMySpace</b>, we take immense pride in our
                     exceptional team!
                   </p>
-                  <p>
+                  <p style={{color:'white'}}>
                     Each of our specialists is deeply committed to delivering
                     outstanding craftsmanship and personalized service. We
                     believe that when clients return to collaborate with us on
@@ -256,7 +256,7 @@ const WhyCraftMySpace = () => {
                     receive. Building lasting relationships and earning customer
                     trust is at the heart of everything we do.
                   </p>
-                  <p>
+                  <p style={{color:'white'}}>
                     We create bespoke solutions tailored to your unique project
                     requirements, ensuring quality, reliability, and safety you
                     can always count on.
@@ -345,9 +345,9 @@ const WhyCraftMySpace = () => {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
-                  <h3>Sliding Wardrobe Doors Manufacturer</h3>
-                  <p>
-                    <b>CraftMySpace</b> is more than just a wardrobe
+                  <h3 style={{color:'#B19777'}}>Sliding Wardrobe Doors Manufacturer</h3>
+                  <p style={{color:'white'}}>
+                    <b style={{color:'#B19777'}}>CraftMySpace</b> is more than just a wardrobe
                     specialist—we are one of the leading sliding door
                     manufacturers in the UK. We design and produce high-quality
                     sliding doors for other wardrobe manufacturers and trade
@@ -355,7 +355,7 @@ const WhyCraftMySpace = () => {
                     compromising on quality.
                   </p>
 
-                  <p>
+                  <p style={{color:'white'}}>
                     If you’re looking for a reliable supplier of sliding doors
                     or wardrobes for your business, we provide an extensive
                     range of stunning designs, top-tier craftsmanship, and fast
@@ -363,11 +363,11 @@ const WhyCraftMySpace = () => {
                     guidance, and we provide a free consultation to ensure you
                     receive the perfect solution.
                   </p>
-                  <p>
+                  <p style={{color:'white'}}>
                     Visit our{" "}
-                    <b>sliding wardrobe door factory website — CraftMySpace</b>
+                    <b style={{color:'#B19777'}}>sliding wardrobe door factory website — CraftMySpace</b>
                   </p>
-                  <p>
+                  <p style={{color:'white'}}>
                     We build every project to your exact specifications,
                     ensuring safety and durability you can trust.
                   </p>

@@ -54,9 +54,9 @@ const HomeOffice = () => {
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
                   <div className=" text-black">
-                    <h3>Fitted Home Office</h3>
-                    <p>
-                      A <b>fitted home office</b> creates an organized,
+                    <h3 style={{color:'#B19777'}}>Fitted Home Office</h3>
+                    <p style={{color:'white'}}>
+                      A <b style={{color:'#B19777'}}>fitted home office</b> creates an organized,
                       efficient, and stylish workspace tailored to your needs.
                       Custom-built desks, shelving, and storage units ensure
                       that everything has its place, reducing clutter and
@@ -64,9 +64,9 @@ const HomeOffice = () => {
                       workstation or a fully equipped study, bespoke designs
                       make the most of your available space.
                     </p>
-                    <p>
+                    <p style={{color:'white'}}>
                       With smart storage solutions and ergonomic designs, a{" "}
-                      <b>made-to-measure home office</b> seamlessly integrates
+                      <b style={{color:'#B19777'}}>made-to-measure home office</b> seamlessly integrates
                       into your home’s aesthetic while offering a functional and
                       comfortable environment. From compact setups for small
                       spaces to expansive workstations for professionals, fitted

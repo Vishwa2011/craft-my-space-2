@@ -20,7 +20,7 @@ const Ourfactorytour = () => {
           data-stellar-background-ratio="0.5"
           style={{
             backgroundImage:
-              "url(https://www.online-bedrooms.co.uk/media/wysiwyg/Grey-Shaker-Fitted-Wardrobe.jpg)",
+              "url(assets/pic/kitchen-units-black.jpg)",
           }}
         >
           <div className="overlay-main bg-black opacity-07"></div>
@@ -28,7 +28,7 @@ const Ourfactorytour = () => {
             <div className="wt-bnr-inr-entry">
               <div className="banner-title-outer">
                 <div className="banner-title-name">
-                  <h2 className="text-white">Our Factory Tour</h2>
+                  <h2 className="text-white" >Our Factory Tour</h2>
                 </div>
               </div>
               <div>
@@ -147,7 +147,7 @@ const Ourfactorytour = () => {
                   ></div>
         
                
-                  <h2>Our Production</h2>
+                  <h2 style={{color:'#B19777'}}>Our Production</h2>
                   <p>
                   At [CraftMySpace], we take pride in crafting high-quality furniture that blends style, durability, and functionality. Our production process is driven by expert craftsmanship, premium materials, and innovative designs to ensure each piece meets the highest standards. From selecting the finest wood and metals to applying precision finishing touches, every step reflects our commitment to excellence. Whether it’s modern, classic, or custom-made furniture, we create pieces that enhance comfort and aesthetics, making every space truly exceptional.We believe that furniture is more than just a functional necessity—it’s an expression of style and comfort. That’s why we pay meticulous attention to design, structure, and finishing, ensuring that our products enhance both residential and commercial spaces. Our team continuously innovates, keeping up with the latest trends while maintaining timeless craftsmanship that stands the test of time.
                   </p>
