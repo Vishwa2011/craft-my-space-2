@@ -160,7 +160,7 @@ const Footers = () => {
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
     onMouseLeave={(e) => e.target.style.color = "#7e878c"}
   >
-    Inspiration
+    Blog
   </a>
 </li>
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
