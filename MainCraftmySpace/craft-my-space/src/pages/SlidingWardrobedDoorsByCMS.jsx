@@ -56,13 +56,13 @@ const SlidingWardrobedDoorsByCMS = () => {
               <div className="project-detail-containt">
                 <div className=" text-black">
                   <h3 style={{color:'#B19777'}}>Elegant Sliding Wardrobe Doors – Premium Wood & Glass Finishes</h3>
-                  <p>
+                  <p style={{color:'#fff'}}>
                   Transform your living space with our elegant sliding wardrobe doors, designed to blend style and functionality. Crafted with premium wood and sleek glass finishes, these doors add a modern touch to any room. Whether you prefer a classic wooden texture or a contemporary glass look, our collection offers a variety of designs to suit your taste. Experience smooth sliding mechanisms and durable materials that ensure long-lasting performance. Upgrade your home with a perfect combination of sophistication and convenience.
                   </p>
-                  <p>
+                  <p style={{color:'#fff'}}>
                   Redefine your interiors with our premium sliding wardrobe doors, crafted with high-quality wood and sleek glass finishes. Designed for smooth operation and lasting durability, these doors enhance both functionality and aesthetics. Whether you prefer a modern glass touch or a warm wooden texture, our collection offers a variety of elegant designs. Elevate your space with a sophisticated and space-saving solution.
                   </p>
-                  <p>
+                  <p style={{color:'#fff'}}>
                   Bring elegance and efficiency to your home with our exquisite sliding wardrobe doors, featuring a seamless blend of wood and glass finishes. These doors provide a stylish yet practical storage solution, enhancing the beauty of any room. Designed for smooth gliding and built with durable materials, they offer both convenience and sophistication. Choose from a range of contemporary and classic styles to complement your décor perfectly.
                   </p>
                   

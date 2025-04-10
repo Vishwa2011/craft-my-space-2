@@ -55,7 +55,7 @@ export default function HingedDoorWardrobes() {
               <div className="project-detail-containt">
                 <div className="text-black">
                   <h3 style={{color:'#B19777'}}>Elegant Hinged Wardrobe Doors for Stylish Living</h3>
-                  <p>
+                  <p style={{color:'#fff'}}>
                     Custom Built-In Fitted Wardrobes Tailored to Your Space in
                     London and the Home Counties – From CraftMySpaceUpgrade
                     your space with our premium hinged wardrobe doors, designed
@@ -67,7 +67,7 @@ export default function HingedDoorWardrobes() {
                     Experience durability, smooth operation, and timeless
                     elegance with our expertly designed hinged wardrobe doors.
                   </p>
-                  <p>
+                  <p style={{color:'#fff'}}>
                     Enhance your bedroom with our beautifully crafted hinged
                     wardrobe doors, designed for durability and elegance. These
                     doors offer a classic opening mechanism, providing full

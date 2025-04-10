@@ -140,29 +140,29 @@ const Walkinwardrobed = () => {
                 <div className=" text-black">
                   <h3 style={{color:'#B19777'}}>Why Walk In Wardrobes?</h3>
                   <h2 style={{color:'#B19777'}}>Benefits of a custom walk-in-wardrobe</h2>
-                  <p>
+                  <p style={{color:'#fff'}}>
                   Everyone has their own reasons for choosing a custom walk-in wardrobe. Beyond just a stylish addition, it offers practical benefits that enhance organization and maximize space. A well-designed walk-in wardrobe ensures that everything is easily accessible while complementing your interior aesthetics.
                   </p>
-                  <p>
+                  <p style={{color:'#fff'}}>
                  <ul>
-                  <li className='mb-2'><b>Optimal Organization :</b> Every item has its designated place, making it easy to find and store belongings.</li>
+                  <li className='mb-2'><b style={{color:'#B19777'}}>Optimal Organization :</b> Every item has its designated place, making it easy to find and store belongings.</li>
                  
-                  <li className='mb-2'><b>Personalized Layout :</b> Tailor your wardrobe to suit your needs, from shelving and hanging sections to drawer placements.</li>
-                  <li className='mb-2'><b>Maximized Space Efficiency :</b> Utilize the entire height of the room, from floor to ceiling, for storage.</li>
-                  <li className='mb-2'><b>Customized Storage Solutions :</b> Create a system that perfectly fits your lifestyle and storage needs.</li>
+                  <li className='mb-2'><b style={{color:'#B19777'}}>Personalized Layout :</b> Tailor your wardrobe to suit your needs, from shelving and hanging sections to drawer placements.</li>
+                  <li className='mb-2'><b style={{color:'#B19777'}}> Maximized Space Efficiency :</b> Utilize the entire height of the room, from floor to ceiling, for storage.</li>
+                  <li className='mb-2'><b style={{color:'#B19777'}}>Customized Storage Solutions :</b> Create a system that perfectly fits your lifestyle and storage needs.</li>
                  </ul>
                   </p>
-                  <p>In addition to clothing and accessories, a walk-in wardrobe can also house built-in appliances, helping to free up space in other areas of your home. Some people even opt for multi-functional designs, such as integrating a laundry area or creating a stylish dressing space with ample mirrors. No matter the vision, <b>CraftMySpace</b> can help bring your ideal walk-in wardrobe to life.</p>
+                  <p style={{color:'#fff'}}>In addition to clothing and accessories, a walk-in wardrobe can also house built-in appliances, helping to free up space in other areas of your home. Some people even opt for multi-functional designs, such as integrating a laundry area or creating a stylish dressing space with ample mirrors. No matter the vision, <b style={{color:'#B19777'}}>CraftMySpace</b> can help bring your ideal walk-in wardrobe to life.</p>
                  
                  
                 </div>
                 <div className=" text-black">
                   <h3 style={{color:'#B19777'}}>Dressing room to order “CraftMySpace” – a dream that becomes a reality</h3>
                   
-                  <p>
+                  <p style={{color:'#fff'}}>
                   A well-designed dressing room is more than just a storage space—it’s a personal retreat that combines luxury, organization, and convenience. With CraftMySpace, you can create a bespoke dressing room tailored to your style and needs. From elegant shelving and spacious wardrobes to stylish lighting and mirrors, every element is thoughtfully designed to enhance your daily routine.
                   </p>
-                 <p>Whether you dream of a chic boutique-style dressing area or a minimalistic, space-saving design, our custom solutions bring functionality and elegance together. With high-quality materials, smart storage options, and a flawless finish, CraftMySpace transforms your vision into reality, making your dressing room a perfect blend of beauty and practicality.</p>
+                 <p style={{color:'#fff'}}>Whether you dream of a chic boutique-style dressing area or a minimalistic, space-saving design, our custom solutions bring functionality and elegance together. With high-quality materials, smart storage options, and a flawless finish, CraftMySpace transforms your vision into reality, making your dressing room a perfect blend of beauty and practicality.</p>
                  
                 </div>
               </div>
