@@ -114,7 +114,7 @@ const MeetDesignerForm = () => {
 
   <div className="col-12">
     <div className="row">
-      <div className="col-6">
+    <div className="col-12 col-md-6">
       <h2>Design Your Own Wardrobe</h2>
             <p>
               Encourage visitors to start customizing their furniture as soon as they land on the website.
@@ -238,7 +238,7 @@ const MeetDesignerForm = () => {
               </button>
             </form>
       </div>
-      <div className="col-6">
+      <div className="col-6 d-none d-md-block">
         <img src="/assets/pic/havan.jpeg" alt="" />
       </div>
     </div>
