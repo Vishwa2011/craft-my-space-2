@@ -89,7 +89,7 @@ const MeetDesignerForm = () => {
           <div
             style={{
               background: "#B19777",
-              padding: "40px",
+              padding: "20px",
               borderRadius: "8px",
               width: "800px",
               boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
@@ -100,11 +100,11 @@ const MeetDesignerForm = () => {
               onClick={handleClose}
               style={{
                 position: "absolute",
-                top: "15px",
-                right: "20px",
+                top: "-5px",
+                right: "4px",
                 background: "none",
                 border: "none",
-                fontSize: "24px",
+                fontSize: "30px",
                 cursor: "pointer",
                 color:'#fff'
               }}
@@ -115,7 +115,7 @@ const MeetDesignerForm = () => {
   <div className="col-12">
     <div className="row">
     <div className="col-12 col-md-6">
-      <h2>Design Your Own Wardrobe</h2>
+      <h3>Design Your Own Wardrobe</h3>
             <p>
               Encourage visitors to start customizing their furniture as soon as they land on the website.
             </p>
@@ -238,9 +238,29 @@ const MeetDesignerForm = () => {
               </button>
             </form>
       </div>
-      <div className="col-6 d-none d-md-block">
-        <img src="/assets/pic/havan.jpeg" alt="" />
-      </div>
+      <div
+  className="col-6 d-none d-md-block"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',          // Take full height of parent
+    minHeight: '100%',       // Ensure it stretches within modal
+    padding: '20px',
+    boxSizing: 'border-box',
+  }}
+>
+  <img
+    src="/assets/pic/havan (1).jpeg"
+    alt=""
+    style={{
+      maxWidth: '100%',
+      maxHeight: '90%',       // Slightly reduce height to center better
+      objectFit: 'contain',
+    }}
+  />
+</div>
+
     </div>
   </div>
          
