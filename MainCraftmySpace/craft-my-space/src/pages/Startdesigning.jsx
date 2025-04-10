@@ -106,7 +106,7 @@ const Startdesigning = () => {
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>Start   Designing</li>
+                  <li>Start Designing</li>
                 </ul>
               </div>
             </div>

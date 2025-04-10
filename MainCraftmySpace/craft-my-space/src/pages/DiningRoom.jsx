@@ -49,28 +49,28 @@ const DiningRoom = () => {
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
                   <div className=" text-black">
-                    <h3>
+                    <h3 style={{color:'#B19777'}}>
                       Dining Room Furniture: Entertain family & friends in style
                     </h3>
-                    <p>
+                    <p style={{color:'#fff'}}>
                       Create the perfect setting for memorable gatherings with{" "}
-                      <b>elegant dining room furniture</b> designed for both
+                      <b style={{color:'#B19777'}}>elegant dining room furniture</b> designed for both
                       comfort and sophistication. Whether it's a sleek dining
                       table, stylish chairs, or custom storage solutions,
                       bespoke furniture enhances your space while providing
                       functionality.
                     </p>
-                    <p>
+                    <p style={{color:'#fff'}}>
                       From modern minimalist designs to classic wooden finishes,{" "}
-                      <b>tailor-made dining furniture</b> ensures a seamless
+                      <b style={{color:'#B19777'}}>tailor-made dining furniture</b> ensures a seamless
                       blend with your home décor. With thoughtfully crafted
                       pieces, you can host dinners, celebrations, and everyday
                       meals in a space that feels warm, inviting, and
                       effortlessly stylish.
                     </p>
-                    <p>
+                    <p style={{color:'#fff'}}>
                       Host unforgettable gatherings with{" "}
-                      <b>bespoke dining room furniture</b>, blending style,
+                      <b style={{color:'#B19777'}}>bespoke dining room furniture</b>, blending style,
                       comfort, and functionality.
                     </p>
                   </div>
@@ -113,10 +113,10 @@ const DiningRoom = () => {
                 <div className="project-detail-containt">
                   <div className=" text-black">
                     
-                    <p>
+                    <p style={{color:'#fff'}}>
                     Custom dining room furniture offers limitless possibilities, from showcasing fine china to organizing everyday essentials. Thoughtfully designed fitted cabinets can transform your dining area into a stylish and functional space, serving as a beautiful focal point while maximizing storage.
                     </p>
-                    <p>
+                    <p style={{color:'#fff'}}>
                     Whether you have a dedicated dining room or an open-plan kitchen diner, made-to-measure furniture ensures a perfect fit for your space and needs. Unlike bulky freestanding pieces, built-in dining cabinets provide ample storage while maintaining a sleek and uncluttered look, allowing for easy movement and a more comfortable dining experience. At CraftMySpace, we craft bespoke dining solutions tailored to your home, blending elegance with practicality.
                     </p>
                     

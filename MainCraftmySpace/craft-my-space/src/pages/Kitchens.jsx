@@ -54,12 +54,12 @@ const Kitchens = () => {
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
                   <div className=" text-black">
-                    <h3>Fitted Kitchens</h3>
-                    <p>
-                    A <b>fitted kitchen</b> offers a seamless and efficient cooking space, designed to match your lifestyle and aesthetic preferences. With custom-built cabinets, sleek countertops, and smart storage solutions, everything is crafted to maximize space and enhance convenience. Whether you prefer a modern minimalist look or a classic design, bespoke kitchens provide a perfect balance of beauty and practicality.
+                    <h3 style={{color:'#B19777'}}>Fitted Kitchens</h3>
+                    <p style={{color:'#fff'}}>
+                    A <b style={{color:'#B19777'}}>fitted kitchen</b> offers a seamless and efficient cooking space, designed to match your lifestyle and aesthetic preferences. With custom-built cabinets, sleek countertops, and smart storage solutions, everything is crafted to maximize space and enhance convenience. Whether you prefer a modern minimalist look or a classic design, bespoke kitchens provide a perfect balance of beauty and practicality.
                     </p>
-                    <p>
-                    Tailored to fit your home perfectly, <b>made-to-measure kitchen units</b> ensure optimal organization, eliminating wasted space while maintaining a clean and clutter-free environment. From integrated appliances to personalized storage options, a fitted kitchen transforms your cooking area into a stylish and functional hub for everyday living.
+                    <p style={{color:'#fff'}}>
+                    Tailored to fit your home perfectly, <b style={{color:'#B19777'}}>made-to-measure kitchen units</b> ensure optimal organization, eliminating wasted space while maintaining a clean and clutter-free environment. From integrated appliances to personalized storage options, a fitted kitchen transforms your cooking area into a stylish and functional hub for everyday living.
                     </p>
                   </div>
                 </div>
@@ -71,115 +71,151 @@ const Kitchens = () => {
             {/* Kitchens Means start   */}
         <div className="section-full p-t80 p-b50 " style={{borderBottom:'2px solid #B19777'}}>
           <div className="container">
-            <h3>Our Fitted Kitchens Means</h3>
+            <h3 style={{textAlign:'center'}}>Our Fitted Kitchens Means</h3>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="G">
-                    Guaranteed Quality
-                    </h4>
-                    <p>
-                    Guaranteed Quality" means we deliver durable, high-quality furniture crafted with the finest materials for lasting performance and beauty.                
-                        </p>
-                  
+                <a href="/Contact">
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="E">
+                        Expert Craftsmanship
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        With over 15+ years of experience, CraftMySpace delivers
+                        expert craftsmanship that combines timeless design with
+                        lasting quality.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-mansion v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-mansion v-icon"></i>
-                    </span>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="P">
-                    Professional Manufacturing
-                    </h4>
-                    <p>
-                    Professional Manufacturing guarantees precision and high-quality craftsmanship in every piece of furniture.
-                    </p>
-                    
+                <a href="/Contact">
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="P">
+                        Premium Materials
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace uses only premium materials, including
+                        high-quality wood, glass, and flawless finishes, to
+                        ensure every piece is both elegant.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-stair v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-stair v-icon"></i>
-                    </span>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="H">
-                    High Quality Service
-                    </h4>
-                    <p>
-                    High Quality Service ensures personalized attention and exceptional results, delivering furniture that exceeds expectations in both style .
-                    </p>
-                    
+                <a href="/Contact">
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="t">
+                        Tailored to your space
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace offers 100% custom designs, thoughtfully
+                        tailored to your space for a perfect blend of style,
+                        comfort, and functionality.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-apartment v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-apartment v-icon"></i>
-                    </span>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="C">
-                    Convenience of Choice
-                    </h4>
-                    <p>
-                    Convenience of Choice offers a wide range of customizable furniture options, allowing you to select designs that perfectly fit your style and needs.
-                    </p>
-                  
+                <a href="/Contact">
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="s">
+                        Seamless installation
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace ensures seamless installation with
+                        hassle-free fitting and finishing, making your furniture
+                        setup smooth and stress-free.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-photo v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-photo v-icon"></i>
-                    </span>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="E">
-                    Easy Delivery
-                    </h4>
-                    <p>
-                    Easy and Timely Delivery ensures your furniture arrives quickly and safely, right to your doorstep with minimal hassle.
-                    </p>
-                   
+                <a href="/Contact">
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
+                    <div className="icon-content m-b30">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="L">
+                        Luxury look
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace delivers a luxury look with sophisticated
+                        designs and premium detailing that elevate every corner
+                        of your home.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-sketch v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-sketch v-icon"></i>
-                    </span>
-                  </div>
-                </div>
+                </a>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6">
-                <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
-                  <div className="icon-content m-b30">
-                    <h4 className="wt-tilte-large m-t0" data-title="M">
-                    Made in Britain
-                    </h4>
-                    <p>
-                    Made in Britain guarantees high-quality craftsmanship, using locally sourced materials and skilled artisans to create durable and stylish furniture.
-                    </p>
-                   
+                <a href="/Contact">
+                  <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
+                    <div className="icon-content m-b30">
+                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="A">
+                        Affordable prices
+                      </h4>
+                      <p style={{ color: "white" }}>
+                        CraftMySpace offers stylish, high-quality furniture at
+                        affordable prices, making luxury living accessible for
+                        every home.
+                      </p>
+                    </div>
+                    <div className="icon-xl inline-icon">
+                      <span className="icon-cell">
+                        <i
+                          className="flaticon-kitchen v-icon"
+                          style={{ color: "#B19777" }}
+                        ></i>
+                      </span>
+                    </div>
                   </div>
-                  <div className="icon-xl inline-icon">
-                    <span className="icon-cell">
-                      <i className="flaticon-kitchen v-icon"></i>
-                    </span>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -191,11 +227,11 @@ const Kitchens = () => {
               <div className="project-detail-outer">
                 <div className="project-detail-containt">
                   <div className=" text-black">
-                    <h3>Fitted Kitchens – Design & Installation</h3>
-                    <p>
+                    <h3 style={{ color: "#B19777" }}>Fitted Kitchens – Design & Installation</h3>
+                    <p style={{ color: "#fff" }}>
                     Once you've selected from our wide range of door styles and over 60 premium finishes, including matte, gloss, and rich wood grains, we ensure a seamless and stress-free installation experience. Every detail is carefully considered to bring your vision to life with precision and elegance.
                     </p>
-                    <p>
+                    <p style={{ color: "#fff" }}>
                     Our expertly crafted built-in storage solutions are designed to maximize functionality and style, meeting even the most demanding requirements, regardless of space constraints. Schedule a free consultation with our experienced specialists today and take the first step toward designing your perfectly fitted kitchen—tailored to your needs, preferences, and lifestyle.
                     </p>
                   </div>

@@ -53,14 +53,14 @@ const SlopingCeilings = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>
+                <h3 style={{color:'#B19777'}}>
                 Sloping ceiling storage
                 </h3>
-                <p>
-                Sloping ceilings can often make storage tricky, but <b>custom-built fitted furniture</b> allows you to maximize every inch of available space. Whether it's a <b>loft conversion</b>, an attic bedroom, or an area under the stairs, <b>bespoke storage solutions</b> ensure that no space goes to waste.
+                <p style={{color:'#fff'}}>
+                Sloping ceilings can often make storage tricky, but <b style={{color:'#B19777'}}>custom-built fitted furniture</b> allows you to maximize every inch of available space. Whether it's a <b style={{color:'#B19777'}}> loft conversion</b>, an attic bedroom, or an area under the stairs, <b style={{color:'#B19777'}}>bespoke storage solutions</b> ensure that no space goes to waste.
                 </p>
-                <p>
-                From <b>tailor-made wardrobes</b> to <b>built-in shelving and drawers</b>, sloping ceiling storage can be designed to <b>blend seamlessly</b> into your home. These solutions not only provide <b>ample storage</b> but also enhance the <b>overall aesthetics</b> of your space, creating a <b>practical and stylish</b> living environment.
+                <p style={{color:'#fff'}}>
+                From <b style={{color:'#B19777'}}>tailor-made wardrobes</b> to <b style={{color:'#B19777'}}>built-in shelving and drawers</b>, sloping ceiling storage can be designed to <b style={{color:'#B19777'}}>blend seamlessly</b> into your home. These solutions not only provide <b style={{color:'#B19777'}}>ample storage</b> but also enhance the <b style={{color:'#B19777'}}>overall aesthetics</b> of your space, creating a <b style={{color:'#B19777'}}>practical and stylish</b> living environment.
                 </p>
                
               </div>

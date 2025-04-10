@@ -49,11 +49,11 @@ const FittedBedroom = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>
+                <h3 style={{color:'#B19777'}}>
                   Transform Your Bedroom into a Serene and Organized Space with
                   Custom Fitted Wardrobes
                 </h3>
-                <p>
+                <p style={{color:'white'}}>
                   We all desire our bedrooms to be a peaceful, cozy retreat—a
                   sanctuary where we can escape the chaos of daily life.
                   However, life can often get in the way, and we may find
@@ -63,7 +63,7 @@ const FittedBedroom = () => {
                   to unwind.
                 </p>
 
-                <p>
+                <p style={{color:'white'}}>
                   But there's a solution to turning your bedroom into a serene
                   and tidy haven: it all begins with a strong foundation. A
                   well-designed storage system, like the Fitted Bedrooms
@@ -78,11 +78,11 @@ const FittedBedroom = () => {
             </div>
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3>
+                <h3 style={{color:'#B19777'}}>
                   Effortless Installation of Fitted Bedrooms and Wardrobes
                   Without the Hassle
                 </h3>
-                <p>
+                <p style={{color:'white'}}>
                   We all desire our bedrooms to be a peaceful, cozy retreat—a
                   sanctuary where we can escape the chaos of daily life.
                   However, life can often get in the way, and we may find
@@ -96,7 +96,7 @@ const FittedBedroom = () => {
                   perfectly utilize the available space in your bedroom.
                 </p>
 
-                <p>
+                <p style={{color:'white'}}>
                   For rooms with unique layouts, such as those with sloped
                   ceilings or awkward corners (often found in loft conversions),
                   our built-in sliding door wardrobes offer the ideal solution.
@@ -106,7 +106,7 @@ const FittedBedroom = () => {
                   ceilings, stairs, or low ceilings, CraftMySpace provides the
                   perfect solution tailored to your needs.
                 </p>
-                <p>
+                <p style={{color:'white'}}>
                   A well-organized home comes from efficiently using the
                   available space. Our range of fitted wardrobes ensures that
                   your room stays neat and stylish without feeling overcrowded.

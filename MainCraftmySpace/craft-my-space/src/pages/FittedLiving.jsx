@@ -250,9 +250,9 @@ const FittedLiving = () => {
                       <div className="home-2-about-left">
                         <div
                           className="home-2-about-left-content p-a50 text-white"
-                          style={{ background: "#272727" }}
+                          style={{ background: "#141414" }}
                         >
-                          <h2 className="m-t0 wt-title">{service.title}</h2>
+                          <h2 className="m-t0 wt-title" style={{color:'#B19777'}}>{service.title}</h2>
                           <p>{service.description}</p>
                           <a
                             href={service.link}
@@ -294,13 +294,13 @@ const FittedLiving = () => {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
-                  <h3>Custom Fitted Living Spaces</h3>
+                  <h3 style={{color:'#B19777'}}>Custom Fitted Living Spaces</h3>
                   
-                  <p>
+                  <p style={{color:'#fff'}}>
                   At CraftMySpace, we specialize in creating personalized living spaces with our custom fitted storage solutions. Whether it's for your living room, bedroom, or hallway, our bespoke designs are tailored to maximize space and complement your unique style. Experience functional elegance with our expertly crafted living solutions, designed to make your home organized and stylish.
                   </p>
                   
-                  <p>
+                  <p style={{color:'#fff'}}>
                   we transform your living areas with custom-fitted storage solutions that blend functionality and style. Our tailored designs ensure that every space is optimized to meet your needs while enhancing the aesthetics of your home. From living rooms to bedrooms, each piece is crafted with attention to detail, creating organized, efficient, and visually appealing spaces that reflect your personal style.
                  
                   </p>
