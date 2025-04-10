@@ -54,7 +54,7 @@ export default function HingedDoorWardrobes() {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className="text-black">
-                  <h3>Elegant Hinged Wardrobe Doors for Stylish Living</h3>
+                  <h3 style={{color:'#B19777'}}>Elegant Hinged Wardrobe Doors for Stylish Living</h3>
                   <p>
                     Custom Built-In Fitted Wardrobes Tailored to Your Space in
                     London and the Home Counties – From CraftMySpaceUpgrade

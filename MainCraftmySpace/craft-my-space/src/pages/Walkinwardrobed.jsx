@@ -61,7 +61,7 @@ const Walkinwardrobed = () => {
                 >
                   <div className="arc-home-about-left">
                     <div className="arc-home-left-content  " style={{background:'#000'}}>
-                      <h3 className="m-t0 wt-tilte-light">
+                      <h3 className="m-t0 wt-tilte-light" style={{color:'#B19777'}}>
                       Walk in Wardrobes
                       </h3>
                       <p>
@@ -138,8 +138,8 @@ const Walkinwardrobed = () => {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
-                  <h3>Why Walk In Wardrobes?</h3>
-                  <h2>Benefits of a custom walk-in-wardrobe</h2>
+                  <h3 style={{color:'#B19777'}}>Why Walk In Wardrobes?</h3>
+                  <h2 style={{color:'#B19777'}}>Benefits of a custom walk-in-wardrobe</h2>
                   <p>
                   Everyone has their own reasons for choosing a custom walk-in wardrobe. Beyond just a stylish addition, it offers practical benefits that enhance organization and maximize space. A well-designed walk-in wardrobe ensures that everything is easily accessible while complementing your interior aesthetics.
                   </p>
@@ -157,7 +157,7 @@ const Walkinwardrobed = () => {
                  
                 </div>
                 <div className=" text-black">
-                  <h3>Dressing room to order “CraftMySpace” – a dream that becomes a reality</h3>
+                  <h3 style={{color:'#B19777'}}>Dressing room to order “CraftMySpace” – a dream that becomes a reality</h3>
                   
                   <p>
                   A well-designed dressing room is more than just a storage space—it’s a personal retreat that combines luxury, organization, and convenience. With CraftMySpace, you can create a bespoke dressing room tailored to your style and needs. From elegant shelving and spacious wardrobes to stylish lighting and mirrors, every element is thoughtfully designed to enhance your daily routine.

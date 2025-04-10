@@ -45,7 +45,7 @@ const Termandcondition = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
               >
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Terms & Conditions</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{color:'#B19777'}}>Terms & Conditions</h2>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -53,7 +53,7 @@ const Termandcondition = () => {
                 transition={{ duration: 1, delay: 0.3 }}
               >
                  <div>
-                   <h4>1.The Contract</h4>
+                   < h4 style={{color:'#B19777'}} >1.The Contract</ h4 >
                    <ul style={{lineHeight:'30px'}}>
                     <li>These terms and conditions form the legally binding agreement between Craftmyspace Interiors Ltd “the Company” and the person signing the contract/agreeing verbally/placing the order referred to as “the Customer”. The Company Registration Number 11976914 is registered at address is Unit 1, Grange Farm, Grange Way. Iver. Buckinghamshire - SL0 9NT. Nothing in this agreement shall affect your statutory rights and it is the Customer’s responsibility to ensure all details are correct. </li>
                     <li>The company may change these terms upon giving reasonable notice of such changes, in writing, online on our website or by any other channels to the Customer.</li>
@@ -61,7 +61,7 @@ const Termandcondition = () => {
                    </ul>
               </div>
               <div>
-                <h4>2.What is not included</h4>
+                < h4 style={{color:'#B19777'}}>2.What is not included</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>Re-decoration, tiling, flooring, and building work of any description or removal/disposal of old units unless specified in the order.</li>
                     <li>Disposing of any waste material, packaging or any unwanted appliances.</li>
@@ -70,7 +70,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>3.Customer’s Responsibilities</h4>
+                < h4 style={{color:'#B19777'}}>3.Customer’s Responsibilities</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>Check carefully the proposed layout to make sure it is correct and meets requirements (an additional charge may have to be made if you request alternations or any additions to the design).</li>
                     <li>Give reasonable access to the premises.</li>
@@ -81,7 +81,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>4.Termination</h4>
+                < h4 style={{color:'#B19777'}}>4.Termination</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>The Customer acknowledges that the goods are made to order and cannot be resold by the Company as there is no available market. As such these are made to your specifications and are personal to you and pursuant to the Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013, Regulation 28(b) they are exempt from the requirement to provide a 14 day cooling off period.</li>
                     <li>Once these goods are ordered, you may not cancel the contract unless we agree and the manufacturing process for your goods has not commenced. If the manufacture of the goods has commenced 50% of the contract value will be retained.</li>
@@ -89,7 +89,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>5.Payment</h4>
+                < h4 style={{color:'#B19777'}}>5.Payment</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>Payment may be made by means of cash, card or bank transfer</li>
                     <li>The deposit required by the company at the time of order is 50% of the total order value, 35% due on the 1st day of installation and finally 15% on completion.</li>
@@ -97,7 +97,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>6.Installation Dates</h4>
+                < h4 style={{color:'#B19777'}}>6.Installation Dates</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>The Company will contact the Customer to arrange installation dates based on the latest information supplied to the company by our suppliers, and therefore can be subject to change.</li>
                     <li>Any last minute changes made to the content of your order may impact on your delivery date.</li>
@@ -106,7 +106,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>7.Title to Goods</h4>
+                < h4 style={{color:'#B19777'}}>7.Title to Goods</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>The title to and property in the goods shall remain with the Company and shall only be transferred to the Customer when the Customer has paid the Total Contract Sum in full, together with all other monies due and owing.</li>
                    
@@ -114,7 +114,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>8.Guarantee</h4>
+                < h4 style={{color:'#B19777'}}>8.Guarantee</ h4 >
                 <ul style={{lineHeight:'30px'}}>
                     <li>For your piece of mind, we offer a 10-year guarantee on our products and 12 months workmanship providing long-term security subject to the following below.</li>
                     <li>The guarantee includes any possible damage that does not arise through improper use. For you, this means that we will deliver a replacement part to your door within a maximum of five weeks.</li>
@@ -130,7 +130,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>9.Specification</h4>
+                < h4 style={{color:'#B19777'}}>9.Specification</ h4 >
                 <ul style={{lineHeight:'30px'}} >
                     <li>Fillers will be placed 50-80 mm by the walls, 80-100mm fillers on the top, 100 mm base where applicable and possible joints where width / height exceeds 2700 mm.</li>
                     <li>Variations may occur in the colour and tone of materials due to their composition. The company cannot guarantee exact colour consistency throughout the range of materials used but will achieve this within an acceptable tolerance.</li>
@@ -142,7 +142,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>10.Images</h4>
+                < h4 style={{color:'#B19777'}}>10.Images</ h4 >
                 <ul style={{lineHeight:'30px'}} >
                     <li>Any documents issued by the Company to the Customer at any time containing texts, designs, specifications or drawings are confidential and are the property of the Company and shall not be copied reproduced or communicated to any third party by the Customer, his workmen or agents without the prior written agreement of the Company.</li>
                     <li>By entering this agreement, the Customer hereby assigns and transfers all and any intellectual property rights in any images of the Customer’s goods, property or furniture to the Company and authorises and licences the Company to use, in any of its publicity material, such images.</li>
@@ -151,7 +151,7 @@ const Termandcondition = () => {
                 </ul>
               </div>
               <div>
-                <h4>11.Survey</h4>
+                < h4 style={{color:'#B19777'}}>11.Survey</ h4 >
                 <ul style={{lineHeight:'30px'}} >
                     <li>If at any time during or after the technical survey there is a structural, technical or costing issue prior to manufacture, the company or the customer should provide reasons for the issue within 7 days of the survey, verbally and in writing, and both parties have the right to terminate this Agreement. If the company terminates this agreement under these conditions, any deposit paid will be refunded in full. Customers should not undertake work or expense based on this contract until such time as the company has confirmed a delivery date after the technical survey and recosting has taken place and both parties have agreed any changes.</li>
                     

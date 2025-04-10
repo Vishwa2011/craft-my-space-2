@@ -62,7 +62,7 @@ const SlidingBedroomWardrobes = () => {
                                     transition={{ duration: 1 }} className="col-lg-6 col-md-12">
                   <div className="arc-home-about-left">
                     <div className="arc-home-left-content  " style={{background:'#000'}}>
-                      <h3 className="m-t0 wt-tilte-light">
+                      <h3 className="m-t0 wt-tilte-light" style={{color:'#B19777'}}>
                       Fitted Wardrobes For Beautiful Bedrooms
                       </h3>
                       <p>

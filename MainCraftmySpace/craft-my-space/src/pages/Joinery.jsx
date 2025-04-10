@@ -82,7 +82,7 @@ const Joinery = () => {
                  
                   <motion.div class="col-lg-6 col-md-12 mb-4 mb-lg-0"
                    initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}>
-                    <h3>What is joinery?</h3>
+                    <h3 style={{color:'#B19777'}}>What is joinery?</h3>
                     <p>
                       Joinery refers to the craft of constructing wooden
                       structures, fittings, and furniture by precisely joining
@@ -161,7 +161,7 @@ const Joinery = () => {
             <div className="container mt-5">
               <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                  <h3>Joinery Production</h3>
+                  <h3 style={{color:'#B19777'}}>Joinery Production</h3>
                   <p>
                     Combining advanced technology with artisanal expertise, our
                     joinery production delivers precision-crafted woodwork
@@ -251,7 +251,7 @@ const Joinery = () => {
 
 
                   <div className="awards-win pb-0">
-                    <h3>Joinery and Furniture Production</h3>
+                    <h3 style={{color:'#B19777'}}>Joinery and Furniture Production</h3>
                     <p>
                       Our joinery and furniture production combines traditional
                       craftsmanship with modern technology to create bespoke
@@ -271,7 +271,7 @@ const Joinery = () => {
                   <div class="awards-win-right-content">
                     <div class="awards-win">
                       <div>
-                        <h3>Benefits of Custom Joinery</h3>
+                        <h3 style={{color:'#B19777'}}>Benefits of Custom Joinery</h3>
                         <p>
                           Our in-house joinery production is structured into
                           three key areas: precision-crafted windows, expertly
@@ -291,7 +291,7 @@ const Joinery = () => {
                               alt=""
                             />
                           </h2>
-                          <h4 class=" m-b10">
+                          <h4 class=" m-b10" style={{color:'#B19777'}}>
                             Superior Craftsmanship & Precision
                           </h4>
                           <p>
@@ -309,7 +309,7 @@ const Joinery = () => {
                               alt=""
                             />
                           </h2>
-                          <h4 class=" m-b10">
+                          <h4 class=" m-b10" style={{color:'#B19777'}}>
                             Uncompromising Quality & Finish
                           </h4>
                           <p>
@@ -326,7 +326,7 @@ const Joinery = () => {
                               alt=""
                             />
                           </h2>
-                          <h4 class=" m-b10">End-to-End Joinery Solutions</h4>
+                          <h4 class=" m-b10" style={{color:'#B19777'}}>End-to-End Joinery Solutions</h4>
                           <p>
                             Our team guarantees careful delivery and
                             professional, mess-free installation, bringing your
@@ -408,11 +408,11 @@ const Joinery = () => {
                   <div className="sec-head md-mb80">
                     <h6
                       className="sub-title main-color mb-15"
-                      style={{ color: "#B19777" }}
+                      style={{ color: "#B19777",fontSize:'25px' }}
                     >
                       [ FAQS ]
                     </h6>
-                    <h2 className="fontmanage">Frequently Asked Questions</h2>
+                    <h2 className="fontmanage"  style={{fontSize:'18px'}}>Frequently Asked Questions</h2>
                   </div>
                   <div className="accordion">
                     {faqs.map((faq, index) => (
@@ -486,13 +486,13 @@ const Joinery = () => {
                     <div className="home-2-about-left-outer">
                       <div className="section-head clearfix">
                         <div className="wt-tilte-main">
-                          <small className="wt-small-title" style={{color:"#B19777"}}>[ Our Company ]</small>
-                          <h2 className="m-b5">About Detail</h2>
+                          <small className="wt-small-title" style={{color:"#B19777",fontSize:'25px'}}>[ Our Company ]</small>
+                          <h2 className="m-b5" style={{fontSize:'18px'}}>About Detail</h2>
                         </div>
                       </div>
                       <div className="home-2-about-left">
                         <div className="home-2-about-left-content  bg-gray p-a50 text-white">
-                          <h2 className="m-t0 wt-title">
+                          <h2 className="m-t0 wt-title" style={{color:'#B19777'}}>
                             Exploring the Quality Ways through Design.
                           </h2>
                           <p>

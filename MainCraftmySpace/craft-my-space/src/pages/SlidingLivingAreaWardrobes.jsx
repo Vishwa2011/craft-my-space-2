@@ -22,7 +22,7 @@ const SlidingLivingAreaWardrobes = () => {
           }}
         >
           <div className="overlay-main bg-black opacity-07"></div>
-          <div className="container">
+          <div className="container"> 
             <div className="wt-bnr-inr-entry">
               <div className="banner-title-outer">
                 <div className="banner-title-name">
@@ -60,7 +60,7 @@ const SlidingLivingAreaWardrobes = () => {
                 <motion.div className="col-lg-6 col-md-12" initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
                   <div className="arc-home-about-left">
                     <div className="arc-home-left-content  " style={{background:'#000'}}>
-                      <h3 className="m-t0 wt-tilte-light">
+                      <h3 className="m-t0 wt-tilte-light" style={{color:'#B19777'}}>
                       Fitted Wardrobes in Your Living Areas
                       </h3>
                       <p>
@@ -164,10 +164,10 @@ const SlidingLivingAreaWardrobes = () => {
                     </div>
                   </div>
                 </motion.div>
-                <motion.div className="col-lg-6 col-md-12" initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }}>
+                <motion.div className="col-lg-6 col-md-12" initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 } }>
                   <div className="arc-home-about-left">
                     <div className="arc-home-left-content  " style={{background:'#000'}}>
-                      <h3 className="m-t0 wt-tilte-light">
+                      <h3 className="m-t0 wt-tilte-light" style={{color:'#B19777'}}>
                       Modernise Your Living Room
                       </h3>
                       <p>
