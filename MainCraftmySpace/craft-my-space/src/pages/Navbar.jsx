@@ -798,10 +798,10 @@ const Navbar = () => {
                   <li 
                   // style={{marginRight:'20px'}}
                   >
-                    <a href="" >Get Quote</a>
+                    <a href="" >Contact</a>
                     <ul className="sub-menu">
                       <li>
-                        <a href="/GetaQuote">Get A Quote</a>
+                        <a href="/ContactUs">Contact Us</a>
                       </li>
                       <li>
                         <a href="/Orderafreebrochure">Order A Free Brochure</a>
