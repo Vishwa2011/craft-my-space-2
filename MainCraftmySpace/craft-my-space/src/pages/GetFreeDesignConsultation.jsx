@@ -11,13 +11,85 @@ export default function GetFreeDesignConsultation() {
   };
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
-useEffect(() => {
-  const handleResize = () => setIsMobile(window.innerWidth < 1024);
-  window.addEventListener("resize", handleResize);
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const isSelected = (room) => selectedRooms.includes(room);
+
+
+  const [postcode, setPostcode] = useState("");
+  const [postcodeError, setPostcodeError] = useState("");
+  // const [showManualAddress, setShowManualAddress] = useState(false);
+  const [address, setAddress] = useState({
+    line1: "",
+    line2: "",
+    city: "",
+    county: "",
+    postcode: "",
+  });
+
+  const validatePostcode = (code) => {
+    const postcodeRegex = /^([A-Z]{1,2}\d[A-Z\d]? ?\d[ABD-HJLNP-UW-Z]{2})$/i;
+    return postcodeRegex.test(code.trim());
+  };
+
+  const handleFindAddress = async () => {
+    if (!validatePostcode(postcode)) {
+      setPostcodeError("Please enter a valid UK postcode.");
+      setShowManualAddress(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(`https://api.postcodes.io/postcodes/${postcode}`);
+      const data = await response.json();
+
+      if (data.status === 200) {
+        setPostcodeError("");
+        const result = data.result;
+
+        setAddress({
+          line1: "", // Can be filled by user if needed
+          line2: "",
+          city: result.admin_district || "",
+          county: result.admin_county || result.region || "",
+          postcode: result.postcode || "",
+        });
+
+        setShowManualAddress(true);
+      } else {
+        setPostcodeError("Postcode not found.");
+      }
+    } catch (error) {
+      setPostcodeError("Error fetching address. Try again.");
+    }
+  };
+  const inputStyle = {
+    background: "#000",
+    color: "#fff",
+    border: "1px solid #ccc",
+    padding: "8px",
+    borderRadius: "4px",
+    width: "100%",
+    marginTop: "8px",
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#B19777",
+    color: "white",
+    padding: "8px 16px",
+    borderRadius: "4px",
+    border: "2px solid #B19777",
+  };
+
+  const manualLinkStyle = {
+    color: "#fff",
+    fontSize: "12px",
+    textDecoration: "underline",
+  };
   return (
     <>
       <div className="page-wraper" style={{ background: "#000" }}>
@@ -75,7 +147,7 @@ useEffect(() => {
                     style={{
                       justifyContent: "center",
                       display: "flex",
-                      fontSize: "18px",
+                      fontSize: "14px",
                       paddingTop: "10px",
                       textAlign: "center",
                       textTransform: "uppercase",
@@ -109,8 +181,8 @@ useEffect(() => {
                 >
                   <select
                     style={{
-                        background:'#000',
-                        color:'#fff',
+                      background: '#000',
+                      color: '#fff',
                       width: "50%",
                       border: "1px solid #ccc",
                       padding: "8px",
@@ -135,8 +207,8 @@ useEffect(() => {
                       type="text"
                       placeholder="First name"
                       style={{
-                        background:'#000',
-                        color:'#fff',
+                        background: '#000',
+                        color: '#fff',
                         border: "1px solid #ccc",
                         padding: "8px",
                         borderRadius: "4px",
@@ -147,8 +219,8 @@ useEffect(() => {
                       type="text"
                       placeholder="Last name"
                       style={{
-                        background:'#000',
-                        color:'#fff',
+                        background: '#000',
+                        color: '#fff',
                         border: "1px solid #ccc",
                         padding: "8px",
                         borderRadius: "4px",
@@ -161,8 +233,8 @@ useEffect(() => {
                     type="text"
                     placeholder="Telephone"
                     style={{
-                        background:'#000',
-                        color:'#fff',
+                      background: '#000',
+                      color: '#fff',
                       border: "1px solid #ccc",
                       padding: "8px",
                       borderRadius: "4px",
@@ -173,8 +245,8 @@ useEffect(() => {
                     type="email"
                     placeholder="Email address"
                     style={{
-                        background:'#000',
-                        color:'#fff',
+                      background: '#000',
+                      color: '#fff',
                       border: "1px solid #ccc",
                       padding: "8px",
                       borderRadius: "4px",
@@ -182,49 +254,26 @@ useEffect(() => {
                     }}
                   />
 
-                  <label style={{ fontSize: "14px" }}>
-                    Quick address lookup:
-                  </label>
+                  <label style={{ fontSize: "14px", marginBottom: '0px' }}>Quick address lookup:</label>
                   <input
                     type="text"
                     placeholder="Postcode"
-                    style={{
-                        background:'#000',
-                        color:'#fff',
-                      border: "1px solid #ccc",
-                      padding: "8px",
-                      borderRadius: "4px",
-                      width: "100%",
-                    }}
+                    value={postcode}
+                    onChange={(e) => setPostcode(e.target.value)}
+                    style={inputStyle}
                   />
+                  {postcodeError && (
+                    <span style={{ color: "red", fontSize: "12px" }}>{postcodeError}</span>
+                  )}
 
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                    }}
-                  >
-                    <button
-                      type="button"
-                      style={{
-                        backgroundColor: "#B19777",
-                        color: "white",
-                        padding: "8px 16px",
-                        borderRadius: "4px",
-                        border: "2px solid #B19777",
-                      }}
-                    >
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <button type="button" onClick={handleFindAddress} style={buttonStyle}>
                       Find Address
                     </button>
                     {!showManualAddress && (
                       <a
                         href="#"
-                        style={{
-                          color: "#fff",
-                          fontSize: "12px",
-                          textDecoration: "underline",
-                        }}
+                        style={manualLinkStyle}
                         onClick={(e) => {
                           e.preventDefault();
                           setShowManualAddress(true);
@@ -234,67 +283,43 @@ useEffect(() => {
                       </a>
                     )}
                   </div>
+
                   {showManualAddress && (
                     <>
                       <input
                         type="text"
                         placeholder="Address line 1"
-                        style={{
-                            background:'#000',
-                        color:'#fff',
-                          border: "1px solid #ccc",
-                          padding: "8px",
-                          borderRadius: "4px",
-                          width: "100%",
-                        }}
+                        value={address.line1}
+                        onChange={(e) => setAddress({ ...address, line1: e.target.value })}
+                        style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="Address line 2"
-                        style={{
-                            background:'#000',
-                        color:'#fff',
-                          border: "1px solid #ccc",
-                          padding: "8px",
-                          borderRadius: "4px",
-                          width: "100%",
-                        }}
+                        value={address.line2}
+                        onChange={(e) => setAddress({ ...address, line2: e.target.value })}
+                        style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="Town or city"
-                        style={{
-                            background:'#000',
-                        color:'#fff',
-                          border: "1px solid #ccc",
-                          padding: "8px",
-                          borderRadius: "4px",
-                          width: "100%",
-                        }}
+                        value={address.city}
+                        onChange={(e) => setAddress({ ...address, city: e.target.value })}
+                        style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="County"
-                        style={{
-                            background:'#000',
-                        color:'#fff',
-                          border: "1px solid #ccc",
-                          padding: "8px",
-                          borderRadius: "4px",
-                          width: "100%",
-                        }}
+                        value={address.county}
+                        onChange={(e) => setAddress({ ...address, county: e.target.value })}
+                        style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="Postcode"
-                        style={{
-                            background:'#000',
-                        color:'#fff',
-                          border: "1px solid #ccc",
-                          padding: "8px",
-                          borderRadius: "4px",
-                          width: "100%",
-                        }}
+                        value={address.postcode}
+                        readOnly
+                        style={{ ...inputStyle, backgroundColor: "#222" }}
                       />
                     </>
                   )}
@@ -397,137 +422,137 @@ useEffect(() => {
                   }}
                 >
                   <div
-  style={{
-    display: "flex",
-    flexDirection: isMobile ? "column" : "row",
-    justifyContent: isMobile ? "center" : "space-between",
-    backgroundColor: "#141414",
-    padding: "16px",
-    borderRadius: "8px",
-    gap: isMobile ? "16px" : "0",
-  }}
->
-  {[...Array(4)].map((_, i) => (
-    <div
-      key={i}
-      style={{
-        textAlign: "center",
-        width: isMobile ? "100%" : "25%",
-      }}
-    >
-      <img
-        src={
-          i === 0
-            ? "/assets/pic/guarantee15 (1).svg"
-            : i === 1
-            ? "/assets/pic/design.svg"
-            : i === 2
-            ? "/assets/pic/bespoke121.svg"
-            : "/assets/pic/sustainable.svg"
-        }
-        alt=""
-        width={"60px"}
-      />
-      <h4
-        style={{
-          fontSize: "16px",
-          fontWeight: "500",
-          margin: 0,
-        }}
-      >
-        {i === 0
-          ? "15-year"
-          : i === 1
-          ? "Bespoke"
-          : i === 2
-          ? "Made in the"
-          : "Sustainably"}
-      </h4>
-      <p
-        style={{
-          fontSize: "12px",
-          textAlign: "center",
-          fontWeight: "bold",
-          margin: 0,
-        }}
-      >
-        {i === 0
-          ? "GUARANTEE"
-          : i === 1
-          ? "DESIGN & FIT"
-          : i === 2
-          ? "UNITED KINGDOM"
-          : "SOURCED"}
-      </p>
-    </div>
-  ))}
-</div>
+                    style={{
+                      display: "flex",
+                      flexDirection: isMobile ? "column" : "row",
+                      justifyContent: isMobile ? "center" : "space-between",
+                      backgroundColor: "#141414",
+                      padding: "16px",
+                      borderRadius: "8px",
+                      gap: isMobile ? "16px" : "0",
+                    }}
+                  >
+                    {[...Array(4)].map((_, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          textAlign: "center",
+                          width: isMobile ? "100%" : "25%",
+                        }}
+                      >
+                        <img
+                          src={
+                            i === 0
+                              ? "/assets/pic/guarantee15 (1).svg"
+                              : i === 1
+                                ? "/assets/pic/design.svg"
+                                : i === 2
+                                  ? "/assets/pic/bespoke121.svg"
+                                  : "/assets/pic/sustainable.svg"
+                          }
+                          alt=""
+                          width={"60px"}
+                        />
+                        <h4
+                          style={{
+                            fontSize: "16px",
+                            fontWeight: "500",
+                            margin: 0,
+                          }}
+                        >
+                          {i === 0
+                            ? "15-year"
+                            : i === 1
+                              ? "Bespoke"
+                              : i === 2
+                                ? "Made in the"
+                                : "Sustainably"}
+                        </h4>
+                        <p
+                          style={{
+                            fontSize: "12px",
+                            textAlign: "center",
+                            fontWeight: "bold",
+                            margin: 0,
+                          }}
+                        >
+                          {i === 0
+                            ? "GUARANTEE"
+                            : i === 1
+                              ? "DESIGN & FIT"
+                              : i === 2
+                                ? "UNITED KINGDOM"
+                                : "SOURCED"}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
 
 
-<div
-      style={{
-        background: "#141414",
-        padding: "20px",
-        borderRadius: "8px",
-      }}
-    >
-      <h2
-        style={{
-          fontSize: "18px",
-          fontWeight: "600",
-          marginBottom: "16px",
-          textAlign: "center",
-          textDecoration: "underline",
-        }}
-      >
-        WHAT HAPPENS DURING YOUR DESIGN VISIT?
-      </h2>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          gap: "16px",
-        }}
-      >
-        {[
-          {
-            title: "View samples",
-            text: "Your designer will listen to your requirements, show you samples and assess your needs.",
-          },
-          {
-            title: "Design your space",
-            text: "They will measure your space and create a detailed 3D illustration free of charge.",
-          },
-          {
-            title: "Receive a quote",
-            text: "Your designer will give you a no-obligation quote with a range of payment options.",
-          },
-        ].map((item, index) => (
-          <div key={index} style={{ flex: 1 }}>
-            <h3
-              style={{
-                fontSize: "18px",
-                textAlign: "center",
-                color: "#B19777",
-                marginBottom: "0px",
-              }}
-            >
-              {item.title}
-            </h3>
-            <p
-              style={{
-                fontSize: "12px",
-                color: "white",
-                textAlign:'center',
-                padding: "10px",
-              }}
-            >
-              {item.text}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
+                  <div
+                    style={{
+                      background: "#141414",
+                      padding: "20px",
+                      borderRadius: "8px",
+                    }}
+                  >
+                    <h2
+                      style={{
+                        fontSize: "18px",
+                        fontWeight: "600",
+                        marginBottom: "16px",
+                        textAlign: "center",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      WHAT HAPPENS DURING YOUR DESIGN VISIT?
+                    </h2>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: isMobile ? "column" : "row",
+                        gap: "16px",
+                      }}
+                    >
+                      {[
+                        {
+                          title: "View samples",
+                          text: "Your designer will listen to your requirements, show you samples and assess your needs.",
+                        },
+                        {
+                          title: "Design your space",
+                          text: "They will measure your space and create a detailed 3D illustration free of charge.",
+                        },
+                        {
+                          title: "Receive a quote",
+                          text: "Your designer will give you a no-obligation quote with a range of payment options.",
+                        },
+                      ].map((item, index) => (
+                        <div key={index} style={{ flex: 1 }}>
+                          <h3
+                            style={{
+                              fontSize: "18px",
+                              textAlign: "center",
+                              color: "#B19777",
+                              marginBottom: "0px",
+                            }}
+                          >
+                            {item.title}
+                          </h3>
+                          <p
+                            style={{
+                              fontSize: "12px",
+                              color: "white",
+                              textAlign: 'center',
+                              padding: "10px",
+                            }}
+                          >
+                            {item.text}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
                   <div style={{ marginTop: "16px" }}>
                     <img
@@ -551,5 +576,6 @@ useEffect(() => {
         </button>
       </div>
     </>
+
   );
 }
