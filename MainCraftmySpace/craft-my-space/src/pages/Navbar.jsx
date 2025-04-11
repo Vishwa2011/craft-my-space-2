@@ -655,7 +655,7 @@ const Navbar = () => {
               <div className={`header-nav ${menuOpen ? "open" : ""}`}>
                 <ul className="nav navbar-nav scroll" 
                 //  style={{padding:'0px 30px'}}
-                 style={{padding:'0px 3px'}}
+                 style={{padding:'0px 6px 0px 0px'}}
                  >
                   <li>
                     <a href="/" >Home</a>
