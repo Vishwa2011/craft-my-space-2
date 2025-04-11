@@ -80,7 +80,7 @@ const MeetDesignerForm = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            zIndex: 999,
+            zIndex: 1000,
             opacity: isFadingIn ? 1 : 0,
             transform: isFadingIn ? "scale(1)" : "scale(0.8)",
             transition: "opacity 0.5s ease-in-out, transform 0.5s ease-in-out",

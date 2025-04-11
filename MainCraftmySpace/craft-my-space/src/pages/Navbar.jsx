@@ -653,11 +653,16 @@ const Navbar = () => {
               </button>
               {/* MAIN Nav */}
               <div className={`header-nav ${menuOpen ? "open" : ""}`}>
-                <ul className="nav navbar-nav scroll"  style={{padding:'0px 30px'}}>
+                <ul className="nav navbar-nav scroll" 
+                //  style={{padding:'0px 30px'}}
+                 style={{padding:'0px 3px'}}
+                 >
                   <li>
                     <a href="/" >Home</a>
                   </li>
-                  <li style={{marginRight:'15px'}}>
+                  <li 
+                  // style={{marginRight:'15px'}}
+                  >
                     <a href="/WhyCraftMySpace">Why CMS?</a>
                     <ul className="sub-menu">
                       <li><a  href="/Mission">Our Mission</a></li>
@@ -780,7 +785,9 @@ const Navbar = () => {
                   {/* <li>
                     <a href="/Inspiration" >Blog</a>
                   </li> */}
-                  {/* <li style={{marginRight:'20px'}}>
+                  <li 
+                  // style={{marginRight:'20px'}}
+                  >
                     <a href="" >Gallery</a>
                     <ul className="sub-menu">
                       <li >
@@ -788,7 +795,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </li>
-                  <li style={{marginRight:'20px'}}>
+                  <li 
+                  // style={{marginRight:'20px'}}
+                  >
                     <a href="" >Get Quote</a>
                     <ul className="sub-menu">
                       <li>
@@ -804,7 +813,7 @@ const Navbar = () => {
                         <a href="/Termandcondition">Terms & Conditions</a>
                       </li>
                     </ul>
-                  </li> */}
+                  </li>
                   {/* <li styl  e={{marginRight:'22px'}}>
                   <div className="extra-nav" style={{height:'0px'}}>
                                 <div className="extra-cell" style={{display:"block"}}>											
