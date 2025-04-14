@@ -4,6 +4,40 @@ import Footers from "./Footer";
 export default function GetFreeDesignConsultation() {
   const [selectedRooms, setSelectedRooms] = useState([]);
   const [showManualAddress, setShowManualAddress] = useState(false);
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+
+  const validateEmail = (value) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailError("");
+  };
+
+  const handleEmailBlur = () => {
+    if (!validateEmail(email)) {
+      setEmailError("Please enter a valid email address");
+    }
+  };
+
+  const handlePhoneChange = (e) => {
+    const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric
+    if (value.length <= 10) {
+      setPhone(value);
+      setPhoneError("");
+    }
+  };
+
+  const handlePhoneBlur = () => {
+    if (phone.length !== 10) {
+      setPhoneError("Phone number must be exactly 10 digits");
+    }
+  };
   const toggleRoomSelection = (room) => {
     setSelectedRooms((prev) =>
       prev.includes(room) ? prev.filter((r) => r !== room) : [...prev, room]
@@ -18,7 +52,6 @@ export default function GetFreeDesignConsultation() {
   }, []);
 
   const isSelected = (room) => selectedRooms.includes(room);
-
 
   const [postcode, setPostcode] = useState("");
   const [postcodeError, setPostcodeError] = useState("");
@@ -44,7 +77,9 @@ export default function GetFreeDesignConsultation() {
     }
 
     try {
-      const response = await fetch(`https://api.postcodes.io/postcodes/${postcode}`);
+      const response = await fetch(
+        `https://api.postcodes.io/postcodes/${postcode}`
+      );
       const data = await response.json();
 
       if (data.status === 200) {
@@ -181,8 +216,8 @@ export default function GetFreeDesignConsultation() {
                 >
                   <select
                     style={{
-                      background: '#000',
-                      color: '#fff',
+                      background: "#000",
+                      color: "#fff",
                       width: "50%",
                       border: "1px solid #ccc",
                       padding: "8px",
@@ -205,10 +240,18 @@ export default function GetFreeDesignConsultation() {
                   >
                     <input
                       type="text"
+                      required
                       placeholder="First name"
+                      onKeyPress={(e) => {
+                        const charCode = e.which || e.keyCode;
+                        const char = String.fromCharCode(charCode);
+                        if (!/^[a-zA-Z\s]*$/.test(char)) {
+                          e.preventDefault(); // Prevent if not a letter or space
+                        }
+                      }}
                       style={{
-                        background: '#000',
-                        color: '#fff',
+                        background: "#000",
+                        color: "#fff",
                         border: "1px solid #ccc",
                         padding: "8px",
                         borderRadius: "4px",
@@ -218,9 +261,17 @@ export default function GetFreeDesignConsultation() {
                     <input
                       type="text"
                       placeholder="Last name"
+                      required
+                      onKeyPress={(e) => {
+                        const charCode = e.which || e.keyCode;
+                        const char = String.fromCharCode(charCode);
+                        if (!/^[a-zA-Z\s]*$/.test(char)) {
+                          e.preventDefault(); // Prevent if not a letter or space
+                        }
+                      }}
                       style={{
-                        background: '#000',
-                        color: '#fff',
+                        background: "#000",
+                        color: "#fff",
                         border: "1px solid #ccc",
                         padding: "8px",
                         borderRadius: "4px",
@@ -231,30 +282,52 @@ export default function GetFreeDesignConsultation() {
 
                   <input
                     type="text"
+                    required
                     placeholder="Telephone"
+                    value={phone}
+                    onChange={handlePhoneChange}
+                    onBlur={handlePhoneBlur}
+                    maxLength={10}
                     style={{
-                      background: '#000',
-                      color: '#fff',
+                      background: "#000",
+                      color: "#fff",
                       border: "1px solid #ccc",
                       padding: "8px",
                       borderRadius: "4px",
                       width: "100%",
                     }}
                   />
+                  {phoneError && (
+                    <div style={{ color: "red", marginTop: "4px" }}>
+                      {phoneError}
+                    </div>
+                  )}
                   <input
                     type="email"
+                    required
                     placeholder="Email address"
+                    value={email}
+                    onChange={handleEmailChange}
+                    onBlur={handleEmailBlur}
                     style={{
-                      background: '#000',
-                      color: '#fff',
+                      background: "#000",
+                      color: "#fff",
                       border: "1px solid #ccc",
                       padding: "8px",
                       borderRadius: "4px",
                       width: "100%",
+                      marginBottom: "6px",
                     }}
                   />
+                  {emailError && (
+                    <div style={{ color: "red", marginBottom: "10px" }}>
+                      {emailError}
+                    </div>
+                  )}
 
-                  <label style={{ fontSize: "14px", marginBottom: '0px' }}>Quick address lookup:</label>
+                  <label style={{ fontSize: "14px", marginBottom: "0px" }}>
+                    Quick address lookup:
+                  </label>
                   <input
                     type="text"
                     placeholder="Postcode"
@@ -263,11 +336,23 @@ export default function GetFreeDesignConsultation() {
                     style={inputStyle}
                   />
                   {postcodeError && (
-                    <span style={{ color: "red", fontSize: "12px" }}>{postcodeError}</span>
+                    <span style={{ color: "red", fontSize: "12px" }}>
+                      {postcodeError}
+                    </span>
                   )}
 
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <button type="button" onClick={handleFindAddress} style={buttonStyle}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
+                    <button
+                      type="button"
+                      onClick={handleFindAddress}
+                      style={buttonStyle}
+                    >
                       Find Address
                     </button>
                     {!showManualAddress && (
@@ -290,28 +375,36 @@ export default function GetFreeDesignConsultation() {
                         type="text"
                         placeholder="Address line 1"
                         value={address.line1}
-                        onChange={(e) => setAddress({ ...address, line1: e.target.value })}
+                        onChange={(e) =>
+                          setAddress({ ...address, line1: e.target.value })
+                        }
                         style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="Address line 2"
                         value={address.line2}
-                        onChange={(e) => setAddress({ ...address, line2: e.target.value })}
+                        onChange={(e) =>
+                          setAddress({ ...address, line2: e.target.value })
+                        }
                         style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="Town or city"
                         value={address.city}
-                        onChange={(e) => setAddress({ ...address, city: e.target.value })}
+                        onChange={(e) =>
+                          setAddress({ ...address, city: e.target.value })
+                        }
                         style={inputStyle}
                       />
                       <input
                         type="text"
                         placeholder="County"
                         value={address.county}
-                        onChange={(e) => setAddress({ ...address, county: e.target.value })}
+                        onChange={(e) =>
+                          setAddress({ ...address, county: e.target.value })
+                        }
                         style={inputStyle}
                       />
                       <input
@@ -445,10 +538,10 @@ export default function GetFreeDesignConsultation() {
                             i === 0
                               ? "/assets/pic/guarantee15 (1).svg"
                               : i === 1
-                                ? "/assets/pic/design.svg"
-                                : i === 2
-                                  ? "/assets/pic/bespoke121.svg"
-                                  : "/assets/pic/sustainable.svg"
+                              ? "/assets/pic/design.svg"
+                              : i === 2
+                              ? "/assets/pic/bespoke121.svg"
+                              : "/assets/pic/sustainable.svg"
                           }
                           alt=""
                           width={"60px"}
@@ -463,10 +556,10 @@ export default function GetFreeDesignConsultation() {
                           {i === 0
                             ? "15-year"
                             : i === 1
-                              ? "Bespoke"
-                              : i === 2
-                                ? "Made in the"
-                                : "Sustainably"}
+                            ? "Bespoke"
+                            : i === 2
+                            ? "Made in the"
+                            : "Sustainably"}
                         </h4>
                         <p
                           style={{
@@ -479,15 +572,14 @@ export default function GetFreeDesignConsultation() {
                           {i === 0
                             ? "GUARANTEE"
                             : i === 1
-                              ? "DESIGN & FIT"
-                              : i === 2
-                                ? "UNITED KINGDOM"
-                                : "SOURCED"}
+                            ? "DESIGN & FIT"
+                            : i === 2
+                            ? "UNITED KINGDOM"
+                            : "SOURCED"}
                         </p>
                       </div>
                     ))}
                   </div>
-
 
                   <div
                     style={{
@@ -543,7 +635,7 @@ export default function GetFreeDesignConsultation() {
                             style={{
                               fontSize: "12px",
                               color: "white",
-                              textAlign: 'center',
+                              textAlign: "center",
                               padding: "10px",
                             }}
                           >
@@ -576,6 +668,5 @@ export default function GetFreeDesignConsultation() {
         </button>
       </div>
     </>
-
   );
 }

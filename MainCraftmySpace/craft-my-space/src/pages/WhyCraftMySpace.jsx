@@ -115,7 +115,7 @@ const WhyCraftMySpace = () => {
             <div className="row justify-content-center">
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="project-detail-pic ">
-                  <div className="wt-media">
+                  <div className="wt-media img-reflection">
                     {/* <img src="assets/images/gallery/pic3.jpg" alt="" /> */}
                     <img src="/assets/pic/cms1.1.jpg" alt="" />
                   </div>
@@ -124,7 +124,7 @@ const WhyCraftMySpace = () => {
 
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="project-detail-pic">
-                  <div className="wt-media">
+                  <div className="wt-media img-reflection">
                     {/* <img src="assets/images/gallery/pic3.jpg" alt="" /> */}
                     <img src="/assets/pic/cms2.1.jpg" alt="" />
                   </div>
@@ -133,7 +133,7 @@ const WhyCraftMySpace = () => {
 
               <div className="col-lg-4 col-md-12 m-b30">
                 <div className="project-detail-pic">
-                  <div className="wt-media">
+                  <div className="wt-media img-reflection">
                     {/* <img src="assets/images/gallery/pic3.jpg" alt="" /> */}
                     <img src="/assets/pic/cms3.jpg" alt="" />
                   </div>
@@ -141,7 +141,7 @@ const WhyCraftMySpace = () => {
               </div>
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="project-detail-pic ">
-                  <div className="wt-media">
+                  <div className="wt-media img-reflection">
                     {/* <img src="assets/images/gallery/pic1.jpg" alt="" /> */}
                     <img src="/assets/pic/cms4 (1).jpg" alt="" />
                   </div>
@@ -150,7 +150,7 @@ const WhyCraftMySpace = () => {
 
               <div className="col-lg-4 col-md-6 m-b30">
                 <div className="project-detail-pic">
-                  <div className="wt-media">
+                  <div className="wt-media img-reflection">
                     {/* <img src="assets/images/gallery/pic2.jpg" alt="" /> */}
                     <img src="/assets/pic/cms5.webp" alt="" />
                   </div>
@@ -159,7 +159,7 @@ const WhyCraftMySpace = () => {
 
               <div className="col-lg-4 col-md-12 m-b30">
                 <div className="project-detail-pic">
-                  <div className="wt-media">
+                  <div className="wt-media img-reflection">
                     {/* <img src="assets/images/gallery/pic3.jpg" alt="" /> */}
                     <img src="/assets/pic/cms6.webp" alt="" />
                   </div>

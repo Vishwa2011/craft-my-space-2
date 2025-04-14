@@ -1459,10 +1459,12 @@ export default function Home() {
                   
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
+                 <div className="img-reflection">
                   <img
                     src="/assets/pic/bed.webp"
                     style={{ height: "450px", width: "100%" }}
                   />
+                  </div> 
                 </div>
               </div>
             </div>
