@@ -51,12 +51,15 @@ import Ourfactorytour from "./pages/Ourfactorytour";
 import BespokeFurniture from "./pages/BespokeFurniture";
 import GetFreeDesignConsultation from "./pages/GetFreeDesignConsultation";
 import Startdesigning from "./pages/Startdesigning";
+import Exitpopup from "./pages/Exitpopup";
 
 
 // import Getaquote from "./pages/GetQuote";
 function App() {
   return (
     <>
+    <Exitpopup
+       />
       {/* <Navbar />  */}
       <div class="phone-widget">
         <a href="tel:(0044)07365 566 666">

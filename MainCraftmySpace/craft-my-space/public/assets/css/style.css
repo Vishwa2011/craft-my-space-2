@@ -8701,3 +8701,9 @@ padding: 20px;;}
   .logo_items img{
 	height: 100px;
   }
+
+  @media (max-width: 425px) {
+	.hide-on-small {
+	  display: none !important;
+	}
+  }
