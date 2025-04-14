@@ -1359,7 +1359,7 @@ export default function Home() {
                   style={{
                     position: "relative", // This will keep the text above the background image
                     // height: "450px",
-                    zIndex:999,
+                    zIndex: 999,
                     overflow: "hidden", // Hide anything outside the bounds
                   }}
                 >
@@ -1392,7 +1392,7 @@ export default function Home() {
                     ))}
                   </div>
                   <h2>Enjoy a Luxury Experience</h2>
-                  <p style={{marginBottom:'50px'}}>
+                  <p style={{ marginBottom: "50px" }}>
                     At Elite Living, we set the benchmark for refined luxury,
                     crafting spaces that epitomize sophistication and
                     exclusivity. Our bespoke services go beyond the ordinary,
@@ -1405,34 +1405,39 @@ export default function Home() {
                     Living, every creation is a testament to timeless beauty,
                     superior craftsmanship, and unparalleled luxury.
                   </p>
-                
-                   
-                    <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center'}}>
-                      <a
-                        href="/GetFreeDesignConsultation"
-                        style={{
-                          background: "#B19777",
-                          padding: "15px",
-                          color: "white",
-                          margin: "10px",
-                          fontWeight: 500,
-                          textDecoration: "none",
-                          border: "2px solid #B19777",
-                          transition: "all 0.3s ease-in-out",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.target.style.background = "white";
-                          e.target.style.color = "#B19777";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.background = "#B19777";
-                          e.target.style.color = "white";
-                        }}
-                      >
-                        Get a Free Design Consultation
-                      </a>
 
-                      <a
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <a
+                      href="/GetFreeDesignConsultation"
+                      style={{
+                        background: "#B19777",
+                        padding: "15px",
+                        color: "white",
+                        margin: "10px",
+                        fontWeight: 500,
+                        textDecoration: "none",
+                        border: "2px solid #B19777",
+                        transition: "all 0.3s ease-in-out",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.background = "white";
+                        e.target.style.color = "#B19777";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.background = "#B19777";
+                        e.target.style.color = "white";
+                      }}
+                    >
+                      Get a Free Design Consultation
+                    </a>
+
+                    {/* <a
                         href="/Startdesigning"
                         style={{
                           background: "#B19777",
@@ -1454,17 +1459,16 @@ export default function Home() {
                         }}
                       >
                         Start Designing Now
-                      </a>
-                    </div>
-                  
+                      </a> */}
+                  </div>
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                 <div className="img-reflection">
-                  <img
-                    src="/assets/pic/bed.webp"
-                    style={{ height: "450px", width: "100%" }}
-                  />
-                  </div> 
+                  <div className="img-reflection">
+                    <img
+                      src="/assets/pic/bed.webp"
+                      style={{ height: "450px", width: "100%" }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -1472,8 +1476,8 @@ export default function Home() {
         </div>
 
         {/* content end */}
-  {/* [ our bespoke ] start  */}
-  <div
+        {/* [ our bespoke ] start  */}
+        <div
           className="section-full p-t80 p-b50"
           style={{ background: "#000", borderBottom: "2px solid #B19777" }}
         >
@@ -1491,10 +1495,15 @@ export default function Home() {
                   [ custom-fitted. elegantly craftd. ]
                 </small>
                 <p
-                  
-                  style={{ justifyContent: "center", display: "flex",fontSize:"16px",textAlign:'center' }}
+                  style={{
+                    justifyContent: "center",
+                    display: "flex",
+                    fontSize: "16px",
+                    textAlign: "center",
+                  }}
                 >
-                  FROM WARDROBES TO MEDIA UNITS, WE DESIGN AND INSTALL BESPOKE FURNITURE THAT TRANSFORMS YOUR SPACE.
+                  FROM WARDROBES TO MEDIA UNITS, WE DESIGN AND INSTALL BESPOKE
+                  FURNITURE THAT TRANSFORMS YOUR SPACE.
                 </p>
               </div>
             </div>
@@ -1503,25 +1512,76 @@ export default function Home() {
             <motion.div className="container mt-5">
               <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
                 {[
-                  { title: "sliding door wardrobes", img: "bespoke1.jpg", link: "/BespokeFurniture" },
-                  { title: "plain hinge door wardrobes", img: "bespoke2.jpg",link:'/BespokeFurniture' },
-                  { title: "shaker style fitted wardrobes", img: "bespoke3.jpg",link:'/BespokeFurniture' },
-                  { title: "walk-in wardrobes", img: "bespoke4.jpg",link:'/BespokeFurniture' },
-                  { title: "loft wardrobes", img: "bespoke5.jpg",link:'/BespokeFurniture' },
-                  { title: "media units", img: "bespoke6.jpg" ,link:'/BespokeFurniture'},
-                  { title: "fitted bookshelves", img: "bespoke7.jpg" ,link:'/BespokeFurniture'},
-                  { title: "office cabinets", img: "bespoke8.jpg",link:'/BespokeFurniture' },
-                  { title: "glass door wardrobe cabinets", img: "bespoke9.jpg",link:'/BespokeFurniture' },
-                  { title: "small utility room storage", img: "bespoke10.jpg" ,link:'/BespokeFurniture'},
-                  { title: "bedroom wardrobes", img: "bespoke11.jpg",link:'/BespokeFurniture' },
-                  { title: "fretwork doors wardrobe", img: "bespoke12.jpg" ,link:'/BespokeFurniture'},
+                  {
+                    title: "sliding door wardrobes",
+                    img: "bespoke1.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "plain hinge door wardrobes",
+                    img: "bespoke2.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "shaker style fitted wardrobes",
+                    img: "bespoke3.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "walk-in wardrobes",
+                    img: "bespoke4.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "loft wardrobes",
+                    img: "bespoke5.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "media units",
+                    img: "bespoke6.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "fitted bookshelves",
+                    img: "bespoke7.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "office cabinets",
+                    img: "bespoke8.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "glass door wardrobe cabinets",
+                    img: "bespoke9.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "small utility room storage",
+                    img: "bespoke10.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "bedroom wardrobes",
+                    img: "bespoke11.jpg",
+                    link: "/BespokeFurniture",
+                  },
+                  {
+                    title: "fretwork doors wardrobe",
+                    img: "bespoke12.jpg",
+                    link: "/BespokeFurniture",
+                  },
                 ].map((item, index) => (
                   <div
-                    key={index}  
+                    key={index}
                     className="masonry-item col-lg-4 col-md-6 col-sm-12 m-b30"
                   >
                     <a href={item.link}>
-                      <div className="img-reflection" style={{ position: "relative", overflow: "hidden" }}>
+                      <div
+                        className="img-reflection"
+                        style={{ position: "relative", overflow: "hidden" }}
+                      >
                         <img
                           src={`/assets/pic/${item.img}`}
                           alt={item.title}
@@ -1538,17 +1598,17 @@ export default function Home() {
                           }
                         />
                         <div
-                         style={{
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          height: "100%",
-                          width: "100%",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          fontSize: "30px",
-                        }}
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            height: "100%",
+                            width: "100%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "30px",
+                          }}
                         >
                           <h4 className="wt-tilte text-white">{item.title}</h4>
                         </div>
@@ -1557,31 +1617,31 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-                <div style={{display:'flex',justifyContent:'center'}}>
+              <div style={{ display: "flex", justifyContent: "center" }}>
                 <a
-                        href="/GetFreeDesignConsultation"
-                        style={{
-                          background: "#B19777",
-                          padding: "15px",
-                          color: "white",
-                          margin: "10px",
-                          fontWeight: 500,
-                          textDecoration: "none",
-                          border: "2px solid #B19777",
-                          transition: "all 0.3s ease-in-out",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.target.style.background = "white";
-                          e.target.style.color = "#B19777";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.background = "#B19777";
-                          e.target.style.color = "white";
-                        }}
-                      >
-                        Get a Free Design Consultation
-                      </a>
-                </div>
+                  href="/GetFreeDesignConsultation"
+                  style={{
+                    background: "#B19777",
+                    padding: "15px",
+                    color: "white",
+                    margin: "10px",
+                    fontWeight: 500,
+                    textDecoration: "none",
+                    border: "2px solid #B19777",
+                    transition: "all 0.3s ease-in-out",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = "white";
+                    e.target.style.color = "#B19777";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = "#B19777";
+                    e.target.style.color = "white";
+                  }}
+                >
+                  Get a Free Design Consultation
+                </a>
+              </div>
             </motion.div>
 
             {/* card end  */}
@@ -1676,7 +1736,6 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
 
@@ -1794,226 +1853,292 @@ export default function Home() {
                   </div>
                 </div> */}
               </div>
+            </div>
           </div>
-          </div>
-            <div style={{display:'flex',justifyContent:'center',marginTop:'20px',flexWrap:'wrap'}}>
-                      <a
-                        href="/"
-                        style={{
-                          background: "#B19777",
-                          padding: "15px",
-                          color: "white",
-                          margin: "10px",
-                          fontWeight: 500,
-                          textDecoration: "none",
-                          border: "2px solid #B19777",
-                          transition: "all 0.3s ease-in-out",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.target.style.background = "white";
-                          e.target.style.color = "#B19777";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.background = "#B19777";
-                          e.target.style.color = "white";
-                        }}
-                      >
-                        Read More Reviews
-                      </a>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "20px",
+              flexWrap: "wrap",
+            }}
+          >
+            <a
+              href="/"
+              style={{
+                background: "#B19777",
+                padding: "15px",
+                color: "white",
+                margin: "10px",
+                fontWeight: 500,
+                textDecoration: "none",
+                border: "2px solid #B19777",
+                transition: "all 0.3s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = "white";
+                e.target.style.color = "#B19777";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = "#B19777";
+                e.target.style.color = "white";
+              }}
+            >
+              Read More Reviews
+            </a>
 
-                      <a
-                        href="/GetFreeDesignConsultation"
-                        style={{
-                          background: "#B19777",
-                          padding: "15px",
-                          color: "white",
-                          margin: "10px",
-                          fontWeight: 500,
-                          textDecoration: "none",
-                          border: "2px solid #B19777",
-                          transition: "all 0.3s ease-in-out",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.target.style.background = "white";
-                          e.target.style.color = "#B19777";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.background = "#B19777";
-                          e.target.style.color = "white";
-                        }}
-                      >
-                        Get a Free Consultation 
-                      </a>
-                    </div>
+            <a
+              href="/GetFreeDesignConsultation"
+              style={{
+                background: "#B19777",
+                padding: "15px",
+                color: "white",
+                margin: "10px",
+                fontWeight: 500,
+                textDecoration: "none",
+                border: "2px solid #B19777",
+                transition: "all 0.3s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = "white";
+                e.target.style.color = "#B19777";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = "#B19777";
+                e.target.style.color = "white";
+              }}
+            >
+              Get a Free Consultation
+            </a>
+          </div>
         </div>
         {/* Testimonial end  */}
+      {/* brands start  */}
+        <div class="logos" style={{borderBottom: "2px solid #B19777" }}>
+          <div class="logo_items row   " style={{display:'flex',flexWrap:'nowrap'}}>
+            <div className="col-6 col-md-3 ">
+              <img src="/assets/pic/hafele.jpg" />
+            </div>
+            <div className="col-6 col-md-3">
+            <img src="/assets/pic/Cleaf.jpg" />
+            </div>
+            <div className="col-6 col-md-3">
+            <img src="/assets/pic/egger.jpg" />
+            </div>
+            <div className="col-6 col-md-3">
+            <img src="/assets/pic/saviola.jpg" />
+            </div>
+        {/*  */}
+            <div className="col-6 col-md-3">
+              <img src="/assets/pic/hafele.jpg" />
+            </div>
+            <div className="col-6 col-md-3">
+            <img src="/assets/pic/Cleaf.jpg" />
+            </div>
+            <div className="col-6 col-md-3">
+            <img src="/assets/pic/egger.jpg" />
+            </div>
+            <div className="col-6 col-md-3">
+            <img src="/assets/pic/saviola.jpg" />
+            </div>
+         
+          </div>
+        </div>
 
-
-
-        <div class="logos">
-<div class="logo_items">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9P0_e2Y3sc_UJI0bn8JLNQ5tgoOs-0qG4g&s" />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrRyYBS09DzxfE1NDnuItmob9ZTHbU7ah5g&s" />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__a-btIUFswU88QVldISRYbeyryuUR1KcEw&s" />
-<img src="https://media.licdn.com/dms/image/v2/D4E22AQHM9Zbf4Izp5w/feedshare-shrink_800/feedshare-shrink_800/0/1708419468973?e=2147483647&v=beta&t=uMJCwJScGg2qPjeiEAuLAtc1x6y5HOt7eJ0hhqGB28Q" />
-
-
-
-</div>
-  <div class="logo_items">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9P0_e2Y3sc_UJI0bn8JLNQ5tgoOs-0qG4g&s" />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrRyYBS09DzxfE1NDnuItmob9ZTHbU7ah5g&s" />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__a-btIUFswU88QVldISRYbeyryuUR1KcEw&s" />
-<img src="https://media.licdn.com/dms/image/v2/D4E22AQHM9Zbf4Izp5w/feedshare-shrink_800/feedshare-shrink_800/0/1708419468973?e=2147483647&v=beta&t=uMJCwJScGg2qPjeiEAuLAtc1x6y5HOt7eJ0hhqGB28Q" />
-
-
-
-</div>
-<div class="logo_items">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9P0_e2Y3sc_UJI0bn8JLNQ5tgoOs-0qG4g&s" />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrRyYBS09DzxfE1NDnuItmob9ZTHbU7ah5g&s" />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__a-btIUFswU88QVldISRYbeyryuUR1KcEw&s" />
-<img src="https://media.licdn.com/dms/image/v2/D4E22AQHM9Zbf4Izp5w/feedshare-shrink_800/feedshare-shrink_800/0/1708419468973?e=2147483647&v=beta&t=uMJCwJScGg2qPjeiEAuLAtc1x6y5HOt7eJ0hhqGB28Q" />
-
-
-
-</div>
-</div>
-
-
+        {/* brands end */}
 
         <div>
-    <div className="section-head clearfix " style={{margin:"60px 0px 10px 0px"}}>
-                  <div style={{ textAlign: "center" }}>
-                    <small
-                      className="wt-small-title"
-                      style={{ color: "#B19777",fontSize:'25px' }}
+          <div
+            className="section-head clearfix "
+            style={{ margin: "60px 0px 10px 0px" }}
+          >
+            <div style={{ textAlign: "center" }}>
+              <small
+                className="wt-small-title"
+                style={{ color: "#B19777", fontSize: "25px" }}
+              >
+                [ DESIGN YOUR DREAM WARDROBE - IN REAL TIME! ]
+              </small>
+              <h2 className="m-b5" style={{ fontSize: "18px" }}>
+                CUSTOMIZE YOUR WARDROBE BY SELECTING SIZES, MATERIALA,COLORS,AND
+                INTERNAL LAYOUTS.
+              </h2>
+            </div>
+          </div>
+          <section className="container py-5 text-center">
+            <div className="row g-4">
+              {/* Step 1 */}
+              <div className="col-md-4 mb-4">
+                <div className="card h-100 shadow-sm" style={{ border: "0px" }}>
+                  <div style={{ position: "relative", overflow: "hidden" }}>
+                    <img
+                      src="/assets/pic/no1 (3).jpg"
+                      alt="Design Visit"
+                      style={{
+                        width: "100%",
+                        height: "240px",
+                        display: "block",
+                      }}
+                    />
+                    {/* Top-right white triangle overlay */}
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        right: "-2px",
+                        width: "100px",
+                        height: "100px",
+                        backgroundColor: "black ",
+                        clipPath: "polygon(100% 0, 0 0, 100% 100%)",
+                      }}
+                    />
+                    {/* Step number */}
+                    <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">
+                      1
+                    </span>
+                  </div>
+                  <div
+                    className="card-body text-center"
+                    style={{ background: "#141414" }}
+                  >
+                    <h5
+                      className="card-title fw-bold"
+                      style={{
+                        color: "#B19777",
+                        fontSize: "20px",
+                        margin: "20px 0px",
+                      }}
                     >
-                      [ DESIGN YOUR DREAM WARDROBE - IN REAL TIME! ]
-                    </small>
-                    <h2 className="m-b5" style={{fontSize:'18px'}}>CUSTOMIZE YOUR WARDROBE BY SELECTING SIZES, MATERIALA,COLORS,AND INTERNAL LAYOUTS.</h2>
+                      Choose your Wardrobe type
+                    </h5>
+                    <p className="card-text " style={{ color: "#fff" }}>
+                      Finding the perfect wardrobe for your space just got
+                      easier! Whether you’re looking for sleek sliding doors,
+                      classic hinged wardrobes, space-saving corner designs, or
+                      fully customized built-ins, we have something to match
+                      every style and need.
+                    </p>
                   </div>
                 </div>
-                <section className="container py-5 text-center">
-   
+              </div>
 
-    <div className="row g-4">
-  {/* Step 1 */}
-  <div className="col-md-4 mb-4">
-    <div className="card h-100 shadow-sm" style={{border:'0px'}}>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        <img
-          src="/assets/pic/no1 (3).jpg"
-          alt="Design Visit"
-          style={{
-            width: '100%',
-            height: '240px',
-            display: 'block',
-          }}
-        />
-        {/* Top-right white triangle overlay */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            right: "-2px",
-            width: '100px',
-            height: '100px',
-            backgroundColor: 'black ',
-            clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-          }}
-        />
-        {/* Step number */}
-        <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">1</span>
-      </div>
-      <div className="card-body text-center" style={{background:'#141414'}}> 
-        <h5 className="card-title fw-bold" style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>Choose your Wardrobe type</h5>
-        <p className="card-text " style={{color:'#fff'}}>
-        Finding the perfect wardrobe for your space just got easier! Whether you’re looking for sleek sliding doors, classic hinged wardrobes, space-saving corner designs, or fully customized built-ins, we have something to match every style and need. 
-        </p>
-      </div>
-    </div>
-  </div>
+              {/* Step 2 */}
+              <div className="col-md-4 mb-4">
+                <div className="card h-100 shadow-sm" style={{ border: "0px" }}>
+                  <div style={{ position: "relative", overflow: "hidden" }}>
+                    <img
+                      src="/assets/pic/no2 (1).jpg"
+                      alt="Survey"
+                      style={{
+                        width: "100%",
+                        height: "240px",
+                        display: "block",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-1px",
+                        right: "-2px",
+                        width: "100px",
+                        height: "100px",
+                        backgroundColor: "black",
+                        clipPath: "polygon(100% 0, 0 0, 100% 100%)",
+                      }}
+                    />
+                    <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">
+                      2
+                    </span>
+                  </div>
+                  <div
+                    className="card-body text-center"
+                    style={{ background: "#141414" }}
+                  >
+                    <h5
+                      className="card-title fw-bold"
+                      style={{
+                        color: "#B19777",
+                        fontSize: "20px",
+                        margin: "20px 0px",
+                      }}
+                    >
+                      select colors & Finishes
+                    </h5>
+                    <p className="card-text " style={{ color: "#fff" }}>
+                      Add the perfect touch to your furniture with our wide
+                      range of colors and finishes. Whether you prefer warm
+                      wooden textures, glossy laminates, soft matte tones, or
+                      bold colors that make a statement – we have options to
+                      suit every mood and interior style.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-  {/* Step 2 */}
-  <div className="col-md-4 mb-4">
-    <div className="card h-100 shadow-sm" style={{border:'0px'}}>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        <img
-          src="/assets/pic/no2 (1).jpg"
-          alt="Survey"
-          style={{
-            width: '100%',
-            height: '240px',
-            display: 'block',
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            top: "-1px",
-            right: "-2px",
-            width: '100px',
-            height: '100px',
-            backgroundColor: 'black',
-            clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-          }}
-        />
-        <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">2</span>
-      </div>
-      <div className="card-body text-center"  style={{background:'#141414'}}>
-        <h5 className="card-title fw-bold" style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>select colors & Finishes</h5>
-        <p className="card-text " style={{color:'#fff'}}>
-        Add the perfect touch to your furniture with our wide range of colors and finishes. Whether you prefer warm wooden textures, glossy laminates, soft matte tones, or bold colors that make a statement – we have options to suit every mood and interior style. 
-        </p>
-      </div>
-    </div>
-  </div>
+              {/* Step 3 */}
+              <div className="col-md-4 mb-4">
+                <div className="card h-100 shadow-sm" style={{ border: "0px" }}>
+                  <div style={{ position: "relative", overflow: "hidden" }}>
+                    <img
+                      src="/assets/pic/no3.jpg"
+                      alt="Installation"
+                      style={{
+                        width: "100%",
+                        height: "240px",
+                        display: "block",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "-1px",
+                        right: "-2px",
+                        width: "100px",
+                        height: "100px",
+                        backgroundColor: "black",
+                        clipPath: "polygon(100% 0, 0 0, 100% 100%)",
+                      }}
+                    />
+                    <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">
+                      3
+                    </span>
+                  </div>
+                  <div
+                    className="card-body text-center"
+                    style={{ background: "#141414" }}
+                  >
+                    <h5
+                      className="card-title fw-bold"
+                      style={{
+                        color: "#B19777",
+                        fontSize: "20px",
+                        margin: "20px 0px",
+                      }}
+                    >
+                      visualize & Contact us{" "}
+                    </h5>
+                    <p className="card-text " style={{ color: "#fff" }}>
+                      See your dream furniture come to life before you buy! With
+                      our visualization tools, you can preview designs, colors,
+                      and finishes in real-time—making it easier to picture how
+                      everything will look in your space.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  {/* Step 3 */}
-  <div className="col-md-4 mb-4" >
-    <div className="card h-100 shadow-sm" style={{border:'0px'}}>
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        <img
-          src="/assets/pic/no3.jpg"
-          alt="Installation"
-          style={{
-            width: '100%',
-            height: '240px',
-            display: 'block',
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            top: "-1px",
-            right: "-2px",
-            width: '100px',
-            height: '100px',
-            backgroundColor: 'black',
-            clipPath: 'polygon(100% 0, 0 0, 100% 100%)',
-          }}
-        />
-        <span className="position-absolute top-0 start-0 m-2 bg-light rounded-circle px-3 py-1 fw-bold">3</span>
-      </div>
-      <div className="card-body text-center"  style={{background:'#141414'}}>
-        <h5 className="card-title fw-bold"  style={{color:'#B19777',fontSize:'20px',margin:'20px 0px'}}>visualize & Contact us </h5>
-        <p className="card-text " style={{color:'#fff'}}>
-        See your dream furniture come to life before you buy! With our visualization tools, you can preview designs, colors, and finishes in real-time—making it easier to picture how everything will look in your space.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-    {/* <!-- Button --> */}
-<div style={{display:'flex' ,justifyContent:'center',flexWrap:'wrap',marginTop:'60px'}}>
-
-    <div style={{margin:'10px'}} >
-                <a
+            {/* <!-- Button --> */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                marginTop: "60px",
+              }}
+            >
+              <div style={{ margin: "10px" }}>
+                {/* <a
                   href="/Startdesigning"
                   className="site-button-link"
                   style={{
@@ -2034,9 +2159,9 @@ export default function Home() {
                   }}
                 >
                     START DESIGNING NOW
-                </a>
+                </a> */}
               </div>
-              <div style={{margin:'10px'}}>
+              <div style={{ margin: "10px" }}>
                 <a
                   href="/Recentwork"
                   className="site-button-link"
@@ -2060,17 +2185,18 @@ export default function Home() {
                   EXPLORE OUR GALLERY
                 </a>
               </div>
-</div>
-    
-  </section>
-
-      </div>
-
+            </div>
+          </section>
+        </div>
+{/*  */}
         {/* <!-- VIDEO SECTION START --> */}
         <div style={{ borderBottom: "2px solid #B19777" }}>
           <div class="high-res-video-container">
             <video class="high-res-video" controls>
-              <source src="/assets/pic/Modern Sliding Wardrobe Ideas That Maximize Space and Style _ Mirror Cupboard Sliding Doors.mp4" type="video/mp4" />
+              <source
+                src="/assets/pic/Modern Sliding Wardrobe Ideas That Maximize Space and Style _ Mirror Cupboard Sliding Doors.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -2105,7 +2231,11 @@ export default function Home() {
                 <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="E">
+                      <h4
+                        style={{ color: "#B19777" }}
+                        className="wt-tilte-large m-t0"
+                        data-title="E"
+                      >
                         Expert Craftsmanship
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2129,7 +2259,11 @@ export default function Home() {
                 <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="P">
+                      <h4
+                        style={{ color: "#B19777" }}
+                        className="wt-tilte-large m-t0"
+                        data-title="P"
+                      >
                         Premium Materials
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2153,7 +2287,11 @@ export default function Home() {
                 <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="t">
+                      <h4
+                        style={{ color: "#B19777" }}
+                        className="wt-tilte-large m-t0"
+                        data-title="t"
+                      >
                         Tailored to your space
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2177,7 +2315,11 @@ export default function Home() {
                 <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="s">
+                      <h4
+                        style={{ color: "#B19777" }}
+                        className="wt-tilte-large m-t0"
+                        data-title="s"
+                      >
                         Seamless installation
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2201,7 +2343,11 @@ export default function Home() {
                 <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1">
                     <div className="icon-content m-b30">
-                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="L">
+                      <h4
+                        style={{ color: "#B19777" }}
+                        className="wt-tilte-large m-t0"
+                        data-title="L"
+                      >
                         Luxury look
                       </h4>
                       <p style={{ color: "white" }}>
@@ -2225,7 +2371,11 @@ export default function Home() {
                 <a href="/ContactUs">
                   <div className="wt-icon-box-wraper m-b30 p-lr30 p-tb25 data-title-large  v-icon-effect block-bg-hover bg-white1 ">
                     <div className="icon-content m-b30">
-                      <h4 style={{color:'#B19777'}} className="wt-tilte-large m-t0" data-title="A">
+                      <h4
+                        style={{ color: "#B19777" }}
+                        className="wt-tilte-large m-t0"
+                        data-title="A"
+                      >
                         Affordable prices
                       </h4>
                       <p style={{ color: "white" }}>

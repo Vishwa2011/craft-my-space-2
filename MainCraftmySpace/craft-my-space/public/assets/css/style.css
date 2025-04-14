@@ -8667,7 +8667,18 @@ padding: 20px;;}
 	height: 100%;
 	z-index: 2;
   }
-  
+  @media (max-width: 1024px) {
+	.logos:before,
+	.logos:after {
+	  width: 170px;
+	}
+  }
+  @media (max-width: 767.98px) {
+	.logos:before,
+	.logos:after {
+	  width: 80px;
+	}
+  }
   .logos:before {
 	left: 0;
 	background: linear-gradient(to left, #a97c4412, #B19777);
