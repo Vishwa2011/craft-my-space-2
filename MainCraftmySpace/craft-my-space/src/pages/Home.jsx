@@ -1848,6 +1848,40 @@ export default function Home() {
         </div>
         {/* Testimonial end  */}
 
+
+
+        <div class="logos">
+<div class="logo_items">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9P0_e2Y3sc_UJI0bn8JLNQ5tgoOs-0qG4g&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrRyYBS09DzxfE1NDnuItmob9ZTHbU7ah5g&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__a-btIUFswU88QVldISRYbeyryuUR1KcEw&s" />
+<img src="https://media.licdn.com/dms/image/v2/D4E22AQHM9Zbf4Izp5w/feedshare-shrink_800/feedshare-shrink_800/0/1708419468973?e=2147483647&v=beta&t=uMJCwJScGg2qPjeiEAuLAtc1x6y5HOt7eJ0hhqGB28Q" />
+
+
+
+</div>
+  <div class="logo_items">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9P0_e2Y3sc_UJI0bn8JLNQ5tgoOs-0qG4g&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrRyYBS09DzxfE1NDnuItmob9ZTHbU7ah5g&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__a-btIUFswU88QVldISRYbeyryuUR1KcEw&s" />
+<img src="https://media.licdn.com/dms/image/v2/D4E22AQHM9Zbf4Izp5w/feedshare-shrink_800/feedshare-shrink_800/0/1708419468973?e=2147483647&v=beta&t=uMJCwJScGg2qPjeiEAuLAtc1x6y5HOt7eJ0hhqGB28Q" />
+
+
+
+</div>
+<div class="logo_items">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9P0_e2Y3sc_UJI0bn8JLNQ5tgoOs-0qG4g&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCrRyYBS09DzxfE1NDnuItmob9ZTHbU7ah5g&s" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__a-btIUFswU88QVldISRYbeyryuUR1KcEw&s" />
+<img src="https://media.licdn.com/dms/image/v2/D4E22AQHM9Zbf4Izp5w/feedshare-shrink_800/feedshare-shrink_800/0/1708419468973?e=2147483647&v=beta&t=uMJCwJScGg2qPjeiEAuLAtc1x6y5HOt7eJ0hhqGB28Q" />
+
+
+
+</div>
+</div>
+
+
+
         <div>
     <div className="section-head clearfix " style={{margin:"60px 0px 10px 0px"}}>
                   <div style={{ textAlign: "center" }}>
