@@ -81,7 +81,14 @@ const Joinery = () => {
                 <div class="row align-items-center">
                  
                   <motion.div class="col-lg-6 col-md-12 mb-4 mb-lg-0"
-                   initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}>
+                   initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}
+                   style={{
+                    position: "relative", // This will keep the text above the background image
+                    // height: "450px",
+                    zIndex: 999,
+                    overflow: "hidden", // Hide anything outside the bounds
+                  }}>
+                     <div className="responsive-background"></div>
                     <h3 style={{color:'#B19777'}}>What is joinery?</h3>
                     <p>
                       Joinery refers to the craft of constructing wooden
@@ -107,11 +114,13 @@ const Joinery = () => {
                
                   <motion.div class="col-lg-6 col-md-12 text-center"
                    initial={{ x: 100 }} animate={{ x: 0 }} transition={{ duration: 1.2 }}>
+                    <div className="img-reflection">
                     <img
                       src="/assets/pic/joinery.jpeg"
                       class="img-fluid rounded"
                       alt="Joinery Image"
                     />
+                    </div>
                   </motion.div>
                 </div>
               </div>
@@ -260,7 +269,7 @@ const Joinery = () => {
                       architectural wood elements, we manufacture pieces that
                       seamlessly blend functionality and aesthetics.
                     </p>
-                    <div class="  awards-win-section-left bg-cover bg-no-repeat bg-center bg-gray  ">
+                    <div class="  awards-win-section-left bg-cover bg-no-repeat bg-center bg-gray img-reflection ">
                       <img src="/assets/pic/bench (1).jpg" />
                      
                     </div>
@@ -398,11 +407,13 @@ const Joinery = () => {
             <motion.div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
+                  <div className="img-reflection">
                   <img
                     src="/assets/pic/enjoy.jpg"
                     alt="FAQ"
                     className="img-fluid"
                   />
+                  </div>
                 </div>
                 <div className="col-lg-7 col-md-6">
                   <div className="sec-head md-mb80">

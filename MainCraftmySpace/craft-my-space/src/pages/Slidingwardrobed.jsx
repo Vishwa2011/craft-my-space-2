@@ -91,7 +91,7 @@ const Slidingwardrobed = () => {
                   viewport={{ once: true }}
                 >
                   <div className="col-xl-5 col-lg-6 col-md-12">
-                    <motion.div className="wt-thum-bx" 
+                    <motion.div className="wt-thum-bx img-reflection" 
                       initial={{ scale: 0.9 }} 
                       whileInView={{ scale: 1 }} 
                       transition={{ duration: 0.5 }}>

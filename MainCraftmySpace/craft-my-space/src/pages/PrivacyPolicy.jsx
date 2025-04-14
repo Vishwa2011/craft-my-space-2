@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
           <div className="container">
             <h2 style={{color:'#B19777'}}>Confidentiality Statement</h2>
             <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>1.Information That We Collect</h4>
+                <h4 style={{color:'#B19777'}}>1. Information That We Collect</h4>
                 <ul style={{ lineHeight: "30px", listStyle: "none" }}>
                   <li style={{textAlign:'justify'}}>
                     Our website at www.craftmyspace.uk uses cookies, which is a
@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>2.The personal data that we collect from you is: –</h4>
+                <h4 style={{color:'#B19777'}}>2. The personal data that we collect from you is: –</h4>
                 <ul style={{ lineHeight: "30px", listStyle: "none" }}>
                   <li>Name</li>
                   <li>Address</li>
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
               </div>
               <div style={{marginBottom:"50px"}}>
                 <h4 style={{color:'#B19777'}}>
-                  3.How We Use Your Personal Data (Legal Basis for Processing)
+                  3. How We Use Your Personal Data (Legal Basis for Processing)
                 </h4>
                 <ul style={{ lineHeight: "30px", listStyle: "none" }}>
                   <li style={{textAlign:'justify'}}>
@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>4.Your Rights</h4>
+                <h4 style={{color:'#B19777'}}>4. Your Rights</h4>
                 <ul style={{ lineHeight: "30px", listStyle: "none" }}>
                   <li style={{textAlign:'justify'}}>
                     You have the right to access any personal information that
@@ -166,7 +166,7 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>5.Sharing and Disclosing Your Personal Information</h4>
+                <h4 style={{color:'#B19777'}}>5. Sharing and Disclosing Your Personal Information</h4>
                 <p>
                   We do not share or disclosure any of your personal information
                   without your consent, other than for the purposes specified in
@@ -183,7 +183,7 @@ const PrivacyPolicy = () => {
                 </p>
               </div>
               <div>
-                <h4 style={{color:'#B19777'}}>6.Safeguarding Measures</h4>
+                <h4 style={{color:'#B19777'}}>6. Safeguarding Measures</h4>
                 <p>
                   We take your privacy seriously and we take every reasonable
                   measure and precaution to protect and secure your personal
@@ -193,7 +193,7 @@ const PrivacyPolicy = () => {
                 </p>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>7.Consequences of Not Providing Your Data</h4>
+                <h4 style={{color:'#B19777'}}>7. Consequences of Not Providing Your Data</h4>
                 <p>
                   You are not obligated to provide your personal information to
                   us, however, as this information is required for us to perform
@@ -202,7 +202,7 @@ const PrivacyPolicy = () => {
                 </p>
               </div>
               <div>
-                <h4 style={{color:'#B19777'}}>8.How Long We Keep Your Data</h4>
+                <h4 style={{color:'#B19777'}}>8. How Long We Keep Your Data</h4>
                 <p>
                   We only ever retain personal information for as long as is
                   necessary and we have strict review and retention policies in

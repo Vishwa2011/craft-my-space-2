@@ -79,7 +79,7 @@ const ServiceSection = ({ service, index }) => {
       }}
     >
       <div className="col-xl-5 col-lg-6 col-md-12">
-        <div className="wt-thum-bx">
+        <div className="wt-thum-bx img-reflection">
           <img src={service.image} alt="Service" />
         </div>
       </div>
