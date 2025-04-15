@@ -1814,7 +1814,7 @@ export default function Home() {
                     className="wt-media"
                     style={{ border: "1px solid white" }}
                   >
-                    <img src="/assets/pic/no-dp.jpg" alt="" />
+                    {/* <img src="/assets/pic/no-dp.jpg" alt="" /> */}
                   </div>
                 </div>
                 <div className="item">
@@ -1822,7 +1822,7 @@ export default function Home() {
                     className="wt-media"
                     style={{ border: "1px solid white" }}
                   >
-                    <img src="/assets/pic/no-dp.jpg" alt="" />
+                    {/* <img src="/assets/pic/no-dp.jpg" alt="" /> */}
                   </div>
                 </div>
                 <div className="item">
@@ -1830,7 +1830,7 @@ export default function Home() {
                     className="wt-media"
                     style={{ border: "1px solid white" }}
                   >
-                    <img src="/assets/pic/no-dp.jpg" alt="" />
+                    {/* <img src="/assets/pic/no-dp.jpg" alt="" /> */}
                   </div>
                 </div>
                 <div className="item">
@@ -1838,7 +1838,7 @@ export default function Home() {
                     className="wt-media"
                     style={{ border: "1px solid white" }}
                   >
-                    <img src="/assets/pic/no-dp.jpg" alt="" />
+                    {/* <img src="/assets/pic/no-dp.jpg" alt="" /> */}
                   </div>
                 </div>
                 {/* <div className="item">
