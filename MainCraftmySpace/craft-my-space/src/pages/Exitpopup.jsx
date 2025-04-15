@@ -1,10 +1,13 @@
-import { color } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 const Exitpopup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [hasShownPopup, setHasShownPopup] = useState(false);
-
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [contact, setContact] = useState("");
+  const [contactError, setContactError] = useState("");
   useEffect(() => {
     const handleMouseLeave = (e) => {
       if (e.clientY <= 0 && !hasShownPopup) {
@@ -19,46 +22,124 @@ const Exitpopup = () => {
 
   if (!showPopup) return null;
 
+  const handleNameChange = (e) => {
+    const value = e.target.value;
+    // Allow only letters and spaces
+    if (/^[a-zA-Z\s]*$/.test(value)) {
+      setFullName(value);
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+
+    // Basic email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (value === "" || emailRegex.test(value)) {
+      setEmailError("");
+    } else {
+      setEmailError("Invalid email address");
+    }
+  };
+
+  const handleContactChange = (e) => {
+    const value = e.target.value;
+
+    // Allow only digits
+    if (/^\d*$/.test(value)) {
+      if (value.length <= 10) {
+        setContact(value);
+        if (value.length === 10) {
+          setContactError("");
+        } else {
+          setContactError("Contact number must be exactly 10 digits");
+        }
+      }
+    }
+  };
   return (
     <div style={styles.overlay}>
       <div style={styles.popup}>
-        <button onClick={() => setShowPopup(false)} style={styles.closeBtn}>×</button>
+        <button onClick={() => setShowPopup(false)} style={styles.closeBtn}>
+          ×
+        </button>
 
-        <h2 style={styles.heading} >MEET A DESIGNER</h2>
+        <h2 style={styles.heading}>MEET A DESIGNER</h2>
         <p style={styles.subheading}>
           Offer a Free Consultation Before They Leave To Increase Conversions.
         </p>
 
         <div style={styles.imagesRow}>
-          <img src="/assets/pic/exit1.jpg" alt="preview1" style={styles.previewImg} className="hide-on-small"/>
-          <img src="/assets/pic/exit2.jpg" alt="preview2" style={styles.previewImgCenter} />
-          <img src="/assets/pic/exit3.jpg" alt="preview3" style={styles.previewImg} />
+          <img
+            src="/assets/pic/exit1.jpg"
+            alt="preview1"
+            style={styles.previewImg}
+            className="hide-on-small"
+          />
+          <img
+            src="/assets/pic/exit2.jpg"
+            alt="preview2"
+            style={styles.previewImgCenter}
+          />
+          <img
+            src="/assets/pic/exit3.jpg"
+            alt="preview3"
+            style={styles.previewImg}
+          />
         </div>
 
         <form style={styles.form}>
           <div style={styles.row}>
-            <input type="text" placeholder="Full Name" style={styles.input} />
-           
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              style={styles.input}
+              value={fullName}
+              onChange={handleNameChange}
+            />
           </div>
-          <div style={styles.row}>
-            <input type="email" placeholder="Email Address" style={styles.input} />
-           
-          </div>
-          <div style={styles.row}>
-          <input type="text" placeholder="Contact Number" style={styles.input} />
 
+          <div style={styles.row}>
+            <input
+              type="email"
+              required
+              placeholder="Email Address"
+              value={email}
+              onChange={handleEmailChange}
+              style={styles.input}
+            />
+            {emailError && <div style={styles.error}>{emailError}</div>}
           </div>
           <div style={styles.row}>
-            <input type="text" placeholder="Your Location" style={styles.input} />
-           
+            <input
+              type="text"
+              placeholder="Contact Number"
+              value={contact}
+              onChange={handleContactChange}
+              style={styles.input}
+            />
+            {contactError && <div style={styles.error}>{contactError}</div>}
+          </div>
+          <div style={styles.row}>
+            <input
+              type="text"
+              placeholder="Your Location"
+              style={styles.input}
+            />
           </div>
           <div>
-            <input type="text" placeholder="Share Your Preferences With Us..." style={{ ...styles.input, width: "100%" }} />
+            <input
+              type="text"
+              placeholder="Share Your Preferences With Us..."
+              style={{ ...styles.input, width: "100%" }}
+            />
           </div>
 
-          
-
-          <button type="submit"  style={styles.submitBtn}>Submit</button>
+          <button type="submit" style={styles.submitBtn}>
+            Submit
+          </button>
         </form>
       </div>
     </div>
@@ -68,7 +149,10 @@ const Exitpopup = () => {
 const styles = {
   overlay: {
     position: "fixed",
-    top: 0, left: 0, width: "100vw", height: "100vh",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    height: "100vh",
     background: "rgba(0,0,0,0.5)",
     zIndex: 9999,
     display: "flex",
@@ -76,6 +160,7 @@ const styles = {
     alignItems: "center",
     padding: "20px",
   },
+  error: { color: "red", fontSize: 12 },
   popup: {
     background: "#fff",
     borderRadius: "8px",
@@ -87,7 +172,8 @@ const styles = {
   },
   closeBtn: {
     position: "absolute",
-    top: "10px", right: "15px",
+    top: "10px",
+    right: "15px",
     fontSize: "24px",
     border: "none",
     background: "transparent",
@@ -97,12 +183,12 @@ const styles = {
     textAlign: "center",
     fontSize: "30px",
     marginBottom: "10px",
-    color:'#B19777'
+    color: "#B19777",
   },
   subheading: {
     textAlign: "center",
     color: "#666",
-    fontSize: "14px",
+    fontSize: "12px",
     marginBottom: "25px",
   },
   imagesRow: {
@@ -135,16 +221,16 @@ const styles = {
   },
   input: {
     flex: 1,
-    padding: "10px 12px",
+    padding: "5px 12px",
     border: "1px solid #ccc",
     borderRadius: "4px",
-    fontSize: "14px",
+    fontSize: "12px",
   },
- 
+
   submitBtn: {
     backgroundColor: "#B19777",
     color: "#fff",
-    padding: "12px 20px",
+    padding: "5px 20px",
     border: "none",
     borderRadius: "4px",
     fontSize: "14px",

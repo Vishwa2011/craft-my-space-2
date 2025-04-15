@@ -30,7 +30,7 @@ export default function Home() {
                 <div
                   id="welcome"
                   className="rev_slider fullscreenbanner"
-                  style={{ display: "none" }}
+                    style={{ display: "none" }}
                   data-version="5.4.3.1"
                 >
                   <ul>

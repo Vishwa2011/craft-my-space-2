@@ -8681,12 +8681,12 @@ padding: 20px;;}
   }
   .logos:before {
 	left: 0;
-	background: linear-gradient(to left, #a97c4412, #B19777);
+	background: linear-gradient(to left, #a97c4400, #B19777);
   }
   
   .logos:after {
 	right: 0;
-	background: linear-gradient(to left, #B19777, #a97c4412);
+	background: linear-gradient(to left, #B19777, #a97c4400);
   }
   
   .logo_items {
