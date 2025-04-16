@@ -416,7 +416,7 @@ const styles = {
   popup: {
     background: "#fff",
     borderRadius: "8px",
-    maxWidth: "600px",
+    maxWidth: "540px",
     width: "100%",
     padding: "30px",
     position: "relative",
