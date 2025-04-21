@@ -1708,7 +1708,7 @@ export default function Home() {
                 </div>
 
                 <div className="item">
-  0                <div className="testimonial-slider-content clearfix">
+                  <div className="testimonial-slider-content clearfix">
                     <div className="testimonial-1 testimonial-1-no-img clearfix">
                       <div className="testimonial-text">
                         <div className="testimonial-paragraph">
