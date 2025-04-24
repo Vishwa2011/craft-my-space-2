@@ -52,7 +52,7 @@ const services = [
     link: "/AwkwardSpaces",
     features: [
       { name: "Alcoves", link: "/Alcoves" },
-      { name: "Bay Windows", link: "/BayWindows" },
+      // { name: "Bay Windows", link: "/BayWindows" },
       { name: "Landing & Hallways", link: "/LandingHallways" },
       { name: "Sloping Ceiling", link: "/SlopingCeilings" },
       { name: "Under Stairs", link: "/UnderStairs" }

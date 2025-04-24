@@ -91,23 +91,23 @@ const Footers = () => {
                       />
                     </a>
                   </h4>
-                  <p>
+                  <p style={{color:'white'}}>
                     Bespoke fitted bedrooms, fitted wardrobes, fitted furniture
-                    and kitchens designed and installed by <b>CraftMySpace</b>.
+                    and kitchens designed and installed by <b style={{color:'white'}}>CraftMySpace</b>.
                   </p>
                 </div>
               </div>
 
               <div className="col-xl-3 col-lg-6 col-md-6">
               <div className="widget widget_address_outer m-b20">
-              <h4 className="widget-title">Quick Links </h4>
+              <h4 className="widget-title" style={{color:'#B19777'}}>Quick Links </h4>
                 <ul >
                 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
    href='/'
-    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    style={{ color: "#fff", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777  "} 
-    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
   >
    Home
   </a>
@@ -126,9 +126,9 @@ const Footers = () => {
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
   href='/Service'
-    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    style={{ color: "#fff", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
-    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
   >
     Services
   </a>
@@ -146,9 +146,9 @@ const Footers = () => {
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
   href='/Recentwork'
-    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    style={{ color: "#fff", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
-    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
   >
     Gallary
   </a>
@@ -156,9 +156,9 @@ const Footers = () => {
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
   href='/Blog'
-    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    style={{ color: "#fff", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
-    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
   >
     Blog
   </a>
@@ -166,11 +166,51 @@ const Footers = () => {
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
   href='/ContactUs'
-    style={{ color: "#7e878c", transition: "color 0.3s" }} 
+    style={{ color: "#fff", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 
-    onMouseLeave={(e) => e.target.style.color = "#7e878c"}
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
   >
   Contact Us
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/Termandcondition'
+    style={{ color: "#fff", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
+  >
+  Terms & Conditions
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/PrivacyPolicy'
+    style={{ color: "#fff", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
+  >
+  Privacy Policy
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/GDPRPolicy'
+    style={{ color: "#fff", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
+  >
+  GDPR Policy
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
+  href='/ContactUs'
+    style={{ color: "#fff", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
+  >
+  Warranty and Guaranty
   </a>
 </li>
 {/* <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
@@ -223,27 +263,27 @@ Privacy & Policy
               <div className="col-xl-3 col-lg-6 col-md-6">
                
                 <div className="widget widget_address_outer m-b20">
-                  <h4 className="widget-title">Address & Contact</h4>
+                  <h4 className="widget-title" style={{color:"#B19777"}}>Address & Contact</h4>
                   <ul className="widget_address">
                     <li>
                       <div style={{ display: "flex" }}>
                         <div>
-                          <LocationOnIcon style={{ marginRight: "6px" }} />
+                          <LocationOnIcon style={{ marginRight: "6px",color:"#fff" }} />
                         </div>
-                        <div>
+                        <div style={{color:"#fff"}}>
                         Unit 1, Grange Farm, Grange Way Iver,Near London,UK
                         </div>
                       </div>
                     </li>
                     <li>
-  <CallIcon style={{ marginRight: "7px" }} />
-  <a href="tel:–(0044)07365 566 666" style={{ color: "inherit", textDecoration: "none" }}>
+  <CallIcon style={{ marginRight: "7px",color:"#fff" }} />
+  <a href="tel:–(0044)07365 566 666" style={{ color: "inherit", textDecoration: "none",color:"#fff" }}>
  (0044)07365 566 666
   </a>
 </li>
                     <li>
-  <EmailIcon style={{ marginRight: "7px" }} />
-  <a href="mailto:– Info@craftmyspace.co.uk" style={{ color: "inherit", textDecoration: "none" }}>
+  <EmailIcon style={{ marginRight: "7px",color:"#fff" }} />
+  <a href="mailto:– Info@craftmyspace.co.uk" style={{ color: "inherit", textDecoration: "none",color:"#fff" }}>
   Info@craftmyspace.co.uk
   </a>
 </li>
@@ -264,7 +304,7 @@ Privacy & Policy
              
               <div className="col-xl-3 col-lg-6 col-md-6">
                 <div className=" widget_address_outer mb-3">
-                  <h4 className="widget-title mb-0">Booking</h4>
+                  <h4 className="widget-title mb-0" style={{color:"#B19777"}}>Booking</h4>
                 </div>
                 <div>
                 <a href="/Orderafreebrochure">
