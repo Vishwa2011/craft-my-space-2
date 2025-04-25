@@ -8792,3 +8792,18 @@ padding: 20px;;}
   .btn-floating.whatsapp:hover {
 	  background-color: #1f7a12
   }
+
+  /*  */
+
+  .svg-container {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center;     /* Center vertically */
+	/* height: 100vh;           Full height of the viewport */
+  }
+  
+  .centered-svg {
+	width: 150px; /* Set desired width */
+	height: 150px; /* Set desired height */
+  }
+  
