@@ -142,14 +142,14 @@ function App() {
         >
           <div
             style={{
-              backgroundColor: '#fff',
+              backgroundColor: '#B19777',
               borderRadius: '10px',
               padding: '20px',
               width: '90%',
               maxWidth: '500px',
               boxShadow: '0px 5px 15px rgba(0,0,0,0.2)',
               fontFamily: 'sans-serif',
-              border: '2px solid #000',
+              border: '2px solid #B19777',
             }}
           >
             <div className="svg-container">
@@ -158,7 +158,7 @@ function App() {
               </svg>
             </div>
 
-            <p style={{ fontSize: '0.95rem', marginTop: '10px', color: '#000' }}>
+            <p style={{ fontSize: '0.95rem', marginTop: '10px', color: '#fff' }}>
               To provide the best experiences, we use technologies like cookies to store
               and/or access device information. Consenting to these technologies will
               allow us to process data such as browsing behavior or unique IDs on this site.
@@ -186,6 +186,7 @@ function App() {
               >
                 Accept
               </button>
+              
               <button
                 onClick={closePopup}
                 style={{

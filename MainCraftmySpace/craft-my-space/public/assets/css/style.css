@@ -8804,6 +8804,7 @@ padding: 20px;;}
   
   .centered-svg {
 	width: 150px; /* Set desired width */
-	height: 150px; /* Set desired height */
+	height: 80px; /* Set desired height */
+	color: #fff;
   }
   
