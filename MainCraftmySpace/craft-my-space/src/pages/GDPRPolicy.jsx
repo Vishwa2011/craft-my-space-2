@@ -23,7 +23,7 @@ const GDPRPolicy = () => {
         <div
           className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"
           data-stellar-background-ratio="0.5"
-          style={{ backgroundImage: "url(assets/pic/privacy.jpg)" }}
+          style={{ backgroundImage: "url(assets/pic/654e512334186412CF_2023_UK_NOV_HPCAT_STORAGE.webp)" }}
         >
           <div className="overlay-main bg-black opacity-07"></div>
           <div className="container">
@@ -78,7 +78,7 @@ const GDPRPolicy = () => {
               <div style={{marginBottom:"50px"}}>
                 <h4 style={{color:'#B19777'}}>2. What Personal Data We Collect</h4>
                 <p style={{marginBottom:'5px'}}>We may collect and process the following personal information:</p>
-                <ul style={{ lineHeight: "30px"}}>
+                <ul style={{ lineHeight: "30px",listStyle:'none'}}>
                   <li>Full name</li>
                   <li>Email address</li>
                   <li>Phone number</li>
@@ -95,7 +95,7 @@ const GDPRPolicy = () => {
                 3. How We Use Your Personal Data
                 </h4>
                 <p style={{marginBottom:'5px'}}>We use your data to:</p>
-                <ul style={{ lineHeight: "30px" }}>
+                <ul style={{ lineHeight: "30px",listStyle:'none' }}>
                     <li>Process and fulfill your orders</li>
                     <li>Communicate with you about your purchases</li>
                     <li>Provide customer support</li>
@@ -108,7 +108,7 @@ const GDPRPolicy = () => {
               <div style={{marginBottom:"50px"}}>
                 <h4 style={{color:'#B19777'}}>4. Legal Bases for Processing</h4>
                 <p style={{marginBottom:'5px'}}>We process your personal data on the following legal bases:</p>
-                <ul style={{ lineHeight: "30px" }}>
+                <ul style={{ lineHeight: "30px" ,listStyle:'none'}}>
                   <li><b>Consent</b> – for marketing and cookies</li>
                   <li><b>Contract</b> – to fulfill product purchases</li>
                   <li><b>Legal obligation</b> – for tax, accounting, and regulatory compliance</li>
@@ -120,7 +120,7 @@ const GDPRPolicy = () => {
                 <p style={{marginBottom:'5px'}}>
                 Your data may be shared with trusted third parties, such as:
                 </p>
-                <ul style={{ lineHeight: "30px" }}>
+                <ul style={{ lineHeight: "30px",listStyle:'none' }}>
                     <li>Payment gateways (e.g. Stripe, PayPal)</li>
                     <li>Shipping and delivery services</li>
                     <li>Web hosting and IT service providers</li>
@@ -133,7 +133,7 @@ const GDPRPolicy = () => {
                 <p style={{marginBottom:'5px'}}>
                 We retain personal data only as long as necessary:
                 </p>
-                <ul style={{ lineHeight: "30px" }}>
+                <ul style={{ lineHeight: "30px",listStyle:'none' }}>
                     <li>To complete the services requested</li>
                     <li>To comply with legal and tax requirements</li>
                     <li>For internal analysis and record-keeping</li>
@@ -144,7 +144,7 @@ const GDPRPolicy = () => {
                 <p style={{marginBottom:'5px'}}>
                 You have the right to:
                 </p>
-                <ul style={{ lineHeight: "30px" }}>
+                <ul style={{ lineHeight: "30px" ,listStyle:'none'}}>
                     <li>Access your data</li>
                     <li>Correct inaccurate information</li>
                     <li>Erase your data (right to be forgotten)</li>
