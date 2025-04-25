@@ -55,6 +55,12 @@ import Exitpopup from "./pages/Exitpopup";
 import { useState } from "react";
 
 
+
+
+
+import Warrantyandguaranty from "./pages/Warrantyandguaranty";
+
+
 // import Getaquote from "./pages/GetQuote";
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -296,6 +302,10 @@ function App() {
         <Route path="/BespokeFurniture" element={<BespokeFurniture />} />
         <Route path="/GetFreeDesignConsultation" element={<GetFreeDesignConsultation />} />
         <Route path="/Startdesigning" element={<Startdesigning />}/>
+
+
+
+        <Route path="/Warrantyandguaranty" element={<Warrantyandguaranty />}/>
       </Routes>
     </>
   );
