@@ -53,6 +53,7 @@ import GetFreeDesignConsultation from "./pages/GetFreeDesignConsultation";
 import Startdesigning from "./pages/Startdesigning";
 import Exitpopup from "./pages/Exitpopup";
 import { useState } from "react";
+import GDPRPolicy from "./pages/GDPRPolicy";
 
 
 // import Getaquote from "./pages/GetQuote";
@@ -296,6 +297,7 @@ function App() {
         <Route path="/BespokeFurniture" element={<BespokeFurniture />} />
         <Route path="/GetFreeDesignConsultation" element={<GetFreeDesignConsultation />} />
         <Route path="/Startdesigning" element={<Startdesigning />}/>
+        <Route path="/GDPRPolicy" element={<GDPRPolicy />}/>
       </Routes>
     </>
   );
