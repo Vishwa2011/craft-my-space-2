@@ -148,7 +148,7 @@ const MediaRoom = () => {
                 {/* <!-- COLUMNS 1 --> */}
                 <div className="masonry-item col-xl-3 col-lg-4  col-md-6 col-sm-6 m-b30">
                   <div className="project-img-effect-1">
-                    <img src="/assets/pic/media1.jpg" alt="" />
+                    <img src="/assets/pic/media1.webp" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
                     <img src="/assets/pic/media7.jpg" alt="" />
@@ -160,7 +160,7 @@ const MediaRoom = () => {
                     <img src="/assets/pic/media5.jpg" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
-                    <img src="/assets/pic/media3.jpg" alt="" />
+                    <img src="/assets/pic/Alcoves2.jpg" alt="" />
                   </div>
                 </div>
                 {/* <!-- COLUMNS 3 --> */}
@@ -178,7 +178,7 @@ const MediaRoom = () => {
                     <img src="/assets/pic/media6.jpeg" alt="" />
                   </div>
                   <div className="project-img-effect-1 mt-4">
-                    <img src="/assets/pic/media4.webp" alt="" />
+                    <img src="/assets/pic/media4.jpg" alt="" />
                   </div>
                 </div>
              

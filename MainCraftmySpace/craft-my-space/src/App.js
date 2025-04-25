@@ -81,8 +81,7 @@ function App() {
   };
   return (
     <>
-    <Exitpopup
-       />
+    <Exitpopup />
       {/* <Navbar />  */}
       <a href="tel:(0044)07365 566 666">
   <button class="btn-floating phone">
