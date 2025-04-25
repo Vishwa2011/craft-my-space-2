@@ -663,8 +663,9 @@ const Navbar = () => {
                   <li 
                   // style={{marginRight:'15px'}}
                   >
-                    <a href="/WhyCraftMySpace">Why CMS?</a>
+                    <a href="">Why CMS?</a>
                     <ul className="sub-menu">
+                      <li><a  href="/WhyCraftMySpace">Why CMS?</a></li>
                       <li><a  href="/Mission">Our Mission</a></li>
                       <li><a  href="/Vision">Our Vision</a></li>
                     </ul>
