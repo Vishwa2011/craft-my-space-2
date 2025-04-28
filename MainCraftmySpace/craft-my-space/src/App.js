@@ -261,6 +261,7 @@ function App() {
         <Route path="/GDPRPolicy" element={<GDPRPolicy />}/>
         <Route path="/Warrantyandguaranty" element={<Warrantyandguaranty />}/>
         <Route path="/" element={<NewHome />}/>
+        
       </Routes>
     </>
   );
