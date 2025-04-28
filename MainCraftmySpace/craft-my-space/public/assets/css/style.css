@@ -8775,9 +8775,10 @@ padding: 20px;;}
   
   /* Phone */
   .btn-floating.phone {
-	  bottom: 105px;
-	  background-color: #760f10;
-  }
+	right: 10px;
+    bottom: 115px;
+    background-color: #760f10;
+}
   
   .btn-floating.phone:hover {
 	  background-color: #c03421;
@@ -8785,8 +8786,9 @@ padding: 20px;;}
   
   /* WhatsApp */
   .btn-floating.whatsapp {
-	  background-color: #34af23;
-	  bottom: 50px;
+	right: 10px;
+    background-color: #34af23;
+    bottom: 60px;
   }
   
   .btn-floating.whatsapp:hover {

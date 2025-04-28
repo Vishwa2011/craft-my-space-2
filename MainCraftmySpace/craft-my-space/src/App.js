@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import FittedBedroom from "./pages/FittedBedroom";
 import FittedWardrobes from "./pages/FittedWardrobes";
 import FittedLiving from "./pages/FittedLiving";
@@ -59,6 +59,7 @@ import { useState } from "react";
 import GDPRPolicy from "./pages/GDPRPolicy";
 
 import Warrantyandguaranty from "./pages/Warrantyandguaranty";
+import NewHome from "./pages/NewHome";
 
 
 // import Getaquote from "./pages/GetQuote";
@@ -219,7 +220,7 @@ function App() {
           </a>
       </div> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />
         <Route path="/FittedWardrobes" element={<FittedWardrobes />} />
         <Route path="/FittedLiving" element={<FittedLiving />} />
@@ -270,6 +271,7 @@ function App() {
 
 
         <Route path="/Warrantyandguaranty" element={<Warrantyandguaranty />}/>
+        <Route path="/" element={<NewHome />}/>
       </Routes>
     </>
   );
