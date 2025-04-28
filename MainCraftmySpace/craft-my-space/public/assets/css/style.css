@@ -8877,9 +8877,9 @@ padding: 20px;;}
   /* Right Content */
   .right-content {
 	margin-left: 80px; /* Space for fixed navbar */
-	width: calc(100% - 90px);
+	width: calc(100% - 80px);
 	height: 100vh;
-	overflow: auto; /* Enable scrolling */
+	/* overflow: auto;  */
 	position: relative;
   }
   
@@ -8947,7 +8947,13 @@ padding: 20px;;}
 		margin-right: 10px;
 		justify-content: end;
 	  }
-	  
+	  .right-content {
+		margin-left: 0px; /* Space for fixed navbar */
+		width: 100%;
+		height: 100vh;
+		overflow: auto; /* Enable scrolling */
+		position: relative;
+	  }
     .left-navbar .logo {
 		writing-mode: vertical-rl;
 		transform: rotate(269deg);
