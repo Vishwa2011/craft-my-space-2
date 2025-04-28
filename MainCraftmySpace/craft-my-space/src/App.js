@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 import FittedBedroom from "./pages/FittedBedroom";
 import FittedWardrobes from "./pages/FittedWardrobes";
 import FittedLiving from "./pages/FittedLiving";
@@ -44,20 +44,12 @@ import Service from "./pages/Service";
 import KitchenService from "./pages/Kitchen-Service";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Ourfactorytour from "./pages/Ourfactorytour";
-
-
-
-
 import BespokeFurniture from "./pages/BespokeFurniture";
 import GetFreeDesignConsultation from "./pages/GetFreeDesignConsultation";
 import Startdesigning from "./pages/Startdesigning";
 import Exitpopup from "./pages/Exitpopup";
 import { useState } from "react";
-
-
-
 import GDPRPolicy from "./pages/GDPRPolicy";
-
 import Warrantyandguaranty from "./pages/Warrantyandguaranty";
 import NewHome from "./pages/NewHome";
 
@@ -220,7 +212,7 @@ function App() {
           </a>
       </div> */}
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/Home" element={<Home />} />
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />
         <Route path="/FittedWardrobes" element={<FittedWardrobes />} />
         <Route path="/FittedLiving" element={<FittedLiving />} />
@@ -263,13 +255,10 @@ function App() {
         <Route path="/Service" element={<Service />} />
         <Route path="/Kitchen-Service" element={<KitchenService />} />
         <Route path="/Ourfactorytour" element={<Ourfactorytour />} />
-
         <Route path="/BespokeFurniture" element={<BespokeFurniture />} />
         <Route path="/GetFreeDesignConsultation" element={<GetFreeDesignConsultation />} />
         <Route path="/Startdesigning" element={<Startdesigning />}/>
         <Route path="/GDPRPolicy" element={<GDPRPolicy />}/>
-
-
         <Route path="/Warrantyandguaranty" element={<Warrantyandguaranty />}/>
         <Route path="/" element={<NewHome />}/>
       </Routes>
