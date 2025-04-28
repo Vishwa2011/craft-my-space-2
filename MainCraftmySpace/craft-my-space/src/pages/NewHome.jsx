@@ -1,27 +1,73 @@
-// LeftNavbar.jsx
-import React from 'react';
-import { FiMenu, FiShoppingCart, FiSearch } from 'react-icons/fi'; // Feather Icons
+import React, { useState, useEffect } from "react";
+import { FiMenu, FiSearch } from "react-icons/fi";
 
-const LeftNavbar = () => {
+const NewHome = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    "/assets/pic/cashmere-kitchen-main.jpg",
+    "/assets/pic/WentworthStudy.jpg",
+    "/assets/pic/Bed_Barnsdale_Hanby_IndigoOak.jpg",
+    "/assets/pic/graphite-offce.webp",
+  ];
+
+  // Function to show the slide by index
+  const showSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  // Function to move to the next slide
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  // Auto slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000);
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
-    <div className="fixed top-0 left-0 h-screen w-16 bg-black flex flex-col justify-between items-center py-6 z-50">
-      {/* Top Logo or Brand Name */}
-      <div className="rotate-[-90deg] text-white text-xl tracking-widest font-semibold">
-        KRIEDER
+    <div className="main-container">
+      {/* Left Side Slider */}
+      <div className="left-navbar">
+        {/* Top Logo */}
+        <div className="logo">CraftMySpace</div>
+
+        {/* Middle Menu Icon */}
+        <div className="middle-icons">
+          <a href="/Home">
+            <FiMenu className="icon" />
+          </a>
+        </div>
+
+        {/* Bottom Search Icon */}
+        <div className="bottom-icons">
+          <FiSearch className="icon" />
+        </div>
       </div>
 
-      {/* Middle Icons */}
-      <div className="flex flex-col gap-6">
-        <FiMenu className="text-white text-2xl cursor-pointer" />
-      </div>
-
-      {/* Bottom Icons */}
-      <div className="flex flex-col gap-6 mb-4">
-        <FiShoppingCart className="text-white text-xl cursor-pointer" />
-        <FiSearch className="text-white text-xl cursor-pointer" />
+      {/* Right Side Image */}
+      <div className="right-content">
+        <div className="slider">
+          {slides.map((image, index) => (
+            <div
+              key={index}
+              className={`slide ${index === currentSlide ? "active" : ""}`}
+            >
+              <img src={image} alt={`Image ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        <div>
+          <h1>hello</h1>
+          <h1>hello</h1>
+          <h1>hello</h1>
+          <h1>hello</h1>
+        </div>
       </div>
     </div>
   );
 };
 
-export default LeftNavbar;
+export default NewHome;

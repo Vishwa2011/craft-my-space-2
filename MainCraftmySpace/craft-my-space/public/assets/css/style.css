@@ -8775,7 +8775,7 @@ padding: 20px;;}
   
   /* Phone */
   .btn-floating.phone {
-	right: 10px;
+	/* right: 10px; */
     bottom: 115px;
     background-color: #760f10;
 }
@@ -8786,7 +8786,7 @@ padding: 20px;;}
   
   /* WhatsApp */
   .btn-floating.whatsapp {
-	right: 10px;
+	/* right: 10px; */
     background-color: #34af23;
     bottom: 60px;
   }
@@ -8808,5 +8808,116 @@ padding: 20px;;}
 	width: 150px; /* Set desired width */
 	height: 80px; /* Set desired height */
 	color: #fff;
+  }
+
+
+  /* newhome page css*/
+
+/* Full Layout */
+.main-container {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+  }
+  
+  /* Left Navbar */
+  .left-navbar {
+	width: 90px;
+	background-color: black;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+	border-right: 1px solid white;
+	z-index: 1000;
+	position: fixed;
+	left: 0;
+	top: 0;
+  }
+  
+  /* Top Logo */
+  .left-navbar .logo {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 3px;
+  }
+  
+  /* Middle Icons */
+  .left-navbar .middle-icons {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Bottom Icons */
+  .left-navbar .bottom-icons {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+  }
+  
+  /* All Icons */
+  .left-navbar .icon {
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+	transition: color 0.3s;
+  }
+  
+  .left-navbar .icon:hover {
+	color: #B19777;
+  }
+  
+  /* Right Content */
+  .right-content {
+	margin-left: 90px; /* Space for fixed navbar */
+	width: calc(100% - 90px);
+	height: 100vh;
+	overflow: auto; /* Enable scrolling */
+	position: relative;
+  }
+  
+  /* Slider */
+  .right-content .slider {
+	width: 100%;
+	height: 100%; /* Set a fixed height for the slider */
+	display: flex;
+	position: relative;
+  }
+  
+  .right-content .slide {
+	min-width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  
+  .right-content .slide.active {
+	opacity: 1;
+	z-index: 1;
+  }
+  
+  .right-content .slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  /* Content Section Below Slider */
+  .right-content .content-section {
+	padding: 20px;
+  }
+  
+  .right-content .content-section h1 {
+	margin-bottom: 20px;
   }
   
