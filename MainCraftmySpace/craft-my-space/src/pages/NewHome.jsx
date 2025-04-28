@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiSearch } from "react-icons/fi";
 import Footers from "./Footer";
+import { AiOutlineClose } from 'react-icons/ai';
 
 const NewHome = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

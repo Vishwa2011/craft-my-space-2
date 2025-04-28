@@ -9007,8 +9007,9 @@ padding: 20px;;}
   /* Close Button Styling */
   .close-btn {
 	position: absolute;
-	top: 415px;
-	left: 20px;
+	top: 0px;
+	/* left: 20px; */
+	right: 0px;
 	background: transparent;
 	border: none;
 	font-size: 30px;
