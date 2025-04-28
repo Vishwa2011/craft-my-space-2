@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiSearch } from "react-icons/fi";
+import Footers from "./Footer";
 
 const NewHome = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,6 +28,24 @@ const NewHome = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the paragraph is in view
+    );
+
+    const target = document.querySelector(".newhomep");
+    observer.observe(target);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="main-container">
       {/* Left Side Slider */}
@@ -49,6 +68,7 @@ const NewHome = () => {
 
       {/* Right Side Image */}
       <div className="right-content">
+        {/* slider start  */}
         <div className="slider">
           {slides.map((image, index) => (
             <div
@@ -59,12 +79,22 @@ const NewHome = () => {
             </div>
           ))}
         </div>
-        <div>
-          <h1>hello</h1>
-          <h1>hello</h1>
-          <h1>hello</h1>
-          <h1>hello</h1>
-        </div>
+        {/* slider end  */}
+          {/* text start  */}
+          <div style={{ margin: "60px 0px" }}>
+      <div className="container">
+        <p className={`newhomep ${isVisible ? "show" : ""}`}>
+          At CraftMySpace, we design furniture that combines elegance with
+          functionality. Our pieces are crafted with precision and attention
+          to detail, ensuring that each creation adds a touch of sophistication
+          to your home. Whether it’s a modern kitchen, stylish living room, or
+          custom storage solutions, we deliver furniture that meets your unique
+          needs and enhances your living space, today and for years to come.
+        </p>
+      </div>
+    </div>
+        {/* text end  */}
+        <Footers />
       </div>
     </div>
   );
