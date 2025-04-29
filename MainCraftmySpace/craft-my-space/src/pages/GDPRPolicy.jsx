@@ -74,7 +74,7 @@ Our registered office is at Unit 1, Grange Farm, Grange Way Iver,Near London,UK 
               <div style={{marginBottom:"50px"}}>
                 <h4 style={{color:'#B19777'}}>2.Information That We Collect</h4>
            <li style={{textAlign:'justify',marginBottom:'20px',listStyle:'none' }}>
-           Our website at www…………………….uk uses cookies, which is a string of information a website stores on to a visitor`s computer. These cookies log the visitor`s browser every time they return. Visitors to the website who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using the website.
+           Our website at <a href="https://www.craftmyspace.co.uk" target="_blank" rel="noopener noreferrer" style={{color:'#B19777'}}>www.craftmyspace.co.uk</a> uses cookies, which is a string of information a website stores on to a visitor`s computer. These cookies log the visitor`s browser every time they return. Visitors to the website who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using the website.
            </li>
            <li style={{textAlign:'justify',listStyle:'none' }}>
            We process your personal information to meet our legal, statutory and contractual obligations, to provide you with our products and services and, where you have provided your consent, to provide you with details of our products, offers, services and competitions. We will never collect any unnecessary personal data from you and do not process your information in any way, other than already specified in this notice.
