@@ -3,6 +3,7 @@ import { FiMenu, FiSearch } from "react-icons/fi";
 import Footers from "./Footer";
 import { AiOutlineClose } from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
+import Home from "@mui/icons-material/Home";
 const NewHome = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
@@ -95,7 +96,7 @@ const NewHome = () => {
         {/* Middle Menu Icon */}
         <div className="middle-icons">
           <a href="/Home">
-            <FiMenu className="icon" />
+            <Home className="icon" />
           </a>
         </div>
 
@@ -156,17 +157,20 @@ const NewHome = () => {
         {/* text end  */}
         {/* service start  */}
         <div className="newHomeservice">
-            <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                       <b>KITCHEN  / 001</b>
-                    </div>
-                    <div className="col-10">
-                       <a href="/Kitchens"> <img src="/assets/pic/Premiumline-kitchen.webp" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div className="container">
+    <div className="row">
+      <div className="col-2">
+        <b>KITCHEN / 001</b>
+      </div>
+      <div className="col-10">
+        <a href="/Kitchens">
+          <img src="/assets/pic/Premiumline-kitchen.webp" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
         <div className="newHomeservice">
             <div className="container">
                 <div className="row">

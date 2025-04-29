@@ -8978,6 +8978,11 @@ padding: 20px;;}
 	.icon {
 	  font-size: 24px;
 	}
+	.right-content .slider {
+		
+		height: 50%; /* Set a fixed height for the slider */
+		
+	  }
   }
 /* Bottom Icon Style */
 .bottom-icons {
@@ -9084,29 +9089,69 @@ padding: 20px;;}
 	.newhomep {
 	  font-size: 14px; /* Adjust text size for mobile */
 	}
+	.search-field {
+		
+		width: 100%;
+		
+	  }
   }
   
-  .newHomeservice {
-	margin: 90px 0px;
+ .newHomeservice {
+  margin: 90px 0;
+}
+
+.newHomeservice .row {
+  display: flex;
+  flex-direction: column; /* 👈 default for mobile: vertical */
+  align-items: center;
+  text-align: center;
+}
+
+.newHomeservice .col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px; /* gap between heading & image */
+  transform: none;
+  writing-mode: initial;
+  max-width: 100%;
+}
+
+.newHomeservice .col-10 {
+  width: 100%;
+}
+
+.newHomeservice img {
+  width: 100%;
+  transition: transform 0.9s ease-in-out, filter 0.6s ease-in-out;
+}
+
+.newHomeservice img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* 🔁 Bigger than 768px: side-by-side layout with rotated heading */
+@media (min-width: 768px) {
+  .newHomeservice .row {
+    flex-direction: row; /* side-by-side */
+    align-items: center;
+    text-align: left;
   }
-  
+
   .newHomeservice .col-2 {
-	transform: rotate(270deg);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	letter-spacing: 1px;
+    transform: rotate(180deg); /* vertical text */
+    writing-mode: vertical-lr;
+    margin-bottom: 0;
+	max-width: 100%;
   }
-  
-  .newHomeservice img {
-	width: 100%;
-	transition: transform 0.9s ease-in-out, filter 0.6s ease-in-out; /* Longer transition for slow motion */
+
+  .newHomeservice .col-10 {
+    width: 100%;
   }
-  
-  .newHomeservice img:hover {
-	transform: scale(1.1); /* Zoom in effect */
-	filter: brightness(1.1); /* Slightly brighten the image on hover */
-  }
+}
+
   
   .parallax-container {
 	background-image: url('/assets/pic/parallax.webp');
