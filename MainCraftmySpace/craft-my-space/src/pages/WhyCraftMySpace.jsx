@@ -55,62 +55,28 @@ const WhyCraftMySpace = () => {
           <div className="project-detail-outer">
             <div className="project-detail-containt">
               <div className=" text-black">
-                <h3 style={{color:'#B19777'}}>Crafting Bespoke Furniture Solutions Since 2009</h3>
-                <p style={{color:'white'}}>
-                  Bespoke fitted wardrobes, bedrooms, furniture, and kitchens
-                  designed and installed by CraftMySpace.
-                </p>
-                <p style={{color:'white'}}>
-                  We design, manufacture, and install premium-quality fitted
-                  bedroom furniture across London and the UK. Our expertise lies
-                  in creating tailor-made hinged door and sliding door
-                  wardrobes, offering functional and stylish storage solutions.
-                  CraftMySpace specializes in designing, producing, and
-                  installing beautifully crafted built-in wardrobes, fitted
-                  bedrooms, and innovative storage systems that cater to
-                  individual needs and preferences. We are also among the
-                  leading manufacturers of bespoke sliding wardrobe doors and
-                  aluminum profile systems for Trade, Private, and B2B sectors.
-                </p>
-                <p style={{color:'white'}}>
-                  Whether you're looking for a Sliding Glass Door Wardrobe, Full
-                  Mirror Door Wardrobe, Hinged Door Wardrobe, Walk-in Wardrobe,
-                  or a Custom Living or Bedroom Wardrobe, CraftMySpace is your
-                  perfect choice. Our bespoke furniture and built-in wardrobes
-                  are entirely made-to-measure, ensuring a perfect fit for your
-                  home. We offer high-quality, affordable products and storage
-                  solutions across London and the Home Counties.
-                </p>
-                <p style={{color:'white'}}>
-                  Book your free, no-obligation wardrobe design consultation,
-                  and our expert designers will visit your home, take precise
-                  measurements, and understand your space requirements. Our
-                  specialists will work with you to create a detailed 3D design
-                  tailored to your space and preferences. Whether you need
-                  closet doors, fitted bedrooms, custom sliding wardrobe doors,
-                  or fully bespoke furniture, our team will help bring your
-                  vision to life.
-                  <p style={{color:'white'}}>
-                    Designed to your exact specifications, our fitted furniture
-                    experts ensure that each piece complements your interior
-                    while maximizing storage space for your clothing,
-                    accessories, and belongings. Every detail, from drawings to
-                    technical specifications, is shared with you before
-                    proceeding with production. Once approved, we move to the
-                    next stage—bringing your dream furniture to life.
-                  </p>
-                  <p style={{color:'white'}}>
-                    "Everything will fit perfectly!" – Since 2009, CraftMySpace
-                    has been delivering high-quality fitted furniture and
-                    wardrobes, ensuring every design meets your unique needs.
-                  </p>
-                </p>
+                <h3 style={{color:'#B19777',fontSize:'37px'}}>Why Choose Us :-</h3>
+               
+                <ul style={{fontSize:'20px',color:'#fff',lineHeight:'50px',listStyle:'none'}}>
+                  <li>	Team based project management.</li>
+                  <li>	Reliable and experienced installers.</li>
+                  <li>	A trained, qualified and fully equipped workforce.</li>
+                  <li>	Skilled to undertake specialist installations.</li>
+                  <li>	Pre-Start Meeting.</li>
+                  <li>12 Months workmanship guarantee.</li>
+
+                  <li>	10 Years product guarantee.</li>
+
+                  
+
+                </ul>
+              
               </div>
             </div>
           </div>
         </motion.div>
         {/* image start  */}
-        <motion.div className="section-full p-tb90">
+        <motion.div className="section-full p-tb40">
           <div className="container-fluid project-detail-pic">
             <div className="row justify-content-center">
               <div className="col-lg-4 col-md-6 m-b30">
@@ -244,22 +210,12 @@ const WhyCraftMySpace = () => {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
+                 <h3 style={{color:'#B19777',fontSize:'37px'}}>About US :-</h3>
                   <p style={{color:'white'}}>
-                    At <b style={{color:'#B19777'}}>CraftMySpace</b>, we take immense pride in our
-                    exceptional team!
+                  We have been making bespoke kitchens and bedrooms from more than 10 years, and in that time we’ve designed and crafted more than 100’s made to measure kitchens and Bedrooms. 
                   </p>
                   <p style={{color:'white'}}>
-                    Each of our specialists is deeply committed to delivering
-                    outstanding craftsmanship and personalized service. We
-                    believe that when clients return to collaborate with us on
-                    multiple projects, it’s the highest compliment we can
-                    receive. Building lasting relationships and earning customer
-                    trust is at the heart of everything we do.
-                  </p>
-                  <p style={{color:'white'}}>
-                    We create bespoke solutions tailored to your unique project
-                    requirements, ensuring quality, reliability, and safety you
-                    can always count on.
+                  During the design process to create your perfect kitchen, we'll listen to your requirements and take on board your ideas, offer advice and guide you through the exciting process of crafting your dream, luxury bespoke kitchen.Our philosophy is to offer understated, premium-quality, combined with the best in thoughtful design and service, whilst always offering exceptional value for money. All of our kitchens/bedrooms are designed and made to order, unique to the needs of their owners. No matter what sort of look you choose for your home, our talented designers are on hand to make your dream space a reality. They will work closely with you to design a space that meets your brief and exceeds your expectations.
                   </p>
                 </div>
               </div>
@@ -345,31 +301,17 @@ const WhyCraftMySpace = () => {
             <div className="project-detail-outer">
               <div className="project-detail-containt">
                 <div className=" text-black">
-                  <h3 style={{color:'#B19777'}}>Sliding Wardrobe Doors Manufacturer</h3>
+                 
                   <p style={{color:'white'}}>
-                    <b style={{color:'#B19777'}}>CraftMySpace</b> is more than just a wardrobe
-                    specialist—we are one of the leading sliding door
-                    manufacturers in the UK. We design and produce high-quality
-                    sliding doors for other wardrobe manufacturers and trade
-                    customers, allowing us to offer the best prices without
-                    compromising on quality.
+                  Please browse our website for inspiration for your project, more images and information about some of the bespoke kitchen / Bedroom designs we have completed for our clients and more information about the way in which we work. 
                   </p>
 
                   <p style={{color:'white'}}>
-                    If you’re looking for a reliable supplier of sliding doors
-                    or wardrobes for your business, we provide an extensive
-                    range of stunning designs, top-tier craftsmanship, and fast
-                    lead times. Our team is dedicated to offering expert
-                    guidance, and we provide a free consultation to ensure you
-                    receive the perfect solution.
+                  You can also find lots of useful kitchen planning information and projects we've been working on by visiting our Instagram, Pinterest and Facebook. pages.
                   </p>
+                  
                   <p style={{color:'white'}}>
-                    Visit our{" "}
-                    <b style={{color:'#B19777'}}>sliding wardrobe door factory website — CraftMySpace</b>
-                  </p>
-                  <p style={{color:'white'}}>
-                    We build every project to your exact specifications,
-                    ensuring safety and durability you can trust.
+                  If you have any questions, don’t hesitate to call us on 07365 566 666. Or, if you prefer, use our showroom locator to find our showroom where one of our talented kitchen designers will be delighted to assist you.
                   </p>
                 </div>
               </div>

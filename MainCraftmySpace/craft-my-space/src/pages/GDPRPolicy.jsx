@@ -59,120 +59,98 @@ const GDPRPolicy = () => {
                 </ul>
                 <h4 style={{color:'#B19777'}}>1. Who We Are</h4>
                 <ul style={{ lineHeight: "30px", listStyle: "none" }}>
-                  <li style={{textAlign:'justify'}}>
-                  <b>CraftMySpace</b> is a UK-based company specialising in custom-made furniture. Our website is operated by CraftMySpace and is intended for customers located in the United Kingdom.{" "}
+                  <li style={{textAlign:'justify',marginBottom:'20px',}}>
+                  Metro Wardrobes Limited (‘we’ or ‘us’ or ‘our’) gather and process your personal information in accordance with this privacy notice and in compliance with the relevant data protection Regulation and law. This notice provides you with the necessary information regarding your rights and obligations, and explains how, why and when we collect and process your personal data.
                   </li>
                   <li style={{textAlign:'justify'}}>
-                    {" "}
-                    📍 Business Address:
-                    <br />
-                    Unit 1, Grange Farm, Grange Way
-                    Iver, Near London, UK
-                    <br />
-                    📞 Phone: (0044) 07365 566 666
-                    <br />
-                    📧 Email: info@craftmyspace.co.uk
+
+                    
+Our registered office is at Unit 1, Grange Farm, Grange Way Iver,Near London,UK and we are a company registered in England and Wales under company number (0044)07365 566 666. We can be contacted at (0044)07365 566 666. 
+
+                   
                   </li>
                 </ul>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>2. What Personal Data We Collect</h4>
-                <p style={{marginBottom:'5px'}}>We may collect and process the following personal information:</p>
-                <ul style={{ lineHeight: "30px",listStyle:'none'}}>
-                  <li>Full name</li>
-                  <li>Email address</li>
-                  <li>Phone number</li>
-                  <li>Billing and shipping address</li>
-                  <li>Payment information (handled securely via third-party providers)</li>
-                  <li>Login credentials (if applicable)</li>
-                  <li>Order and communication history</li>
-                  <li>IP address, browser type, and device data</li>
-                  <li>Cookies and usage data (see our Cookie Policy)</li>
-                </ul>
+                <h4 style={{color:'#B19777'}}>2.Information That We Collect</h4>
+           <li style={{textAlign:'justify',marginBottom:'20px',listStyle:'none' }}>
+           Our website at www…………………….uk uses cookies, which is a string of information a website stores on to a visitor`s computer. These cookies log the visitor`s browser every time they return. Visitors to the website who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using the website.
+           </li>
+           <li style={{textAlign:'justify',listStyle:'none' }}>
+           We process your personal information to meet our legal, statutory and contractual obligations, to provide you with our products and services and, where you have provided your consent, to provide you with details of our products, offers, services and competitions. We will never collect any unnecessary personal data from you and do not process your information in any way, other than already specified in this notice.
+           </li>
               </div>
               <div style={{marginBottom:"50px"}}>
                 <h4 style={{color:'#B19777'}}>
-                3. How We Use Your Personal Data
+                3.The personal data that we collect from you is: –
                 </h4>
-                <p style={{marginBottom:'5px'}}>We use your data to:</p>
+             
                 <ul style={{ lineHeight: "30px",listStyle:'none' }}>
-                    <li>Process and fulfill your orders</li>
-                    <li>Communicate with you about your purchases</li>
-                    <li>Provide customer support</li>
-                    <li>Send updates, invoices, and delivery information</li>
-                    <li>Improve our services and website</li>
-                    <li>Send marketing emails (only with your consent)</li>
-                    <li>Comply with legal obligations</li>
+                    <li>Name</li>
+                    <li>Address</li>
+                    <li>Email</li>
+                    <li>Contact Number</li>
+                    <li>We collect the information about you from your completion of a brochure request form, a design visit form or an order form, from any other forms and surveys you complete and from records of correspondence, phone calls and site visits to you.</li>
+                   
                 </ul>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>4. Legal Bases for Processing</h4>
-                <p style={{marginBottom:'5px'}}>We process your personal data on the following legal bases:</p>
-                <ul style={{ lineHeight: "30px" ,listStyle:'none'}}>
-                  <li><b>Consent</b> – for marketing and cookies</li>
-                  <li><b>Contract</b> – to fulfill product purchases</li>
-                  <li><b>Legal obligation</b> – for tax, accounting, and regulatory compliance</li>
-                  <li><b>Legitimate interest</b> – to improve services and prevent fraud</li>
+                <h4 style={{color:'#B19777'}}>4. How We Use Your Personal Data (Legal Basis for Processing)</h4>
+               
+                <ul style={{ lineHeight: "40px" ,listStyle:'none'}}>
+                  <li>We take your privacy very seriously and will never disclosure, share or sell your data without your consent, unless required to do so by law. We only retain your data for as long as is necessary and for the purposes specified in this notice. Where you have consented to us providing you with promotional offers and marketing, you are free to withdraw consent at any time. </li>
+                  <li>We collect your information in order to perform our contract with you.</li>
+                  <li>Where you have consented to us providing you with promotional offers and marketing, we collect your information for marketing purposes as a legitimate business interest.</li>
+                  <li>Where you have entered a competition, we collect the information based on your consent.</li>
                 </ul>
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>5. Sharing of Personal Data</h4>
+                <h4 style={{color:'#B19777'}}>5. Your Rights</h4>
                 <p style={{marginBottom:'5px'}}>
-                Your data may be shared with trusted third parties, such as:
+                You have the right to access any personal information that we process about you and to request information about: –
                 </p>
                 <ul style={{ lineHeight: "30px",listStyle:'none' }}>
-                    <li>Payment gateways (e.g. Stripe, PayPal)</li>
-                    <li>Shipping and delivery services</li>
-                    <li>Web hosting and IT service providers</li>
-                    <li>Legal authorities (where required by law)</li>
+                    <li>What personal data we hold about you</li>
+                   <li>The purposes of the processing</li>
+                   <li>The categories of personal data concerned</li>
+                   <li>The recipients to whom the personal data has/will be disclosed</li>
+                   <li>How long we intend to store your personal data for</li>
+                   <li>If we did not collect the data directly from you, information about the source</li>
+
                 </ul>
-                <p>We will never sell or rent your personal information.</p>
+                <p>If you believe that we hold any incomplete or inaccurate data about you, you have the right to ask us to correct and/or complete the information and we will strive to update/correct it as quickly as possible; unless there is a valid reason for not doing so, at which point you will be notified.</p>
+                <p>
+                You also have the right to request erasure of your personal data or to restrict processing in accordance with data protection laws, as well as to object to any direct marketing from us and to be informed about any automated decision-making that we use.
+                </p>
+                <p>If we receive a request from you to exercise any of the above rights, we may ask you to verify your identity before acting on the relevant request; this is to ensure that your data is protected and kept secure.</p>
               </div>
-              <div>
-                <h4 style={{color:'#B19777'}}>6. Data Retention</h4>
+              <div  style={{marginBottom:"50px"}}>
+                <h4 style={{color:'#B19777'}}>6. Sharing and Disclosing Your Personal Information</h4>
                 <p style={{marginBottom:'5px'}}>
-                We retain personal data only as long as necessary:
+                We do not share or disclosure any of your personal information without your consent, other than for the purposes specified in this notice or where there is a legal requirement. We use third-parties such as designers, surveyors and fitters in the performance of our contract with you and, where you have provided your consent to receiving marketing information communications from us, we may share your information with our marketing agencies. However all processors acting on our behalf only process your data in accordance with instructions from us and comply fully with this privacy notice, the data protection laws and any other appropriate confidentiality and security measures.
                 </p>
-                <ul style={{ lineHeight: "30px",listStyle:'none' }}>
-                    <li>To complete the services requested</li>
-                    <li>To comply with legal and tax requirements</li>
-                    <li>For internal analysis and record-keeping</li>
-                </ul>
+               
               </div>
               <div style={{marginBottom:"50px"}}>
-                <h4 style={{color:'#B19777'}}>7. Your Rights Under UK GDPR</h4>
+                <h4 style={{color:'#B19777'}}>7.Safeguarding Measures</h4>
                 <p style={{marginBottom:'5px'}}>
-                You have the right to:
+                We take your privacy seriously and we take every reasonable measure and precaution to protect and secure your personal data. We work hard to protect you and your information from unauthorised access, alteration, disclosure or destruction and have several layers of security measures in place.
                 </p>
-                <ul style={{ lineHeight: "30px" ,listStyle:'none'}}>
-                    <li>Access your data</li>
-                    <li>Correct inaccurate information</li>
-                    <li>Erase your data (right to be forgotten)</li>
-                    <li>Restrict or object to processing</li>
-                    <li>Withdraw consent at any time</li>
-                    <li>Request data portability</li>
-                </ul>
-                <p>To exercise any of these rights, email us at info@craftmyspace.co.uk</p>
+               
               </div>
-              <div>
-                <h4 style={{color:'#B19777'}}>8. Data Security</h4>
+              <div style={{marginBottom:"50px"}}>
+                <h4 style={{color:'#B19777'}}>8. Consequences of Not Providing Your Data</h4>
                 <p>
-                We use secure servers, encryption technologies, and strict access controls to protect your data from unauthorized access, disclosure, or loss.
+                You are not obligated to provide your personal information to us, however, as this information is required for us to perform the contract with you, we will not be able to perform the contract without it.
                 </p>
               </div>
-              <div>
-                <h4 style={{color:'#B19777'}}>9. Cookies</h4>
+              <div style={{marginBottom:"70px"}}>
+                <h4 style={{color:'#B19777'}}>9. How Long We Keep Your Data</h4>
                 <p>
-                We use cookies to enhance user experience and analyze website traffic. Please refer to our Cookie Policy for full details.
+                We only ever retain personal information for as long as is necessary and we have strict review and retention policies in place to meet these obligations. We will retain your personal information for 10 years where you have the benefit of our 10-year guarantee. Where you have consented to us using your details for direct marketing, we will keep such data until you notify us otherwise and/or withdraw your consent. Where you have entered a competition (and not consented to us using your details for direct marketing), we will delete your personal information within one month of the result of the competition.
                 </p>
               </div>
-              <div>
-                <h4 style={{color:'#B19777'}}>10. Changes to This Policy</h4>
-                <p>
-                We may update this policy occasionally. Any changes will be posted on this page with an updated effective date.
-                </p>
-              </div>
-              <p><b >Thank you for trusting CraftMySpace. Your privacy matters to us.</b></p>
+        
           </div>
         </motion.div>
       </div>
