@@ -165,6 +165,16 @@ const Footers = () => {
 </li>
 <li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
   <a 
+  href='/Joinery'
+    style={{ color: "#fff", transition: "color 0.3s" }} 
+    onMouseEnter={(e) => e.target.style.color = "#B19777"} 
+    onMouseLeave={(e) => e.target.style.color = "#fff"}
+  >
+ Joinery
+  </a>
+</li>
+<li className="text-3xl font-bold mb-6" style={{ marginBottom: '10px' }}>
+  <a 
   href='/ContactUs'
     style={{ color: "#fff", transition: "color 0.3s" }} 
     onMouseEnter={(e) => e.target.style.color = "#B19777"} 

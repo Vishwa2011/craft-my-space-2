@@ -781,7 +781,7 @@ const Navbar = () => {
                     </ul> */}
                   </li>
                   <li>
-                    <a href="/Joinery" >Joinery</a>
+                    <a href="/Product" >Product</a>
                   </li>
                   {/* <li>
                     <a href="/Inspiration" >Blog</a>

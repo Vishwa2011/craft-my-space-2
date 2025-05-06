@@ -51,7 +51,8 @@ import Exitpopup from "./pages/Exitpopup";
 import { useState } from "react";
 import GDPRPolicy from "./pages/GDPRPolicy";
 import Warrantyandguaranty from "./pages/Warrantyandguaranty";
-import NewHome from "./pages/NewHome";
+import Product from "./pages/Product";
+// import NewHome from "./pages/NewHome";
 
 
 // import Getaquote from "./pages/GetQuote";
@@ -212,7 +213,7 @@ function App() {
           </a>
       </div> */}
       <Routes>
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/fitted-bedroom" element={<FittedBedroom />} />
         <Route path="/FittedWardrobes" element={<FittedWardrobes />} />
         <Route path="/FittedLiving" element={<FittedLiving />} />
@@ -260,7 +261,8 @@ function App() {
         <Route path="/Startdesigning" element={<Startdesigning />}/>
         <Route path="/GDPRPolicy" element={<GDPRPolicy />}/>
         <Route path="/Warrantyandguaranty" element={<Warrantyandguaranty />}/>
-        <Route path="/" element={<NewHome />}/>
+        <Route path="/Product" element={<Product />}/>
+        {/* <Route path="/" element={<NewHome />}/> */}
         
       </Routes>
     </>

@@ -129,7 +129,7 @@ const NewHome = () => {
       {/* Right Side Image */}
       <div className="right-content">
         {/* slider start  */}
-        <div className="slider">
+        <div className="                                ">
           {slides.map((image, index) => (
             <div
               key={index}
