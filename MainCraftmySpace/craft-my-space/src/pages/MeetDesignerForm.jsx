@@ -411,7 +411,7 @@ const MeetDesignerForm = () => {
             <div className="col-12">
               <div className="row">
                 <div className="col-12 col-md-6">
-                  <h3>Design Your Own Wardrobe</h3>
+                  <h3 >Design Your Own Wardrobe</h3>
                   <p>
                     Encourage visitors to start customizing their furniture as
                     soon as they land on the website.
