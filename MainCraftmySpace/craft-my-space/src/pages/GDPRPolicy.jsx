@@ -65,7 +65,7 @@ const GDPRPolicy = () => {
                   <li style={{textAlign:'justify'}}>
 
                     
-Our registered office is at Unit 1, Grange Farm, Grange Way Iver,Near London,UK and we are a company registered in England and Wales under company number (0044)07365 566 666. We can be contacted at (0044)07365 566 666. 
+Our registered office is at Unit 1, Grange Farm, Grange Way.  Iver Buckinghamshire. SL0 9NT and we are a company registered in England and Wales under company registration number 15963804 . We can be contacted at (0044)07365 566 666. 
 
                    
                   </li>

@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
                 <h4 style={{color:'#B19777'}}>1. Information That We Collect</h4>
                 <ul style={{ lineHeight: "30px", listStyle: "none" }}>
                   <li style={{textAlign:'justify'}}>
-                    Our website at www.craftmyspace.uk uses cookies, which is a
+                    Our website at  <a href="https://www.craftmyspace.co.uk" target="_blank" rel="noopener noreferrer" style={{color:'#B19777'}}>www.craftmyspace.co.uk</a> uses cookies, which is a
                     string of information a website stores on to a visitor`s
                     computer. These cookies log the visitor`s browser every time
                     they return. Visitors to the website who do not wish to have
