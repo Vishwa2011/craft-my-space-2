@@ -416,7 +416,7 @@ const MeetDesignerForm = () => {
                     Encourage visitors to start customizing their furniture as
                     soon as they land on the website.
                   </p>
-                  <form onSubmit={handleSubmit}>
+                  <form onSubmit={handleSubmit} >
                     <input
                       type="text"
                       name="fullName"
