@@ -91,7 +91,7 @@ function App() {
 </a>
       <div class="phone-widget2" style={{
     transform: "rotate(1deg)"
-}}>
+}}>    
         <a href="/ContactUs">
           <div class="phone-number">
           Book An Appointment
